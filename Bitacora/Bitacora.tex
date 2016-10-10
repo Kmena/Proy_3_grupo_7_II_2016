@@ -1,0 +1,84 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{graphicx}
+\usepackage[left=3cm,right=3cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{\textbf{\thepage/\pageref{LastPage}}}
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\vspace*{1.5cm}
+\textbf{Escuela de Ingenierí­Â­a en Electronica}\\[0.8cm]
+\textbf{Laboratorio de Diseño de Sistemas Digitales}\\[1cm]
+\textbf{Bitácora}\\[2cm]
+\textbf{Proyecto:}\\[0.4cm]
+Control y programación RTC con Nexys3 \\[1.7cm]
+\textbf{Profesor:}\\[0.4cm]
+Alfonso Chacón Rodrí­Â­guez \\[1.7cm]
+\textbf{Estudiantes:}\\[0.4cm]
+Keylor Mena Venegas \\[0.8cm]
+Luis Leon Vega \\[0.8cm]
+Luis Merayo Gatica \\[1.7cm]
+\textbf{Periodo}\\[0.8cm]
+II Semestre, 2016\\
+\end{center}
+\end{titlepage}
+
+
+\section*{\textit{Descripción del problema}}
+
+Se debe realizar un controlador para realizar la lectura y escritura del módulo RTC V3023. Los datos del sistema deben poder ser desplegados en un monitor LCD mediante el protocolo VGA. Ante ello, se debe realizar un controlador para el RTC y para la VGA. Asimismo, se deben poder ajustar la hora, activar la alarma y el cronómetro de forma descendente mediante botones e interruptores dispuestos en la FPGA Nexys3.
+
+\section*{\textit{Introducción al proyecto}}
+
+Este proyecto consiste en realizar un controlador de módulos RTC (Real Time Controller), especí­ficamente para el módulo V3023. Este controlador será capaz de escribir y leer dicho módulo para obtener parámetros de reloj, cronómetro y alarma. \\
+Asimismo, para poder desplegar la información relevante de los parámetros anteriores, se conectará un monitor LCD mediante el protocolo VGA. Por otro lado, para poder programar y dar instrucciones al circuito, se deberán usar los botones señalados en el instructivo y algunos interruptores. \\
+Finalmente, el conjunto es un circuito que permita controlar el módulo y comunicar al usuario mediante los botones y el monitor LCD, donde él podrá recibir la información relevante y poder modificar dicha información.\\
+
+\section*{\textit{Objetivo General}}
+Diseñar un controlador de RTC que permita leerlo y programarlo mediante una interfaz de usuario consistente en botones incorporados dentro de la FPGA (Nexys3) y un monitor comunicado a través del protocolo VGA.
+
+\section*{\textit{Objetivos Especí­ficos}}
+\begin{itemize}
+	\item Investigar el funcionamiento del módulo RTC y el protocolo de comunicación del mismo.
+	\item Diseñar un controlador para el módulo RTC, cuyo bus de datos y direcciones estén multiplexados.
+	\item Cumplir con las reglas de temporizado del sistema, en especial, con el protocolo de comunicación del módulo RTC.
+	\item Combinar el controlador de RTC con un controlador VGA para poder desplegar la información del módulo al usuario. Este módulo VGA será adaptado del proyecto anterior.
+	\item Desarrollar un banco de pruebas (testbench) para poder emular el comportamiento del módulo RTC con la finalidad de comprobar el funcionamiento del circuito controlador.
+\end{itemize}
+
+\newpage
+
+% Comienzo de la bitacora
+\section*{\textit{Control de eventos}}
+% Nueva entrada
+\begin{flushright}
+	\begin{large}
+		\textbf{Fecha: 10 de Noviembre}\\[5ex]
+	\end{large}
+\end{flushright}
+
+\noindent \textbf{Integrantes:} todos \\[1ex]
+\textbf{Hora:} 20:00 -22:30 pm \\[1ex]
+\textbf{Actividad:} \\[2ex]
+Se diseño el primer intento de aproximarse a un diagrama de bloques de nivel 2. Esto se puede notar en la figura \ref{fig:DigramaNivel2.1}, en este se puede notar 5 bloques principales, uno de ellos es el microprocesador echo con el picoblaze. Ademas podemos notar que este tiene como entrada las señales PosX y PosY de la VGA, de esta manera se controla la lectura de la RTC cuando la VGA se encuentra pintando en algunos lugares de la pantalla, Ademas la entrada IRQ controla cuando la etapa de sonido funciona.\\
+La memoria alimenta con los datos que debe pintar la VGA, estos datos vienen de la RTC directamente cuando se encuentra actualizando los datos. ademas que posee un espacio para la señal IRQ y el teclado.\\
+El teclado introduce a la memoria los datos que el usuario desea cambiar para que se muestre inmediatamente en la VGA. Ademas una vez que el usuario desea introducir el cambio en la RTC, este bloque se comunica con el controlador RTC para introducir el cambio.\\
+ 
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=14cm]{Img/Digrama_tercer_proyecto.png}
+	\caption{Diagrama de bloques nivel 2 primer intento}
+	\label{fig:DigramaNivel2.1}
+\end{figure}
+
+
+
+
+\end{document}
