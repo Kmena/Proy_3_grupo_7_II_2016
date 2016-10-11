@@ -59,7 +59,7 @@ Diseñar un controlador de RTC que permita leerlo y programarlo mediante una inte
 % Nueva entrada
 \begin{flushright}
 	\begin{large}
-		\textbf{Fecha: 10 de Noviembre}\\[5ex]
+		\textbf{Fecha: 9 de Noviembre}\\[5ex]
 	\end{large}
 \end{flushright}
 
@@ -78,7 +78,41 @@ El teclado introduce a la memoria los datos que el usuario desea cambiar para qu
 	\label{fig:DigramaNivel2.1}
 \end{figure}
 
+% Nueva entrada
+\newpage
+\begin{flushright}
+	\begin{large}
+		\textbf{Fecha: 10 de Noviembre}\\[5ex]
+	\end{large}
+\end{flushright}
 
+\noindent \textbf{Integrantes:} Luis Leon \\[1ex]
+\textbf{Hora:} 14:00 -  16:00\\[1ex]
+\textbf{Actividad:} \\[2ex]
+Algunos de los miembros del equipo asistieron a la tutoría de hoy, donde se aclaró el funcionamiento del microcontrolador PicoBlaze para FPGA. Esto ha originado algunos cambios en el diseño del día de ayer, al saber que el funcionamiento del Picoblaze es con base a un puerto I/O controlado por una memoria (físico representado en memoria). Esto ha generado el cambio en el diseño, por lo cual, se debe referir a la figura \ref{fig:DigramaNivel2.2}. \\
 
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=17cm]{Img/Digrama_tercer_proyecto2-1.png}
+	\caption{Diagrama de bloques nivel 2 segundo intento}
+	\label{fig:DigramaNivel2.2}
+\end{figure}
+
+Por otro lado, el mapa de memoria mediante el cual, se controlarán todos los periféricos es representado en la figura \ref{fig:mapamemoria1}. Este mapa contempla que:
+
+\begin{itemize}
+	\item La VGA contiene un banco de registros estabilizados que consultará dependiendo de la posición del cursor. Estos registros son accedidos por el Port ID 1 y modificados por el Port ID 2.
+	\item El teclado brinda el código de la tecla presionada. Luego de que se hace el ReadStrobe en el controlador de teclado, este código se limpia y espera la próxima tecla o, bien, que se levante la tecla (Evento KeyUp).
+	\item El controlador de audio solo tiene un registro que le habilita para que suene el speaker o no.
+	\item El controlador de RTC tiene todos los registros que son posible cambiar. Cuando se hace un WriteStrobe, se habilita el ciclo de escritura en la RTC en el dato dado por la dirección del ID (Port ID). Cuando se hace ReadStrobe, se puede ejecutar una lectura o algo similar en el próximo ciclo.
+	\item Dependiendo del orden de magnitud, se habilitará la lectura de datos. Ejemplo: Si el Bit 5 está activo, es un dato que va a la RTC, si el Bit 4 está en 1 pero el Bit 5 no, entonces va a audio y así sucesivamente, de acuerdo al mapa.
+\end{itemize}
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=16cm]{Img/Mapa de Memoria.png}
+	\caption{Mapa de memoria}
+	\label{fig:mapamemoria1}
+\end{figure}
 
 \end{document}
