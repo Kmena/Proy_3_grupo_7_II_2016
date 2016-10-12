@@ -135,5 +135,19 @@ Los registro de la rtc se pasaron a la memoria scratch para guardar los datos de
 	\label{fig:mapamemoria2}
 \end{figure}
 
+\noindent \textbf{Integrantes:} todos \\[1ex]
+\textbf{Hora:} 15:00 -18:00 pm \\[1ex]
+\textbf{Actividad:} \\[2ex]
+
+Tomando en cuenta algunos datos y consejos que el profe acoto al proyecto se decidió integrar un deco a la salida del id. De esta manera se puede tener un control mas fácil en cada modulo creando un CS en cada modulo y que este sea el que active los procesos, como se puede notar en la figura \ref{fig:Deco}.\\
+Otro aspecto a considerar es que se puede tomar este deco para generar las direcciones de la RTC y ahorrar procesos del microprocesador generando datos y direcciones en un solo acceso. Pensando en este aspecto de debe considerar tener la memoria scratch con un direccionamiento de igual manera para el id de cada dato como se muestra en la columna de " Dirección B10" de la figura \ref{fig:mapamemoria1}.\\
+De esta manera solo se ocupa una variable o un registro para accesar a la memoria scratch y generar el valor de dirección en la RTC
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=16cm]{Img/Deco.png}
+	\caption{Deco de ID}
+	\label{fig:Deco}
+\end{figure}
 
 \end{document}
