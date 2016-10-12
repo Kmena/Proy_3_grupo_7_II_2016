@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.27)  10 OCT 2016 20:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.9)  11 OCT 2016 13:48
 entering extended mode
 **./Bitacora.tex
 (Bitacora.tex
-LaTeX2e <2016/03/31> patch level 3
+LaTeX2e <2016/03/31> patch level 1
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
@@ -63,7 +63,7 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2016/06/02 v1.0s Standard LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
@@ -73,8 +73,8 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
-File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2016/06/17 v0.06h Graphics/color for pdfTeX
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
@@ -299,25 +299,44 @@ Overfull \hbox (28.45273pt too wide) in paragraph at lines 113--114
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 125--130
+
+ []
+
+
+LaTeX Warning: File `Img/Mapa de Memoria2.png' not found on input line 133.
+
+<Img/Mapa de Memoria2.png, id=20, 627.09282pt x 230.36063pt>
+File: Img/Mapa de Memoria2.png Graphic file (type png)
+
+<use Img/Mapa de Memoria2.png>
+Package pdftex.def Info: Img/Mapa de Memoria2.png used on input line 133.
+(pdftex.def)             Requested size: 455.24408pt x 167.2374pt.
+
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 133--134
+ [] 
+ []
+
+
 AED: lastpage setting LastPage
-[4 <./Img/Mapa de Memoria.png>] (Bitacora.aux
+[4 <./Img/Mapa de Memoria.png>] [5 <./Img/Mapa de Memoria2.png>] (Bitacora.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 3005 strings out of 493334
- 42178 string characters out of 3136672
- 119131 words of memory out of 3000000
- 6506 multiletter control sequences out of 15000+200000
+ 3010 strings out of 493335
+ 42309 string characters out of 3136663
+ 119107 words of memory out of 3000000
+ 6510 multiletter control sequences out of 15000+200000
  6167 words of font info for 22 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,11n,43p,554b,384s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
 ><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Bitacora.pdf (5 pages, 94373 bytes).
+Output written on Bitacora.pdf (6 pages, 107222 bytes).
 PDF statistics:
- 33 PDF objects out of 1000 (max. 8388607)
+ 37 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
