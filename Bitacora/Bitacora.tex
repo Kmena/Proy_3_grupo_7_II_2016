@@ -198,6 +198,9 @@ Por facilidad se uso la misma dirección en la memoria de regitros que en el id.\
 	\label{Tabla_deco}
 	\begin{tabular}{lll}
 	Id	& CS & ADD  \\
+	0   & MemoriaEstable & \\
+	1   & Escritura & \\
+	2   & VSync & \\
 	5	& teclado &  \\
 	6	& teclado &  \\
 	7	& teclado &  \\
@@ -222,9 +225,9 @@ Por facilidad se uso la misma dirección en la memoria de regitros que en el id.\
 	34	& AUX &  \\
 	35	& AUX &  \\
 	36	& AUX &  \\
-	40	& VGA &  1\\
-	41	& VGA &  2\\
-	42	& VGA &  3\\
+	40	& VGA &  Direccion \\
+	41	& VGA &  Dato\\
+	42	& VGA &  Cursor3\\
 	43	& VGA &  4\\
 	44	& VGA &  5\\
 	45	& VGA &  6\\
@@ -236,4 +239,38 @@ Por facilidad se uso la misma dirección en la memoria de regitros que en el id.\
 	\end{tabular}
 \end{table}
 
+
+\begin{table}[]
+	\centering
+	\caption{resumen del Deco}
+	\label{Tabla_memdeco}
+	\begin{tabular}{lll}
+		Id	& CS & ADD  \\
+		2   & VSync & \\
+		5	& teclado &  Direccion \\
+		6	& teclado &  Dato \\
+		7	& teclado &  Commit \\
+		14	& sonido &  \\
+		17	& RTC &  d33\\
+		18	& RTC &  d34\\
+		19	& RTC &  d35\\
+		20	& RTC &  d36\\
+		21	& RTC &  d37\\
+		22	& RTC &  d38\\
+		23	& RTC &  h41\\
+		24	& RTC &  h42\\
+		25	& RTC &  h43\\
+		26	& RTC &  \\
+		27	& RTC &  \\
+		28	& RTC &  \\
+		29	& RTC &  \\
+		33	& AUX &  \\
+		34	& AUX &  \\
+		35	& AUX &  \\
+		36	& AUX &  \\
+		40	& VGA &  Direccion \\
+		41	& VGA &  Dato\\
+
+	\end{tabular}
+\end{table}
 \end{document}
