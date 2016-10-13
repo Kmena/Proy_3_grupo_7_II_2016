@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.9)  11 OCT 2016 21:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.9)  12 OCT 2016 18:11
 entering extended mode
 **./Bitacora.tex
 (Bitacora.tex
@@ -334,25 +334,93 @@ Overfull \hbox (28.45273pt too wide) in paragraph at lines 148--149
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 160--163
+
+ []
+
+[5 <./Img/Mapa de Memoria2.png> <./Img/Deco.png>]
+
+LaTeX Warning: File `Img/Diagrama De Flujo Princiapal.png' not found on input l
+ine 168.
+
+<Img/Diagrama De Flujo Princiapal.png, id=28, 165.61874pt x 276.03125pt>
+File: Img/Diagrama De Flujo Princiapal.png Graphic file (type png)
+
+<use Img/Diagrama De Flujo Princiapal.png>
+Package pdftex.def Info: Img/Diagrama De Flujo Princiapal.png used on input lin
+e 168.
+(pdftex.def)             Requested size: 113.81102pt x 189.68256pt.
+
+
+LaTeX Warning: File `Img/digrama de teclado irq.png' not found on input line 17
+9.
+
+<Img/digrama de teclado irq.png, id=29, 1020.81375pt x 872.25874pt>
+File: Img/digrama de teclado irq.png Graphic file (type png)
+
+<use Img/digrama de teclado irq.png>
+Package pdftex.def Info: Img/digrama de teclado irq.png used on input line 179.
+
+(pdftex.def)             Requested size: 455.24408pt x 388.99907pt.
+
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 179--180
+ [] 
+ []
+
+
+LaTeX Warning: File `Img/digrama de flujo RTC.png' not found on input line 185.
+
+
+<Img/digrama de flujo RTC.png, id=30, 676.5275pt x 748.7975pt>
+File: Img/digrama de flujo RTC.png Graphic file (type png)
+
+<use Img/digrama de flujo RTC.png>
+Package pdftex.def Info: Img/digrama de flujo RTC.png used on input line 185.
+(pdftex.def)             Requested size: 284.52756pt x 314.92699pt.
+
+
+LaTeX Warning: File `Img/digrama de flujo VGA.png' not found on input line 191.
+
+
+<Img/digrama de flujo VGA.png, id=31, 674.52pt x 748.7975pt>
+File: Img/digrama de flujo VGA.png Graphic file (type png)
+
+<use Img/digrama de flujo VGA.png>
+Package pdftex.def Info: Img/digrama de flujo VGA.png used on input line 191.
+(pdftex.def)             Requested size: 284.52756pt x 315.86389pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 195.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 199.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 199.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 199.
+
 AED: lastpage setting LastPage
-[5 <./Img/Mapa de Memoria2.png> <./Img/Deco.png>] (Bitacora.aux
+[6 <./Img/Diagrama De Flujo Princiapal.png>] [7 <./Img/digrama de teclado irq.p
+ng>] [8 <./Img/digrama de flujo RTC.png> <./Img/digrama de flujo VGA.png>]
+[9] (Bitacora.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 3023 strings out of 493334
- 42191 string characters out of 3139256
- 119147 words of memory out of 3000000
- 6523 multiletter control sequences out of 15000+200000
- 6167 words of font info for 22 fonts, out of 3000000 for 9000
+ 3064 strings out of 493334
+ 43053 string characters out of 3139256
+ 123187 words of memory out of 3000000
+ 6555 multiletter control sequences out of 15000+200000
+ 8605 words of font info for 30 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,11n,43p,554b,384s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Bitacora.pdf (6 pages, 109805 bytes).
+Output written on Bitacora.pdf (10 pages, 157003 bytes).
 PDF statistics:
- 38 PDF objects out of 1000 (max. 8388607)
+ 56 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

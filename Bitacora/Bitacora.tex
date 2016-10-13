@@ -150,4 +150,90 @@ De esta manera solo se ocupa una variable o un registro para accesar a la memori
 	\label{fig:Deco}
 \end{figure}
 
+
+\begin{flushright}
+	\begin{large}
+		\textbf{Fecha: 12 de Octubre}\\[5ex]
+	\end{large}
+\end{flushright}
+
+\noindent \textbf{Integrantes:} todos \\[1ex]
+\textbf{Hora:} 16:00 -18:00 pm \\[1ex]
+\textbf{Actividad:} \\[2ex]
+
+Después de un análisis de los avances del día anterior se procedió a diseñar un primer intento de un diagrama de flujo de el micro procesador.\\
+Para esta efecto se buscaron crear 5 ciclos, como se muestra de la figura \ref{fig:Cicloprincipal}, donde el primer ciclo es el de inicializacion {falta diseño}.\\
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=4cm]{Img/Diagrama De Flujo Princiapal.png}
+	\caption{Diagrama de flujo principal}
+	\label{fig:Cicloprincipal}
+\end{figure}
+Después de este un ciclo de teclado, como se muestra en la figura \ref{fig:Cicloteclado}, en este se usan los espacios de memoria y Id de la tabla \ref{Tabla_deco}, usando los espacios de los registros auxiliares se guardan valores para generar ciclos como se muestra en el diagrama de flujo.\\
+Este flujo tiene 3 etapas principales, una donde guarda el valor del registro que desea cambiar y el valor del teclado. Luego se generan los cambios en la RTC, los procesos de arriba y abajo se hacen automáticamente y una vez que se hace un comit se escribe en la dirección y el dato que ingresaron previamente, el ultimo proceso es activar o desactivar el irq.\\
+Después de este proceso sigue el ciclo de la RTC como se muestra en la figura \ref{fig:CicloRTC}, este genera ciclos donde activa la lectura en la RTC, y espera a que el dato este estable para poder leerlo.\\
+Después de este proceso el sistema espera a que la VGA le solicite los datos luego este pasa al proceso de VGA como se muestra en la figura \ref{fig:CicloVGA}, este proceso se parece mucho al de escritura, donde se crea un ciclo donde se recorren todas las direcciones de escritura con la ayuda de un auxiliar y con ayuda del deco se determina el valor de dirección donde se guarda en la VGA.\\ 
+Por facilidad se uso la misma dirección en la memoria de regitros que en el id.\\[2ex]
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=16cm]{Img/digrama de teclado irq.png}
+	\caption{Diagrama de flujo principal}
+	\label{fig:Cicloteclado}
+\end{figure}
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=10cm]{Img/digrama de flujo RTC.png}
+	\caption{Diagrama de flujo principal}
+	\label{fig:CicloRTC}
+\end{figure}
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=10cm]{Img/digrama de flujo VGA.png}
+	\caption{Diagrama de flujo principal}
+	\label{fig:CicloVGA}
+\end{figure}
+\begin{table}[]
+	\centering
+	\caption{resumen del Deco}
+	\label{Tabla_deco}
+	\begin{tabular}{lll}
+	Id	& CS & ADD  \\
+	5	& teclado &  \\
+	6	& teclado &  \\
+	7	& teclado &  \\
+	8	& teclado &  \\
+	9	& teclado &  \\
+	10	& teclado &  \\
+	14	& sonido &  \\
+	17	& RTC &  d33\\
+	18	& RTC &  d34\\
+	19	& RTC &  d35\\
+	20	& RTC &  d36\\
+	21	& RTC &  d37\\
+	22	& RTC &  d38\\
+	23	& RTC &  h41\\
+	24	& RTC &  h42\\
+	25	& RTC &  h43\\
+	26	& RTC &  \\
+	27	& RTC &  \\
+	28	& RTC &  \\
+	29	& RTC &  \\
+	33	& AUX &  \\
+	34	& AUX &  \\
+	35	& AUX &  \\
+	36	& AUX &  \\
+	40	& VGA &  1\\
+	41	& VGA &  2\\
+	42	& VGA &  3\\
+	43	& VGA &  4\\
+	44	& VGA &  5\\
+	45	& VGA &  6\\
+	46	& VGA &  7\\
+	47	& VGA &  8\\
+	48	& VGA &  9\\
+	49	& VGA &  10\\
+	50	& VGA &  11
+	\end{tabular}
+\end{table}
+
 \end{document}
