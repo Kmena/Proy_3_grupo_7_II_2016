@@ -1,0 +1,66 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "AN[0]" LOC = N6;
+NET "AN[1]" LOC = M6;
+NET "AN[2]" LOC = M3;
+NET "AN[3]" LOC = N5;
+NET "AN[4]" LOC = N2;
+NET "AN[5]" LOC = N4;
+NET "AN[6]" LOC = L1;
+NET "AN[7]" LOC = M1;
+
+# PlanAhead Generated IO constraints 
+
+NET "AN[7]" IOSTANDARD = LVCMOS33;
+NET "AN[6]" IOSTANDARD = LVCMOS33;
+NET "AN[5]" IOSTANDARD = LVCMOS33;
+NET "AN[4]" IOSTANDARD = LVCMOS33;
+NET "AN[3]" IOSTANDARD = LVCMOS33;
+NET "AN[2]" IOSTANDARD = LVCMOS33;
+NET "AN[1]" IOSTANDARD = LVCMOS33;
+NET "AN[0]" IOSTANDARD = LVCMOS33;
+NET "SEG[6]" IOSTANDARD = LVCMOS33;
+NET "SEG[5]" IOSTANDARD = LVCMOS33;
+NET "SEG[4]" IOSTANDARD = LVCMOS33;
+NET "SEG[3]" IOSTANDARD = LVCMOS33;
+NET "SEG[2]" IOSTANDARD = LVCMOS33;
+NET "SEG[1]" IOSTANDARD = LVCMOS33;
+NET "SEG[0]" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "SEG[0]" LOC = L3;
+NET "SEG[1]" LOC = N1;
+NET "SEG[2]" LOC = L5;
+NET "SEG[3]" LOC = L4;
+NET "SEG[4]" LOC = K3;
+NET "SEG[5]" LOC = M2;
+NET "SEG[6]" LOC = L6;
+NET "CLK100MHZ" LOC = E3;
+
+# PlanAhead Generated IO constraints 
+
+NET "CLK100MHZ" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "DP" LOC = M4;
+
+# PlanAhead Generated IO constraints 
+
+NET "DP" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "PS2_CLK" LOC = F4;
+//NET "UART_TXD" LOC = D4;
+NET "PS2_DATA" LOC = B2;
+NET "PS2_CLK" PULLUP;
+NET "PS2_DATA" PULLUP;
+
+# PlanAhead Generated IO constraints 
+
+NET "PS2_CLK" IOSTANDARD = LVCMOS33;
+NET "PS2_DATA" IOSTANDARD = LVCMOS33;
+//NET "UART_TXD" IOSTANDARD = LVCMOS33;
