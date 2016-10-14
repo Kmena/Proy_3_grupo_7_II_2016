@@ -73,7 +73,7 @@ El teclado introduce a la memoria los datos que el usuario desea cambiar para qu
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=14cm]{Img/Digrama_tercer_proyecto.png}
+	\includegraphics[width=14cm]{img/Digrama_tercer_proyecto.png}
 	\caption{Diagrama de bloques nivel 2 primer intento}
 	\label{fig:DigramaNivel2.1}
 \end{figure}
@@ -93,7 +93,7 @@ Algunos de los miembros del equipo asistieron a la tutoría de hoy, donde se acla
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=17cm]{Img/Digrama_tercer_proyecto2-1.png}
+	\includegraphics[width=17cm]{img/Digrama_tercer_proyecto2-1.png}
 	\caption{Diagrama de bloques nivel 2 segundo intento}
 	\label{fig:DigramaNivel2.2}
 \end{figure}
@@ -110,7 +110,7 @@ Por otro lado, el mapa de memoria mediante el cual, se controlarán todos los per
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=16cm]{Img/Mapa de Memoria.png}
+	\includegraphics[width=16cm]{img/Mapa de Memoria.png}
 	\caption{Mapa de memoria}
 	\label{fig:mapamemoria1}
 \end{figure}
@@ -118,7 +118,7 @@ Por otro lado, el mapa de memoria mediante el cual, se controlarán todos los per
 % Nueva entrada
 \begin{flushright}
 	\begin{large}
-		\textbf{Fecha: 9 de Noviembre}\\[5ex]
+		\textbf{Fecha: 9 de Octubre}\\[5ex]
 	\end{large}
 \end{flushright}
 
@@ -130,7 +130,7 @@ Los registro de la rtc se pasaron a la memoria scratch para guardar los datos de
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=16cm]{Img/Mapa de Memoria2.png}
+	\includegraphics[width=16cm]{img/Mapa de Memoria2.png}
 	\caption{Mapa de memoria}
 	\label{fig:mapamemoria2}
 \end{figure}
@@ -145,7 +145,7 @@ De esta manera solo se ocupa una variable o un registro para accesar a la memori
 
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=16cm]{Img/Deco.png}
+	\includegraphics[width=16cm]{img/Deco.png}
 	\caption{Deco de ID}
 	\label{fig:Deco}
 \end{figure}
@@ -165,7 +165,7 @@ Después de un análisis de los avances del día anterior se procedió a diseñar un 
 Para esta efecto se buscaron crear 5 ciclos, como se muestra de la figura \ref{fig:Cicloprincipal}, donde el primer ciclo es el de inicializacion {falta diseño}.\\
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=4cm]{Img/Diagrama De Flujo Princiapal.png}
+	\includegraphics[width=4cm]{img/Diagrama De Flujo Princiapal.png}
 	\caption{Diagrama de flujo principal}
 	\label{fig:Cicloprincipal}
 \end{figure}
@@ -176,19 +176,19 @@ Después de este proceso el sistema espera a que la VGA le solicite los datos lue
 Por facilidad se uso la misma dirección en la memoria de regitros que en el id.\\[2ex]
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=16cm]{Img/digrama de teclado irq.png}
+	\includegraphics[width=16cm]{img/digrama de teclado irq.png}
 	\caption{Diagrama de flujo principal}
 	\label{fig:Cicloteclado}
 \end{figure}
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=10cm]{Img/digrama de flujo RTC.png}
+	\includegraphics[width=10cm]{img/digrama de flujo RTC.png}
 	\caption{Diagrama de flujo principal}
 	\label{fig:CicloRTC}
 \end{figure}
 \begin{figure}[hbtp]
 	\centering
-	\includegraphics[width=10cm]{Img/digrama de flujo VGA.png}
+	\includegraphics[width=10cm]{img/digrama de flujo VGA.png}
 	\caption{Diagrama de flujo principal}
 	\label{fig:CicloVGA}
 \end{figure}
@@ -273,4 +273,47 @@ Por facilidad se uso la misma dirección en la memoria de regitros que en el id.\
 
 	\end{tabular}
 \end{table}
+
+% Nueva entrada
+\begin{flushright}
+	\begin{large}
+		\textbf{Fecha: 13 de Octubre}\\[5ex]
+	\end{large}
+\end{flushright}
+
+\noindent \textbf{Integrantes:} Todos \\[1ex]
+\textbf{Hora:} 13:30 -16:10 pm \\[1ex]
+\textbf{Actividad:} \\[2ex]
+% Actividad de lleon
+\noindent \textbf{Con respecto al teclado:} \\
+Se ha probado un ejemplo disponible para Nexys 4 DDR, el cual, consiste en un módulo para obtener datos procedentes del teclado de forma unidireccional, mostrando todos los códigos recibidos mediante el protocolo serial PS/2. En este se ha descubierto el siguiente comportamiento: \\
+
+\begin{itemize}
+	\item Proceso 1:\\
+	Al presionar la tecla (evento KeyDown), se recibe el código de la tecla que fue presionada (Scan Code).
+	\item Proceso 2:\\
+	Al mantener la tecla (evento KeyPress), no ocurre nada y el código de la tecla se mantiene como el último recibido.
+	\item Proceso 3:\\
+	Al soltar la tecla (evento KeyUp), se recibe el código de liberación (F0) seguido del código de la tecla que fue liberada.
+\end{itemize}
+
+Conociendo el procedimiento, se expondrá un ejemplo para aclarar el funcionamiento de este ejemplo. Suponer que se presiona la tecla Enter, que tiene un Scan Code 5A.\\
+Al no presionar la tecla aún, en el display: \textbf{00 00 00 00}\\
+Al presionar la tecla, en el display: \textbf{00 00 00 5A}\\
+Al mantener la tecla, en el display: \textbf{00 00 00 5A}\\
+Al soltar la tecla, en el display: \textbf{00 5A F0 5A}\\
+
+% Actividad de Merayo
+\noindent \textbf{Con respecto al audio:} \\
+
+
+% Actividad de Keylor
+\noindent \textbf{Con respecto al picoblaze:} \\
+
+
+\noindent Enlaces de interés:
+\begin{itemize}
+	\item Ejemplo del teclado en Digilent: https://reference.digilentinc.com/learn/programmable-logic/tutorials/nexys-4-ddr-keyboard-demo/start
+\end{itemize}
+
 \end{document}
