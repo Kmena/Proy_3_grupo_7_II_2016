@@ -17,12 +17,16 @@ module Port_ID_Decoder(
 	
 	always @*
 	begin
-		case(Port_ID)
+		if(Read_Strobe)
+		begin
+			case(Port_ID)
 			8'h05: DataSelect = 2'd0;
 			8'h06: DataSelect = 2'd1;
 			8'h07: DataSelect = 2'd2;
 			default: DataSelect = 2'd0;
-		endcase
+			endcase
+		end
+		else DataSelect = 2'd0;
 	end
 
 endmodule

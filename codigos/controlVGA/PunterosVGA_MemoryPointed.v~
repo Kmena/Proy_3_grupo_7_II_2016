@@ -5,7 +5,8 @@ module PunterosVGA_MemoryPointed(
 		input [7:0] MemDataIN,
 		input [9:0] PosX,
 		input [9:0] PosY,
-		output reg [3:0] MemAddrIN,
+		input [3:0] MemAddrIN,
+		input CS_DATA,
 		//output [18:0] ROMAddrOut,
 		//output [1:0] ROMCS,
 		//input [5:0] ROMDataIN,
@@ -19,7 +20,6 @@ module PunterosVGA_MemoryPointed(
 		  Banco de registros temporales
 	*/
 	reg [7:0] segReloj, minReloj, horReloj, dayReloj, monReloj, yearReloj, segCrono, minCrono, horCrono; // 2 Bit CS, 10 Bit D, 10 Bit U
-	reg [3:0] contador;
 	reg ringCrono, actCrono;
 	reg [7:0] Cursor;
 	
@@ -45,63 +45,55 @@ module PunterosVGA_MemoryPointed(
 				ringCrono <= 0;
 				actCrono <= 0;
 				Cursor <= 0;
-				contador <= 0;
+				
 			end
 		else if(!RESET && !VSync)
 			begin
 			// Contador de flujo
 					
-				case(contador-4'd1)
-					4'd1 : segReloj <= MemDataIN;
-					4'd2 : minReloj <= MemDataIN;
-					4'd3 : horReloj <= MemDataIN;
-					4'd4 : dayReloj <= MemDataIN;
-					4'd5 : monReloj <= MemDataIN;
-					4'd6 : yearReloj <= MemDataIN;
-					// Ajustes de timer - 1 de Octubre- NO TRABAJA
-					//4'd7 : segCrono <= 8'd60 - MemDataIN;
-					//4'd8 : minCrono <= 8'd60 - MemDataIN;
-					//4'd9 : horCrono <= 8'd23 - MemDataIN;
-					4'd7: begin
-						segCrono[3:0] <= 4'd9 - MemDataIN[3:0];
-						segCrono[7:4] <= 4'd5 - MemDataIN[7:4];
+				case(MemAddrIN)
+					if(CS_DATA)
+					begin
+						4'd1 : segReloj <= MemDataIN;
+						4'd2 : minReloj <= MemDataIN;
+						4'd3 : horReloj <= MemDataIN;
+						4'd4 : dayReloj <= MemDataIN;
+						4'd5 : monReloj <= MemDataIN;
+						4'd6 : yearReloj <= MemDataIN;
+						// Ajustes de timer - 1 de Octubre- NO TRABAJA
+						//4'd7 : segCrono <= 8'd60 - MemDataIN;
+						//4'd8 : minCrono <= 8'd60 - MemDataIN;
+						//4'd9 : horCrono <= 8'd23 - MemDataIN;
+						4'd7: begin
+							segCrono[3:0] <= 4'd9 - MemDataIN[3:0];
+							segCrono[7:4] <= 4'd5 - MemDataIN[7:4];
+						end
+						4'd8 : begin
+							minCrono[3:0] <= 4'd9 - MemDataIN[3:0];
+							minCrono[7:4] <= 4'd5 - MemDataIN[7:4];
+						end
+						4'd9 : begin
+							if(MemDataIN[3:0] > 4'd3)
+								begin
+									horCrono[3:0] <= 4'd13 - MemDataIN[3:0];
+									horCrono[7:4] <= 4'd1 - MemDataIN[7:4];
+								end
+							else
+								begin
+									horCrono[3:0] <= 4'd3 - MemDataIN[3:0];
+									horCrono[7:4] <= 4'd2 - MemDataIN[7:4];
+								end
+						end
+						// End of Ajustes de timer
+						4'd10 : ringCrono <= MemDataIN[0];
+						4'd11 : actCrono <= MemDataIN[0];
+						4'd12 : Cursor <= MemDataIN;
 					end
-					4'd8 : begin
-						minCrono[3:0] <= 4'd9 - MemDataIN[3:0];
-						minCrono[7:4] <= 4'd5 - MemDataIN[7:4];
-					end
-					4'd9 : begin
-						if(MemDataIN[3:0] > 4'd3)
-							begin
-								horCrono[3:0] <= 4'd13 - MemDataIN[3:0];
-								horCrono[7:4] <= 4'd1 - MemDataIN[7:4];
-							end
-						else
-							begin
-								horCrono[3:0] <= 4'd3 - MemDataIN[3:0];
-								horCrono[7:4] <= 4'd2 - MemDataIN[7:4];
-							end
-					end
-					// End of Ajustes de timer
-					4'd10 : ringCrono <= MemDataIN[0];
-					4'd11 : actCrono <= MemDataIN[0];
-					4'd12 : Cursor <= MemDataIN;
 				endcase
-				// Actualizacion del banco
-				if(contador < 4'd13) contador <= contador + 4'd1;
-				else contador <= 0;
-				
-				MemAddrIN <= contador;
+	
 			end
 	end
 	
-	
-	// Value es el valor a cambbiar por puntero
-	/*
-			Ya tengo cada direccion que debo desplazar
-			Tengo los numeros en BCD
-			Falta: Hacer condiciones de posicion
-	*/
 	
 	/*
 		Parametros de punteros

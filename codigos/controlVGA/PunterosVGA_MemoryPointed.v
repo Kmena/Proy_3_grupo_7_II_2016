@@ -45,7 +45,7 @@ module PunterosVGA_MemoryPointed(
 				ringCrono <= 0;
 				actCrono <= 0;
 				Cursor <= 0;
-				contador <= 0;
+				
 			end
 		else if(!RESET && !VSync)
 			begin
@@ -57,9 +57,9 @@ module PunterosVGA_MemoryPointed(
 						4'd1 : segReloj <= MemDataIN;
 						4'd2 : minReloj <= MemDataIN;
 						4'd3 : horReloj <= MemDataIN;
-						4'd4 : dayReloj <= MemDataIN;
+						4'd6 : dayReloj <= MemDataIN;
 						4'd5 : monReloj <= MemDataIN;
-						4'd6 : yearReloj <= MemDataIN;
+						4'd4 : yearReloj <= MemDataIN;
 						// Ajustes de timer - 1 de Octubre- NO TRABAJA
 						//4'd7 : segCrono <= 8'd60 - MemDataIN;
 						//4'd8 : minCrono <= 8'd60 - MemDataIN;
