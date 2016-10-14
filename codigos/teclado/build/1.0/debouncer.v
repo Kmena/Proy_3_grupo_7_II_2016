@@ -35,18 +35,18 @@ module debouncer(
 always@(posedge(clk))begin
     if (I0==Iv0)begin
         if (cnt0==19)O0<=I0;
-        else cnt0<=cnt0+1;
+        else cnt0<=cnt0+5'd1;
       end
     else begin
-        cnt0<="00000";
+        cnt0<=5'd0;
         Iv0<=I0;
     end
     if (I1==Iv1)begin
             if (cnt1==19)O1<=I1;
-            else cnt1<=cnt1+1;
+            else cnt1<=cnt1+5'd1;
           end
         else begin
-            cnt1<="00000";
+            cnt1<=5'd0;
             Iv1<=I1;
         end
     end
