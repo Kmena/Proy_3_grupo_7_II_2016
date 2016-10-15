@@ -18,10 +18,10 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module pwm(clk,pwm_ref,pwm_out,reset);
+module pwm(clk,pwm_out,reset);
 input clk;
 input reset;
-input [4:0] pwm_ref;
+//input [4:0] pwm_ref;
 output pwm_out;
 reg pwm_out;
 wire [4:0] counter;
@@ -31,7 +31,7 @@ counter counter1(.clk(clk_out),.reset(reset),.counter_out(counter));//reset sec 
 div_frecuencia div(.clk(clk),.clk_out(clk_out),.reset(reset));//reset sec en lugar del otro reset
 reset reset2(.clk(clk_out),.pwm_ref(ref),.reset_central(reset));
 
-always @(posedge clk_out)
+always @(posedge clk_out or posedge reset)
 begin
  if (reset)
   pwm_out<=0;
