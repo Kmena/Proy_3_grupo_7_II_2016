@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    22:48:15 10/11/2016 
+// Create Date:    14:59:49 10/15/2016 
 // Design Name: 
-// Module Name:    counter 
+// Module Name:    contador2 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,18 +18,18 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module counter(clk,reset,counter_out);
+module contador2(clk,reset,counter_out);
 input clk;	
 input reset;	// clock declared as an input port
-output [4:0] counter_out;
-reg [4:0] counter_out;  // counter_out declared as an 8 bit output register
+output [16:0] counter_out;
+reg [16:0] counter_out;  // counter_out declared as an 8 bit output register
 
 always @(posedge clk or posedge reset)
 		begin
 		   if (reset)
 			 counter_out<=0;
 			else
-			 counter_out <= counter_out + 5'b1;
+			 counter_out <= counter_out + 17'b1;
 		end
 
 endmodule

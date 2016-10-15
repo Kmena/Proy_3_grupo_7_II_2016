@@ -24,13 +24,14 @@ input reset;
 //input [4:0] pwm_ref;
 output pwm_out;
 reg pwm_out;
-wire [16:0] counter;
+wire [4:0] counter;
+wire [16:0] contador_ref;
 wire clk_out;
-wire [16:0] ref;//nuevo pwM_ref
+wire [4:0] ref;//nuevo pwM_ref
 counter counter1(.clk(clk_out),.reset(reset),.counter_out(counter));//reset sec en lugar del otro reset
 div_frecuencia div(.clk(clk),.clk_out(clk_out),.reset(reset));//reset sec en lugar del otro reset
-reset reset2(.clk(clk_out),.contador(counter),.pwm_ref(ref),.reset_central(reset));
-
+reset reset2(.clk(clk_out),.contador(contador_ref),.pwm_ref(ref),.reset_central(reset));
+contador2 cont_ref(.clk(clk_out),.reset(reset),.counter_out(contador_ref));
 always @(posedge clk_out)
 begin
  if (reset)
