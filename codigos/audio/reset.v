@@ -21,13 +21,22 @@
 module reset(clk,reset,reset_central);
 input clk;
 input reset_central;
+reg [2:0] contador;
 output reset;
 reg reset;
 always @(posedge clk or posedge reset_central)
 begin
  if (reset_central)
+ begin
   reset<=0;
+  contador<=0;
+ end
  else
-  reset<=~reset;
+ begin
+  if (contador==3'b111)
+   reset<=~reset;
+  else
+   contador<=contador+3'd1;
+ end
 end
 endmodule

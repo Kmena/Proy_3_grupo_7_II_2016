@@ -27,8 +27,8 @@ reg pwm_out;
 wire [4:0] counter;
 wire clk_out;
 wire reset_sec;
-counter counter1(.clk(clk_out),.reset(reset_sec),.counter_out(counter));//puse reset_sec en lugar de reset
-div_frecuencia div(.clk(clk),.clk_out(clk_out),.reset(reset_sec));//puse reset_sec en lugar de reset
+counter counter1(.clk(clk_out),.reset(reset_sec),.counter_out(counter));//reset sec en lugar del otro reset
+div_frecuencia div(.clk(clk),.clk_out(clk_out),.reset(reset_sec));//reset sec en lugar del otro reset
 reset reset2(.clk(clk_out),.reset(reset_sec),.reset_central(reset));
 
 always @(posedge clk_out)
