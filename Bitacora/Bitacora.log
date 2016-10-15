@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.9)  13 OCT 2016 20:22
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.9)  15 OCT 2016 14:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -411,47 +411,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 284--290
 [6 <./img/Diagrama De Flujo Princiapal.png>] [7 <./img/digrama de teclado irq.p
 ng>] [8 <./img/digrama de flujo RTC.png> <./img/digrama de flujo VGA.png>]
 [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 300--305
+Underfull \hbox (badness 10000) in paragraph at lines 300--306
+
+ []
+
+<img/diagrama_keyboard.jpeg, id=49, 1284.8pt x 962.59625pt>
+File: img/diagrama_keyboard.jpeg Graphic file (type jpg)
+
+<use img/diagrama_keyboard.jpeg>
+Package pdftex.def Info: img/diagrama_keyboard.jpeg used on input line 309.
+(pdftex.def)             Requested size: 398.33858pt x 298.44582pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 315--316
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 307--308
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--312
-
- []
-
-
-Overfull \hbox (47.5079pt too wide) in paragraph at lines 316--317
+Overfull \hbox (47.5079pt too wide) in paragraph at lines 324--325
 []\OT1/cmr/m/n/12 Ejemplo del te-cla-do en Di-gi-lent: https://reference.digile
 ntinc.com/learn/programmable-
  []
 
-
+[11] 
 AED: lastpage setting LastPage
-[11] (./Bitacora.aux
+[12 <./img/diagrama_keyboard.jpeg>] (./Bitacora.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 2965 strings out of 494966
- 41551 string characters out of 6179560
- 122590 words of memory out of 5000000
- 6148 multiletter control sequences out of 15000+600000
+ 2973 strings out of 494966
+ 41737 string characters out of 6179560
+ 122600 words of memory out of 5000000
+ 6154 multiletter control sequences out of 15000+600000
  8605 words of font info for 30 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
  38i,11n,43p,552b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Bitacora.pdf (12 pages, 154773 bytes).
+Output written on Bitacora.pdf (13 pages, 286737 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
+ 69 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

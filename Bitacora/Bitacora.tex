@@ -282,7 +282,7 @@ Por facilidad se uso la misma dirección en la memoria de regitros que en el id.\
 \end{flushright}
 
 \noindent \textbf{Integrantes:} Todos \\[1ex]
-\textbf{Hora:} 13:30 -16:10 pm \\[1ex]
+\textbf{Hora:} 13:30 -16:10 pm | 19:30-21:30\\[1ex]
 \textbf{Actividad:} \\[2ex]
 % Actividad de lleon
 \noindent \textbf{Con respecto al teclado:} \\
@@ -301,7 +301,15 @@ Conociendo el procedimiento, se expondrá un ejemplo para aclarar el funcionamien
 Al no presionar la tecla aún, en el display: \textbf{00 00 00 00}\\
 Al presionar la tecla, en el display: \textbf{00 00 00 5A}\\
 Al mantener la tecla, en el display: \textbf{00 00 00 5A}\\
-Al soltar la tecla, en el display: \textbf{00 5A F0 5A}\\
+Al soltar la tecla, en el display: \textbf{00 5A F0 5A}\\[2ex]
+Finalmente, al terminar el día, se implementaron los bloques más significativos, excluyendo al control, en Verilog. Eso con base al diagrama \ref{fig:DiagramaKeyboard}. Mañana se realizará el control.\\
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=14cm]{img/diagrama_keyboard.jpeg}
+	\caption{Diagrama de bloques del controlador de teclado}
+	\label{fig:DiagramaKeyboard}
+\end{figure}
 
 % Actividad de Merayo
 \noindent \textbf{Con respecto al audio:} \\
@@ -315,5 +323,19 @@ Al soltar la tecla, en el display: \textbf{00 5A F0 5A}\\
 \begin{itemize}
 	\item Ejemplo del teclado en Digilent: https://reference.digilentinc.com/learn/programmable-logic/tutorials/nexys-4-ddr-keyboard-demo/start
 \end{itemize}
+
+\newpage
+% Nueva entrada
+\begin{flushright}
+	\begin{large}
+		\textbf{Fecha: 14 de Octubre}\\[5ex]
+	\end{large}
+\end{flushright}
+
+\noindent \textbf{Integrantes:} Luis Leon \\[1ex]
+\textbf{Hora:} 7:00 - 9:20\\[1ex]
+\textbf{Actividad:} \\[2ex]
+Se realizó el módulo de control del controlador de teclado, señalado en el diagrama \ref{fig:DiagramaKeyboard} como "Control KB". Se ha comentado el equipo de trabajo de la conclusión de dicho controlador y quedará pendiente la simulación mediante un testbench, donde se deberá representar el comportamiento del teclado bajo el protocolo PS/2.
+
 
 \end{document}
