@@ -112,6 +112,62 @@ module Keyboard_tb;
 		#20 Read_Strobe = 0;
 		#20 Port_ID = 8'h00; // Low
 		#100;
+		// Iniciar con una tecla de Tab:0D
+		Key = 8'h0D;
+		#3300000 Port_ID = 8'h05; // Dir
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		Port_ID = 8'h06; // Dat
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		Port_ID = 8'h07; // Commit
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		#20 Port_ID = 8'h00; // Low
+		Key = 8'h00;
+
+		// Iniciar con una tecla de Tab:0D
+		#3300000 Key = 8'h0D;
+		#3300000 Port_ID = 8'h05; // Dir
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		Port_ID = 8'h06; // Dat
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		Port_ID = 8'h07; // Commit
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		#20 Port_ID = 8'h00; // Low
+		Key = 8'h00;
+		#100;
+		// Iniciar con una tecla de Tab:0D
+		#3300000 Key = 8'h0D;
+		#3300000 Port_ID = 8'h05; // Dir
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		Port_ID = 8'h06; // Dat
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		Port_ID = 8'h07; // Commit
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		#20 Port_ID = 8'h00; // Low
+		Key = 8'h00;
+		#100;
+		// Iniciar con una tecla de Tab:0D
+		#3300000 Key = 8'h0D;
+		#3300000 Port_ID = 8'h05; // Dir
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		Port_ID = 8'h06; // Dat
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		Port_ID = 8'h07; // Commit
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		#20 Port_ID = 8'h00; // Low
+		#100;
+		
 		// Iniciar con una tecla de numero 2: 1E 
 		Key = 8'h1E;
 		#3300000 Port_ID = 8'h05; // Dir

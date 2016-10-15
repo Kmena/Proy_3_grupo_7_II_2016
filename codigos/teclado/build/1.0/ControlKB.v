@@ -101,8 +101,8 @@ module ControlKB(
 					VirtualPos <= 2'd0;
 				end
 				else begin end
-			else
-			begin
+			else begin end
+			
 				// Comprobar teclado - Detectar nueva tecla
 				Changing <= KBBuffer != KBBuffer_Before;
 				if(Changing)
@@ -149,7 +149,7 @@ module ControlKB(
 								else
 									begin
 										VirtualPos <= VirtualPos + 2'd1;
-										AddressBuffer <= AddressBuffer - VirtualPos;
+										AddressBuffer <= AddressBuffer - 4'd1;
 									end
 							end
 							N0: begin
@@ -193,6 +193,7 @@ module ControlKB(
 								DataBuffer[3:0] <= 4'd9;
 							end
 						endcase
+						Changing <= 0;
 					end
 					else
 					begin
@@ -208,7 +209,7 @@ module ControlKB(
 						end
 					end
 				end
-			end
+			
 		end
 	end
 	

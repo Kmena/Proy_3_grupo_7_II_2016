@@ -74,9 +74,18 @@ end
 
 always @(posedge flag)begin
     if (dataprev!=datacur)begin
-        keycode[15:8]<=dataprev;
-        keycode[7:0]<=datacur;
-        dataprev<=datacur;
+        if(keycode[15:8] == 8'hF0)
+		  begin
+			  keycode[15:8]<= 8'd0;
+			  keycode[7:0]<=datacur;
+			  dataprev<=datacur;
+		  end
+		  else
+		  begin
+			  keycode[15:8]<=dataprev;
+			  keycode[7:0]<=datacur;
+			  dataprev<=datacur;
+		  end
     end
 end
     
