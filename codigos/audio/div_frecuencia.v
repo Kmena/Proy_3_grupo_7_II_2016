@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    22:48:15 10/11/2016 
+// Create Date:    13:22:15 10/13/2016 
 // Design Name: 
-// Module Name:    counter 
+// Module Name:    div_frecuencia 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,18 +18,31 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module counter(clk,reset,counter_out);
-input clk;	
-input reset;	// clock declared as an input port
-output [4:0] counter_out;
-reg [4:0] counter_out;  // counter_out declared as an 8 bit output register
+module div_frecuencia(clk,clk_out,reset);
+input clk;
+input reset;
+output clk_out;
+reg clk_out;
+reg [16:0] contador;
+always @(posedge clk)
+begin
+ if (reset)
+ begin
+  contador<=0;
+  clk_out<=0;
+ end
+ else
+ begin
+  if (contador==17'd800)
+  begin
+   contador<=0;
+   clk_out<=~clk_out;
+  end 
+  else
+   contador<=contador+17'd1;
+ end
+ 
+end
 
-always @(posedge clk or posedge reset)
-		begin
-		   if (reset)
-			 counter_out<=0;
-			else
-			 counter_out <= counter_out + 4'b1;
-		end
 
 endmodule
