@@ -18,25 +18,26 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module reset(clk,reset,reset_central);
+module reset(clk,pwm_ref,reset_central);
 input clk;
 input reset_central;
-reg [2:0] contador;
-output reset;
-reg reset;
+reg [1:0] contador;
+output [4:0] pwm_ref;
+reg [4:0] pwm_ref;
 always @(posedge clk or posedge reset_central)
 begin
  if (reset_central)
  begin
-  reset<=0;
+  pwm_ref<=0;
   contador<=0;
  end
  else
  begin
-  if (contador==3'b111)
-   reset<=~reset;
+  if (contador==2'b11)
+   pwm_ref<=5'b00110;
   else
-   contador<=contador+3'd1;
+   contador<=contador+2'd1;
+	pwm_ref<=5'b00000;
  end
 end
 endmodule
