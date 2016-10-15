@@ -34,11 +34,11 @@ begin
  begin
   if (contador>=5'b00100 && contador<=5'b11111)
   begin
-   pwm_ref<=5'b01110;
+   pwm_ref<=5'b00110;
 	//contador<=0;
   end
   else
-	pwm_ref<=5'b00000;
+	pwm_ref<=5'b11111;
  end
 end
 endmodule
