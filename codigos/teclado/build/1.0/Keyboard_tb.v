@@ -33,6 +33,7 @@ module Keyboard_tb;
 	reg PS2_Data;
 	integer id;
 	reg [7:0] Key;
+	parameter F0 = 8'hF0;
 
 	// Outputs
 	wire [7:0] Keyboard_Output;
@@ -56,8 +57,7 @@ module Keyboard_tb;
 		Read_Strobe = 0;
 		PS2_Clock = 1;
 		PS2_Data = 1;
-		Toggle = 0;
-		WriteKey = 0;
+		Key = 8'd0;
 		id = $fopen("TB_Results.txt", "w");
 
 		// Wait 100 ns for global reset to finish
@@ -70,20 +70,101 @@ module Keyboard_tb;
 		$fwrite(id, "PORT_ID");
 		$fwrite(id, "\t");
 		$fwrite(id, "Keyboard_Output");
+		$fwrite(id, "\t");
+		$fwrite(id, "Key");
 		$fwrite(id, "\n");
 		#100;
 		// Iniciar haciendo un read_strobe durante inactividad
 		Port_ID = 8'h05; // Dir
-		#10 Read_Strobe = 1;
-		#10 Read_Strobe = 0;
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
 		Port_ID = 8'h06; // Dat
-		#10 Read_Strobe = 1;
-		#10 Read_Strobe = 0;
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
 		Port_ID = 8'h07; // Commit
-		#10 Read_Strobe = 1;
-		#10 Read_Strobe = 0;
-		#100;
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		#20 Port_ID = 8'h00; // Low
+		#100 ;
 		// Iniciar con un comando inmediato F11: 78
+		Key = 8'h78;
+		#3300000 Port_ID = 8'h05; // Dir
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		Port_ID = 8'h06; // Dat
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		Port_ID = 8'h07; // Commit
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		#20 Port_ID = 8'h00; // Low
+		#100;
+		// Iniciar con una tecla de seleccion F1: 05
+		Key = 8'h05;
+		#3300000 Port_ID = 8'h05; // Dir
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		Port_ID = 8'h06; // Dat
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		Port_ID = 8'h07; // Commit
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		#20 Port_ID = 8'h00; // Low
+		#100;
+		// Iniciar con una tecla de numero 2: 1E 
+		Key = 8'h1E;
+		#3300000 Port_ID = 8'h05; // Dir
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		Port_ID = 8'h06; // Dat
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		Port_ID = 8'h07; // Commit
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		#20 Port_ID = 8'h00; // Low
+		#100;
+		// Iniciar con una tecla de numero 1: 16
+		Key = 8'h16;
+		#3300000 Port_ID = 8'h05; // Dir
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		Port_ID = 8'h06; // Dat
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		Port_ID = 8'h07; // Commit
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		#20 Port_ID = 8'h00; // Low
+		#100;
+		// Iniciar con una tecla de commit: 5A
+		Key = 8'h5A;
+		#3300000 Port_ID = 8'h05; // Dir
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		Port_ID = 8'h06; // Dat
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		Port_ID = 8'h07; // Commit
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		#20 Port_ID = 8'h00; // Low
+		#1000;
+		// Probar nuevamente para ver si se borran
+	   Port_ID = 8'h05; // Dir
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		Port_ID = 8'h06; // Dat
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		Port_ID = 8'h07; // Commit
+		#20 Read_Strobe = 1;
+		#20 Read_Strobe = 0;
+		#20 Port_ID = 8'h00; // Low
+		#100;
+		$fclose(id);
+		$stop;
 		
 	end
       
@@ -93,33 +174,68 @@ module Keyboard_tb;
 	// Imprimir datos
 	always @(Read_Strobe)
 	begin
-		$fwrite(id, Read_Strobe);
+		$fwrite(id, "%H",Read_Strobe);
 		$fwrite(id, "\t");
-		$fwrite(id, Port_ID);
+		$fwrite(id, "%H",Port_ID);
 		$fwrite(id, "\t");
-		$fwrite(id, Keyboard_Output);
+		$fwrite(id, "%H",Keyboard_Output);
+		$fwrite(id, "\t");
+		$fwrite(id, "%H",Key);
 		$fwrite(id, "\n");
 	end
 	// Presionar tecla
 	integer i;
-	integer
+
 	always @(Key)
 	begin
+		// KeyDown
+		PS2_Data = 0;
 		#30000 PS2_Clock = 0;
 		#30000 PS2_Clock = 1;
-		PS2_Data = 0;
-		for(i = 0; i < 8; i++)
+		for(i = 0; i < 8; i = i + 1)
 		begin
+			PS2_Data = Key[i];
 			#30000 PS2_Clock = 0;
 			#30000 PS2_Clock = 1;
-			PS2_Data = Key[i];
 		end
-		#30000 PS2_Clock = 0;
-		#30000 PS2_Clock = 1;
 		PS2_Data = 0; // Paridad no importa
 		#30000 PS2_Clock = 0;
 		#30000 PS2_Clock = 1;
-		PS2_Data = 1; // Stop
+				PS2_Data = 1; // Stop
+		#30000 PS2_Clock = 0;
+		#30000 PS2_Clock = 1;
+		// KeyUp
+		PS2_Data = 0;
+		#30000 PS2_Clock = 0;
+		#30000 PS2_Clock = 1;
+		for(i = 0; i < 8; i = i + 1)
+		begin
+			PS2_Data = F0[i];
+			#30000 PS2_Clock = 0;
+			#30000 PS2_Clock = 1;
+		end
+		PS2_Data = 0; // Paridad no importa
+		#30000 PS2_Clock = 0;
+		#30000 PS2_Clock = 1;
+				PS2_Data = 1; // Stop
+		#30000 PS2_Clock = 0;
+		#60000 PS2_Clock = 1;
+		// KeyDown
+		PS2_Data = 0;
+		#30000 PS2_Clock = 0;
+		#30000 PS2_Clock = 1;
+		for(i = 0; i < 8; i = i + 1)
+		begin
+			PS2_Data = Key[i];
+			#30000 PS2_Clock = 0;
+			#30000 PS2_Clock = 1;
+		end
+		PS2_Data = 0; // Paridad no importa
+		#30000 PS2_Clock = 0;
+		#30000 PS2_Clock = 1;
+				PS2_Data = 1; // Stop
+		#30000 PS2_Clock = 0;
+		#30000 PS2_Clock = 1;
 	end
 
 endmodule

@@ -46,7 +46,8 @@ module ControlKB(
 		input Read_Strobe,
 		output [7:0] Address, 
 		output [7:0] Data,
-		output [7:0] Commit
+		output [7:0] Commit,
+		input [1:0] DataSelect
 	);
 	
 	// Parámetros
@@ -90,7 +91,7 @@ module ControlKB(
 		else
 		begin
 			if(Read_Strobe)
-				if(ReadyCommit)
+				if(ReadyCommit && DataSelect == 2'b10)
 				begin
 					AddressBuffer <= 8'd0;
 					DataBuffer <= 8'd0;

@@ -40,6 +40,8 @@ module PS2Receiver(
         keycode[15:0]<=16'h0000;
         cnt<=4'b0000;
         flag<=1'b0;
+		  dataprev <= 8'd0;
+		  datacur <= 8'd0;
     end
     
 debouncer debounce(

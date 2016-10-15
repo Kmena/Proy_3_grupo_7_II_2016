@@ -27,7 +27,7 @@ module Keyboard(
 	// Decodificador de Port_ID
 	wire [1:0] DataSelect;
 	Port_ID_Decoder Decoder(
-		.Port_ID(Port_ID),.Read_Strobe(Read_Strobe),.DataSelect(DataSelect)
+		.Port_ID(Port_ID),.DataSelect(DataSelect)
 	);
 	
 	// Control KB
@@ -39,7 +39,8 @@ module Keyboard(
 		.Read_Strobe(Read_Strobe),
 		.Address(Address), 
 		.Data(Data),
-		.Commit(Commit)
+		.Commit(Commit),
+		.DataSelect(DataSelect)
 	);
 	
 	// Mux de salida
