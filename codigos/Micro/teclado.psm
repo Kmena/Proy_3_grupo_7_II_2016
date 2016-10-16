@@ -1,0 +1,16 @@
+load s0,4
+ciclo_teclado:
+add s0,1
+rdprt s1,(s0)
+wrmem s1,(s0)
+test s0,7
+jump nz, ciclo_teclado
+rdmem s1,7 
+test s1, 1
+call z, escritura
+
+escritura:
+rdmem s0,5
+rdmem s1,6
+wrprt s1,(s0)
+ret

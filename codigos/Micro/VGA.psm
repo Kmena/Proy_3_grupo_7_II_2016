@@ -1,0 +1,13 @@
+load s0,39
+load s1,16
+ciclo_teclado:
+add s0,1
+add s1,1
+rdmem s2,(s1)
+wrprt s2,(s0)
+test s0,49
+jump nz,ciclo_teclado
+rdmem s3,26
+wrprt s3,49
+rdmem s3,27
+wrprt s3,50

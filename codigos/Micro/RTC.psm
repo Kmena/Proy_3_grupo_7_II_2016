@@ -1,13 +1,16 @@
 load s0, 16
 ciclo_RTC:
 add s0,1
-memoria_listo:
-rdprt s1, (s0)
-test s1, 1
-jump z, memoria_listo
+call memoria_listo
 rdprt s2,(s0)
 wrmem s2,(s0)
 test s0,25
 jump nz,ciclo_RTC
 rdmem s0,10
 wrmem s0,26  
+
+memoria_listo:
+rdprt s1, (s0)
+test s1, 1
+jump z, memoria_listo
+ret
