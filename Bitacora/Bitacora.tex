@@ -13,13 +13,13 @@
 \begin{titlepage}
 \begin{center}
 \vspace*{1.5cm}
-\textbf{Escuela de Ingenierí­Â­a en Electronica}\\[0.8cm]
+\textbf{Escuela de Ingenierí­a en Electronica}\\[0.8cm]
 \textbf{Laboratorio de Diseño de Sistemas Digitales}\\[1cm]
 \textbf{Bitácora}\\[2cm]
 \textbf{Proyecto:}\\[0.4cm]
 Control y programación RTC con Nexys3 \\[1.7cm]
 \textbf{Profesor:}\\[0.4cm]
-Alfonso Chacón Rodrí­Â­guez \\[1.7cm]
+Alfonso Chacón Rodrí­guez \\[1.7cm]
 \textbf{Estudiantes:}\\[0.4cm]
 Keylor Mena Venegas \\[0.8cm]
 Luis Leon Vega \\[0.8cm]
@@ -350,20 +350,60 @@ Se realizó el módulo de control del controlador de teclado, señalado en el diagr
 \textbf{Actividad:} \\[2ex]
 Se realizó el modelo comportamental del teclado PS/2 para poder probar el controlador de teclado mediante el testbench. Se han hecho algunas correcciones y se ha tomado prevista de casos repetitivos de teclas que no se habían tomado en cuenta.\\
 Al finalizar el proceso de trabajo, el controlador está listo para ser implementado en el sistema principal y debidamente probado. En la figura \ref{fig:SimKeyB1} se muestra el comportamiento de la simulación gráfica, donde se aprecia los cambios en los registros al pulsar y liberar las teclas. Por otro lado, en la figura \ref{fig:SimKeyB2} se muestra una tabla generada mediante el script del testbench para corroborar los resultados.\\
-Se recuerda que el funcionamiento consta de tres etapas: la consulta de la dirección que se ha cambiado (en memoria), el dato con el nuevo valor y verificación de commit.
+Se recuerda que el funcionamiento consta de tres etapas: la consulta de la dirección que se ha cambiado (en memoria), el dato con el nuevo valor y verificación de commit.\\
+Finalmente, se ejecutaron los cambios en el módulo VGA integrando el sistema de cambio de registros con base a un PortID y un ReadStrobe.\\ 
 
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=16cm]{img/simkb1_1.png}
-	\caption{Diagrama de bloques del controlador de teclado}
+	\caption{Diagrama de tiempos de la simulación del controlador de teclado}
 	\label{fig:SimKeyB1}
 \end{figure}
 
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[height=14cm]{img/simkb2.png}
-	\caption{Diagrama de bloques del controlador de teclado}
+	\caption{Simulación tabular del controlador de teclado}
 	\label{fig:SimKeyB2}
 \end{figure}
+
+\newpage
+% Nueva entrada
+\begin{flushright}
+	\begin{large}
+		\textbf{Fecha: 16 de Octubre}\\[5ex]
+	\end{large}
+\end{flushright}
+
+\noindent \textbf{Integrantes:} Luis Leon \\[1ex]
+\textbf{Hora:} 8:00 - 10:30\\[1ex]
+\textbf{Actividad:} \\[2ex]
+Se realizaron las simulaciones del módulo VGA para comprobar el funcionamiento de la modificación. Todo resultó de acuerdo con lo que se esperaba. En la figura \ref{fig:SimVGA1} se muestra un despliegue general de los resultados, donde se destaca la imagen obtenida con los diagramas de tiempos.\\
+Por otro lado, el diagrama de tiempos específicos se encuentran en las figuras \ref{fig:SimVGA2} y \ref{fig:SimVGA3}.\\
+Para descifrar las pruebas de simulación, se han escrito en el registro de años un 16 y en el registro de cronómetro un 45 para destacar los cambios de registros distintos.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=16cm]{img/simvga1.png}
+	\caption{Imagen de los resultados de la simulación}
+	\label{fig:SimVGA1}
+\end{figure}
+
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=16cm]{img/simvga2.png}
+	\caption{Imagen de los resultados de la simulación - Tiempos generales}
+	\label{fig:SimVGA2}
+\end{figure}
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=16cm]{img/simvga3.png}
+	\caption{Imagen de los resultados de la simulación - Tiempos de cambio}
+	\label{fig:SimVGA3}
+\end{figure}
+
+
 
 \end{document}

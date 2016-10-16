@@ -6,14 +6,14 @@ module PunterosVGA_MemoryPointed(
 		input [9:0] PosX,
 		input [9:0] PosY,
 		input [3:0] MemAddrIN,
-		input CS_DATA,
 		//output [18:0] ROMAddrOut,
 		//output [1:0] ROMCS,
 		//input [5:0] ROMDataIN,
 		input CLK,
 		input RESET,
 		output reg [5:0] OutRGB,
-		input VSync
+		input VSync,
+		input Write
     );
 
 	/*
@@ -47,24 +47,23 @@ module PunterosVGA_MemoryPointed(
 				Cursor <= 0;
 				
 			end
-		else if(!RESET && !VSync)
+		else if(!RESET && !VSync && Write)
 			begin
 			// Contador de flujo
 					
 				case(MemAddrIN)
-					if(CS_DATA)
-					begin
+					
 						4'd1 : segReloj <= MemDataIN;
 						4'd2 : minReloj <= MemDataIN;
 						4'd3 : horReloj <= MemDataIN;
-						4'd6 : dayReloj <= MemDataIN;
-						4'd5 : monReloj <= MemDataIN;
 						4'd4 : yearReloj <= MemDataIN;
-						// Ajustes de timer - 1 de Octubre- NO TRABAJA
-						//4'd7 : segCrono <= 8'd60 - MemDataIN;
-						//4'd8 : minCrono <= 8'd60 - MemDataIN;
-						//4'd9 : horCrono <= 8'd23 - MemDataIN;
-						4'd7: begin
+						4'd5 : monReloj <= MemDataIN;
+						4'd6 : dayReloj <= MemDataIN;
+					
+						4'd7 : segCrono <= MemDataIN;
+						4'd8 : minCrono <= MemDataIN;
+						4'd9 : horCrono <= MemDataIN;
+						/*4'd7: begin
 							segCrono[3:0] <= 4'd9 - MemDataIN[3:0];
 							segCrono[7:4] <= 4'd5 - MemDataIN[7:4];
 						end
@@ -83,12 +82,12 @@ module PunterosVGA_MemoryPointed(
 									horCrono[3:0] <= 4'd3 - MemDataIN[3:0];
 									horCrono[7:4] <= 4'd2 - MemDataIN[7:4];
 								end
-						end
+						end*/
 						// End of Ajustes de timer
 						4'd10 : ringCrono <= MemDataIN[0];
 						4'd11 : actCrono <= MemDataIN[0];
 						4'd12 : Cursor <= MemDataIN;
-					end
+					
 				endcase
 	
 			end
