@@ -1,0 +1,61 @@
+call inicializacion
+ciclo_principal:
+call teclado
+call RTC
+call VGA
+jump ciclo_principal
+
+inicializacion:
+ret
+
+teclado:
+load s0,4
+ciclo_teclado:
+add s0,1
+rdprt s1,(s0)
+wrmem s1,(s0)
+test s0,7
+jump nz, ciclo_teclado
+rdmem s1,7 
+test s1, 1
+call z, escritura
+ret
+escritura:
+rdmem s0,5
+rdmem s1,6
+wrprt s1,(s0)
+ret
+
+RTC:
+load s0, 16
+ciclo_RTC:
+add s0,1
+call memoria_listo
+rdprt s2,(s0)
+wrmem s2,(s0)
+test s0,25
+jump nz,ciclo_RTC
+rdmem s0,10
+wrmem s0,26  
+ret
+memoria_listo:
+rdprt s1, (s0)
+test s1, 1
+jump z, memoria_listo
+ret
+
+VGA:
+load s0,39
+load s1,16
+ciclo_teclado:
+add s0,1
+add s1,1
+rdmem s2,(s1)
+wrprt s2,(s0)
+test s0,49
+jump nz,ciclo_teclado
+rdmem s3,26
+wrprt s3,49
+rdmem s3,27
+wrprt s3,50
+ret
