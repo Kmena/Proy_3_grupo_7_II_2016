@@ -37,7 +37,7 @@ begin
    pwm_ref<=5'b00110;
   end
   else
-	pwm_ref<=5'b11111;
+	pwm_ref<=5'b00000;
  end
 end
 endmodule
