@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <project version="3">
     <PrjInfo>
-        <title>controlprincipal</title>
+        <title>controlP</title>
         <version>0.1</version>
         <comment></comment>
     </PrjInfo>
     <sources>
-        <srcFiles>RTC.psm:teclado.psm:VGA.psm:control_principal.psm</srcFiles>
+        <srcFiles>control_principal.psm</srcFiles>
     </sources>
     <ModProcessor>
         <processor>Xilinx PicoBlaze 6</processor>
     </ModProcessor>
-    <XPBlze6>
-        <scrpdSize>64</scrpdSize>
-        <intVectorAddr>1023</intVectorAddr>
-        <clkFreq>100000000</clkFreq>
-        <memMap>
-            <pageSize>1024</pageSize>
-        </memMap>
-    </XPBlze6>
     <AsmFe>
         <defaultCharset>UTF-8</defaultCharset>
         <behavior>
@@ -37,11 +29,11 @@
                 <outputFile></outputFile>
             </vhdl>
             <verilog>
-                <en>0</en>
+                <en>1</en>
                 <writeFileEventBut1>1</writeFileEventBut1>
                 <writeFileEventBut2>1</writeFileEventBut2>
-                <writeFileEventSave>0</writeFileEventSave>
-                <entityName></entityName>
+                <writeFileEventSave>1</writeFileEventSave>
+                <entityName>microP</entityName>
                 <templateFile></templateFile>
                 <outputFile></outputFile>
             </verilog>
@@ -99,12 +91,20 @@
     </Syscall>
     <ModEditor>
         <tabIndent>4</tabIndent>
-        <openFiles>RTC.psm:teclado.psm:VGA.psm:control_principal.psm</openFiles>
+        <openFiles>control_principal.psm</openFiles>
         <lastFile></lastFile>
         <lastCursorPos>0</lastCursorPos>
     </ModEditor>
     <ModHlp>
-        <openFiles>pageid&amp;amp;#58;&amp;#47;&amp;#47;gettingstarted:qthelp&amp;amp;#58;&amp;#47;&amp;#47;fx&amp;#47;FIDEx&amp;#47;manual&amp;#47;codingManual&amp;#47;instructionSet&amp;#47;wrPrt&amp;#47;wrPrt.html:qthelp&amp;amp;#58;&amp;#47;&amp;#47;fx&amp;#47;FIDEx&amp;#47;manual&amp;#47;codingManual&amp;#47;instructionSet&amp;#47;rdPrt&amp;#47;rdPrt.html:qthelp&amp;amp;#58;&amp;#47;&amp;#47;fx&amp;#47;FIDEx&amp;#47;manual&amp;#47;codingManual&amp;#47;instructionSet&amp;#47;wrMem&amp;#47;wrMem.html:qthelp&amp;amp;#58;&amp;#47;&amp;#47;fx&amp;#47;FIDEx&amp;#47;manual&amp;#47;codingManual&amp;#47;instructionSet&amp;#47;test&amp;#47;test.html</openFiles>
-        <currentFile></currentFile>
+        <openFiles>pageid&amp;amp;#58;&amp;#47;&amp;#47;asmfemessages#errNoAsmBe</openFiles>
+        <currentFile>pageid:&amp;#47;&amp;#47;asmfemessages#errNoAsmBe</currentFile>
     </ModHlp>
+    <XPBlze6>
+        <scrpdSize>64</scrpdSize>
+        <intVectorAddr>1023</intVectorAddr>
+        <clkFreq>100000000</clkFreq>
+        <memMap>
+            <pageSize>1024</pageSize>
+        </memMap>
+    </XPBlze6>
 </project>

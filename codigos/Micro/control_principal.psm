@@ -1,3 +1,22 @@
+#SET instMem::pageSize, 1024
+#SET instMem::pageCount, 1
+#SET instMem::sharedMemLocation, loMem 
+
+#SET IODev::YourDevName::initValue, 0x00000
+; Assigning instruction memory values
+#SET IODev::YourDevName::value,     instMem
+#SET IODev::YourDevName::value,     instMem[page1]
+#SET IODev::YourDevName::value,     instMem[0:1023]
+#SET IODev::YourDevName::value,     instMem[1023:0]
+#SET IODev::YourDevName::value,     instMem[page1][7:0]
+#SET IODev::YourDevName::value,     instMem[0:1023][7:0]
+; Assigning arbitrary values
+#SET IODev::YourDevName::value,     append: 0x12, 0x34, 0x56, 0x78
+#SET IODev::YourDevName::value,     0x33, 0x44, 0x55
+#SET IODev::YourDevName::value,     0x10: 0x33, 0x44, 0x55
+#SET IODev::YourDevName::value,     0x01: 0x33
+#SET IODev::YourDevName::value,     0x02: 0x44
+
 call inicializacion
 ciclo_principal:
 call teclado
@@ -23,8 +42,27 @@ ret
 escritura:
 rdmem s0,5
 rdmem s1,6
+load sA,1
+load sC,10
+test s0,10
+call z act_t
+test s0,11
+call z dis_t
 wrprt s1,(s0)
+fin:
 ret
+
+act_t:
+load sB,4
+wrmem sA,(sC)
+wrprt sB,(sA)
+jump fin
+
+dis_t:
+load sB,0
+wrmem sB,(sC)
+wrprt sB,(sA)
+jump fin
 
 RTC:
 load s0, 16
@@ -47,15 +85,15 @@ ret
 VGA:
 load s0,39
 load s1,16
-ciclo_teclado:
+ciclo_VGA:
 add s0,1
 add s1,1
 rdmem s2,(s1)
 wrprt s2,(s0)
-test s0,49
-jump nz,ciclo_teclado
+test s0,50
+jump nz,ciclo_VGA
 rdmem s3,26
 wrprt s3,49
-rdmem s3,27
+rdmem s3,10
 wrprt s3,50
 ret
