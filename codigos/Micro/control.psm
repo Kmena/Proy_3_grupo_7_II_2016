@@ -35,11 +35,11 @@ output s2,03
 call write_start
 ;escritura de mascara on
 load s2,01000100'b
-output s2,03
+output s2,02
 call write_start
 ;scritura de enable
 load s2,00001000'b
-output s2,03
+output s2,01
 call write_start
 return
 ;fin de llamada de inicicalizacion
