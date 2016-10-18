@@ -1,0 +1,3 @@
+verilog work "../kcpsm6.v"
+verilog work "../control.v"
+verilog work "../kcpsm6_design_template.v"
