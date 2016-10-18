@@ -1,21 +1,21 @@
-#SET instMem::pageSize, 1024
-#SET instMem::pageCount, 1
-#SET instMem::sharedMemLocation, loMem 
+;#SET instMem::pageSize, 1024
+;#SET instMem::pageCount, 1
+;#SET instMem::sharedMemLocation, loMem 
 
-#SET IODev::YourDevName::initValue, 0x00000
+;#SET IODev::YourDevName::initValue, 0x00000
 ; Assigning instruction memory values
-#SET IODev::YourDevName::value,     instMem
-#SET IODev::YourDevName::value,     instMem[page1]
-#SET IODev::YourDevName::value,     instMem[0:1023]
-#SET IODev::YourDevName::value,     instMem[1023:0]
-#SET IODev::YourDevName::value,     instMem[page1][7:0]
-#SET IODev::YourDevName::value,     instMem[0:1023][7:0]
+;#SET IODev::YourDevName::value,     instMem
+;#SET IODev::YourDevName::value,     instMem[page1]
+;#SET IODev::YourDevName::value,     instMem[0:1023]
+;#SET IODev::YourDevName::value,     instMem[1023:0]
+;#SET IODev::YourDevName::value,     instMem[page1][7:0]
+;#SET IODev::YourDevName::value,     instMem[0:1023][7:0]
 ; Assigning arbitrary values
-#SET IODev::YourDevName::value,     append: 0x12, 0x34, 0x56, 0x78
-#SET IODev::YourDevName::value,     0x33, 0x44, 0x55
-#SET IODev::YourDevName::value,     0x10: 0x33, 0x44, 0x55
-#SET IODev::YourDevName::value,     0x01: 0x33
-#SET IODev::YourDevName::value,     0x02: 0x44
+;#SET IODev::YourDevName::value,     append: 0x12, 0x34, 0x56, 0x78
+;#SET IODev::YourDevName::value,     0x33, 0x44, 0x55
+;#SET IODev::YourDevName::value,     0x10: 0x33, 0x44, 0x55
+;#SET IODev::YourDevName::value,     0x01: 0x33
+;#SET IODev::YourDevName::value,     0x02: 0x44
 
 call inicializacion
 ciclo_principal:
@@ -25,8 +25,24 @@ call VGA
 jump ciclo_principal
 
 inicializacion:
+;escritura de bit de inicializazion en 1
+load s2,b00010000
+wrprt s2,(03)
+call write_start
+;escritura de bit de inicializacion en 0
+load s2,b00000000
+WRPRT s2,(03)
+call write_start
+;escritura de mascara on
+load s2,b01000100
+WRPRT s2,(03)
+call write_start
+;scritura de enable
+load s2,b00001000
+WRPRT s2,(03)
+call write_start
 ret
-
+;fin de llamada de inicicalizacion
 teclado:
 load s0,4
 ciclo_teclado:
@@ -42,44 +58,42 @@ ret
 escritura:
 rdmem s0,5
 rdmem s1,6
-load sA,1
-load sC,10
-test s0,10
-call z act_t
-test s0,11
-call z dis_t
+;load sA,1
+;load sC,10
+;test s0,10
+;call z act_t
+;test s0,11
+;call z dis_t
+wrmem s1,(s0)
 wrprt s1,(s0)
 fin:
 ret
 
-act_t:
-load sB,4
-wrmem sA,(sC)
-wrprt sB,(sA)
-jump fin
+;act_t:
+;load sB,4
+;wrmem sA,(sC)
+;wrprt sB,(sA)
+;jump fin
 
-dis_t:
-load sB,0
-wrmem sB,(sC)
-wrprt sB,(sA)
-jump fin
+;dis_t:
+;load sB,0
+;wrmem sB,(sC)
+;wrprt sB,(sA)
+;jump fin
 
 RTC:
 load s0, 16
 ciclo_RTC:
 add s0,1
-call memoria_listo
+call write_start
 rdprt s2,(s0)
 wrmem s2,(s0)
 test s0,25
 jump nz,ciclo_RTC
 rdmem s0,10
 wrmem s0,26  
-ret
-memoria_listo:
-rdprt s1, (s0)
-test s1, 1
-jump z, memoria_listo
+rdmem s0,11
+wrmem s0,27
 ret
 
 VGA:
@@ -96,4 +110,11 @@ rdmem s3,26
 wrprt s3,49
 rdmem s3,10
 wrprt s3,50
+ret
+
+;fin de inicializacion
+write_start:
+rdprt s1,(02)
+test s1,1
+jump z, write_start
 ret

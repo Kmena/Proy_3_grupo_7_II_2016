@@ -51,6 +51,14 @@ module deco_id(id_port, actRTC, actVGA, actTeclado, actsonido, dir);
 			actsonido=0;
 			dir=8'd2;
 		end
+		8'd4:
+		begin
+			actRTC=1;
+			actVGA=0; 
+			actTeclado=0; 
+			actsonido=0;
+			dir=8'hF0;
+		end
 		8'd5:
 		begin
 			actRTC=0;

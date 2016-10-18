@@ -18,11 +18,11 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module control_principal_rtc(clk,reset,cs,writestrobe,readstrobe,dir,dato,memorialisto,esclisto,datomem, actesc,actlec, datoout,datoreg,dirreg,dirmem,esc_reg);
+module control_principal_rtc(clk,reset,cs,writestrobe,readstrobe,dir,dato,memorialisto,esclisto,datomem, actesc,actlec, datoout,datoreg,dirreg,dirmem);
  input clk,reset,cs,writestrobe,readstrobe,memorialisto,esclisto;
  input [7:0] dir,dato,datomem;
- output datoout,datoreg,dirreg,dirmem,actesc,actlec,esc_reg;
- reg actesc,actlec,esc_reg;
+ output datoout,datoreg,dirreg,dirmem,actesc,actlec;
+ reg actesc,actlec;
  reg [7:0] datoout,datoreg,dirreg;
  reg [3:0] dirmem;
  reg [2:0] State;
@@ -87,7 +87,6 @@ module control_principal_rtc(clk,reset,cs,writestrobe,readstrobe,dir,dato,memori
  State<=NextState;
  if(reset == 1)
  begin
-	esc_reg<=0;
 	datoout<=0;
 	datoreg<=0;
 	dirreg<=0;
@@ -131,50 +130,42 @@ module control_principal_rtc(clk,reset,cs,writestrobe,readstrobe,dir,dato,memori
 		 end
 		esc:
 		begin
-			esc_reg<=0;
 			datoout<=0;
 			actesc<=1;
 			actlec<=0;
 		end
 		lec:
 		begin
-			esc_reg<=0;
 			datoout<=0;
 			actesc<=0;
 			actlec<=0;
 		end
 		ciclolec:
 		begin
-			esc_reg<=1;
 			datoout<=0;
 			actesc<=0;
 			actlec<=0;
 		end
 		finallec:
 		begin
-			esc_reg<=0;
-			esc_reg<=0;
 			datoout<=1;
 			actesc<=0;
 			actlec<=0;
 		end
 		lectmem:
 		begin
-			esc_reg<=0;
 			datoout<=datomem;
 			actesc<=0;
 			actlec<=0;
 		end
 		final: 
 		begin
-			esc_reg<=0;
 			datoout<=1;
 			actesc<=0;
 			actlec<=0;
 		end
 		default:
 		 begin
-			esc_reg<=0;
 			datoout<=0;
 			datoreg<=0;
 			dirreg<=0;

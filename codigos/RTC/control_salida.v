@@ -1,5 +1,4 @@
-module control_salida(reset,direccion,dato,clk,iniciar,escribe,data_out,CS,AD,RD,WR,final,esc,escreg);
-input esc;
+module control_salida(reset,direccion,dato,clk,iniciar,escribe,data_out,CS,AD,RD,WR,final,escreg);
 input reset;
 input iniciar;
 input clk;
@@ -148,7 +147,8 @@ begin
 			     RD <= 1'b0;
 			     WR <= 1'b1;
 			     final <= 1'b0;
-				  escreg<=esc;
+				  if((direccion >=8'd33 && direccion <=8'd38) &&  (direccion >=8'h41 && direccion <=8'h43))escreg<=1;
+				  else escreg<=0;
 				  data_out <= 8'b0;
 				 end
 	  end

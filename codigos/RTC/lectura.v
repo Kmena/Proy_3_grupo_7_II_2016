@@ -18,24 +18,20 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module lectura(reset,clk,dir,dir_reg,esc_reg,iniciar,fin,activa,w,reg_out,dir_out);
+module lectura(reset,clk,dir,iniciar,fin,activa,dir_out,final);
 //inicio input output
 input reset;
-input [3:0] dir_reg;
 input iniciar;
 input [7:0] dir;
 input clk;
 input fin;
-input esc_reg;
 output [7:0] dir_out;
-output [3:0] reg_out;
 output activa;
-output w;
+output final;
 //fin input output
 reg [7:0] dir_out;
-reg [3:0] reg_out;
-reg w;
 reg activa;
+reg final;
 
 //inicio variables y parametros internos
 
@@ -80,10 +76,9 @@ begin
  if (reset || ~iniciar)
  begin
   dir_out <= 0;
-  reg_out <= 0;
-  w <= 0;
   activa <= 0;
   state <= inicio;
+  final <= 0;
  end
  else
  begin
@@ -91,21 +86,18 @@ begin
   case (state)
    inicio:begin
 	        dir_out <= 0;
-           reg_out <= 0;
-           w <= 0;
            activa <= 0;
+			  final <= 0;
 	 end
 	lee:begin
 	        dir_out <= dir;
-           reg_out <= dir_reg;
-           w <= esc_reg;
            activa <= 1;
+			  final<= 0;
 	 end
    finalizar:begin
 	        dir_out <= 0;
-           reg_out <= 0;
-           w <= 0;
            activa <= 0;
+			  final <= 1;
 	 end
 	default:begin
 	        state <= inicio;
