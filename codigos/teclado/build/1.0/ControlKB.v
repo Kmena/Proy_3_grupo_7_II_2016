@@ -14,8 +14,8 @@
 	F1: 05: Adj Date
 	F2: 06: Adj Clock
 	F3: 04: Adj Timer
-	F11: 78: Timer toggle
-	F12: 07: Ring off
+	F11: 78: Timer Act
+	F12: 07: Timer Off
 	ESC: 76: Discard all
 	
 	Tab: 0D: Sweep Element
@@ -128,8 +128,8 @@ module ControlKB(
 							end
 							F11: begin
 								// Cambiar timer
-								AddressBuffer <= 4'd11;
-								DataBuffer[7:0] <= 8'd1; // RECORDAR KEYLOR
+								AddressBuffer <= 4'd10;
+								DataBuffer[7:0] <= 8'd8; // RECORDAR KEYLOR
 								ReadyCommit <= 1'b1;
 							end
 							F12: begin
