@@ -31,7 +31,7 @@ module encapsulado_micro(
 	output actVGA, 
 	output actTeclado,
 	output actsonido, 
-	output dir
+	output [7:0] dir
    );
 	wire [7:0]		port_id;
 	wire write_strobe;

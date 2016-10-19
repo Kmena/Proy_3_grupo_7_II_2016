@@ -39,7 +39,7 @@ module encapsulado_micro_tb;
 	wire actVGA;
 	wire actTeclado;
 	wire actsonido;
-	wire dir;
+	wire [7:0] dir;
 
 	integer id;
 	// Instantiate the Unit Under Test (UUT)
