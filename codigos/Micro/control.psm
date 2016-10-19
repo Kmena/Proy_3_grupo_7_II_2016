@@ -83,9 +83,12 @@ return
 
 RTC:
 input s3,04
+call write_start
+input s3,04
 load s0, 16
 ciclo_RTC:
 add s0,01
+input s2,(s0)
 call write_start
 input s2,(s0)
 store s2,(s0)
