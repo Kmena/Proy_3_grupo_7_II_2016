@@ -37,7 +37,7 @@ module encapsulado_micro(
 	wire write_strobe;
 	wire k_write_strobe;
 	
-	or2(.dato1(write_strobe),.dato2(k_write_strobe),.salida(writestrobe));
+	or2 or2_2(.dato1(write_strobe),.dato2(k_write_strobe),.salida(writestrobe));
 	pico piko(.port_id(port_id),.out_port(out_port),.in_port(in_port),.write_strobe(write_strobe),.k_write_strobe(k_write_strobe),.read_strobe(read_strobe),.interrupt(interrupt),.interrupt_ack(interrupt_ack),.clk(clk),.kcpsm6_reset(kcpsm6_reset));
 	deco_id id_out(.id_port(port_id), .actRTC(actRTC), .actVGA(actVGA), .actTeclado(actTeclado), .actsonido(actsonido), .dir(dir));
 	
