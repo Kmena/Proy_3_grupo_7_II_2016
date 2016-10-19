@@ -25,18 +25,208 @@ module control_principal_rtc(clk,reset,cs,writestrobe,readstrobe,dir,dato,memori
  reg actesc,actlec;
  reg [7:0] datoout,datoreg,dirreg;
  reg [3:0] dirmem;
- reg [2:0] State;
- reg [2:0] NextState;
- parameter [2:0] inicio = 3'b000;
- parameter [2:0] finallec= 3'b001;
- parameter [2:0] esclec = 3'b010;
- parameter [2:0] esc= 3'b011;
- parameter [2:0] lec= 3'b100;
- parameter [2:0] ciclolec= 3'b101;
- parameter [2:0] lectmem=3'b110;
- parameter [2:0] final=3'b111;
- 
+ reg [3:0] State;
+ reg [3:0] NextState;
+ parameter [3:0] inicio = 4'b0000;
+ parameter [3:0] esclec= 4'b0001;
+ parameter [3:0] wstrobe = 4'b0010;
+ parameter [3:0] w_start= 4'b0011;
+ parameter [3:0] finesc= 4'b0100;
+ parameter [3:0] mem_cicle= 4'b0101;
+ parameter [3:0] rstrobe=4'b0110;
+ parameter [3:0] r_start=4'b1011;
+ parameter [3:0] noactlec=4'b0111;
+ parameter [3:0] actilec=4'b1000;
+ parameter [3:0] mem=4'b1001;
+ parameter [3:0] fin=4'b1010;
  always@(cs or writestrobe or readstrobe or memorialisto or State or esclisto or dirreg)
+ begin
+	 NextState=0;
+	 case(State)
+	 inicio:
+			if(cs==1'b1)
+				NextState=esclec;
+			else
+				NextState=inicio;
+	 esclec:
+			if(readstrobe ==1)
+				NextState=mem_cicle;//error con el write strobe, por si acaso, no se usa
+			else
+				NextState=wstrobe;
+	wstrobe:
+		if(cs ==1'b1)
+			NextState = w_start;
+		else
+			NextState = wstrobe;
+	mem_cicle:
+	   if(dirreg == 10 || dirreg == 11)
+			NextState=mem;
+		else
+			NextState= rstrobe;
+	w_start:
+		if(esclisto==1)
+			NextState=finesc;
+		else
+			NextState= wstrobe;
+	finesc:
+		NextState=fin;
+	rstrobe:
+		if(cs ==1'b1)
+			NextState = r_start;
+		else
+			NextState = rstrobe;
+	r_start:
+		if(memorialisto ==1'b1)
+			NextState = noactlec;
+		else
+			NextState = rstrobe;
+	noactlec:
+		if(cs ==1'b1)
+			NextState = actilec;
+		else
+			NextState = noactlec;
+	actilec:
+		if(cs ==1'b1)
+			NextState = mem;
+		else
+			NextState = actilec;
+	mem:
+			NextState = fin;
+	fin: 
+		NextState=inicio;
+	default:
+		NextState=inicio;
+	endcase
+ end
+ always @(posedge clk)
+ begin
+ State<=NextState;
+ if(reset == 1)
+ begin
+	datoout<=0;
+	datoreg<=0;
+	dirreg<=0;
+	dirmem<=0;
+	actesc<=0;
+	actlec<=0;
+	State<=inicio;
+ end
+ else
+ begin
+	 case(State)
+		 inicio:
+		 begin
+			datoout<=0;
+			datoreg<=0;
+			dirreg<=0;
+			dirmem<=0;
+			actesc<=0;
+			actlec<=0;
+		 end
+		 esclec:
+		 begin
+			datoout<=0;
+			datoreg<=dato;
+			dirreg<=dir;
+			actesc<=0;
+			actlec<=0;
+			case(dir)
+				8'd33: dirmem <=4'd1;
+				8'd34: dirmem <=4'd2;
+				8'd35: dirmem <=4'd3;
+				8'd36: dirmem <=4'd4;
+				8'd37: dirmem <=4'd5;
+				8'd38: dirmem <=4'd6;
+				8'd65: dirmem <=4'd7;
+				8'd66: dirmem <=4'd8;
+				8'd67: dirmem <=4'd9;
+				8'd10: dirmem <=4'd10;
+				8'd11: dirmem <=4'd11;
+				default: dirmem <= 4'd0;
+			endcase
+		 end		
+		wstrobe:
+		begin
+			datoout<=0;
+			actesc<=1;
+			actlec<=0;
+		end
+	   mem_cicle:
+	   begin
+			datoout<=0;
+			actesc<=0;
+			actlec<=0;
+		end
+	   w_start:
+		begin
+			datoout<=0;
+			actesc<=1;
+			actlec<=0;
+		end
+	   finesc:
+		begin
+			datoout<=1;
+			actesc<=0;
+			actlec<=0;
+		end
+	   rstrobe:
+		begin
+			datoout<=0;
+			actesc<=0;
+			actlec<=1;
+		end
+	   r_start:
+		begin
+			datoout<=0;
+			actesc<=0;
+			actlec<=1;
+		end
+	   noactlec:
+		begin
+			datoout<=1;
+			actesc<=0;
+			actlec<=0;
+		end
+	   actilec:
+		begin
+			datoout<=0;
+			actesc<=0;
+			actlec<=0;
+		end
+	   mem:
+			begin
+			datoout<=datomem;
+			actesc<=0;
+			actlec<=0;
+		end
+	   fin: 
+		begin
+			datoout<=0;
+			actesc<=0;
+			actlec<=0;
+		end
+	default:
+		begin
+	   datoout<=0;
+	   datoreg<=0;
+	   dirreg<=0;
+	   dirmem<=0;
+	   actesc<=0;
+	   actlec<=0;
+	   State<=inicio;
+      end
+		endcase
+	end
+ end
+
+
+
+ 
+ 
+ 
+
+endmodule
+/*always@(cs or writestrobe or readstrobe or memorialisto or State or esclisto or dirreg)
  begin
 	 NextState=0;
 	 case(State)
@@ -176,6 +366,4 @@ module control_principal_rtc(clk,reset,cs,writestrobe,readstrobe,dir,dato,memori
 		 end
 		endcase
 	end
-end
-
-endmodule
+end*/
