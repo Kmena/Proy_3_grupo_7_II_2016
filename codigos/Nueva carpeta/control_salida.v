@@ -78,6 +78,7 @@ begin
   AD <= 1'b1;
   RD <= 1'b1;
   WR <= 1'b1;
+  data_out=8'd0;
   final <= 1'b0;
   contador <=0;
   escreg<=0;
@@ -147,7 +148,7 @@ begin
 			     RD <= 1'b0;
 			     WR <= 1'b1;
 			     final <= 1'b0;
-				  if((direccion >=8'd33 && direccion <=8'd38) &&  (direccion >=8'h41 && direccion <=8'h43))escreg<=1;
+				  if((direccion >=8'd33 && direccion <=8'd38) ||  (direccion >=8'h41 && direccion <=8'h43))escreg<=1;
 				  else escreg<=0;
 				  data_out <= 8'b0;
 				 end

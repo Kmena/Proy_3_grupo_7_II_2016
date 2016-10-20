@@ -60,9 +60,11 @@ begin
 			 else
 			  next_state = lee;
    end
-  finalizar:begin
-			  next_state = inicio;	
-			 end
+  finalizar:
+          if (iniciar == 1'b1)
+			  next_state = lee;
+			 else
+			  next_state = inicio;
   default:begin
           next_state = inicio;
    end

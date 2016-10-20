@@ -1,8 +1,0 @@
-verilog work "../kcpsm6.v"
-verilog work "../control.v"
-verilog work "../../Nueva carpeta/or2.v"
-verilog work "../kcpsm6_design_template.v"
-verilog work "../../deco id/decoid.v"
-verilog work "../encapsulado_micro.v"
-verilog work "../encapsulado_micro_tb.v"
-verilog work "C:/Xilinx/14.1/ISE_DS/ISE//verilog/src/glbl.v"

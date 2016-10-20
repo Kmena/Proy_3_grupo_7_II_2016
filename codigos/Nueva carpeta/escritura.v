@@ -80,7 +80,10 @@ begin
 			  next_state = clk_transfer;
    end
   finalizar:begin
-			  next_state = inicio;   
+          if (iniciar == 1'b1)
+			  next_state = finalizar;
+			 else
+			  next_state = inicio;  
 			end
   default:begin
           next_state = inicio;
