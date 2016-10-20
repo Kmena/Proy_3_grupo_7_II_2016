@@ -139,6 +139,8 @@
     <transform xil_pn:end_ts="1476923835" xil_pn:in_ck="7491358244296593820" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5741038178725618983" xil_pn:start_ts="1476923829">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ModuloRTC_tb_beh.prj"/>
       <outfile xil_pn:name="ModuloRTC_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -149,6 +151,8 @@
     <transform xil_pn:end_ts="1476923836" xil_pn:in_ck="-8735784483394028666" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7749875094818039524" xil_pn:start_ts="1476923835">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ModuloRTC_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
