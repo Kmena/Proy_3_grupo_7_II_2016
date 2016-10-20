@@ -1,26 +1,11 @@
-;#SET instMem::pageSize, 1024
-;#SET instMem::pageCount, 1
-;#SET instMem::sharedMemLocation, loMem 
 
-;#SET IODev::YourDevName::initValue, 0x00000
-; Assigning instruction memory values
-;#SET IODev::YourDevName::value,     instMem
-;#SET IODev::YourDevName::value,     instMem[page1]
-;#SET IODev::YourDevName::value,     instMem[0:1023]
-;#SET IODev::YourDevName::value,     instMem[1023:0]
-;#SET IODev::YourDevName::value,     instMem[page1][7:0]
-;#SET IODev::YourDevName::value,     instMem[0:1023][7:0]
-; Assigning arbitrary values
-;#SET IODev::YourDevName::value,     append: 0x12, 0x34, 0x56, 0x78
-;#SET IODev::YourDevName::value,     0x33, 0x44, 0x55
-;#SET IODev::YourDevName::value,     0x10: 0x33, 0x44, 0x55
-;#SET IODev::YourDevName::value,     0x01: 0x33
-;#SET IODev::YourDevName::value,     0x02: 0x44
 
 call inicializacion
 ciclo_principal:
-call teclado
 call RTC
+call teclado
+load s0,51
+call write_start
 call VGA
 jump ciclo_principal
 
@@ -34,7 +19,7 @@ load s2,00000000'b
 output s2,03
 call write_start
 ;escritura de mascara on
-load s2,01000100'b
+load s2,00000100'b
 output s2,02
 call write_start
 ;scritura de enable
@@ -43,6 +28,7 @@ output s2,01
 call write_start
 return
 ;fin de llamada de inicicalizacion
+
 teclado:
 load s0,04
 ciclo_teclado:
@@ -54,71 +40,66 @@ jump nz, ciclo_teclado
 fetch s1,07 
 test s1, 01
 call z, escritura
-return
-escritura:
 fetch s0,05
 fetch s1,06
-;load sA,01
-;load sC,0A
-;test s0,0A
-;call z act_t
-;test s0,0B
-;call z dis_t
 store s1,(s0)
-output s1,(s0)
-fin:
+store s0,0A
 return
 
-;act_t:
-;load sB,4
-;store sA,(sC)
-;output sB,(sA)
-;jump fin
-
-;dis_t:
-;load sB,0
-;store sB,(sC)
-;output sB,(sA)
-;jump fin
+escritura:
+output s1,(s0)
+return
 
 RTC:
 input s3,04
 call write_start
 input s3,04
-load s0, 16
+load s0,16'd
 ciclo_RTC:
 add s0,01
 input s2,(s0)
 call write_start
 input s2,(s0)
 store s2,(s0)
-test s0,25
+test s0,25'd
 jump nz,ciclo_RTC
-fetch s0,10
-store s0,26  
-fetch s0,11
-store s0,27
+fetch s0,10'd
+store s0,26'd  
+input s2,0B
+call write_start
+input s2,0B
+store s2,27'd
 return
 
 VGA:
-load s0,39
-load s1,16
+load s0,39'd
+load s1,16'd
 ciclo_VGA:
 add s0,01
 add s1,01
 fetch s2,(s1)
 output s2,(s0)
-test s0,50
+test s0,50'd
 jump nz,ciclo_VGA
-fetch s3,26
-output s3,49
-fetch s3,10
-output s3,50
+fetch s3,26'd  ;direccion de cambio????? 
+output s3,49'd
+fetch s3,10'd  ;irq
+output s3,50'd
+test s3,01
+jump z,alarma
+load s4,00
+output s4,14'd
+fin:
 return
+
+alarma:
+load s4,01
+output s4,14'd
+jump fin
 
 ;fin de inicializacion
 write_start:
-input s1,02
+input s1,(s0)
 test s1,01
 jump z, write_start
 return

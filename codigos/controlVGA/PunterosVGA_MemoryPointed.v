@@ -84,9 +84,9 @@ module PunterosVGA_MemoryPointed(
 								end
 						end*/
 						// End of Ajustes de timer
-						4'd10 : ringCrono <= MemDataIN[0];
-						4'd11 : actCrono <= MemDataIN[0];
-						4'd12 : Cursor <= MemDataIN;
+						4'd11 : ringCrono <= MemDataIN[0];
+						4'd12 : actCrono <= MemDataIN[0];
+						4'd10 : Cursor <= MemDataIN;
 					
 				endcase
 	

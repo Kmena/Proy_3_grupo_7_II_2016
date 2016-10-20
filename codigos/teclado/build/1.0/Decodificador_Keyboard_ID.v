@@ -18,9 +18,9 @@ module Port_ID_Decoder(
 	begin
 		begin
 			case(Port_ID)
-			8'h05: DataSelect = 2'd0;
-			8'h06: DataSelect = 2'd1;
-			8'h07: DataSelect = 2'd2;
+			8'h01: DataSelect = 2'd0;
+			8'h02: DataSelect = 2'd1;
+			8'h03: DataSelect = 2'd2;
 			default: DataSelect = 2'd3;
 			endcase
 		end
