@@ -60,7 +60,7 @@ module control_principal_rtc(clk,reset,cs,writestrobe,readstrobe,dir,dato,memori
 			NextState = wstrobe;
 	mem_cicle:
 	   if(dirreg == 10 || dirreg == 11)
-			NextState=mem;
+			NextState=noactlec;
 		else
 			NextState= rstrobe;
 	w_start:
@@ -91,6 +91,9 @@ module control_principal_rtc(clk,reset,cs,writestrobe,readstrobe,dir,dato,memori
 		else
 			NextState = actilec;
 	mem:
+		if(cs ==1'b1)
+			NextState = mem;
+		else
 			NextState = fin;
 	fin: 
 		NextState=inicio;

@@ -1,0 +1,10 @@
+Command line:
+   ModuloRTC_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  57390
+
+Wed Oct 19 18:40:53 2016
+
+
+ Elaboration Time: 0.0936 sec

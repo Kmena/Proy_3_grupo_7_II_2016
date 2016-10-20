@@ -1,16 +1,16 @@
-Release 14.1 - xst P.15xf (nt64)
-Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.27 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.27 secs
  
 --> Reading design: encapsulado_micro.prj
 
@@ -105,18 +105,18 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\kcpsm6.v" into library work
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Micro\kcpsm6.v" into library work
 Parsing module <kcpsm6>.
-Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\control.v" into library work
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Micro\control.v" into library work
 Parsing module <control>.
 Parsing module <jtag_loader_6>.
-Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Nueva carpeta\or2.v" into library work
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Nueva carpeta\or2.v" into library work
 Parsing module <or2>.
-Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\kcpsm6_design_template.v" into library work
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Micro\kcpsm6_design_template.v" into library work
 Parsing module <pico>.
-Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\deco id\decoid.v" into library work
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\deco id\decoid.v" into library work
 Parsing module <deco_id>.
-Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\encapsulado_micro.v" into library work
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Micro\encapsulado_micro.v" into library work
 Parsing module <encapsulado_micro>.
 
 =========================================================================
@@ -126,7 +126,7 @@ Parsing module <encapsulado_micro>.
 Elaborating module <encapsulado_micro>.
 
 Elaborating module <or2>.
-WARNING:HDLCompiler:1016 - "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\kcpsm6_design_template.v" Line 193: Port rdl is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Micro\kcpsm6_design_template.v" Line 193: Port rdl is not connected to this instance
 
 Elaborating module <pico>.
 
@@ -217,7 +217,7 @@ Elaborating module <LUT6(INIT=64'b1011111110111100100011111000110010110011101100
 Elaborating module <LUT6(INIT=64'b1111111100000000111100001111000011001100110011001010101010101010)>.
 
 Elaborating module <RAM64M(INIT_A=64'b0,INIT_B=64'b0,INIT_C=64'b0,INIT_D=64'b0)>.
-WARNING:HDLCompiler:1127 - "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\kcpsm6_design_template.v" Line 147: Assignment to interrupt_ack ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Micro\kcpsm6_design_template.v" Line 147: Assignment to interrupt_ack ignored, since the identifier is never used
 
 Elaborating module <control(C_FAMILY="7S",C_RAM_SIZE_KWORDS=1,C_JTAG_LOADER_ENABLE=0)>.
 
@@ -233,29 +233,29 @@ Elaborating module <deco_id>.
 =========================================================================
 
 Synthesizing Unit <encapsulado_micro>.
-    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\encapsulado_micro.v".
+    Related source file is "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Micro\encapsulado_micro.v".
     Summary:
 	no macro.
 Unit <encapsulado_micro> synthesized.
 
 Synthesizing Unit <or2>.
-    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Nueva carpeta\or2.v".
+    Related source file is "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Nueva carpeta\or2.v".
     Summary:
 	no macro.
 Unit <or2> synthesized.
 
 Synthesizing Unit <pico>.
-    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\kcpsm6_design_template.v".
+    Related source file is "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Micro\kcpsm6_design_template.v".
 WARNING:Xst:647 - Input <interrupt_ack> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3210 - "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\kcpsm6_design_template.v" line 136: Output port <interrupt_ack> of the instance <processor> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\kcpsm6_design_template.v" line 197: Output port <rdl> of the instance <program_rom> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Micro\kcpsm6_design_template.v" line 136: Output port <interrupt_ack> of the instance <processor> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Micro\kcpsm6_design_template.v" line 197: Output port <rdl> of the instance <program_rom> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <interrupt> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
 Unit <pico> synthesized.
 
 Synthesizing Unit <kcpsm6>.
-    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\kcpsm6.v".
+    Related source file is "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Micro\kcpsm6.v".
         hwbuild = 8'b00000000
         interrupt_vector = 12'b001111111111
         scratch_pad_memory_size = 64
@@ -485,7 +485,7 @@ Synthesizing Unit <kcpsm6>.
 Unit <kcpsm6> synthesized.
 
 Synthesizing Unit <control>.
-    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\control.v".
+    Related source file is "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Micro\control.v".
         C_JTAG_LOADER_ENABLE = 0
         C_FAMILY = "7S"
         C_RAM_SIZE_KWORDS = 1
@@ -495,7 +495,7 @@ Synthesizing Unit <control>.
 Unit <control> synthesized.
 
 Synthesizing Unit <deco_id>.
-    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\deco id\decoid.v".
+    Related source file is "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\deco id\decoid.v".
     Summary:
 	no macro.
 Unit <deco_id> synthesized.
@@ -802,12 +802,12 @@ interrupt_OBUF |    3.590|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 11.05 secs
+Total REAL time to Xst completion: 25.00 secs
+Total CPU time to Xst completion: 25.81 secs
  
 --> 
 
-Total memory usage is 405744 kilobytes
+Total memory usage is 252184 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   26 (   0 filtered)

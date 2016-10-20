@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/User/Documents/Proyecto_3_grupo_7_II_2016/codigos/Micro/pico/ModuloRTC.xst" -ofn "C:/Users/User/Documents/Proyecto_3_grupo_7_II_2016/codigos/Micro/pico/ModuloRTC.syr" 
