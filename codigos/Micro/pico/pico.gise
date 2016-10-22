@@ -22,6 +22,9 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="pico.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Latch_entrada.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Latch_entrada.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Latch_entrada.xst"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="ModuloRTC.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="ModuloRTC.lso"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="ModuloRTC.ngc"/>
@@ -89,6 +92,9 @@
     <transform xil_pn:end_ts="1476923829" xil_pn:in_ck="7491358244296593820" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1476923829">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="../../Nueva carpeta/ModuloRTC.v"/>
       <outfile xil_pn:name="../../Nueva carpeta/Mux2x7.v"/>
       <outfile xil_pn:name="../../Nueva carpeta/control_principal_rtc.v"/>
@@ -120,6 +126,7 @@
     <transform xil_pn:end_ts="1476923829" xil_pn:in_ck="7491358244296593820" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1476923829">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="../../Nueva carpeta/ModuloRTC.v"/>
       <outfile xil_pn:name="../../Nueva carpeta/Mux2x7.v"/>
       <outfile xil_pn:name="../../Nueva carpeta/control_principal_rtc.v"/>
@@ -139,6 +146,8 @@
     <transform xil_pn:end_ts="1476923835" xil_pn:in_ck="7491358244296593820" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5741038178725618983" xil_pn:start_ts="1476923829">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ModuloRTC_tb_beh.prj"/>
@@ -151,6 +160,7 @@
     <transform xil_pn:end_ts="1476923836" xil_pn:in_ck="-8735784483394028666" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7749875094818039524" xil_pn:start_ts="1476923835">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ModuloRTC_tb_isim_beh.wdb"/>
@@ -190,7 +200,10 @@
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ModuloRTC.lso"/>
       <outfile xil_pn:name="ModuloRTC.ngc"/>
       <outfile xil_pn:name="ModuloRTC.ngr"/>
