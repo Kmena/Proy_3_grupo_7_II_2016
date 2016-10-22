@@ -78,7 +78,7 @@ module ControlVGACentral_MemoryPointed(
 		if(Port_ID == 8'd2 && Read_Strobe)
 			OUT_DATA = {7'd0, ~VSync};
 		else
-			OUT_DATA = 8'hFF;
+			OUT_DATA = 8'h00;
 	end
 	always @(posedge CLK)
 	begin
