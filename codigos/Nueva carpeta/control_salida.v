@@ -78,7 +78,7 @@ begin
   AD <= 1'b1;
   RD <= 1'b1;
   WR <= 1'b1;
-  data_out=8'd0;
+  data_out<=8'd0;
   final <= 1'b0;
   contador <=0;
   escreg<=0;

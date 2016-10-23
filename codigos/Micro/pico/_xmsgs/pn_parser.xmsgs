@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proyecto_3_grupo_7_II_2016/codigos/Empaquetado_total.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Empaquetado_total.v&quot; into library work</arg>
 </msg>
 
 </messages>

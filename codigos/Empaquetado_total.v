@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Empaquetado_total(clk,reset,R,G,B,HSync,VSync,PosX,PosY,PS2_Clock,PS2_Data,datRTC,CS,AD,RD,WR,pwm_out);
+module Empaquetado_total(clk,reset,R,G,B,HSync,VSync,PosX,PosY,PS2_Clock,PS2_Data,datRTC,CS,AD,RD,WR,pwm_out,irq);
 	//input general
 	input clk,reset;
 	//port id, output input port
@@ -43,7 +43,7 @@ module Empaquetado_total(clk,reset,R,G,B,HSync,VSync,PosX,PosY,PS2_Clock,PS2_Dat
 	//output sonido
 	output pwm_out;
 	
-	ControlVGACentral_MemoryPointed VGA(.CLK(clk),.RESET(reset),.Port_ID(id_port),.IN_DATA(datooutmicro),.Read_Strobe(readstrobe),.Write_Strobe(writestrobe),.OUT_DATA(datoVGA),.R(R),.G(G),.B(B),.HSync(Hsync),.VSync(Vsync),.PosX(PosX),.PosY(PosY));
+	ControlVGACentral_MemoryPointed VGA(.CLK(clk),.RESET(reset),.Port_ID(id_port),.IN_DATA(datooutmicro),.Read_Strobe(readstrobe),.Write_Strobe(writestrobe),.OUT_DATA(datoVGA),.R(R),.G(G),.B(B),.HSync(HSync),.VSync(VSync),.PosX(PosX),.PosY(PosY));
 	Keyboard teclado(.CLK(clk),.RESET(reset),.Port_ID(id_port),.Read_Strobe(readstrobe),.Keyboard_Output(datointeclado),.PS2_Clock(PS2_Clock),.PS2_Data(PS2_Data));
 	ModuloRTC RTC(.clk(clk),.reset(reset),.data_out(datRTC),.data_out_micro(datoinRTC),.dat_RTC(datRTC),.CS(CS),.AD(AD),.RD(RD),.WR(WR),.chipsel(actRTC),.writestrobe(writestrobe),.readstrobe(readstrobe),.irq(irq),.dir_in(id_port),.dato_in(datooutmicro));
 	empaquetado_audio sonido(.clk(clk),.reset(reset),.act_sonido(actSonido),.data_in(datooutmicro),.pwm_out(pwm_out));
