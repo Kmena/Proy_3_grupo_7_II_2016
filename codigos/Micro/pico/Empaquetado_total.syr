@@ -1,0 +1,208 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.28 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.28 secs
+ 
+--> Reading design: Empaquetado_total.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Empaquetado_total.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Empaquetado_total"
+Output Format                      : NGC
+Target Device                      : xc7a100t-1-csg324
+
+---- Source Options
+Top Module Name                    : Empaquetado_total
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\teclado\build\1.0\debouncer.v" into library work
+Parsing module <debouncer>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Micro\kcpsm6.v" into library work
+Parsing module <kcpsm6>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Micro\control.v" into library work
+Parsing module <control>.
+Parsing module <jtag_loader_6>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\controlVGA\VROMswithBlue.v" into library work
+Parsing module <VROMswithBlue>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\controlVGA\generadorVsync.v" into library work
+Parsing module <generadorVsync>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\controlVGA\generadorHsync.v" into library work
+Parsing module <generadorHsync>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\controlVGA\generadorBlank.v" into library work
+Parsing module <generadorBlank>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\controlVGA\contadorvertical.v" into library work
+Parsing module <contadorvertical>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\controlVGA\contadorhorizontal.v" into library work
+Parsing module <contadorhorizontal>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\audio\reset.v" into library work
+Parsing module <reset>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\audio\div_frecuencia.v" into library work
+Parsing module <div_frecuencia>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\audio\counter.v" into library work
+Parsing module <counter>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\audio\contador2.v" into library work
+Parsing module <contador2>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\teclado\build\1.0\PS2Receiver.v" into library work
+Parsing module <PS2Receiver>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\teclado\build\1.0\Decodificador_Keyboard_ID.v" into library work
+Parsing module <Port_ID_Decoder>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\teclado\build\1.0\ControlKB.v" into library work
+Parsing module <ControlKB>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Nueva carpeta\or2.v" into library work
+Parsing module <or2>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Nueva carpeta\Mux2x7.v" into library work
+Parsing module <Mux2x7>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Nueva carpeta\memoria_DRULC.v" into library work
+Parsing module <memoria_DMULC>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Nueva carpeta\lectura.v" into library work
+Parsing module <lectura>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Nueva carpeta\escritura.v" into library work
+Parsing module <escritura>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Nueva carpeta\control_salida.v" into library work
+Parsing module <control_salida>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Nueva carpeta\control_principal_rtc.v" into library work
+Parsing module <control_principal_rtc>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Micro\mux3x7.v" into library work
+Parsing module <mux3x7>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Micro\kcpsm6_design_template.v" into library work
+Parsing module <pico>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\deco id\decoid.v" into library work
+Parsing module <deco_id>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\controlVGA\SyncCounters.v" into library work
+Parsing module <SyncCounters>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\controlVGA\PunterosVGA_MemoryPointed.v" into library work
+Parsing module <PunterosVGA_MemoryPointed>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\controlVGA\ControlSalidaVGA.v" into library work
+Parsing module <ControlSalidaVGA>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\audio\pwm.v" into library work
+Parsing module <pwm>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\audio\Latch_entrada.v" into library work
+Parsing module <Latch_entrada>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\teclado\build\1.0\Keyboard.v" into library work
+Parsing module <Keyboard>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Nueva carpeta\ModuloRTC.v" into library work
+Parsing module <ModuloRTC>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Micro\encapsulado_micro.v" into library work
+Parsing module <encapsulado_micro>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\controlVGA\ControlVGACentralWithBlue.v" into library work
+Parsing module <ControlVGACentral_MemoryPointed>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\audio\empaquetado_audio.v" into library work
+Parsing module <empaquetado_audio>.
+Analyzing Verilog file "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Empaquetado_total.v" into library work
+Parsing module <Empaquetado_total>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Empaquetado_total>.
+
+Elaborating module <ControlVGACentral_MemoryPointed>.
+
+Elaborating module <SyncCounters>.
+
+Elaborating module <contadorhorizontal>.
+
+Elaborating module <contadorvertical>.
+
+Elaborating module <generadorHsync>.
+
+Elaborating module <generadorVsync>.
+
+Elaborating module <generadorBlank>.
+
+Elaborating module <PunterosVGA_MemoryPointed>.
+
+Elaborating module <VROMswithBlue>.
+Reading initialization file \":\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\controlVGA\/Numeros.png.hex\".
+Reading initialization file \":\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\controlVGA\/Interfaz.png.hex\".

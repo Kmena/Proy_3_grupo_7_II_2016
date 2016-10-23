@@ -24,8 +24,6 @@ module Latch_entrada(clk,reset,en,data_in,out);
 	output out;
 	reg out;
 	
-	assign data_in [7:1] = 7'b0;
-	
 	always @ (posedge clk)
 	begin
 	if(reset == 1'b1)
@@ -33,7 +31,10 @@ module Latch_entrada(clk,reset,en,data_in,out);
 	else
 	begin
 		if(en ==1'b1)
-			out <= ~data_in[0];
+			if(data_in == 8'b1)
+				out <= 1'b0;
+			else
+				out <= 1'b1;
 		else
 			out<=out;
 	end

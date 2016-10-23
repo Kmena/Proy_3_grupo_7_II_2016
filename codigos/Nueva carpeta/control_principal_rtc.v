@@ -168,7 +168,7 @@ module control_principal_rtc(clk,reset,cs,writestrobe,readstrobe,dir,dato,memori
 		end
 	   finesc:
 		begin
-			datoout<=1;
+			datoout<=8'd1;
 			actesc<=0;
 			actlec<=0;
 		end
@@ -186,7 +186,7 @@ module control_principal_rtc(clk,reset,cs,writestrobe,readstrobe,dir,dato,memori
 		end
 	   noactlec:
 		begin
-			datoout<=1;
+			datoout<=8'd1;
 			actesc<=0;
 			actlec<=0;
 		end

@@ -1,5 +1,3 @@
-
-
 call inicializacion
 ciclo_principal:
 call RTC
@@ -26,6 +24,14 @@ call write_start
 load s2,00001000'b
 output s2,01
 call write_start
+;ciclo de escritura en cero
+load s0,16'd
+load s1,00
+ciclo_cero:
+add s0,01
+output s1,(s0)
+test s0,25
+jump nz, ciclo_cero
 return
 ;fin de llamada de inicicalizacion
 
@@ -81,23 +87,16 @@ fetch s2,(s1)
 output s2,(s0)
 test s0,50'd
 jump nz,ciclo_VGA
-fetch s3,26'd  ;direccion de cambio????? 
+fetch s3,26'd  ;puntero
 output s3,49'd
 fetch s3,10'd  ;irq
 output s3,50'd
-test s3,01
-jump z,alarma
-load s4,00
-output s4,14'd
-fin:
+output s3,14'd
+fetch s3,28'd  ;timer activo
+output s3,51'd
 return
 
-alarma:
-load s4,01
-output s4,14'd
-jump fin
 
-;fin de inicializacion
 write_start:
 input s1,(s0)
 test s1,01
