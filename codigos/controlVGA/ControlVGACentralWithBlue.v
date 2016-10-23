@@ -30,14 +30,12 @@ module ControlVGACentral_MemoryPointed(
 		output [3:0] G,
 		output [3:0] B,
 		output HSync,
-		output VSync,
-		output [9:0] PosX, 
-		output [9:0] PosY
+		output VSync
     );
 
 	
 	wire BLANK;
-	//wire [9:0] PosX, PosY;
+	wire [9:0] PosX, PosY;
 	wire [5:0] RGB;
 
 	// Vincular Maquina de Sincronia
@@ -78,7 +76,7 @@ module ControlVGACentral_MemoryPointed(
 		if(Port_ID == 8'd2 && Read_Strobe)
 			OUT_DATA = {7'd0, ~VSync};
 		else
-			OUT_DATA = 8'hFF;
+			OUT_DATA = 8'h00;
 	end
 	always @(posedge CLK)
 	begin

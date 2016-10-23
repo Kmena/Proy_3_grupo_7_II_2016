@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-10-22T19:13:03</DateModified>
+  <DateModified>2016-10-23T08:33:29</DateModified>
   <ModuleName>Empaquetado_total</ModuleName>
-  <SummaryTimeStamp>2016-10-22T19:10:43</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/User/Documents/Proyecto_3_grupo_7_II_2016/codigos/Micro/pico/iseconfig/ModuloRTC.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/User/Documents/Proyecto_3_grupo_7_II_2016/codigos/Micro/pico</ImplementationReportsDirectory>
-  <DateInitialized>2016-10-22T18:26:58</DateInitialized>
+  <SummaryTimeStamp>2016-10-23T08:21:16</SummaryTimeStamp>
+  <SavedFilePath>/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/pico/iseconfig/ModuloRTC.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/pico/</ImplementationReportsDirectory>
+  <DateInitialized>2016-10-22T18:01:50</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>
