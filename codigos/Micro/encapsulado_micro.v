@@ -35,9 +35,10 @@ module encapsulado_micro(
 	output actsonido, 
 	output [7:0] dir
    );
-	wire [7:0]		port_id;
+	wire [7:0]		in_port;
 	wire write_strobe;
 	wire k_write_strobe;	
+	wire [7:0] port_id;
 	
 	or2 or2_2(.dato1(write_strobe),.dato2(k_write_strobe),.salida(writestrobe));
 	pico piko(.port_id(port_id),.out_port(out_port),.in_port(in_port),.write_strobe(write_strobe),.k_write_strobe(k_write_strobe),.read_strobe(read_strobe),.interrupt(interrupt),.interrupt_ack(interrupt_ack),.clk(clk),.kcpsm6_reset(kcpsm6_reset));

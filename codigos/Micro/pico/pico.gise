@@ -33,188 +33,37 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Empaquetado_total_envsettings.html"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Empaquetado_total_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Empaquetado_total_xst.xrpt"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Latch_entrada.prj"/>
-    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Latch_entrada.stx"/>
-    <file xil_pn:fileType="FILE_XST" xil_pn:name="Latch_entrada.xst"/>
-    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="ModuloRTC.cmd_log"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="ModuloRTC.lso"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="ModuloRTC.ngc"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="ModuloRTC.ngr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ModuloRTC.prj"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="ModuloRTC.stx"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="ModuloRTC.syr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="ModuloRTC.xst"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ModuloRTC_summary.html"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ModuloRTC_tb_beh.prj"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ModuloRTC_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ModuloRTC_tb_isim_beh.wdb"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ModuloRTC_tb_stx_beh.prj"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ModuloRTC_xst.xrpt"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
-    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="control_principal_rtc.cmd_log"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="control_principal_rtc.lso"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="control_principal_rtc.ngc"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="control_principal_rtc.ngr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="control_principal_rtc.prj"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="control_principal_rtc.stx"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="control_principal_rtc.syr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="control_principal_rtc.xst"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="control_principal_rtc_envsettings.html"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="control_principal_rtc_summary.html"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="control_principal_rtc_xst.xrpt"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="control_salida_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="encapsulado_micro.cmd_log"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="encapsulado_micro.lso"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="encapsulado_micro.ngc"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="encapsulado_micro.ngr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="encapsulado_micro.prj"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="encapsulado_micro.stx"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="encapsulado_micro.syr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="encapsulado_micro.xst"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="encapsulado_micro_envsettings.html"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="encapsulado_micro_summary.html"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="encapsulado_micro_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="encapsulado_micro_xst.xrpt"/>
-    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
-    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
-    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="pico.cmd_log"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="pico.lso"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="pico.ngc"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="pico.ngr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pico.prj"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="pico.stx"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="pico.syr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="pico.xst"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="pico_envsettings.html"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="pico_summary.html"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="pico_xst.xrpt"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1476905406" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1476905406">
+    <transform xil_pn:end_ts="1477185199" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="3470879507694620846" xil_pn:start_ts="1477185199">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1476923829" xil_pn:in_ck="7491358244296593820" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1476923829">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="../../Nueva carpeta/ModuloRTC.v"/>
-      <outfile xil_pn:name="../../Nueva carpeta/Mux2x7.v"/>
-      <outfile xil_pn:name="../../Nueva carpeta/control_principal_rtc.v"/>
-      <outfile xil_pn:name="../../Nueva carpeta/control_salida.v"/>
-      <outfile xil_pn:name="../../Nueva carpeta/escritura.v"/>
-      <outfile xil_pn:name="../../Nueva carpeta/lectura.v"/>
-      <outfile xil_pn:name="../../Nueva carpeta/memoria_DRULC.v"/>
-      <outfile xil_pn:name="../../Nueva carpeta/or2.v"/>
-      <outfile xil_pn:name="../../deco id/decoid.v"/>
-      <outfile xil_pn:name="../control.v"/>
-      <outfile xil_pn:name="../encapsulado_micro.v"/>
-      <outfile xil_pn:name="../encapsulado_micro_tb.v"/>
-      <outfile xil_pn:name="../kcpsm6.v"/>
-      <outfile xil_pn:name="../kcpsm6_design_template.v"/>
-      <outfile xil_pn:name="ModuloRTC_tb.v"/>
-    </transform>
-    <transform xil_pn:end_ts="1476922633" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-1957849880170517403" xil_pn:start_ts="1476922633">
+    <transform xil_pn:end_ts="1477185199" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-7273748642243781900" xil_pn:start_ts="1477185199">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1476922633" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6012959717534108157" xil_pn:start_ts="1476922633">
+    <transform xil_pn:end_ts="1477185199" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1477185199">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1476921625" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="5387533530697396788" xil_pn:start_ts="1476921625">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-    </transform>
-    <transform xil_pn:end_ts="1476923829" xil_pn:in_ck="7491358244296593820" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1476923829">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="../../Nueva carpeta/ModuloRTC.v"/>
-      <outfile xil_pn:name="../../Nueva carpeta/Mux2x7.v"/>
-      <outfile xil_pn:name="../../Nueva carpeta/control_principal_rtc.v"/>
-      <outfile xil_pn:name="../../Nueva carpeta/control_salida.v"/>
-      <outfile xil_pn:name="../../Nueva carpeta/escritura.v"/>
-      <outfile xil_pn:name="../../Nueva carpeta/lectura.v"/>
-      <outfile xil_pn:name="../../Nueva carpeta/memoria_DRULC.v"/>
-      <outfile xil_pn:name="../../Nueva carpeta/or2.v"/>
-      <outfile xil_pn:name="../../deco id/decoid.v"/>
-      <outfile xil_pn:name="../control.v"/>
-      <outfile xil_pn:name="../encapsulado_micro.v"/>
-      <outfile xil_pn:name="../encapsulado_micro_tb.v"/>
-      <outfile xil_pn:name="../kcpsm6.v"/>
-      <outfile xil_pn:name="../kcpsm6_design_template.v"/>
-      <outfile xil_pn:name="ModuloRTC_tb.v"/>
-    </transform>
-    <transform xil_pn:end_ts="1476923835" xil_pn:in_ck="7491358244296593820" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5741038178725618983" xil_pn:start_ts="1476923829">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="ModuloRTC_tb_beh.prj"/>
-      <outfile xil_pn:name="ModuloRTC_tb_isim_beh.exe"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
-    </transform>
-    <transform xil_pn:end_ts="1476923836" xil_pn:in_ck="-8735784483394028666" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7749875094818039524" xil_pn:start_ts="1476923835">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="ModuloRTC_tb_isim_beh.wdb"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
-    </transform>
-    <transform xil_pn:end_ts="1476911623" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1476911623">
+    <transform xil_pn:end_ts="1477185199" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="1862810405752104208" xil_pn:start_ts="1477185199">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1477182419" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="3470879507694620846" xil_pn:start_ts="1477182419">
+    <transform xil_pn:end_ts="1477185199" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="3206529612922900429" xil_pn:start_ts="1477185199">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1477182419" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-7273748642243781900" xil_pn:start_ts="1477182419">
+    <transform xil_pn:end_ts="1477185199" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="1950454600968841406" xil_pn:start_ts="1477185199">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1477182419" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1477182419">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1477182419" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="1862810405752104208" xil_pn:start_ts="1477182419">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1477182419" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="3206529612922900429" xil_pn:start_ts="1477182419">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1477182419" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="1950454600968841406" xil_pn:start_ts="1477182419">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1477184281" xil_pn:in_ck="305024736576539940" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="3821959566276664881" xil_pn:start_ts="1477184098">
+    <transform xil_pn:end_ts="1477186408" xil_pn:in_ck="305024736576539940" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="3821959566276664881" xil_pn:start_ts="1477186167">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -226,10 +75,7 @@
       <outfile xil_pn:name="Empaquetado_total.syr"/>
       <outfile xil_pn:name="Empaquetado_total.xst"/>
       <outfile xil_pn:name="Empaquetado_total_xst.xrpt"/>
-      <outfile xil_pn:name="ModuloRTC.ngr"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="control_principal_rtc.ngr"/>
-      <outfile xil_pn:name="encapsulado_micro.ngr"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
