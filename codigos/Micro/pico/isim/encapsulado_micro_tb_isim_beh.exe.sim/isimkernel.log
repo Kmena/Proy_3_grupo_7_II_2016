@@ -2,9 +2,9 @@ Command line:
    encapsulado_micro_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  59700
+     -socket  60116
 
-Sun Oct 23 10:02:38 2016
+Sun Oct 23 15:21:24 2016
 
 
- Elaboration Time: 0.265202 sec
+ Elaboration Time: 0.280801 sec

@@ -8,9 +8,9 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/ControlVGACentral_MemoryPointed C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|controlVGA|ControlVGACentralWithBlue.v</ClosedNode>
+         <ClosedNode>/Empaquetado_total C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|Empaquetado_total.v/RTC - ModuloRTC</ClosedNode>
          <ClosedNode>/Empaquetado_total C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|Empaquetado_total.v/VGA - ControlVGACentral_MemoryPointed</ClosedNode>
-         <ClosedNode>/Empaquetado_total C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|Empaquetado_total.v/micro - encapsulado_micro</ClosedNode>
-         <ClosedNode>/Empaquetado_total C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|Empaquetado_total.v/micro - encapsulado_micro/piko - pico</ClosedNode>
+         <ClosedNode>/Empaquetado_total C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|Empaquetado_total.v/micro - encapsulado_micro/piko - pico/program_rom - control</ClosedNode>
          <ClosedNode>/Empaquetado_total C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|Empaquetado_total.v/sonido - empaquetado_audio</ClosedNode>
          <ClosedNode>/Empaquetado_total C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|Empaquetado_total.v/teclado - Keyboard</ClosedNode>
          <ClosedNode>/Keyboard C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|teclado|build|1.0|Keyboard.v</ClosedNode>
@@ -20,13 +20,13 @@
          <ClosedNode>/pwm C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|audio|pwm.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Empaquetado_total (C:/Users/User/Documents/Proyecto_3_grupo_7_II_2016/codigos/Empaquetado_total.v)</SelectedItem>
+         <SelectedItem>program_rom - control (C:/Users/User/Documents/Proyecto_3_grupo_7_II_2016/codigos/Micro/pico/control.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >9</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001e3000000020000000000000000000000000200000064ffffffff000000810000000300000002000001e30000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>Empaquetado_total (C:/Users/User/Documents/Proyecto_3_grupo_7_II_2016/codigos/Empaquetado_total.v)</CurrentItem>
+      <CurrentItem>program_rom - control (C:/Users/User/Documents/Proyecto_3_grupo_7_II_2016/codigos/Micro/pico/control.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
@@ -37,13 +37,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Check Syntax</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000e7000000010000000100000000000000000000000064ffffffff000000810000000000000001000000e70000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Check Syntax</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -88,8 +88,15 @@
          <ClosedNode>/ControlVGA_tb C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|controlVGA|ControlVGA_tb.v</ClosedNode>
          <ClosedNode>/ControlVGAwithBlue_tb C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|controlVGA|ControlVGAwithBlue_tb.v</ClosedNode>
          <ClosedNode>/Empaquetado_total C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|Empaquetado_total.v</ClosedNode>
+         <ClosedNode>/Empaquetado_total C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|Empaquetado_total.v/RTC - ModuloRTC</ClosedNode>
+         <ClosedNode>/Empaquetado_total C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|Empaquetado_total.v/VGA - ControlVGACentral_MemoryPointed</ClosedNode>
+         <ClosedNode>/Empaquetado_total C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|Empaquetado_total.v/micro - encapsulado_micro</ClosedNode>
+         <ClosedNode>/Empaquetado_total C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|Empaquetado_total.v/sonido - empaquetado_audio</ClosedNode>
+         <ClosedNode>/Empaquetado_total C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|Empaquetado_total.v/teclado - Keyboard</ClosedNode>
+         <ClosedNode>/FlipFlopRS_tb C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|Nueva carpeta|FlipFlopRS_tb.v</ClosedNode>
          <ClosedNode>/Keyboard_tb C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|teclado|build|1.0|Keyboard_tb.v</ClosedNode>
          <ClosedNode>/ModuloRTC_tb C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|Micro|pico|ModuloRTC_tb.v</ClosedNode>
+         <ClosedNode>/control C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|Micro|pico|control.v</ClosedNode>
          <ClosedNode>/empaquetado_audio C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|audio|empaquetado_audio.v</ClosedNode>
          <ClosedNode>/encapsulado_micro_tb C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|Micro|encapsulado_micro_tb.v</ClosedNode>
          <ClosedNode>PROJECT</ClosedNode>
@@ -97,10 +104,10 @@
       <SelectedItems>
          <SelectedItem>encapsulado_micro_tb (C:/Users/User/Documents/Proyecto_3_grupo_7_II_2016/codigos/Micro/encapsulado_micro_tb.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000152000000020000000000000000000000000200000064ffffffff000000810000000300000002000001520000000100000003000000000000000100000003</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>encapsulado_micro_tb (C:/Users/User/Documents/Proyecto_3_grupo_7_II_2016/codigos/Micro/encapsulado_micro_tb.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
@@ -120,19 +127,18 @@
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>ISim Simulator</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>ISim Simulator</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>ISim Simulator</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <CurrentView>Behavioral Simulation</CurrentView>
 </Project>
 <?xml version="1.0" encoding="utf-8"?>
 <!--This is an ISE project configuration file.-->

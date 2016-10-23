@@ -1,6 +1,7 @@
+verilog work "control.v"
 verilog work "../kcpsm6.v"
-verilog work "../control.v"
 verilog work "../../Nueva carpeta/or2.v"
+verilog work "../../Nueva carpeta/FlipFlopRS.v"
 verilog work "../mux3x7.v"
 verilog work "../kcpsm6_design_template.v"
 verilog work "../../deco id/decoid.v"

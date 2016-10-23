@@ -25,7 +25,7 @@ module FlipFlopRS(S,R,Q);
 	
 	always @ (posedge S or negedge R)
 	begin
-		if(S==1'b1)
+		if(S==1'b1 && R==1'b0)
 			Q<=1'b1;
 		else
 		begin

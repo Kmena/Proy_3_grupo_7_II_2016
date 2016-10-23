@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.48 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.29 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.48 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.30 secs
  
 --> Reading design: Empaquetado_total.prj
 
@@ -191,8 +191,6 @@ Elaborating module <Empaquetado_total>.
 
 Elaborating module <ControlVGACentral_MemoryPointed>.
 
-Elaborating module <FlipFlopRS>.
-
 Elaborating module <SyncCounters>.
 
 Elaborating module <contadorhorizontal>.
@@ -254,6 +252,8 @@ Elaborating module <reset>.
 Elaborating module <contador2>.
 
 Elaborating module <encapsulado_micro>.
+WARNING:HDLCompiler:1127 - "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Micro\encapsulado_micro.v" Line 45: Assignment to writeS ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Micro\encapsulado_micro.v" Line 46: Assignment to writeS ignored, since the identifier is never used
 WARNING:HDLCompiler:1016 - "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Micro\kcpsm6_design_template.v" Line 193: Port rdl is not connected to this instance
 
 Elaborating module <pico>.
@@ -357,7 +357,11 @@ NIT_1B=256'b0,INIT_1C=256'b0,INIT_1D=256'b0,INIT_1E=256'b0,INIT_1F=256'b0,INIT_2
 Elaborating module <deco_id>.
 
 Elaborating module <mux3x7>.
+
+Elaborating module <FlipFlopRS>.
+WARNING:HDLCompiler:462 - "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Nueva carpeta\FlipFlopRS.v" Line 28: if-condition does not match any sensitivity list edge
 WARNING:HDLCompiler:1127 - "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Empaquetado_total.v" Line 67: Assignment to actTeclado ignored, since the identifier is never used
+WARNING:Xst:2972 - "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Micro\encapsulado_micro.v" line 46. All outputs of instance <or2_2> of block <or2> are unconnected in block <encapsulado_micro>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -383,6 +387,8 @@ Unit <Empaquetado_total> synthesized.
 
 Synthesizing Unit <ControlVGACentral_MemoryPointed>.
     Related source file is "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\controlVGA\ControlVGACentralWithBlue.v".
+WARNING:Xst:647 - Input <actVGA> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Read_Strobe> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 4-bit register for signal <MemAddr>.
     Found 8-bit register for signal <MemData>.
     Found 1-bit register for signal <Write>.
@@ -391,17 +397,10 @@ Synthesizing Unit <ControlVGACentral_MemoryPointed>.
 	inferred   2 Multiplexer(s).
 Unit <ControlVGACentral_MemoryPointed> synthesized.
 
-Synthesizing Unit <FlipFlopRS>.
-    Related source file is "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Nueva carpeta\FlipFlopRS.v".
-    Found 1-bit register for signal <Q>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <FlipFlopRS> synthesized.
-
 Synthesizing Unit <SyncCounters>.
     Related source file is "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\controlVGA\SyncCounters.v".
-    Found 10-bit subtractor for signal <CntX[9]_GND_13_o_sub_1_OUT> created at line 59.
-    Found 10-bit subtractor for signal <CntY[9]_GND_13_o_sub_2_OUT> created at line 60.
+    Found 10-bit subtractor for signal <CntX[9]_GND_11_o_sub_1_OUT> created at line 59.
+    Found 10-bit subtractor for signal <CntY[9]_GND_11_o_sub_2_OUT> created at line 60.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred   2 Multiplexer(s).
@@ -411,7 +410,7 @@ Synthesizing Unit <contadorhorizontal>.
     Related source file is "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\controlVGA\contadorhorizontal.v".
     Found 1-bit register for signal <vflag>.
     Found 12-bit register for signal <Horizontal>.
-    Found 12-bit adder for signal <Horizontal[11]_GND_14_o_add_3_OUT> created at line 38.
+    Found 12-bit adder for signal <Horizontal[11]_GND_12_o_add_3_OUT> created at line 38.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  13 D-type flip-flop(s).
@@ -420,7 +419,7 @@ Unit <contadorhorizontal> synthesized.
 Synthesizing Unit <contadorvertical>.
     Related source file is "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\controlVGA\contadorvertical.v".
     Found 10-bit register for signal <cntVertical>.
-    Found 10-bit adder for signal <cntVertical[9]_GND_15_o_add_2_OUT> created at line 27.
+    Found 10-bit adder for signal <cntVertical[9]_GND_13_o_add_2_OUT> created at line 27.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  10 D-type flip-flop(s).
@@ -428,7 +427,7 @@ Unit <contadorvertical> synthesized.
 
 Synthesizing Unit <generadorHsync>.
     Related source file is "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\controlVGA\generadorHsync.v".
-    Found 10-bit comparator greater for signal <GND_16_o_cntHorizontal[9]_LessThan_1_o> created at line 17
+    Found 10-bit comparator greater for signal <GND_14_o_cntHorizontal[9]_LessThan_1_o> created at line 17
     Found 10-bit comparator lessequal for signal <n0001> created at line 17
     Summary:
 	inferred   2 Comparator(s).
@@ -436,8 +435,8 @@ Unit <generadorHsync> synthesized.
 
 Synthesizing Unit <generadorVsync>.
     Related source file is "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\controlVGA\generadorVsync.v".
-    Found 10-bit comparator greater for signal <GND_17_o_cntVertical[9]_LessThan_1_o> created at line 18
-    Found 10-bit comparator greater for signal <cntVertical[9]_PWR_8_o_LessThan_2_o> created at line 18
+    Found 10-bit comparator greater for signal <GND_15_o_cntVertical[9]_LessThan_1_o> created at line 18
+    Found 10-bit comparator greater for signal <cntVertical[9]_PWR_7_o_LessThan_2_o> created at line 18
     Summary:
 	inferred   2 Comparator(s).
 Unit <generadorVsync> synthesized.
@@ -445,9 +444,9 @@ Unit <generadorVsync> synthesized.
 Synthesizing Unit <generadorBlank>.
     Related source file is "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\controlVGA\generadorBlank.v".
     Found 10-bit comparator lessequal for signal <n0000> created at line 28
-    Found 10-bit comparator greater for signal <PosX[9]_PWR_9_o_LessThan_2_o> created at line 28
+    Found 10-bit comparator greater for signal <PosX[9]_PWR_8_o_LessThan_2_o> created at line 28
     Found 10-bit comparator lessequal for signal <n0004> created at line 28
-    Found 10-bit comparator greater for signal <PosY[9]_GND_18_o_LessThan_4_o> created at line 28
+    Found 10-bit comparator greater for signal <PosY[9]_GND_16_o_LessThan_4_o> created at line 28
     Summary:
 	inferred   4 Comparator(s).
 Unit <generadorBlank> synthesized.
@@ -504,8 +503,8 @@ Synthesizing Unit <PunterosVGA_MemoryPointed>.
     Found 10-bit subtractor for signal <PosX[9]_newPointerX[9]_sub_197_OUT> created at line 511.
     Found 10-bit subtractor for signal <PosY[9]_newPointerY[9]_sub_198_OUT> created at line 512.
     Found 19-bit adder for signal <AddrInterfaz> created at line 152.
-    Found 10-bit adder for signal <unoffPointerY[9]_PWR_11_o_add_199_OUT> created at line 514.
-    Found 15-bit adder for signal <GND_19_o_PWR_11_o_add_201_OUT> created at line 516.
+    Found 10-bit adder for signal <unoffPointerY[9]_PWR_10_o_add_199_OUT> created at line 514.
+    Found 15-bit adder for signal <GND_17_o_PWR_10_o_add_201_OUT> created at line 516.
     Found 10x10-bit multiplier for signal <n0247> created at line 152.
     Found 6x4-bit multiplier for signal <n0321> created at line 514.
     Found 6x10-bit multiplier for signal <n0284> created at line 516.
@@ -515,7 +514,7 @@ Synthesizing Unit <PunterosVGA_MemoryPointed>.
     Found 10-bit comparator lessequal for signal <n0077> created at line 281
     Found 10-bit comparator lessequal for signal <n0106> created at line 463
     Found 10-bit comparator lessequal for signal <n0108> created at line 463
-    Found 10-bit comparator lessequal for signal <unoffPointerY[9]_GND_19_o_LessThan_204_o> created at line 520
+    Found 10-bit comparator lessequal for signal <unoffPointerY[9]_GND_17_o_LessThan_204_o> created at line 520
     Summary:
 	inferred   3 Multiplier(s).
 	inferred   5 Adder/Subtractor(s).
@@ -577,7 +576,7 @@ Synthesizing Unit <PS2Receiver>.
     Found 16-bit register for signal <keycode>.
     Found 8-bit register for signal <dataprev>.
     Found 1-bit register for signal <flag>.
-    Found 4-bit adder for signal <cnt[3]_GND_26_o_add_4_OUT> created at line 70.
+    Found 4-bit adder for signal <cnt[3]_GND_24_o_add_4_OUT> created at line 70.
     Found 4-bit comparator greater for signal <n0003> created at line 70
     Found 8-bit comparator equal for signal <n0019> created at line 76
     Summary:
@@ -595,8 +594,8 @@ Synthesizing Unit <debouncer>.
     Found 5-bit register for signal <cnt1>.
     Found 1-bit register for signal <Iv1>.
     Found 1-bit register for signal <O0>.
-    Found 5-bit adder for signal <cnt0[4]_GND_27_o_add_3_OUT> created at line 38.
-    Found 5-bit adder for signal <cnt1[4]_GND_27_o_add_8_OUT> created at line 46.
+    Found 5-bit adder for signal <cnt0[4]_GND_25_o_add_3_OUT> created at line 38.
+    Found 5-bit adder for signal <cnt1[4]_GND_25_o_add_8_OUT> created at line 46.
     Found 1-bit comparator equal for signal <I0_Iv0_equal_2_o> created at line 36
     Found 1-bit comparator equal for signal <I1_Iv1_equal_7_o> created at line 44
     Summary:
@@ -619,9 +618,9 @@ Synthesizing Unit <ControlKB>.
     Found 16-bit register for signal <KBBuffer_Before>.
     Found 2-bit register for signal <VirtualPos>.
     Found 4-bit register for signal <AddressBuffer>.
-    Found 4-bit subtractor for signal <AddressBuffer[3]_GND_29_o_sub_15_OUT> created at line 152.
-    Found 4-bit adder for signal <AddressBuffer[3]_GND_29_o_add_12_OUT> created at line 147.
-    Found 2-bit adder for signal <VirtualPos[1]_GND_29_o_add_13_OUT> created at line 151.
+    Found 4-bit subtractor for signal <AddressBuffer[3]_GND_27_o_sub_15_OUT> created at line 152.
+    Found 4-bit adder for signal <AddressBuffer[3]_GND_27_o_add_12_OUT> created at line 147.
+    Found 2-bit adder for signal <VirtualPos[1]_GND_27_o_add_13_OUT> created at line 151.
     Found 16-bit comparator not equal for signal <n0012> created at line 107
     Summary:
 	inferred   2 Adder/Subtractor(s).
@@ -781,7 +780,7 @@ Synthesizing Unit <control_salida>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 5-bit adder for signal <contador[4]_GND_36_o_add_16_OUT> created at line 89.
+    Found 5-bit adder for signal <contador[4]_GND_34_o_add_16_OUT> created at line 89.
     Found 8-bit comparator lessequal for signal <n0018> created at line 151
     Found 8-bit comparator lessequal for signal <n0020> created at line 151
     Found 8-bit comparator lessequal for signal <n0023> created at line 151
@@ -956,7 +955,7 @@ Unit <pwm> synthesized.
 Synthesizing Unit <counter>.
     Related source file is "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\audio\counter.v".
     Found 5-bit register for signal <counter_out>.
-    Found 5-bit adder for signal <counter_out[4]_GND_41_o_add_0_OUT> created at line 32.
+    Found 5-bit adder for signal <counter_out[4]_GND_39_o_add_0_OUT> created at line 32.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   5 D-type flip-flop(s).
@@ -966,7 +965,7 @@ Synthesizing Unit <div_frecuencia>.
     Related source file is "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\audio\div_frecuencia.v".
     Found 1-bit register for signal <clk_out>.
     Found 17-bit register for signal <contador>.
-    Found 17-bit adder for signal <contador[16]_GND_42_o_add_2_OUT> created at line 42.
+    Found 17-bit adder for signal <contador[16]_GND_40_o_add_2_OUT> created at line 42.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  18 D-type flip-flop(s).
@@ -985,7 +984,7 @@ Unit <reset> synthesized.
 Synthesizing Unit <contador2>.
     Related source file is "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\audio\contador2.v".
     Found 17-bit register for signal <counter_out>.
-    Found 17-bit adder for signal <counter_out[16]_GND_44_o_add_0_OUT> created at line 32.
+    Found 17-bit adder for signal <counter_out[16]_GND_42_o_add_0_OUT> created at line 32.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  17 D-type flip-flop(s).
@@ -993,6 +992,7 @@ Unit <contador2> synthesized.
 
 Synthesizing Unit <encapsulado_micro>.
     Related source file is "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Micro\encapsulado_micro.v".
+INFO:Xst:3210 - "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Micro\encapsulado_micro.v" line 46: Output port <salida> of the instance <or2_2> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <encapsulado_micro> synthesized.
@@ -1259,6 +1259,13 @@ Synthesizing Unit <mux3x7>.
 	inferred   2 Multiplexer(s).
 Unit <mux3x7> synthesized.
 
+Synthesizing Unit <FlipFlopRS>.
+    Related source file is "C:\Users\User\Documents\Proyecto_3_grupo_7_II_2016\codigos\Nueva carpeta\FlipFlopRS.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <Q>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 Latch(s).
+Unit <FlipFlopRS> synthesized.
+
 =========================================================================
 HDL Synthesis Report
 
@@ -1281,8 +1288,8 @@ Macro Statistics
  4-bit adder                                           : 1
  4-bit addsub                                          : 1
  5-bit adder                                           : 4
-# Registers                                            : 109
- 1-bit register                                        : 43
+# Registers                                            : 107
+ 1-bit register                                        : 41
  10-bit register                                       : 6
  12-bit register                                       : 1
  15-bit register                                       : 1
@@ -1293,6 +1300,8 @@ Macro Statistics
  5-bit register                                        : 5
  6-bit register                                        : 3
  8-bit register                                        : 37
+# Latches                                              : 1
+ 1-bit latch                                           : 1
 # Comparators                                          : 26
  1-bit comparator equal                                : 2
  10-bit comparator greater                             : 5
@@ -1337,8 +1346,8 @@ INFO:Xst:2261 - The FF/Latch <dataprev_7> in Unit <PS2> is equivalent to the fol
 INFO:Xst:2261 - The FF/Latch <dataprev_0> in Unit <PS2> is equivalent to the following FF/Latch, which will be removed : <keycode_0> 
 INFO:Xst:2261 - The FF/Latch <dataprev_1> in Unit <PS2> is equivalent to the following FF/Latch, which will be removed : <keycode_1> 
 INFO:Xst:2261 - The FF/Latch <dataprev_2> in Unit <PS2> is equivalent to the following FF/Latch, which will be removed : <keycode_2> 
-INFO:Xst:2261 - The FF/Latch <pwm_ref_1> in Unit <reset2> is equivalent to the following FF/Latch, which will be removed : <pwm_ref_2> 
 INFO:Xst:2261 - The FF/Latch <pwm_ref_0> in Unit <reset2> is equivalent to the following 2 FFs/Latches, which will be removed : <pwm_ref_3> <pwm_ref_4> 
+INFO:Xst:2261 - The FF/Latch <pwm_ref_1> in Unit <reset2> is equivalent to the following FF/Latch, which will be removed : <pwm_ref_2> 
 WARNING:Xst:1710 - FF/Latch <out> (without init value) has a constant value of 1 in block <entrada>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <pwm_ref_0> (without init value) has a constant value of 0 in block <reset2>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2404 -  FFs/Latches <pwm_ref<4:3>> (without init value) have a constant value of 0 in block <reset>.
@@ -1348,9 +1357,9 @@ The following registers are absorbed into counter <cnt>: 1 register on signal <c
 Unit <PS2Receiver> synthesized (advanced).
 
 Synthesizing (advanced) Unit <PunterosVGA_MemoryPointed>.
-	Multiplier <Mmult_n0284> in block <PunterosVGA_MemoryPointed> and adder/subtractor <Madd_GND_19_o_PWR_11_o_add_201_OUT> in block <PunterosVGA_MemoryPointed> are combined into a MAC<Maddsub_n0284>.
+	Multiplier <Mmult_n0284> in block <PunterosVGA_MemoryPointed> and adder/subtractor <Madd_GND_17_o_PWR_10_o_add_201_OUT> in block <PunterosVGA_MemoryPointed> are combined into a MAC<Maddsub_n0284>.
 	The following registers are also absorbed by the MAC: <AddrNumeros> in block <PunterosVGA_MemoryPointed>, <unoffPointerX> in block <PunterosVGA_MemoryPointed>.
-	Multiplier <Mmult_n0321> in block <PunterosVGA_MemoryPointed> and adder/subtractor <Madd_unoffPointerY[9]_PWR_11_o_add_199_OUT> in block <PunterosVGA_MemoryPointed> are combined into a MAC<Maddsub_n0321>.
+	Multiplier <Mmult_n0321> in block <PunterosVGA_MemoryPointed> and adder/subtractor <Madd_unoffPointerY[9]_PWR_10_o_add_199_OUT> in block <PunterosVGA_MemoryPointed> are combined into a MAC<Maddsub_n0321>.
 	The following registers are also absorbed by the MAC: <adjPointerY> in block <PunterosVGA_MemoryPointed>.
 	Multiplier <Mmult_n0247> in block <PunterosVGA_MemoryPointed> and adder/subtractor <Madd_AddrInterfaz> in block <PunterosVGA_MemoryPointed> are combined into a MAC<Maddsub_n0247>.
 Unit <PunterosVGA_MemoryPointed> synthesized (advanced).
@@ -1442,8 +1451,8 @@ Macro Statistics
  17-bit up counter                                     : 2
  4-bit up counter                                      : 1
  5-bit up counter                                      : 4
-# Registers                                            : 522
- Flip-Flops                                            : 522
+# Registers                                            : 520
+ Flip-Flops                                            : 520
 # Comparators                                          : 26
  1-bit comparator equal                                : 2
  10-bit comparator greater                             : 5
@@ -1484,7 +1493,6 @@ INFO:Xst:2261 - The FF/Latch <dataprev_0> in Unit <PS2Receiver> is equivalent to
 INFO:Xst:2261 - The FF/Latch <dataprev_1> in Unit <PS2Receiver> is equivalent to the following FF/Latch, which will be removed : <keycode_1> 
 INFO:Xst:2261 - The FF/Latch <dataprev_2> in Unit <PS2Receiver> is equivalent to the following FF/Latch, which will be removed : <keycode_2> 
 INFO:Xst:2261 - The FF/Latch <pwm_ref_1> in Unit <reset> is equivalent to the following FF/Latch, which will be removed : <pwm_ref_2> 
-WARNING:Xst:1710 - FF/Latch <sonido/entrada/out> (without init value) has a constant value of 1 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2146 - In block <Empaquetado_total>, Counter <sonido/sonido/cont_ref/counter_out> <sonido/sonido/counter1/counter_out> are equivalent, XST will keep only <sonido/sonido/cont_ref/counter_out>.
 Analyzing FSM <MFsm> for best encoding.
 Optimizing FSM <RTC/CPRTC/FSM_0> on signal <State[1:4]> with user encoding.
@@ -1539,8 +1547,27 @@ Optimizing FSM <RTC/COUT/FSM_3> on signal <state[1:3]> with user encoding.
  111   | 111
 -------------------
 WARNING:Xst:1710 - FF/Latch <Maddsub_n02841_0> (without init value) has a constant value of 0 in block <PunterosVGA_MemoryPointed>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <dirreg_4> in Unit <control_principal_rtc> is equivalent to the following FF/Latch, which will be removed : <dirreg_7> 
 INFO:Xst:2261 - The FF/Latch <activa> in Unit <escritura> is equivalent to the following FF/Latch, which will be removed : <escribe> 
+WARNING:Xst:1710 - FF/Latch <sonido/entrada/out> (without init value) has a constant value of 1 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:3001 - This design contains one or more registers or latches with an active
+   asynchronous set and asynchronous reset. While this circuit can be built,
+   it creates a sub-optimal implementation in terms of area, power and
+   performance. For a more optimal implementation Xilinx highly recommends
+   one of the following:
+
+          1) Remove either the set or reset from all registers and latches if
+             not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Artix7 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    micro/FF2/Q in unit <Empaquetado_total>
+
 
 Optimizing unit <kcpsm6> ...
 
@@ -1566,8 +1593,6 @@ Optimizing unit <debouncer> ...
 
 Optimizing unit <ControlKB> ...
 
-Optimizing unit <ModuloRTC> ...
-
 Optimizing unit <memoria_DMULC> ...
 
 Optimizing unit <control_principal_rtc> ...
@@ -1581,23 +1606,17 @@ INFO:Xst:2399 - RAMs <Memoryinput/Mram_Digitos3>, <Memoryinput/Mram_Digitos1> ar
 INFO:Xst:2399 - RAMs <Memoryinput/Mram_Digitos3>, <Memoryinput/Mram_Digitos5> are equivalent, second RAM is removed
 INFO:Xst:2399 - RAMs <Memoryinput/Mram_Digitos2>, <Memoryinput/Mram_Digitos6> are equivalent, second RAM is removed
 INFO:Xst:2399 - RAMs <Memoryinput/Mram_Digitos2>, <Memoryinput/Mram_Digitos4> are equivalent, second RAM is removed
-WARNING:Xst:1710 - FF/Latch <VGA/Pointers/MeM_2> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/MeM_3> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/MemData_0> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/MemData_1> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/MemData_2> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/MemData_3> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/MemData_4> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/MemData_5> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/MemData_6> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/MemData_7> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/MemAddr_0> (without init value) has a constant value of 1 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/MemAddr_1> (without init value) has a constant value of 1 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/MemAddr_2> (without init value) has a constant value of 1 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/MemAddr_3> (without init value) has a constant value of 1 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Write> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_02> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <RTC/memoria/memoriain_6> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_7> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_01> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_11> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_21> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_31> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_41> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_51> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_61> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_71> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_02> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_73> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_63> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_53> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
@@ -1611,37 +1630,25 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoria
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_52> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_42> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_32> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/cursorON> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_22> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_12> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/MeM_0> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/MeM_1> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_13> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_12> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_11> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_10> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_9> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_8> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_7> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_6> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_5> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_4> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_3> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_2> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_1> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_0> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <micro/piko/processor/sync_interrupt_flop> has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/clk_out> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <micro/piko/processor/sync_sleep_flop> has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_61> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_51> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_41> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_31> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_21> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_11> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_01> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_7> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_6> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/clk_out> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <micro/piko/processor/sync_interrupt_flop> has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_0> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_1> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_2> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_3> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_4> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_5> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_6> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_7> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_8> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_9> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_10> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_11> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_12> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_13> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_14> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_15> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/div/contador_16> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
@@ -1651,56 +1658,6 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoria
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_3> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_4> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RTC/memoria/memoriain_5> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/horReloj_1> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/horReloj_2> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/horReloj_3> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/horReloj_4> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/horReloj_5> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/horReloj_6> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/horReloj_7> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/monReloj_0> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/monReloj_1> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/monReloj_2> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/monReloj_3> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/monReloj_4> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/monReloj_5> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/monReloj_6> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/monReloj_7> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/yearReloj_0> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/dayReloj_0> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/dayReloj_1> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/dayReloj_2> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/dayReloj_3> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/dayReloj_4> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/dayReloj_5> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/dayReloj_6> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/dayReloj_7> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/minReloj_0> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/minReloj_1> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/minReloj_2> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/minReloj_3> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/minReloj_4> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/minReloj_5> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/minReloj_6> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/minReloj_7> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/horReloj_0> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/cont_ref/counter_out_15> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/cont_ref/counter_out_16> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/actCrono> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/ringCrono> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/segReloj_7> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/segReloj_6> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/segReloj_5> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/segReloj_4> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/segReloj_3> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/segReloj_2> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/segReloj_1> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/segReloj_0> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/Cursor_7> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/Cursor_6> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/Cursor_5> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/Cursor_4> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/Cursor_3> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/pwm_out> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/reset2/pwm_ref_1> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/cont_ref/counter_out_0> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
@@ -1718,42 +1675,8 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/cont_
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/cont_ref/counter_out_12> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/cont_ref/counter_out_13> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/cont_ref/counter_out_14> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/minCrono_1> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/minCrono_0> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/segCrono_7> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/segCrono_6> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/segCrono_5> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/segCrono_4> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/segCrono_3> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/segCrono_2> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/segCrono_1> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/segCrono_0> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/yearReloj_7> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/yearReloj_6> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/yearReloj_5> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/yearReloj_4> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/yearReloj_3> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/yearReloj_2> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/yearReloj_1> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/Cursor_2> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/Cursor_1> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/Cursor_0> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/horCrono_7> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/horCrono_6> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/horCrono_5> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/horCrono_4> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/horCrono_3> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/horCrono_2> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/horCrono_1> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/horCrono_0> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/minCrono_7> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/minCrono_6> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/minCrono_5> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/minCrono_4> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/minCrono_3> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <VGA/Pointers/minCrono_2> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <micro/piko/processor/sync_interrupt_flop> has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <micro/piko/processor/sync_sleep_flop> has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/cont_ref/counter_out_15> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sonido/sonido/cont_ref/counter_out_16> (without init value) has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <micro/piko/processor/sync_interrupt_flop> has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <micro/piko/processor/sync_sleep_flop> has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <micro/piko/processor/sync_interrupt_flop> has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
@@ -1764,8 +1687,6 @@ WARNING:Xst:1293 - FF/Latch <micro/piko/processor/sync_interrupt_flop> has a con
 WARNING:Xst:1293 - FF/Latch <micro/piko/processor/sync_sleep_flop> has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:2261 - The FF/Latch <VGA/Pointers/newPointerY_7> in Unit <Empaquetado_total> is equivalent to the following FF/Latch, which will be removed : <VGA/Pointers/newPointerY_1> 
 INFO:Xst:2261 - The FF/Latch <VGA/Pointers/newPointerY_8> in Unit <Empaquetado_total> is equivalent to the following FF/Latch, which will be removed : <VGA/Pointers/newPointerY_5> 
-INFO:Xst:2261 - The FF/Latch <RTC/read/dir_out_7> in Unit <Empaquetado_total> is equivalent to the following FF/Latch, which will be removed : <RTC/read/dir_out_4> 
-INFO:Xst:2261 - The FF/Latch <RTC/esc/dir_out_7> in Unit <Empaquetado_total> is equivalent to the following FF/Latch, which will be removed : <RTC/esc/dir_out_4> 
 
 Mapping all equations...
 WARNING:Xst:1293 - FF/Latch <micro/piko/processor/sync_interrupt_flop> has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
@@ -1787,6 +1708,8 @@ WARNING:Xst:1293 - FF/Latch <micro/piko/processor/sync_interrupt_flop> has a con
 WARNING:Xst:1293 - FF/Latch <micro/piko/processor/sync_sleep_flop> has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <micro/piko/processor/sync_interrupt_flop> has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <micro/piko/processor/sync_sleep_flop> has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <micro/piko/processor/sync_interrupt_flop> has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <micro/piko/processor/sync_sleep_flop> has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 
 Final Macro Processing ...
 
@@ -1794,8 +1717,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 452
- Flip-Flops                                            : 452
+# Registers                                            : 478
+ Flip-Flops                                            : 478
 
 =========================================================================
 WARNING:Xst:1293 - FF/Latch <micro/piko/processor/sync_interrupt_flop> has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
@@ -1822,31 +1745,31 @@ Top Level Output File Name         : Empaquetado_total.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 876
+# BELS                             : 861
 #      GND                         : 1
-#      INV                         : 7
-#      LUT1                        : 41
-#      LUT2                        : 61
-#      LUT3                        : 78
-#      LUT4                        : 68
-#      LUT5                        : 99
-#      LUT6                        : 228
+#      INV                         : 3
+#      LUT1                        : 34
+#      LUT2                        : 50
+#      LUT3                        : 69
+#      LUT4                        : 82
+#      LUT5                        : 98
+#      LUT6                        : 227
 #      LUT6_2                      : 50
 #      MUXCY                       : 118
-#      MUXF7                       : 5
+#      MUXF7                       : 2
 #      MUXF8                       : 1
 #      VCC                         : 1
-#      XORCY                       : 118
-# FlipFlops/Latches                : 452
-#      FD                          : 54
-#      FD_1                        : 12
-#      FDC                         : 16
-#      FDCE                        : 16
-#      FDE                         : 16
-#      FDPE_1                      : 2
-#      FDR                         : 116
-#      FDRE                        : 216
+#      XORCY                       : 125
+# FlipFlops/Latches                : 479
+#      FD                          : 51
+#      FD_1                        : 3
+#      FDR                         : 117
+#      FDR_1                       : 2
+#      FDRE                        : 217
+#      FDRE_1                      : 80
 #      FDS                         : 4
+#      FDSE                        : 4
+#      LD                          : 1
 # RAMS                             : 69
 #      RAM32M                      : 4
 #      RAM64M                      : 2
@@ -1854,8 +1777,8 @@ Primitive and Black Box Usage:
 #      RAMB36E1                    : 62
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 31
-#      IBUF                        : 4
+# IO Buffers                       : 29
+#      IBUF                        : 2
 #      IOBUF                       : 8
 #      OBUF                        : 19
 # DSPs                             : 1
@@ -1868,22 +1791,22 @@ Selected Device : 7a100tcsg324-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             452  out of  126800     0%  
- Number of Slice LUTs:                  656  out of  63400     1%  
-    Number used as Logic:               632  out of  63400     0%  
+ Number of Slice Registers:             479  out of  126800     0%  
+ Number of Slice LUTs:                  637  out of  63400     1%  
+    Number used as Logic:               613  out of  63400     0%  
     Number used as Memory:               24  out of  19000     0%  
        Number used as RAM:               24
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    812
-   Number with an unused Flip Flop:     360  out of    812    44%  
-   Number with an unused LUT:           156  out of    812    19%  
-   Number of fully used LUT-FF pairs:   296  out of    812    36%  
-   Number of unique control sets:        38
+ Number of LUT Flip Flop pairs used:    884
+   Number with an unused Flip Flop:     405  out of    884    45%  
+   Number with an unused LUT:           247  out of    884    27%  
+   Number of fully used LUT-FF pairs:   232  out of    884    26%  
+   Number of unique control sets:        44
 
 IO Utilization: 
  Number of IOs:                          32
- Number of bonded IOBs:                  32  out of    210    15%  
+ Number of bonded IOBs:                  30  out of    210    14%  
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:               63  out of    135    46%  
@@ -1912,14 +1835,11 @@ Clock Information:
 -----------------------------------------------------------+-------------------------------------------------------------+-------+
 Clock Signal                                               | Clock buffer(FF name)                                       | Load  |
 -----------------------------------------------------------+-------------------------------------------------------------+-------+
-actVGA(micro/id_out/out1:O)                                | NONE(*)(VGA/FFVGA/Q)                                        | 1     |
-clk                                                        | BUFGP                                                       | 490   |
-teclado/PS2/debounce/O0                                    | NONE(teclado/PS2/cnt_3)                                     | 13    |
-teclado/PS2/flag                                           | NONE(teclado/PS2/keycode_15)                                | 16    |
-actRTC(micro/id_out/out11:O)                               | NONE(*)(RTC/FF2/Q)                                          | 1     |
+clk                                                        | BUFGP                                                       | 547   |
+micro/FF2/Q_G(micro/FF2/Q_G:O)                             | NONE(*)(micro/FF2/Q)                                        | 1     |
 RTC/memoria/Mmux_ADD2[3]_memoriain[15][7]_wide_mux_19_OUT_4| NONE(micro/piko/program_rom/ram_1k_generate.akv7.kcpsm6_rom)| 1     |
 -----------------------------------------------------------+-------------------------------------------------------------+-------+
-(*) These 2 clock signal(s) are generated by combinatorial logic,
+(*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -1965,9 +1885,9 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 11.273ns (Maximum Frequency: 88.704MHz)
-   Minimum input arrival time before clock: 2.003ns
-   Maximum output required time after clock: 2.706ns
+   Minimum period: 10.527ns (Maximum Frequency: 94.989MHz)
+   Minimum input arrival time before clock: 2.086ns
+   Maximum output required time after clock: 2.712ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -1976,10 +1896,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 11.273ns (frequency: 88.704MHz)
-  Total number of paths / destination ports: 303804 / 876
+  Clock period: 10.527ns (frequency: 94.989MHz)
+  Total number of paths / destination ports: 255634 / 1006
 -------------------------------------------------------------------------
-Delay:               11.273ns (Levels of Logic = 12)
+Delay:               10.527ns (Levels of Logic = 11)
   Source:            micro/piko/program_rom/ram_1k_generate.akv7.kcpsm6_rom (RAM)
   Destination:       micro/piko/processor/zero_flag_flop (FF)
   Source Clock:      clk rising
@@ -1991,12 +1911,11 @@ Delay:               11.273ns (Levels of Logic = 12)
     ----------------------------------------  ------------
      RAMB18E1:CLKARDCLK->DOADO7   16   2.454   0.497  micro/piko/program_rom/ram_1k_generate.akv7.kcpsm6_rom (micro/piko/instruction<7>)
      RAM32M:ADDRA3->DOA1    2   0.345   0.405  micro/piko/processor/upper_reg_banks (micro/piko/processor/sy<5>)
-     LUT6_2:I2->O6        10   0.664   0.998  micro/piko/processor/data_path_loop[4].output_data.sy_kk_mux_lut (micro/port_id<5>)
-     LUT6:I0->O            3   0.124   0.435  micro/id_out/dir<7>1 (micro/id_out/dir<7>)
-     LUT3:I2->O            4   0.124   0.796  micro/id_out/dir<7>2 (id_port<1>)
-     LUT6:I2->O           11   0.124   0.487  teclado/Decoder/Mmux_DataSelect2 (teclado/DataSelect<1>)
-     LUT3:I2->O            1   0.124   0.536  micro/mux1/Mmux_salida21_SW1 (N98)
-     LUT6:I4->O            1   0.124   0.776  micro/mux1/Mmux_salida25 (micro/in_port<0>)
+     LUT6_2:I2->O6        13   0.664   0.796  micro/piko/processor/data_path_loop[4].output_data.sy_kk_mux_lut (micro/port_id<5>)
+     LUT3:I0->O            4   0.124   0.441  micro/id_out/dir<4>11 (micro/id_out/dir<4>1)
+     LUT6:I5->O            6   0.124   0.972  micro/id_out/dir<2>1 (id_port<6>)
+     LUT6:I0->O            1   0.124   0.421  micro/mux1/Mmux_salida23 (micro/mux1/Mmux_salida22)
+     LUT6:I5->O            1   0.124   0.776  micro/mux1/Mmux_salida25 (micro/in_port<0>)
      LUT6:I2->O            3   0.287   0.413  micro/piko/processor/data_path_loop[0].alu_mux_lut (micro/piko/processor/alu_result<0>)
      LUT6_2:I0->O6         1   0.664   0.000  micro/piko/processor/lower_zero_lut (micro/piko/processor/lower_zero_sel)
      MUXCY:S->O            1   0.472   0.000  micro/piko/processor/lower_zero_muxcy (micro/piko/processor/carry_lower_zero)
@@ -2004,54 +1923,8 @@ Delay:               11.273ns (Levels of Logic = 12)
      MUXCY:CI->O           1   0.365   0.000  micro/piko/processor/upper_zero_muxcy (micro/piko/processor/zero_flag_value)
      FDRE:D                    0.030          micro/piko/processor/zero_flag_flop
     ----------------------------------------
-    Total                     11.273ns (5.930ns logic, 5.343ns route)
-                                       (52.6% logic, 47.4% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'teclado/PS2/debounce/O0'
-  Clock period: 2.371ns (frequency: 421.763MHz)
-  Total number of paths / destination ports: 83 / 21
--------------------------------------------------------------------------
-Delay:               2.371ns (Levels of Logic = 1)
-  Source:            teclado/PS2/cnt_2 (FF)
-  Destination:       teclado/PS2/cnt_3 (FF)
-  Source Clock:      teclado/PS2/debounce/O0 falling
-  Destination Clock: teclado/PS2/debounce/O0 falling
-
-  Data Path: teclado/PS2/cnt_2 to teclado/PS2/cnt_3
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDRE:C->Q            13   0.478   0.856  teclado/PS2/cnt_2 (teclado/PS2/cnt_2)
-     LUT4:I0->O            4   0.124   0.419  teclado/PS2/_n01131 (teclado/PS2/_n0113)
-     FDRE:R                    0.494          teclado/PS2/cnt_0
-    ----------------------------------------
-    Total                      2.371ns (1.096ns logic, 1.275ns route)
-                                       (46.2% logic, 53.8% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'teclado/PS2/flag'
-  Clock period: 3.707ns (frequency: 269.760MHz)
-  Total number of paths / destination ports: 216 / 24
--------------------------------------------------------------------------
-Delay:               3.707ns (Levels of Logic = 3)
-  Source:            teclado/PS2/dataprev_7 (FF)
-  Destination:       teclado/PS2/keycode_15 (FF)
-  Source Clock:      teclado/PS2/flag rising
-  Destination Clock: teclado/PS2/flag rising
-
-  Data Path: teclado/PS2/dataprev_7 to teclado/PS2/keycode_15
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDE:C->Q             14   0.478   1.024  teclado/PS2/dataprev_7 (teclado/PS2/dataprev_7)
-     LUT6:I0->O            1   0.124   0.421  teclado/PS2/n0019_inv3_SW0 (N129)
-     LUT5:I4->O            1   0.124   0.776  teclado/PS2/n0019_inv3 (teclado/PS2/n0019_inv3)
-     LUT6:I2->O           16   0.124   0.497  teclado/PS2/n0019_inv5 (teclado/PS2/n0019_inv)
-     FDE:CE                    0.139          teclado/PS2/dataprev_0
-    ----------------------------------------
-    Total                      3.707ns (0.989ns logic, 2.718ns route)
-                                       (26.7% logic, 73.3% route)
+    Total                     10.527ns (5.806ns logic, 4.721ns route)
+                                       (55.2% logic, 44.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'RTC/memoria/Mmux_ADD2[3]_memoriain[15][7]_wide_mux_19_OUT_4'
@@ -2076,29 +1949,30 @@ Delay:               3.590ns (Levels of Logic = 0)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 341 / 339
+  Total number of paths / destination ports: 478 / 478
 -------------------------------------------------------------------------
-Offset:              2.003ns (Levels of Logic = 2)
+Offset:              2.086ns (Levels of Logic = 3)
   Source:            reset (PAD)
-  Destination:       VGA/SyncMachine/cntV/cntVertical_0 (FF)
-  Destination Clock: clk rising
+  Destination:       VGA/Pointers/segReloj_7 (FF)
+  Destination Clock: clk falling
 
-  Data Path: reset to VGA/SyncMachine/cntV/cntVertical_0
+  Data Path: reset to VGA/Pointers/segReloj_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           295   0.001   0.926  reset_IBUF (reset_IBUF)
-     LUT3:I0->O           10   0.124   0.458  VGA/SyncMachine/cntV/Mcount_cntVertical_val3 (VGA/SyncMachine/cntV/Mcount_cntVertical_val)
-     FDRE:R                    0.494          VGA/SyncMachine/cntV/cntVertical_0
+     IBUF:I->O           360   0.001   0.760  reset_IBUF (reset_IBUF)
+     LUT3:I1->O           12   0.124   0.493  VGA/Pointers/RESET_Write_AND_7_o1 (VGA/Pointers/RESET_Write_AND_7_o)
+     LUT5:I4->O            8   0.124   0.445  VGA/Pointers/_n0439_inv1 (VGA/Pointers/_n0439_inv)
+     FDRE_1:CE                 0.139          VGA/Pointers/Cursor_0
     ----------------------------------------
-    Total                      2.003ns (0.619ns logic, 1.384ns route)
-                                       (30.9% logic, 69.1% route)
+    Total                      2.086ns (0.388ns logic, 1.698ns route)
+                                       (18.6% logic, 81.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
   Total number of paths / destination ports: 57 / 26
 -------------------------------------------------------------------------
-Offset:              2.706ns (Levels of Logic = 3)
+Offset:              2.712ns (Levels of Logic = 3)
   Source:            VGA/SyncMachine/cntH/Horizontal_8 (FF)
   Destination:       HSync (PAD)
   Source Clock:      clk rising
@@ -2107,12 +1981,12 @@ Offset:              2.706ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q             17   0.478   1.045  VGA/SyncMachine/cntH/Horizontal_8 (VGA/SyncMachine/cntH/Horizontal_8)
-     LUT6:I0->O            1   0.124   0.536  VGA/SyncMachine/HS/HSync_SW0 (N16)
+     FDR:C->Q             18   0.478   1.051  VGA/SyncMachine/cntH/Horizontal_8 (VGA/SyncMachine/cntH/Horizontal_8)
+     LUT6:I0->O            1   0.124   0.536  VGA/SyncMachine/HS/HSync_SW0 (N10)
      LUT6:I4->O            1   0.124   0.399  VGA/SyncMachine/HS/HSync (HSync_OBUF)
      OBUF:I->O                 0.000          HSync_OBUF (HSync)
     ----------------------------------------
-    Total                      2.706ns (0.726ns logic, 1.980ns route)
+    Total                      2.712ns (0.726ns logic, 1.986ns route)
                                        (26.8% logic, 73.2% route)
 
 =========================================================================
@@ -2128,62 +2002,34 @@ Source Clock                                               |Dest:Rise|Dest:Rise|
 RTC/memoria/Mmux_ADD2[3]_memoriain[15][7]_wide_mux_19_OUT_4|    3.590|         |         |         |
 -----------------------------------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock actRTC
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    6.374|         |
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock actVGA
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |         |         |    6.051|         |
----------------+---------+---------+---------+---------+
-
 Clock to Setup on destination clock clk
-----------------+---------+---------+---------+---------+
-                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-----------------+---------+---------+---------+---------+
-actRTC          |         |    2.270|         |         |
-actVGA          |         |    5.921|         |         |
-clk             |   11.273|    0.913|    0.921|         |
-teclado/PS2/flag|    6.073|         |         |         |
-----------------+---------+---------+---------+---------+
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   10.527|    3.643|    4.002|         |
+micro/FF2/Q_G  |         |    5.249|         |         |
+---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock teclado/PS2/debounce/O0
------------------------+---------+---------+---------+---------+
-                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
------------------------+---------+---------+---------+---------+
-clk                    |         |         |    1.106|         |
-teclado/PS2/debounce/O0|         |         |    2.371|         |
------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock teclado/PS2/flag
------------------------+---------+---------+---------+---------+
-                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
------------------------+---------+---------+---------+---------+
-teclado/PS2/debounce/O0|         |    3.622|         |         |
-teclado/PS2/flag       |    3.707|         |         |         |
------------------------+---------+---------+---------+---------+
+Clock to Setup on destination clock micro/FF2/Q_G
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    6.110|         |
+---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 197.00 secs
-Total CPU time to Xst completion: 197.28 secs
+Total REAL time to Xst completion: 193.00 secs
+Total CPU time to Xst completion: 192.91 secs
  
 --> 
 
-Total memory usage is 344536 kilobytes
+Total memory usage is 341656 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  237 (   0 filtered)
-Number of infos    :   44 (   0 filtered)
+Number of warnings :  145 (   0 filtered)
+Number of infos    :   42 (   0 filtered)
 

@@ -83,6 +83,14 @@ module deco_id(id_port, actRTC, actVGA, actTeclado, actsonido, dir);
 			actsonido=0;
 			dir=8'd3;
 		end
+		8'd11:
+		begin
+			actRTC=1;
+			actVGA=0; 
+			actTeclado=0; 
+			actsonido=0;
+			dir=8'd11;
+		end
 		//segundos
 		8'd17:
 		begin
@@ -196,7 +204,7 @@ module deco_id(id_port, actRTC, actVGA, actTeclado, actsonido, dir);
 			actVGA=1; 
 			actTeclado=0; 
 			actsonido=0;
-			dir=8'd1;
+			dir=8'd40;
 		end
 		8'd41:
 		begin
@@ -204,7 +212,7 @@ module deco_id(id_port, actRTC, actVGA, actTeclado, actsonido, dir);
 			actVGA=1; 
 			actTeclado=0; 
 			actsonido=0;
-			dir=8'd2;
+			dir=8'd41;
 		end
 		8'd42:
 		begin
@@ -212,7 +220,7 @@ module deco_id(id_port, actRTC, actVGA, actTeclado, actsonido, dir);
 			actVGA=1; 
 			actTeclado=0; 
 			actsonido=0;
-			dir=8'd3;
+			dir=8'd42;
 		end
 		8'd43:
 		begin
@@ -220,7 +228,7 @@ module deco_id(id_port, actRTC, actVGA, actTeclado, actsonido, dir);
 			actVGA=1; 
 			actTeclado=0; 
 			actsonido=0;
-			dir=8'd6;
+			dir=8'd45;
 		end
 		8'd44:
 		begin
@@ -228,7 +236,7 @@ module deco_id(id_port, actRTC, actVGA, actTeclado, actsonido, dir);
 			actVGA=1; 
 			actTeclado=0; 
 			actsonido=0;
-			dir=8'd5;
+			dir=8'd44;
 		end
 		8'd45:
 		begin
@@ -236,7 +244,7 @@ module deco_id(id_port, actRTC, actVGA, actTeclado, actsonido, dir);
 			actVGA=1; 
 			actTeclado=0; 
 			actsonido=0;
-			dir=8'd4;
+			dir=8'd43;
 		end
 		8'd46:
 		begin
@@ -244,7 +252,7 @@ module deco_id(id_port, actRTC, actVGA, actTeclado, actsonido, dir);
 			actVGA=1; 
 			actTeclado=0; 
 			actsonido=0;
-			dir=8'd7;
+			dir=8'd46;
 		end
 		8'd47:
 		begin
@@ -252,7 +260,7 @@ module deco_id(id_port, actRTC, actVGA, actTeclado, actsonido, dir);
 			actVGA=1; 
 			actTeclado=0; 
 			actsonido=0;
-			dir=8'd8;
+			dir=8'd47;
 		end
 		8'd48:
 		begin
@@ -260,7 +268,7 @@ module deco_id(id_port, actRTC, actVGA, actTeclado, actsonido, dir);
 			actVGA=1; 
 			actTeclado=0; 
 			actsonido=0;
-			dir=8'd9;
+			dir=8'd48;
 		end
 		8'd49:
 		begin
@@ -268,7 +276,7 @@ module deco_id(id_port, actRTC, actVGA, actTeclado, actsonido, dir);
 			actVGA=1; 
 			actTeclado=0; 
 			actsonido=0;
-			dir=8'd10;
+			dir=8'd49;
 		end
 		8'd51:
 		begin
@@ -276,7 +284,7 @@ module deco_id(id_port, actRTC, actVGA, actTeclado, actsonido, dir);
 			actVGA=1; 
 			actTeclado=0; 
 			actsonido=0;
-			dir=8'd11;
+			dir=8'd51;
 		end
 		8'd50:
 		begin
@@ -284,7 +292,7 @@ module deco_id(id_port, actRTC, actVGA, actTeclado, actsonido, dir);
 			actVGA=1; 
 			actTeclado=0; 
 			actsonido=0;
-			dir=8'd11;
+			dir=8'd50;
 		end
 		default:
 		begin

@@ -33,16 +33,16 @@ module ModuloRTC(clk,reset,data_out,data_out_micro,dat_RTC,CS,AD,RD,WR,chipsel,w
  wire escribe,memescribe;
  wire [7:0]datescout;
  wire [7:0] direscout,dirlecout,dirsalida;
- wire Rstrobe;
+// wire Rstrobe;
  
  
  Mux2x7 Mux1(.Dato1(direscout),.Dato2(dirlecout),.selector(actwr),.salida(dirsalida));
  or2 or1(.dato1(activaoutlec),.dato2(activaoutesc),.salida(activaout));
- control_principal_rtc CPRTC(.clk(clk),.reset(reset),.cs(chipsel),.writestrobe(writestrobe),.readstrobe(Rstrobe),.dir(dir_in),.dato(dato_in),.memorialisto(finlec),.esclisto(finesc),.datomem(datmem), .actesc(actwr),.actlec(actlec), .datoout(data_out_micro),.datoreg(dato),.dirreg(dir),.dirmem(dirmem));
+ control_principal_rtc CPRTC(.clk(clk),.reset(reset),.cs(chipsel),.writestrobe(writestrobe),.readstrobe(readstrobe),.dir(dir_in),.dato(dato_in),.memorialisto(finlec),.esclisto(finesc),.datomem(datmem), .actesc(actwr),.actlec(actlec), .datoout(data_out_micro),.datoreg(dato),.dirreg(dir),.dirmem(dirmem));
  lectura read(.reset(reset),.clk(clk),.dir(dir),.iniciar(actlec),.fin(finalout),.activa(activaoutlec),.dir_out(dirlecout),.final(finlec));
  escritura esc(.reset(reset),.clk(clk),.dir(dir),.dato(dato),.iniciar(actwr),.fin(finalout),.data_out(datescout),.dir_out(direscout),.escribe(escribe),.final(finesc),.activa(activaoutesc));
  control_salida COUT(.reset(reset),.direccion(dirsalida),.dato(datescout),.clk(clk),.iniciar(activaout),.escribe(escribe),.data_out(data_out),.CS(CS),.AD(AD),.RD(RD),.WR(WR),.final(finalout),.escreg(memescribe));
  memoria_DMULC memoria(.ADD1(dirmem),.ADD2(dirmem),.DAT1(dat_RTC),.Dato2(datmem),.clk(clk),.reset(reset),.w1(memescribe),.irq(irq));
- FlipFlopRS FF2(.S(readstrobe),.R(chipsel),.Q(Rstrobe));
-
+/* FlipFlopRS FF2(.S(readstrobe),.R(chipsel),.Q(Rstrobe));
+*/
 endmodule

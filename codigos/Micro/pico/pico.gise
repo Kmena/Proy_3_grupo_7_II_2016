@@ -38,6 +38,7 @@
     <file xil_pn:fileType="FILE_XST" xil_pn:name="FlipFlopRS.xst"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="FlipFlopRS_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="empaquetado_sonido_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="encapsulado_micro_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="encapsulado_micro_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="encapsulado_micro_tb_isim_beh.wdb"/>
@@ -51,14 +52,13 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1477238466" xil_pn:in_ck="-7213712249376081523" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1477238465">
+    <transform xil_pn:end_ts="1477256558" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1477256558">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
+    </transform>
+    <transform xil_pn:end_ts="1477256558" xil_pn:in_ck="5938104800601643107" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1477256558">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../../Empaquetado_total.v"/>
       <outfile xil_pn:name="../../Nueva carpeta/FlipFlopRS.v"/>
       <outfile xil_pn:name="../../Nueva carpeta/FlipFlopRS_tb.v"/>
@@ -75,6 +75,7 @@
       <outfile xil_pn:name="../../audio/counter.v"/>
       <outfile xil_pn:name="../../audio/div_frecuencia.v"/>
       <outfile xil_pn:name="../../audio/empaquetado_audio.v"/>
+      <outfile xil_pn:name="../../audio/empaquetado_sonido_tb.v"/>
       <outfile xil_pn:name="../../audio/pwm.v"/>
       <outfile xil_pn:name="../../audio/reset.v"/>
       <outfile xil_pn:name="../../controlVGA/ControlSalidaVGA.v"/>
@@ -103,12 +104,13 @@
       <outfile xil_pn:name="../kcpsm6_design_template.v"/>
       <outfile xil_pn:name="../mux3x7.v"/>
       <outfile xil_pn:name="ModuloRTC_tb.v"/>
+      <outfile xil_pn:name="control.v"/>
     </transform>
-    <transform xil_pn:end_ts="1477238513" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2607988483092486228" xil_pn:start_ts="1477238513">
+    <transform xil_pn:end_ts="1477257634" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="2607988483092486228" xil_pn:start_ts="1477257634">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1477238513" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2149016320828751758" xil_pn:start_ts="1477238513">
+    <transform xil_pn:end_ts="1477257634" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-2149016320828751758" xil_pn:start_ts="1477257634">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -116,14 +118,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1477238466" xil_pn:in_ck="-7213712249376081523" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1477238466">
+    <transform xil_pn:end_ts="1477256558" xil_pn:in_ck="5938104800601643107" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1477256558">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../Empaquetado_total.v"/>
       <outfile xil_pn:name="../../Nueva carpeta/FlipFlopRS.v"/>
       <outfile xil_pn:name="../../Nueva carpeta/FlipFlopRS_tb.v"/>
@@ -140,6 +137,7 @@
       <outfile xil_pn:name="../../audio/counter.v"/>
       <outfile xil_pn:name="../../audio/div_frecuencia.v"/>
       <outfile xil_pn:name="../../audio/empaquetado_audio.v"/>
+      <outfile xil_pn:name="../../audio/empaquetado_sonido_tb.v"/>
       <outfile xil_pn:name="../../audio/pwm.v"/>
       <outfile xil_pn:name="../../audio/reset.v"/>
       <outfile xil_pn:name="../../controlVGA/ControlSalidaVGA.v"/>
@@ -168,15 +166,11 @@
       <outfile xil_pn:name="../kcpsm6_design_template.v"/>
       <outfile xil_pn:name="../mux3x7.v"/>
       <outfile xil_pn:name="ModuloRTC_tb.v"/>
+      <outfile xil_pn:name="control.v"/>
     </transform>
-    <transform xil_pn:end_ts="1477238551" xil_pn:in_ck="-7213712249376081523" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="3453418033293667671" xil_pn:start_ts="1477238513">
+    <transform xil_pn:end_ts="1477257678" xil_pn:in_ck="5938104800601643107" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="3453418033293667671" xil_pn:start_ts="1477257634">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="encapsulado_micro_tb_beh.prj"/>
       <outfile xil_pn:name="encapsulado_micro_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -184,12 +178,9 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1477238552" xil_pn:in_ck="6102587077520102897" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-8254970182583705606" xil_pn:start_ts="1477238551">
+    <transform xil_pn:end_ts="1477257679" xil_pn:in_ck="-5084471926542813386" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-8254970182583705606" xil_pn:start_ts="1477257678">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="encapsulado_micro_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
@@ -222,7 +213,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1477240517" xil_pn:in_ck="2390352174764501058" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="3821959566276664881" xil_pn:start_ts="1477240313">
+    <transform xil_pn:end_ts="1477256384" xil_pn:in_ck="2390352174764501058" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="3821959566276664881" xil_pn:start_ts="1477256186">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>

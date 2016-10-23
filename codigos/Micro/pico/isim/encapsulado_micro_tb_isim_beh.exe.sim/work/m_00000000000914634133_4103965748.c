@@ -29,7 +29,7 @@ static unsigned int ng4[] = {1U, 0U};
 static int ng5[] = {0, 0};
 static const char *ng6 = "%d \t %d \t %b \t %b \t %b \t %b \t %b \t %b \n";
 static int ng7[] = {1, 0};
-static unsigned int ng8[] = {11U, 0U};
+static unsigned int ng8[] = {51U, 0U};
 
 
 
