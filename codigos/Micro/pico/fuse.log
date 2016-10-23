@@ -86,8 +86,8 @@ WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/RAMB18E1.v" Li
 WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/RAMB18E1.v" Line 2236: Element index 63 into mem is out of bounds
 WARNING:HDLCompiler:1007 - "N:/P.20131013/rtf/verilog/src/unisims/RAMB18E1.v" Line 2237: Element index 7 into memp is out of bounds
 Completed static elaboration
-Fuse Memory Usage: 109548 KB
-Fuse CPU Usage: 1699 ms
+Fuse Memory Usage: 108588 KB
+Fuse CPU Usage: 1700 ms
 Compiling module or2
 Compiling module LUT6_2(INIT=64'b1111111111111111...
 Compiling module FD
@@ -114,8 +114,8 @@ Compiling module encapsulado_micro
 Compiling module encapsulado_micro_tb
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 13 sub-compilation(s) to finish...
+Waiting for 8 sub-compilation(s) to finish...
 Compiled 55 Verilog Units
 Built simulation executable C:/Users/User/Documents/Proyecto_3_grupo_7_II_2016/codigos/Micro/pico/encapsulado_micro_tb_isim_beh.exe
-Fuse Memory Usage: 140828 KB
-Fuse CPU Usage: 3572 ms
+Fuse Memory Usage: 140892 KB
+Fuse CPU Usage: 3603 ms

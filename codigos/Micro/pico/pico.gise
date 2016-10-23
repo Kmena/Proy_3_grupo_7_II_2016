@@ -56,7 +56,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1477256558" xil_pn:in_ck="5938104800601643107" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1477256558">
+    <transform xil_pn:end_ts="1477262942" xil_pn:in_ck="5938104800601643107" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1477262942">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../../Empaquetado_total.v"/>
@@ -118,7 +118,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1477256558" xil_pn:in_ck="5938104800601643107" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1477256558">
+    <transform xil_pn:end_ts="1477262942" xil_pn:in_ck="5938104800601643107" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1477262942">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../../Empaquetado_total.v"/>
@@ -168,7 +168,7 @@
       <outfile xil_pn:name="ModuloRTC_tb.v"/>
       <outfile xil_pn:name="control.v"/>
     </transform>
-    <transform xil_pn:end_ts="1477257678" xil_pn:in_ck="5938104800601643107" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="3453418033293667671" xil_pn:start_ts="1477257634">
+    <transform xil_pn:end_ts="1477262974" xil_pn:in_ck="5938104800601643107" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="3453418033293667671" xil_pn:start_ts="1477262942">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="encapsulado_micro_tb_beh.prj"/>
@@ -178,7 +178,7 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1477257679" xil_pn:in_ck="-5084471926542813386" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-8254970182583705606" xil_pn:start_ts="1477257678">
+    <transform xil_pn:end_ts="1477262974" xil_pn:in_ck="-5084471926542813386" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-8254970182583705606" xil_pn:start_ts="1477262974">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="encapsulado_micro_tb_isim_beh.wdb"/>
