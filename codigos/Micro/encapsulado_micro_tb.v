@@ -4,7 +4,7 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   19:43:08 10/18/2016
+// Create Date:   21:54:59 10/22/2016
 // Design Name:   encapsulado_micro
 // Module Name:   C:/Users/User/Documents/Proyecto_3_grupo_7_II_2016/codigos/Micro/encapsulado_micro_tb.v
 // Project Name:  pico
@@ -25,7 +25,9 @@
 module encapsulado_micro_tb;
 
 	// Inputs
-	reg [7:0] in_port;
+	reg [7:0] in_portRTC;
+	reg [7:0] in_portteclado;
+	reg [7:0] in_portVGA;
 	reg interrupt_ack;
 	reg clk;
 	reg kcpsm6_reset;
@@ -41,11 +43,15 @@ module encapsulado_micro_tb;
 	wire actsonido;
 	wire [7:0] dir;
 
+
 	integer id;
+	
 	// Instantiate the Unit Under Test (UUT)
 	encapsulado_micro uut (
 		.out_port(out_port), 
-		.in_port(in_port), 
+		.in_portRTC(in_portRTC), 
+		.in_portteclado(in_portteclado), 
+		.in_portVGA(in_portVGA), 
 		.writestrobe(writestrobe), 
 		.read_strobe(read_strobe), 
 		.interrupt(interrupt), 
@@ -59,6 +65,35 @@ module encapsulado_micro_tb;
 		.dir(dir)
 	);
 	initial forever #5 clk=~clk; 
+	initial begin
+		// Initialize Inputs
+		id=$fopen("C:/Users/User/Documents/Proyecto_3_grupo_7_II_2016/codigos/Micro/micro.txt","w+");
+		$fwrite(id,"dato \t dir \t RTC \t VGA \t Tec \t son \t w \t r \n");
+		in_portRTC = 8'b1;
+		in_portteclado = 8'b1;
+		in_portVGA = 8'b1;
+		interrupt_ack = 0;
+		clk = 0;
+		kcpsm6_reset = 0;
+
+		// Wait 100 ns for global reset to finish
+		#100;
+	end
+        
+		// Add stimulus here
+		always @(posedge actRTC or posedge actVGA or posedge actTeclado or posedge actsonido)
+	begin
+		$fwrite(id,"%d \t %d \t %b \t %b \t %b \t %b \t %b \t %b \n",out_port, dir ,actRTC,actVGA,actTeclado,actsonido,writestrobe,read_strobe);
+		if(actVGA ==1 && dir == 8'd11)
+		begin
+			$fclose(id);
+			$finish;
+		end
+		else begin end
+	end
+      
+endmodule
+/*	initial forever #5 clk=~clk; 
 	initial begin
 		id=$fopen("C:/Users/User/Documents/Proyecto_3_grupo_7_II_2016/codigos/Micro/micro.txt","w+");
 		$fwrite(id,"dir \t RTC \t VGA \t Tec \t son \t w \t r \n");
@@ -84,6 +119,5 @@ module encapsulado_micro_tb;
 			$finish;
 		end
 		else begin end
-	end
-endmodule
+	end*/
 
