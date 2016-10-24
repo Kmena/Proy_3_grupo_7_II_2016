@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Sun Oct 23 20:47:14 2016">
+  <application stringID="NgdBuild" timeStamp="Sun Oct 23 20:48:50 2016">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -33,7 +33,7 @@
         <column stringID="speed"/>
         <row stringID="row" value="0">
           <item stringID="arch" value="Intel(R) Core(TM) i3-2350M CPU @ 2.30GHz"/>
-          <item stringID="speed" value="1400.000 MHz"/>
+          <item stringID="speed" value="1000.000 MHz"/>
         </row>
       </table>
     </section>
@@ -47,9 +47,9 @@
     </task>
     <task stringID="NGDBUILD_REPORT">
       <section stringID="NGDBUILD_DESIGN_SUMMARY">
-        <item dataType="int" stringID="NGDBUILD_NUM_ERRORS" value="16"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="NGDBUILD_FILTERED_WARNINGS" value="0"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_WARNINGS" value="9"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_WARNINGS" value="1"/>
         <item dataType="int" stringID="NGDBUILD_FILTERED_INFOS" value="0"/>
         <item dataType="int" stringID="NGDBUILD_NUM_INFOS" value="0"/>
       </section>

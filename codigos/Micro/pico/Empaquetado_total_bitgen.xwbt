@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/pico/Empaquetado_total.ncd
+OUTFILE=/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/pico/Empaquetado_total.bit
+FAMILY=Artix7
+PART=xc7a100t-1csg324
+WORKINGDIR=/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/pico
+LICENSE=WebPack
+USER_INFO=211175017_0_0_273

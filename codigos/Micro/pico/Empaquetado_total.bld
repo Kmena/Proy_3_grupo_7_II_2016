@@ -14,118 +14,6 @@ Done.
 Annotating constraints to design from ucf file "Empaquetado_total.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
-ERROR:ConstraintSystem:59 - Constraint <NET "DatAdd[0]" LOC = B13;>
-   [Empaquetado_total.ucf(21)]: NET "DatAdd[0]" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET "DatAdd[0]" LOC = B13;> [Empaquetado_total.ucf(21)]' could not be found
-   and so the Locate constraint will be removed.
-
-ERROR:ConstraintSystem:59 - Constraint <NET "DatAdd[1]" LOC = F14;>
-   [Empaquetado_total.ucf(22)]: NET "DatAdd[1]" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET "DatAdd[1]" LOC = F14;> [Empaquetado_total.ucf(22)]' could not be found
-   and so the Locate constraint will be removed.
-
-ERROR:ConstraintSystem:59 - Constraint <NET "DatAdd[2]" LOC = D17;>
-   [Empaquetado_total.ucf(23)]: NET "DatAdd[2]" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET "DatAdd[2]" LOC = D17;> [Empaquetado_total.ucf(23)]' could not be found
-   and so the Locate constraint will be removed.
-
-ERROR:ConstraintSystem:59 - Constraint <NET "DatAdd[3]" LOC = E17;>
-   [Empaquetado_total.ucf(24)]: NET "DatAdd[3]" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET "DatAdd[3]" LOC = E17;> [Empaquetado_total.ucf(24)]' could not be found
-   and so the Locate constraint will be removed.
-
-ERROR:ConstraintSystem:59 - Constraint <NET "DatAdd[4]" LOC = G13;>
-   [Empaquetado_total.ucf(25)]: NET "DatAdd[4]" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET "DatAdd[4]" LOC = G13;> [Empaquetado_total.ucf(25)]' could not be found
-   and so the Locate constraint will be removed.
-
-ERROR:ConstraintSystem:59 - Constraint <NET "DatAdd[5]" LOC = C17;>
-   [Empaquetado_total.ucf(26)]: NET "DatAdd[5]" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET "DatAdd[5]" LOC = C17;> [Empaquetado_total.ucf(26)]' could not be found
-   and so the Locate constraint will be removed.
-
-ERROR:ConstraintSystem:59 - Constraint <NET "DatAdd[6]" LOC = D18;>
-   [Empaquetado_total.ucf(27)]: NET "DatAdd[6]" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET "DatAdd[6]" LOC = D18;> [Empaquetado_total.ucf(27)]' could not be found
-   and so the Locate constraint will be removed.
-
-ERROR:ConstraintSystem:59 - Constraint <NET "DatAdd[7]" LOC = E18;>
-   [Empaquetado_total.ucf(28)]: NET "DatAdd[7]" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-WARNING:ConstraintSystem - A target design object for the Locate constraint
-   '<NET "DatAdd[7]" LOC = E18;> [Empaquetado_total.ucf(28)]' could not be found
-   and so the Locate constraint will be removed.
-
-ERROR:ConstraintSystem:59 - Constraint <NET "DatAdd[7]" IOSTANDARD = LVCMOS33;>
-   [Empaquetado_total.ucf(43)]: NET "DatAdd[7]" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-ERROR:ConstraintSystem:59 - Constraint <NET "DatAdd[6]" IOSTANDARD = LVCMOS33;>
-   [Empaquetado_total.ucf(44)]: NET "DatAdd[6]" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-ERROR:ConstraintSystem:59 - Constraint <NET "DatAdd[5]" IOSTANDARD = LVCMOS33;>
-   [Empaquetado_total.ucf(45)]: NET "DatAdd[5]" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-ERROR:ConstraintSystem:59 - Constraint <NET "DatAdd[4]" IOSTANDARD = LVCMOS33;>
-   [Empaquetado_total.ucf(46)]: NET "DatAdd[4]" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-ERROR:ConstraintSystem:59 - Constraint <NET "DatAdd[3]" IOSTANDARD = LVCMOS33;>
-   [Empaquetado_total.ucf(47)]: NET "DatAdd[3]" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-ERROR:ConstraintSystem:59 - Constraint <NET "DatAdd[2]" IOSTANDARD = LVCMOS33;>
-   [Empaquetado_total.ucf(48)]: NET "DatAdd[2]" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-ERROR:ConstraintSystem:59 - Constraint <NET "DatAdd[1]" IOSTANDARD = LVCMOS33;>
-   [Empaquetado_total.ucf(49)]: NET "DatAdd[1]" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
-ERROR:ConstraintSystem:59 - Constraint <NET "DatAdd[0]" IOSTANDARD = LVCMOS33;>
-   [Empaquetado_total.ucf(50)]: NET "DatAdd[0]" not found.  Please verify that:
-   1. The specified design element actually exists in the original design.
-   2. The specified object is spelled correctly in the constraint source file.
-
 Done...
 
 Checking expanded design ...
@@ -140,14 +28,13 @@ Partition Implementation Status
 -------------------------------
 
 NGDBUILD Design Results Summary:
-  Number of errors:    16
-  Number of warnings:   9
+  Number of errors:     0
+  Number of warnings:   1
 
-Total memory usage is 472596 kilobytes
+Total memory usage is 472508 kilobytes
 
+Writing NGD file "Empaquetado_total.ngd" ...
 Total REAL time to NGDBUILD completion:  23 sec
-Total CPU time to NGDBUILD completion:   22 sec
-
-One or more errors were found during NGDBUILD.  No NGD file will be written.
+Total CPU time to NGDBUILD completion:   23 sec
 
 Writing NGDBUILD log file "Empaquetado_total.bld"...
