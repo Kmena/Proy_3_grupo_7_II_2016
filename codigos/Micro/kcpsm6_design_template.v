@@ -1,6 +1,6 @@
 //
 ///////////////////////////////////////////////////////////////////////////////////////////
-// Copyright © 2010-2011, Xilinx, Inc.
+// Copyright  2010-2011, Xilinx, Inc.
 // This file contains confidential and proprietary information of Xilinx, Inc. and is
 // protected under U.S. and international copyright and other intellectual property laws.
 ///////////////////////////////////////////////////////////////////////////////////////////
@@ -192,7 +192,7 @@ wire			kcpsm6_sleep;
 
   control #(
 	.C_FAMILY		   ("7S"),   	//Family 'S6' or 'V6'
-	.C_RAM_SIZE_KWORDS	(1),     	//Program size '1', '2' or '4'
+	.C_RAM_SIZE_KWORDS	(2),     	//Program size '1', '2' or '4'
 	.C_JTAG_LOADER_ENABLE	(0))     	//Include JTAG Loader when set to 1'b1 
   program_rom (    		       	//Name to match your PSM file
 	.enable 		(bram_enable),

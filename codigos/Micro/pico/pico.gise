@@ -121,6 +121,7 @@
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputRemoved"/>
     </transform>
@@ -131,6 +132,7 @@
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputRemoved"/>
     </transform>
@@ -176,7 +178,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Empaquetado_total.lso"/>
       <outfile xil_pn:name="Empaquetado_total.ngc"/>
@@ -198,6 +202,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Empaquetado_total.bld"/>
       <outfile xil_pn:name="Empaquetado_total.ngd"/>
       <outfile xil_pn:name="Empaquetado_total_ngdbuild.xrpt"/>
@@ -207,6 +212,7 @@
     <transform xil_pn:end_ts="1477277877" xil_pn:in_ck="-5416887653396664251" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="-7188367874928765557" xil_pn:start_ts="1477277330">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Empaquetado_total.pcf"/>
@@ -222,6 +228,7 @@
     <transform xil_pn:end_ts="1477277997" xil_pn:in_ck="-3095651014974183682" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-2283627392121029586" xil_pn:start_ts="1477277877">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Empaquetado_total.ncd"/>
       <outfile xil_pn:name="Empaquetado_total.pad"/>
       <outfile xil_pn:name="Empaquetado_total.par"/>
@@ -236,6 +243,7 @@
     <transform xil_pn:end_ts="1477278195" xil_pn:in_ck="-7421147329767223044" xil_pn:name="TRANEXT_bitFile_virtex7" xil_pn:prop_ck="306664139534459597" xil_pn:start_ts="1477278068">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Empaquetado_total.bgn"/>
       <outfile xil_pn:name="Empaquetado_total.bit"/>
       <outfile xil_pn:name="Empaquetado_total.drc"/>
@@ -248,6 +256,7 @@
     <transform xil_pn:end_ts="1477277997" xil_pn:in_ck="5049806964750628161" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416183" xil_pn:start_ts="1477277964">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Empaquetado_total.twr"/>
       <outfile xil_pn:name="Empaquetado_total.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
