@@ -6,7 +6,7 @@
         <comment></comment>
     </PrjInfo>
     <sources>
-        <srcFiles>RTC.psm:teclado.psm:VGA.psm:control_principal.psm</srcFiles>
+        <srcFiles>RTC.psm:teclado.psm:VGA.psm:control_principal.psm:control.psm</srcFiles>
     </sources>
     <ModProcessor>
         <processor>Xilinx PicoBlaze 6</processor>
@@ -99,12 +99,12 @@
     </Syscall>
     <ModEditor>
         <tabIndent>4</tabIndent>
-        <openFiles>RTC.psm:teclado.psm:VGA.psm:control_principal.psm</openFiles>
+        <openFiles>control.psm</openFiles>
         <lastFile></lastFile>
         <lastCursorPos>0</lastCursorPos>
     </ModEditor>
     <ModHlp>
-        <openFiles>pageid&amp;amp;#58;&amp;#47;&amp;#47;gettingstarted:pageid&amp;amp;#58;&amp;#47;&amp;#47;asmfemessages#errLicMaxFileCnt:pageid&amp;amp;#58;&amp;#47;&amp;#47;asmfemessages#infoSetProcDef</openFiles>
+        <openFiles>pageid&amp;amp;#58;&amp;#47;&amp;#47;asmfemessages#infoSetProcDef</openFiles>
         <currentFile></currentFile>
     </ModHlp>
 </project>

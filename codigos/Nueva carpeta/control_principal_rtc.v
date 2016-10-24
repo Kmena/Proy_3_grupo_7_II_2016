@@ -52,7 +52,9 @@ module control_principal_rtc(clk,reset,cs,writestrobe,readstrobe,dir,dato,memori
 			if(readstrobe ==1)
 				NextState=mem_cicle;//error con el write strobe, por si acaso, no se usa
 			else
-				NextState=wstrobe;
+				if(writestrobe==1)NextState=wstrobe;
+				else if(cs==1'b0) NextState=inicio;
+				else begin end
 	wstrobe:
 		if(cs ==1'b1)
 			NextState = w_start;

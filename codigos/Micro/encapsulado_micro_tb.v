@@ -81,10 +81,10 @@ module encapsulado_micro_tb;
 	end
         
 		// Add stimulus here
-		always @(posedge actRTC or posedge actVGA or posedge actTeclado or posedge actsonido)
+		always @(posedge read_strobe or posedge writestrobe /*or posedge actTeclado or posedge actsonido*/)
 	begin
 		$fwrite(id,"%d \t %d \t %b \t %b \t %b \t %b \t %b \t %b \n",out_port, dir ,actRTC,actVGA,actTeclado,actsonido,writestrobe,read_strobe);
-		if(actVGA ==1 && dir == 8'd51)
+		if(actsonido ==1)
 		begin
 			$fclose(id);
 			$finish;

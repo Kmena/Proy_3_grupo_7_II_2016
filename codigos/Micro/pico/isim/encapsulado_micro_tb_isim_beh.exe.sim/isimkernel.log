@@ -2,28 +2,28 @@ Command line:
    encapsulado_micro_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  60198
+     -socket  49264
 
-Sun Oct 23 16:49:38 2016
+Sun Oct 23 20:04:57 2016
 
 
- Elaboration Time: 0.265202 sec
+ Elaboration Time: 0.202802 sec
 
- Current Memory Usage: 665.661 Meg
+ Current Memory Usage: 664.875 Meg
 
- Total Signals          : 1427
- Total Nets             : 2144
- Total Signal Drivers   : 654
- Total Blocks           : 384
- Total Primitive Blocks : 232
- Total Processes        : 1152
- Total Traceable Variables  : 2103
- Total Scalar Nets and Variables : 121938
-Total Line Count : 7518
+ Total Signals          : 1423
+ Total Nets             : 2142
+ Total Signal Drivers   : 651
+ Total Blocks           : 383
+ Total Primitive Blocks : 231
+ Total Processes        : 1148
+ Total Traceable Variables  : 2102
+ Total Scalar Nets and Variables : 121935
+Total Line Count : 7514
 
- Total Simulation Time: 1.59121 sec
+ Total Simulation Time: 0.702004 sec
 
- Current Memory Usage: 665.661 Meg
+ Current Memory Usage: 664.875 Meg
 
-Sun Oct 23 16:52:20 2016
+Sun Oct 23 20:08:21 2016
 
