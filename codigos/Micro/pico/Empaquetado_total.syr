@@ -12,7 +12,7 @@ Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> 
 Reading design: Empaquetado_total.prj
@@ -149,6 +149,8 @@ Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Nuev
 Parsing module <memoria_DMULC>.
 Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/lectura.v" into library work
 Parsing module <lectura>.
+Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/FlipFlopRS.v" into library work
+Parsing module <FlipFlopRS>.
 Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/escritura.v" into library work
 Parsing module <escritura>.
 Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/control_salida.v" into library work
@@ -191,6 +193,8 @@ Parsing module <Empaquetado_total>.
 Elaborating module <Empaquetado_total>.
 
 Elaborating module <ControlVGACentral_MemoryPointed>.
+
+Elaborating module <FlipFlopRS>.
 
 Elaborating module <SyncCounters>.
 
@@ -356,7 +360,7 @@ NIT_1B=256'b0,INIT_1C=256'b0,INIT_1D=256'b0,INIT_1E=256'b0,INIT_1F=256'b0,INIT_2
 Elaborating module <deco_id>.
 
 Elaborating module <mux3x7>.
-WARNING:HDLCompiler:1127 - "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Empaquetado_total.v" Line 67: Assignment to actVGA ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Empaquetado_total.v" Line 67: Assignment to actTeclado ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -364,7 +368,6 @@ WARNING:HDLCompiler:1127 - "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/
 
 Synthesizing Unit <Empaquetado_total>.
     Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Empaquetado_total.v".
-INFO:Xst:3210 - "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Empaquetado_total.v" line 67: Output port <actVGA> of the instance <micro> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Empaquetado_total.v" line 67: Output port <actTeclado> of the instance <micro> is unconnected or connected to loadless signal.
     Found 8-bit register for signal <writeRTC>.
     Found 8-bit register for signal <writedata>.
@@ -391,10 +394,17 @@ Synthesizing Unit <ControlVGACentral_MemoryPointed>.
 	inferred   2 Multiplexer(s).
 Unit <ControlVGACentral_MemoryPointed> synthesized.
 
+Synthesizing Unit <FlipFlopRS>.
+    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/FlipFlopRS.v".
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <FlipFlopRS> synthesized.
+
 Synthesizing Unit <SyncCounters>.
     Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/SyncCounters.v".
-    Found 10-bit subtractor for signal <CntX[9]_GND_11_o_sub_1_OUT> created at line 59.
-    Found 10-bit subtractor for signal <CntY[9]_GND_11_o_sub_2_OUT> created at line 60.
+    Found 10-bit subtractor for signal <CntX[9]_GND_13_o_sub_1_OUT> created at line 59.
+    Found 10-bit subtractor for signal <CntY[9]_GND_13_o_sub_2_OUT> created at line 60.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred   2 Multiplexer(s).
@@ -404,7 +414,7 @@ Synthesizing Unit <contadorhorizontal>.
     Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/contadorhorizontal.v".
     Found 1-bit register for signal <vflag>.
     Found 12-bit register for signal <Horizontal>.
-    Found 12-bit adder for signal <Horizontal[11]_GND_12_o_add_3_OUT> created at line 38.
+    Found 12-bit adder for signal <Horizontal[11]_GND_14_o_add_3_OUT> created at line 38.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  13 D-type flip-flop(s).
@@ -413,7 +423,7 @@ Unit <contadorhorizontal> synthesized.
 Synthesizing Unit <contadorvertical>.
     Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/contadorvertical.v".
     Found 10-bit register for signal <cntVertical>.
-    Found 10-bit adder for signal <cntVertical[9]_GND_13_o_add_2_OUT> created at line 27.
+    Found 10-bit adder for signal <cntVertical[9]_GND_15_o_add_2_OUT> created at line 27.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  10 D-type flip-flop(s).
@@ -421,7 +431,7 @@ Unit <contadorvertical> synthesized.
 
 Synthesizing Unit <generadorHsync>.
     Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/generadorHsync.v".
-    Found 10-bit comparator greater for signal <GND_14_o_cntHorizontal[9]_LessThan_1_o> created at line 17
+    Found 10-bit comparator greater for signal <GND_16_o_cntHorizontal[9]_LessThan_1_o> created at line 17
     Found 10-bit comparator lessequal for signal <n0001> created at line 17
     Summary:
 	inferred   2 Comparator(s).
@@ -429,8 +439,8 @@ Unit <generadorHsync> synthesized.
 
 Synthesizing Unit <generadorVsync>.
     Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/generadorVsync.v".
-    Found 10-bit comparator greater for signal <GND_15_o_cntVertical[9]_LessThan_1_o> created at line 18
-    Found 10-bit comparator greater for signal <cntVertical[9]_PWR_7_o_LessThan_2_o> created at line 18
+    Found 10-bit comparator greater for signal <GND_17_o_cntVertical[9]_LessThan_1_o> created at line 18
+    Found 10-bit comparator greater for signal <cntVertical[9]_PWR_8_o_LessThan_2_o> created at line 18
     Summary:
 	inferred   2 Comparator(s).
 Unit <generadorVsync> synthesized.
@@ -438,9 +448,9 @@ Unit <generadorVsync> synthesized.
 Synthesizing Unit <generadorBlank>.
     Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/generadorBlank.v".
     Found 10-bit comparator lessequal for signal <n0000> created at line 28
-    Found 10-bit comparator greater for signal <PosX[9]_PWR_8_o_LessThan_2_o> created at line 28
+    Found 10-bit comparator greater for signal <PosX[9]_PWR_9_o_LessThan_2_o> created at line 28
     Found 10-bit comparator lessequal for signal <n0004> created at line 28
-    Found 10-bit comparator greater for signal <PosY[9]_GND_16_o_LessThan_4_o> created at line 28
+    Found 10-bit comparator greater for signal <PosY[9]_GND_18_o_LessThan_4_o> created at line 28
     Summary:
 	inferred   4 Comparator(s).
 Unit <generadorBlank> synthesized.
@@ -497,8 +507,8 @@ Synthesizing Unit <PunterosVGA_MemoryPointed>.
     Found 10-bit subtractor for signal <PosX[9]_newPointerX[9]_sub_197_OUT> created at line 511.
     Found 10-bit subtractor for signal <PosY[9]_newPointerY[9]_sub_198_OUT> created at line 512.
     Found 19-bit adder for signal <AddrInterfaz> created at line 152.
-    Found 10-bit adder for signal <unoffPointerY[9]_PWR_10_o_add_199_OUT> created at line 514.
-    Found 15-bit adder for signal <GND_17_o_PWR_10_o_add_201_OUT> created at line 516.
+    Found 10-bit adder for signal <unoffPointerY[9]_PWR_11_o_add_199_OUT> created at line 514.
+    Found 15-bit adder for signal <GND_19_o_PWR_11_o_add_201_OUT> created at line 516.
     Found 10x10-bit multiplier for signal <n0247> created at line 152.
     Found 6x4-bit multiplier for signal <n0321> created at line 514.
     Found 6x10-bit multiplier for signal <n0284> created at line 516.
@@ -508,7 +518,7 @@ Synthesizing Unit <PunterosVGA_MemoryPointed>.
     Found 10-bit comparator lessequal for signal <n0077> created at line 281
     Found 10-bit comparator lessequal for signal <n0106> created at line 463
     Found 10-bit comparator lessequal for signal <n0108> created at line 463
-    Found 10-bit comparator lessequal for signal <unoffPointerY[9]_GND_17_o_LessThan_204_o> created at line 520
+    Found 10-bit comparator lessequal for signal <unoffPointerY[9]_GND_19_o_LessThan_204_o> created at line 520
     Summary:
 	inferred   3 Multiplier(s).
 	inferred   5 Adder/Subtractor(s).
@@ -570,7 +580,7 @@ Synthesizing Unit <PS2Receiver>.
     Found 16-bit register for signal <keycode>.
     Found 8-bit register for signal <dataprev>.
     Found 1-bit register for signal <flag>.
-    Found 4-bit adder for signal <cnt[3]_GND_24_o_add_4_OUT> created at line 70.
+    Found 4-bit adder for signal <cnt[3]_GND_26_o_add_4_OUT> created at line 70.
     Found 4-bit comparator greater for signal <n0003> created at line 70
     Found 8-bit comparator equal for signal <n0019> created at line 76
     Summary:
@@ -588,8 +598,8 @@ Synthesizing Unit <debouncer>.
     Found 5-bit register for signal <cnt1>.
     Found 1-bit register for signal <Iv1>.
     Found 1-bit register for signal <O0>.
-    Found 5-bit adder for signal <cnt0[4]_GND_25_o_add_3_OUT> created at line 38.
-    Found 5-bit adder for signal <cnt1[4]_GND_25_o_add_8_OUT> created at line 46.
+    Found 5-bit adder for signal <cnt0[4]_GND_27_o_add_3_OUT> created at line 38.
+    Found 5-bit adder for signal <cnt1[4]_GND_27_o_add_8_OUT> created at line 46.
     Found 1-bit comparator equal for signal <I0_Iv0_equal_2_o> created at line 36
     Found 1-bit comparator equal for signal <I1_Iv1_equal_7_o> created at line 44
     Summary:
@@ -612,9 +622,9 @@ Synthesizing Unit <ControlKB>.
     Found 16-bit register for signal <KBBuffer_Before>.
     Found 2-bit register for signal <VirtualPos>.
     Found 4-bit register for signal <AddressBuffer>.
-    Found 4-bit subtractor for signal <AddressBuffer[3]_GND_27_o_sub_15_OUT> created at line 152.
-    Found 4-bit adder for signal <AddressBuffer[3]_GND_27_o_add_12_OUT> created at line 147.
-    Found 2-bit adder for signal <VirtualPos[1]_GND_27_o_add_13_OUT> created at line 151.
+    Found 4-bit subtractor for signal <AddressBuffer[3]_GND_29_o_sub_15_OUT> created at line 152.
+    Found 4-bit adder for signal <AddressBuffer[3]_GND_29_o_add_12_OUT> created at line 147.
+    Found 2-bit adder for signal <VirtualPos[1]_GND_29_o_add_13_OUT> created at line 151.
     Found 16-bit comparator not equal for signal <n0012> created at line 107
     Summary:
 	inferred   2 Adder/Subtractor(s).
@@ -774,7 +784,7 @@ Synthesizing Unit <control_salida>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 5-bit adder for signal <contador[4]_GND_34_o_add_16_OUT> created at line 89.
+    Found 5-bit adder for signal <contador[4]_GND_36_o_add_16_OUT> created at line 89.
     Found 8-bit comparator lessequal for signal <n0018> created at line 151
     Found 8-bit comparator lessequal for signal <n0020> created at line 151
     Found 8-bit comparator lessequal for signal <n0023> created at line 151
@@ -949,7 +959,7 @@ Unit <pwm> synthesized.
 Synthesizing Unit <counter>.
     Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/audio/counter.v".
     Found 5-bit register for signal <counter_out>.
-    Found 5-bit adder for signal <counter_out[4]_GND_39_o_add_0_OUT> created at line 32.
+    Found 5-bit adder for signal <counter_out[4]_GND_41_o_add_0_OUT> created at line 32.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   5 D-type flip-flop(s).
@@ -959,7 +969,7 @@ Synthesizing Unit <div_frecuencia>.
     Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/audio/div_frecuencia.v".
     Found 1-bit register for signal <clk_out>.
     Found 17-bit register for signal <contador>.
-    Found 17-bit adder for signal <contador[16]_GND_40_o_add_2_OUT> created at line 42.
+    Found 17-bit adder for signal <contador[16]_GND_42_o_add_2_OUT> created at line 42.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  18 D-type flip-flop(s).
@@ -978,7 +988,7 @@ Unit <reset> synthesized.
 Synthesizing Unit <contador2>.
     Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/audio/contador2.v".
     Found 17-bit register for signal <counter_out>.
-    Found 17-bit adder for signal <counter_out[16]_GND_42_o_add_0_OUT> created at line 32.
+    Found 17-bit adder for signal <counter_out[16]_GND_44_o_add_0_OUT> created at line 32.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  17 D-type flip-flop(s).
@@ -1274,8 +1284,8 @@ Macro Statistics
  4-bit adder                                           : 1
  4-bit addsub                                          : 1
  5-bit adder                                           : 4
-# Registers                                            : 107
- 1-bit register                                        : 41
+# Registers                                            : 109
+ 1-bit register                                        : 43
  10-bit register                                       : 6
  12-bit register                                       : 1
  15-bit register                                       : 1
@@ -1330,8 +1340,8 @@ INFO:Xst:2261 - The FF/Latch <dataprev_7> in Unit <PS2> is equivalent to the fol
 INFO:Xst:2261 - The FF/Latch <dataprev_0> in Unit <PS2> is equivalent to the following FF/Latch, which will be removed : <keycode_0> 
 INFO:Xst:2261 - The FF/Latch <dataprev_1> in Unit <PS2> is equivalent to the following FF/Latch, which will be removed : <keycode_1> 
 INFO:Xst:2261 - The FF/Latch <dataprev_2> in Unit <PS2> is equivalent to the following FF/Latch, which will be removed : <keycode_2> 
-INFO:Xst:2261 - The FF/Latch <pwm_ref_0> in Unit <reset2> is equivalent to the following 2 FFs/Latches, which will be removed : <pwm_ref_3> <pwm_ref_4> 
 INFO:Xst:2261 - The FF/Latch <pwm_ref_1> in Unit <reset2> is equivalent to the following FF/Latch, which will be removed : <pwm_ref_2> 
+INFO:Xst:2261 - The FF/Latch <pwm_ref_0> in Unit <reset2> is equivalent to the following 2 FFs/Latches, which will be removed : <pwm_ref_3> <pwm_ref_4> 
 WARNING:Xst:1710 - FF/Latch <out> (without init value) has a constant value of 1 in block <entrada>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <pwm_ref_0> (without init value) has a constant value of 0 in block <reset2>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2404 -  FFs/Latches <pwm_ref<4:3>> (without init value) have a constant value of 0 in block <reset>.
@@ -1341,9 +1351,9 @@ The following registers are absorbed into counter <cnt>: 1 register on signal <c
 Unit <PS2Receiver> synthesized (advanced).
 
 Synthesizing (advanced) Unit <PunterosVGA_MemoryPointed>.
-	Multiplier <Mmult_n0284> in block <PunterosVGA_MemoryPointed> and adder/subtractor <Madd_GND_17_o_PWR_10_o_add_201_OUT> in block <PunterosVGA_MemoryPointed> are combined into a MAC<Maddsub_n0284>.
+	Multiplier <Mmult_n0284> in block <PunterosVGA_MemoryPointed> and adder/subtractor <Madd_GND_19_o_PWR_11_o_add_201_OUT> in block <PunterosVGA_MemoryPointed> are combined into a MAC<Maddsub_n0284>.
 	The following registers are also absorbed by the MAC: <AddrNumeros> in block <PunterosVGA_MemoryPointed>, <unoffPointerX> in block <PunterosVGA_MemoryPointed>.
-	Multiplier <Mmult_n0321> in block <PunterosVGA_MemoryPointed> and adder/subtractor <Madd_unoffPointerY[9]_PWR_10_o_add_199_OUT> in block <PunterosVGA_MemoryPointed> are combined into a MAC<Maddsub_n0321>.
+	Multiplier <Mmult_n0321> in block <PunterosVGA_MemoryPointed> and adder/subtractor <Madd_unoffPointerY[9]_PWR_11_o_add_199_OUT> in block <PunterosVGA_MemoryPointed> are combined into a MAC<Maddsub_n0321>.
 	The following registers are also absorbed by the MAC: <adjPointerY> in block <PunterosVGA_MemoryPointed>.
 	Multiplier <Mmult_n0247> in block <PunterosVGA_MemoryPointed> and adder/subtractor <Madd_AddrInterfaz> in block <PunterosVGA_MemoryPointed> are combined into a MAC<Maddsub_n0247>.
 Unit <PunterosVGA_MemoryPointed> synthesized (advanced).
@@ -1435,8 +1445,8 @@ Macro Statistics
  17-bit up counter                                     : 2
  4-bit up counter                                      : 1
  5-bit up counter                                      : 4
-# Registers                                            : 520
- Flip-Flops                                            : 520
+# Registers                                            : 522
+ Flip-Flops                                            : 522
 # Comparators                                          : 26
  1-bit comparator equal                                : 2
  10-bit comparator greater                             : 5
@@ -1558,6 +1568,8 @@ Optimizing unit <PS2Receiver> ...
 Optimizing unit <debouncer> ...
 
 Optimizing unit <ControlKB> ...
+
+Optimizing unit <ModuloRTC> ...
 
 Optimizing unit <memoria_DMULC> ...
 
@@ -1785,8 +1797,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 450
- Flip-Flops                                            : 450
+# Registers                                            : 452
+ Flip-Flops                                            : 452
 
 =========================================================================
 WARNING:Xst:1293 - FF/Latch <micro/piko/processor/sync_interrupt_flop> has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
@@ -1813,7 +1825,7 @@ Top Level Output File Name         : Empaquetado_total.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 874
+# BELS                             : 876
 #      GND                         : 1
 #      INV                         : 7
 #      LUT1                        : 41
@@ -1821,19 +1833,20 @@ Primitive and Black Box Usage:
 #      LUT3                        : 78
 #      LUT4                        : 68
 #      LUT5                        : 99
-#      LUT6                        : 226
+#      LUT6                        : 228
 #      LUT6_2                      : 50
 #      MUXCY                       : 118
 #      MUXF7                       : 5
 #      MUXF8                       : 1
 #      VCC                         : 1
 #      XORCY                       : 118
-# FlipFlops/Latches                : 450
+# FlipFlops/Latches                : 452
 #      FD                          : 54
 #      FD_1                        : 12
 #      FDC                         : 16
 #      FDCE                        : 16
 #      FDE                         : 16
+#      FDPE_1                      : 2
 #      FDR                         : 116
 #      FDRE                        : 216
 #      FDS                         : 4
@@ -1858,18 +1871,18 @@ Selected Device : 7a100tcsg324-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             450  out of  126800     0%  
- Number of Slice LUTs:                  654  out of  63400     1%  
-    Number used as Logic:               630  out of  63400     0%  
+ Number of Slice Registers:             452  out of  126800     0%  
+ Number of Slice LUTs:                  656  out of  63400     1%  
+    Number used as Logic:               632  out of  63400     0%  
     Number used as Memory:               24  out of  19000     0%  
        Number used as RAM:               24
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    808
-   Number with an unused Flip Flop:     358  out of    808    44%  
-   Number with an unused LUT:           154  out of    808    19%  
-   Number of fully used LUT-FF pairs:   296  out of    808    36%  
-   Number of unique control sets:        36
+ Number of LUT Flip Flop pairs used:    812
+   Number with an unused Flip Flop:     360  out of    812    44%  
+   Number with an unused LUT:           156  out of    812    19%  
+   Number of fully used LUT-FF pairs:   296  out of    812    36%  
+   Number of unique control sets:        38
 
 IO Utilization: 
  Number of IOs:                          32
@@ -1902,11 +1915,16 @@ Clock Information:
 -----------------------------------------------------------+-------------------------------------------------------------+-------+
 Clock Signal                                               | Clock buffer(FF name)                                       | Load  |
 -----------------------------------------------------------+-------------------------------------------------------------+-------+
+actVGA(micro/id_out/out1:O)                                | NONE(*)(VGA/FFVGA/Q)                                        | 1     |
 clk                                                        | BUFGP                                                       | 490   |
 teclado/PS2/debounce/O0                                    | NONE(teclado/PS2/cnt_3)                                     | 13    |
 teclado/PS2/flag                                           | NONE(teclado/PS2/keycode_15)                                | 16    |
+actRTC(micro/id_out/out11:O)                               | NONE(*)(RTC/FF2/Q)                                          | 1     |
 RTC/memoria/Mmux_ADD2[3]_memoriain[15][7]_wide_mux_19_OUT_4| NONE(micro/piko/program_rom/ram_1k_generate.akv7.kcpsm6_rom)| 1     |
 -----------------------------------------------------------+-------------------------------------------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -1950,7 +1968,7 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 11.280ns (Maximum Frequency: 88.649MHz)
+   Minimum period: 11.273ns (Maximum Frequency: 88.704MHz)
    Minimum input arrival time before clock: 2.003ns
    Maximum output required time after clock: 2.706ns
    Maximum combinational path delay: No path found
@@ -1961,10 +1979,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 11.280ns (frequency: 88.649MHz)
-  Total number of paths / destination ports: 303811 / 876
+  Clock period: 11.273ns (frequency: 88.704MHz)
+  Total number of paths / destination ports: 303804 / 876
 -------------------------------------------------------------------------
-Delay:               11.280ns (Levels of Logic = 12)
+Delay:               11.273ns (Levels of Logic = 12)
   Source:            micro/piko/program_rom/ram_1k_generate.akv7.kcpsm6_rom (RAM)
   Destination:       micro/piko/processor/zero_flag_flop (FF)
   Source Clock:      clk rising
@@ -1975,10 +1993,10 @@ Delay:               11.280ns (Levels of Logic = 12)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      RAMB18E1:CLKARDCLK->DOADO7   16   2.454   0.497  micro/piko/program_rom/ram_1k_generate.akv7.kcpsm6_rom (micro/piko/instruction<7>)
-     RAM32M:ADDRA3->DOA1    2   0.345   0.405  micro/piko/processor/lower_reg_banks (micro/piko/processor/sy<1>)
-     LUT6_2:I2->O5        11   0.664   1.005  micro/piko/processor/data_path_loop[0].output_data.sy_kk_mux_lut (micro/port_id<0>)
-     LUT6:I0->O            3   0.124   0.435  micro/id_out/dir<8>1 (micro/id_out/dir<8>)
-     LUT3:I2->O            4   0.124   0.796  micro/id_out/dir<8>2 (id_port<0>)
+     RAM32M:ADDRA3->DOA1    2   0.345   0.405  micro/piko/processor/upper_reg_banks (micro/piko/processor/sy<5>)
+     LUT6_2:I2->O6        10   0.664   0.998  micro/piko/processor/data_path_loop[4].output_data.sy_kk_mux_lut (micro/port_id<5>)
+     LUT6:I0->O            3   0.124   0.435  micro/id_out/dir<7>1 (micro/id_out/dir<7>)
+     LUT3:I2->O            4   0.124   0.796  micro/id_out/dir<7>2 (id_port<1>)
      LUT6:I2->O           11   0.124   0.487  teclado/Decoder/Mmux_DataSelect2 (teclado/DataSelect<1>)
      LUT3:I2->O            1   0.124   0.536  micro/mux1/Mmux_salida21_SW1 (N98)
      LUT6:I4->O            1   0.124   0.776  micro/mux1/Mmux_salida25 (micro/in_port<0>)
@@ -1989,7 +2007,7 @@ Delay:               11.280ns (Levels of Logic = 12)
      MUXCY:CI->O           1   0.365   0.000  micro/piko/processor/upper_zero_muxcy (micro/piko/processor/zero_flag_value)
      FDRE:D                    0.030          micro/piko/processor/zero_flag_flop
     ----------------------------------------
-    Total                     11.280ns (5.930ns logic, 5.350ns route)
+    Total                     11.273ns (5.930ns logic, 5.343ns route)
                                        (52.6% logic, 47.4% route)
 
 =========================================================================
@@ -2113,12 +2131,30 @@ Source Clock                                               |Dest:Rise|Dest:Rise|
 RTC/memoria/Mmux_ADD2[3]_memoriain[15][7]_wide_mux_19_OUT_4|    3.590|         |         |         |
 -----------------------------------------------------------+---------+---------+---------+---------+
 
+Clock to Setup on destination clock actRTC
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    6.374|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock actVGA
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    6.051|         |
+---------------+---------+---------+---------+---------+
+
 Clock to Setup on destination clock clk
 ----------------+---------+---------+---------+---------+
                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------+---------+---------+---------+---------+
-clk             |   11.280|    0.913|    0.921|         |
+actRTC          |         |    2.270|         |         |
+actVGA          |         |    5.921|         |         |
+clk             |   11.273|    0.913|    0.921|         |
 teclado/PS2/flag|    6.073|         |         |         |
 ----------------+---------+---------+---------+---------+
 
@@ -2143,15 +2179,15 @@ teclado/PS2/flag       |    3.707|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 167.00 secs
-Total CPU time to Xst completion: 151.94 secs
+Total REAL time to Xst completion: 141.00 secs
+Total CPU time to Xst completion: 119.47 secs
  
 --> 
 
 
-Total memory usage is 587256 kilobytes
+Total memory usage is 587132 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  237 (   0 filtered)
-Number of infos    :   45 (   0 filtered)
+Number of infos    :   44 (   0 filtered)
 

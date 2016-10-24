@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-10-22T22:19:32</DateModified>
+  <DateModified>2016-10-23T20:24:15</DateModified>
   <ModuleName>Empaquetado_total</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/User/Documents/Proyecto_3_grupo_7_II_2016/codigos/Micro/pico/iseconfig/Empaquetado_total.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/User/Documents/Proyecto_3_grupo_7_II_2016/codigos/Micro/pico</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2016-10-23T10:08:58</SummaryTimeStamp>
+  <SavedFilePath>/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/pico/iseconfig/Empaquetado_total.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/pico/</ImplementationReportsDirectory>
   <DateInitialized>2016-10-22T21:51:47</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

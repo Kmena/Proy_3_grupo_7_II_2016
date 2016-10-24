@@ -11,10 +11,7 @@
 <msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/kcpsm6_design_template.v" Line 147: Assignment to <arg fmt="%s" index="1">interrupt_ack</arg> ignored, since the identifier is never used
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Empaquetado_total.v" Line 67: Assignment to <arg fmt="%s" index="1">actVGA</arg> ignored, since the identifier is never used
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Empaquetado_total.v</arg>&quot; line <arg fmt="%s" index="2">67</arg>: Output port &lt;<arg fmt="%s" index="3">actVGA</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">micro</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Empaquetado_total.v" Line 67: Assignment to <arg fmt="%s" index="1">actTeclado</arg> ignored, since the identifier is never used
 </msg>
 
 <msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Empaquetado_total.v</arg>&quot; line <arg fmt="%s" index="2">67</arg>: Output port &lt;<arg fmt="%s" index="3">actTeclado</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">micro</arg>&gt; is unconnected or connected to loadless signal.
@@ -125,10 +122,10 @@
 <msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">dataprev_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PS2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;keycode_2&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_ref_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reset2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_ref_3&gt; &lt;pwm_ref_4&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_ref_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reset2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_ref_2&gt; </arg>
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_ref_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reset2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_ref_2&gt; </arg>
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">pwm_ref_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">reset2</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pwm_ref_3&gt; &lt;pwm_ref_4&gt; </arg>
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">out</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">entrada</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
