@@ -5,10 +5,108 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">micro/piko/processor/write_strobe_flop</arg>&apos; has unconnected output pin
+<msg type="error" file="ConstraintSystem" num="59" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DatAdd[0]&quot; LOC = B13;&gt; [Empaquetado_total.ucf(21)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">DatAdd[0]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
 </msg>
 
-<msg type="warning" file="NgdBuild" num="443" delta="new" >SFF primitive &apos;<arg fmt="%s" index="1">micro/piko/processor/k_write_strobe_flop</arg>&apos; has unconnected output pin
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;DatAdd[0]&quot; LOC = B13;&gt; [Empaquetado_total.ucf(21)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DatAdd[1]&quot; LOC = F14;&gt; [Empaquetado_total.ucf(22)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">DatAdd[1]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;DatAdd[1]&quot; LOC = F14;&gt; [Empaquetado_total.ucf(22)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DatAdd[2]&quot; LOC = D17;&gt; [Empaquetado_total.ucf(23)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">DatAdd[2]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;DatAdd[2]&quot; LOC = D17;&gt; [Empaquetado_total.ucf(23)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DatAdd[3]&quot; LOC = E17;&gt; [Empaquetado_total.ucf(24)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">DatAdd[3]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;DatAdd[3]&quot; LOC = E17;&gt; [Empaquetado_total.ucf(24)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DatAdd[4]&quot; LOC = G13;&gt; [Empaquetado_total.ucf(25)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">DatAdd[4]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;DatAdd[4]&quot; LOC = G13;&gt; [Empaquetado_total.ucf(25)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DatAdd[5]&quot; LOC = C17;&gt; [Empaquetado_total.ucf(26)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">DatAdd[5]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;DatAdd[5]&quot; LOC = C17;&gt; [Empaquetado_total.ucf(26)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DatAdd[6]&quot; LOC = D18;&gt; [Empaquetado_total.ucf(27)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">DatAdd[6]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;DatAdd[6]&quot; LOC = D18;&gt; [Empaquetado_total.ucf(27)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DatAdd[7]&quot; LOC = E18;&gt; [Empaquetado_total.ucf(28)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">DatAdd[7]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;DatAdd[7]&quot; LOC = E18;&gt; [Empaquetado_total.ucf(28)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DatAdd[7]&quot; IOSTANDARD = LVCMOS33;&gt; [Empaquetado_total.ucf(43)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">DatAdd[7]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DatAdd[6]&quot; IOSTANDARD = LVCMOS33;&gt; [Empaquetado_total.ucf(44)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">DatAdd[6]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DatAdd[5]&quot; IOSTANDARD = LVCMOS33;&gt; [Empaquetado_total.ucf(45)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">DatAdd[5]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DatAdd[4]&quot; IOSTANDARD = LVCMOS33;&gt; [Empaquetado_total.ucf(46)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">DatAdd[4]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DatAdd[3]&quot; IOSTANDARD = LVCMOS33;&gt; [Empaquetado_total.ucf(47)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">DatAdd[3]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DatAdd[2]&quot; IOSTANDARD = LVCMOS33;&gt; [Empaquetado_total.ucf(48)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">DatAdd[2]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DatAdd[1]&quot; IOSTANDARD = LVCMOS33;&gt; [Empaquetado_total.ucf(49)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">DatAdd[1]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="error" file="ConstraintSystem" num="59" delta="new" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;DatAdd[0]&quot; IOSTANDARD = LVCMOS33;&gt; [Empaquetado_total.ucf(50)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">DatAdd[0]</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
 </msg>
 
 <msg type="warning" file="NgdBuild" num="440" delta="new" >FF primitive &apos;<arg fmt="%s" index="1">micro/piko/processor/interrupt_ack_flop</arg>&apos; has unconnected output pin

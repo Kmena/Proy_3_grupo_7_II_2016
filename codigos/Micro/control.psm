@@ -10,19 +10,22 @@ jump ciclo_principal
 inicializacion:
 ;escritura de bit de inicializazion en 1
 load s2,00010000'b
-output s2,03
+load s0,03
+output s2,(s0)
 call write_start
 ;escritura de bit de inicializacion en 0
 load s2,00000000'b
-output s2,03
+output s2,(s0)
 call write_start
 ;escritura de mascara on
 load s2,00000100'b
-output s2,02
+load s0,02
+output s2,(s0)
 call write_start
 ;scritura de enable
 load s2,00001000'b
-output s2,01
+load s0,01
+output s2,(s0)
 call write_start
 ;ciclo de escritura en cero
 load s0,16'd
@@ -30,7 +33,8 @@ load s1,00
 ciclo_cero:
 add s0,01
 output s1,(s0)
-test s0,25
+call write_start
+test s0,25'd
 jump nz, ciclo_cero
 return
 ;fin de llamada de inicicalizacion
@@ -57,9 +61,10 @@ output s1,(s0)
 return
 
 RTC:
-input s3,04
+load s0,04
+input s3,(s0)
 call write_start
-input s3,04
+input s3,(s0)
 load s0,16'd
 ciclo_RTC:
 add s0,01
@@ -85,15 +90,16 @@ add s0,01
 add s1,01
 fetch s2,(s1)
 output s2,(s0)
-test s0,50'd
+test s0,48'd
 jump nz,ciclo_VGA
 fetch s3,26'd  ;puntero
 output s3,49'd
-fetch s3,10'd  ;irq
-output s3,50'd
+fetch s3,27'd  ;irq
 output s3,14'd
 fetch s3,28'd  ;timer activo
 output s3,51'd
+fetch s3,27'd 
+output s3,50'd
 return
 
 

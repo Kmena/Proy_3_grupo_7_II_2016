@@ -37,9 +37,9 @@ module ControlVGACentral_MemoryPointed(
 	
 	wire BLANK;
 	wire [9:0] PosX, PosY;
-	wire [5:0] RGB;
+	wire [5:0] RGB;/*
 	wire Rstrobe;
-	FlipFlopRS FFVGA(.S(Read_Strobe),.R(actVGA),.Q(Rstrobe));
+	FlipFlopRS FFVGA(.S(Read_Strobe),.R(actVGA),.Q(Rstrobe));*/
 
 	// Vincular Maquina de Sincronia
 	SyncCounters SyncMachine(.CLK(CLK),.RESET(RESET),.Blank(BLANK),.HSync(HSync),.VSync(VSync),.PosX(PosX),.PosY(PosY));
@@ -76,7 +76,7 @@ module ControlVGACentral_MemoryPointed(
 	always @*
 	begin
 		// De salida
-		if(Port_ID == 8'd2 && Rstrobe)
+		if(Port_ID == 8'd2 && Write_Strobe)
 			OUT_DATA = {7'd0, ~VSync};
 		else
 			OUT_DATA = 8'h00;
