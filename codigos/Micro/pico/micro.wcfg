@@ -62,6 +62,7 @@
    <wvobject fp_name="/Empaquetado_total_tb/uut/micro/port_id" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">port_id[7:0]</obj_property>
       <obj_property name="ObjectShortName">port_id[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/Empaquetado_total_tb/uut/micro/in_port" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">in_port[7:0]</obj_property>
