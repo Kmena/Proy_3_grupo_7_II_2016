@@ -34,7 +34,7 @@ ciclo_cero:
 add s0,01
 output s1,(s0)
 call write_start
-test s0,25'd
+compare s0,25'd
 jump nz, ciclo_cero
 return
 ;fin de llamada de inicicalizacion
@@ -45,10 +45,10 @@ ciclo_teclado:
 add s0,01
 input s1,(s0)
 store s1,(s0)
-test s0,07
+compare s0,07
 jump nz, ciclo_teclado
 fetch s1,07 
-test s1, 01
+compare s1, 01
 call z, escritura
 fetch s0,05
 fetch s1,06
@@ -72,7 +72,7 @@ input s2,(s0)
 call write_start
 input s2,(s0)
 store s2,(s0)
-test s0,25'd
+compare s0,25'd
 jump nz,ciclo_RTC
 fetch s0,10'd
 store s0,26'd  
@@ -90,7 +90,7 @@ add s0,01
 add s1,01
 fetch s2,(s1)
 output s2,(s0)
-test s0,48'd
+compare s0,48'd
 jump nz,ciclo_VGA
 fetch s3,26'd  ;puntero
 output s3,49'd

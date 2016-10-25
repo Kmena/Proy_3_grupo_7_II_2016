@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Xilinx/pico/encapsulado_micro_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="encapsulado_micro_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/encapsulado_micro_tb/out_port" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_port[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_port[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/encapsulado_micro_tb/writestrobe" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">writestrobe</obj_property>
+      <obj_property name="ObjectShortName">writestrobe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/encapsulado_micro_tb/read_strobe" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">read_strobe</obj_property>
+      <obj_property name="ObjectShortName">read_strobe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/encapsulado_micro_tb/uut/id_out/id_port" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">id_port[7:0]</obj_property>
+      <obj_property name="ObjectShortName">id_port[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/encapsulado_micro_tb/actRTC" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">actRTC</obj_property>
+      <obj_property name="ObjectShortName">actRTC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/encapsulado_micro_tb/actVGA" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">actVGA</obj_property>
+      <obj_property name="ObjectShortName">actVGA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/encapsulado_micro_tb/actTeclado" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">actTeclado</obj_property>
+      <obj_property name="ObjectShortName">actTeclado</obj_property>
+   </wvobject>
+   <wvobject fp_name="/encapsulado_micro_tb/actsonido" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">actsonido</obj_property>
+      <obj_property name="ObjectShortName">actsonido</obj_property>
+   </wvobject>
+   <wvobject fp_name="/encapsulado_micro_tb/dir" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dir[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dir[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/encapsulado_micro_tb/in_portRTC" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">in_portRTC[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_portRTC[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/encapsulado_micro_tb/in_portteclado" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">in_portteclado[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_portteclado[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/encapsulado_micro_tb/in_portVGA" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">in_portVGA[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_portVGA[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/encapsulado_micro_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/encapsulado_micro_tb/kcpsm6_reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">kcpsm6_reset</obj_property>
+      <obj_property name="ObjectShortName">kcpsm6_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/encapsulado_micro_tb/id" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">id[31:0]</obj_property>
+      <obj_property name="ObjectShortName">id[31:0]</obj_property>
+   </wvobject>
+</wave_config>
