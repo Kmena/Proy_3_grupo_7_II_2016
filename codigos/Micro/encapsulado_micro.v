@@ -45,7 +45,7 @@ module encapsulado_micro(
 	or2 or2_2(.dato1(write_strobe),.dato2(k_write_strobe),.salida(writestrobe));
 	pico piko(.port_id(port_id),.out_port(out_port),.in_port(in_port),.write_strobe(write_strobe),.k_write_strobe(k_write_strobe),.read_strobe(read_strobe),.clk(clk),.kcpsm6_reset(kcpsm6_reset));
 	deco_id id_out(.id_port(port_id), .actRTC(actRTC), .actVGA(actVGA), .actTeclado(actTeclado), .actsonido(actsonido), .dir(dir));
-	mux3x7 mux1(.Dato1(in_portRTC),.Dato2(in_portteclado),.Dato3(in_portVGA),.selector(actRTC),.selector2(actVGA),.salida(in_port));
+	mux3x7 mux1(.Dato1(in_portRTC),.Dato2(in_portteclado),.Dato3(in_portVGA),.selector(actRTC),.selector2(actTeclado),.salida(in_port));
 //	FlipFlopRS FF1(.S(W_strobe),.R(writeS),.Q(writestrobe));
 //	FlipFlopRS FF2(.S(RStrobe),.R(Act),.Q(read_strobe));
 endmodule

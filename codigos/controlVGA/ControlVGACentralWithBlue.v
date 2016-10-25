@@ -74,10 +74,7 @@ module ControlVGACentral_MemoryPointed(
 	always @*
 	begin
 		// De salida
-		if(Read_Strobe)
-			OUT_DATA = {7'd0, ~VSync};
-		else
-			OUT_DATA = 8'h00;
+		OUT_DATA = {7'd0, ~VSync};
 	end
 	
 	

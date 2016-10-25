@@ -1,0 +1,23 @@
+ISim log file
+Running: C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\pico\Empaquetado_total_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/Empaquetado_total_tb_isim_beh.wdb 
+ISim P.15xf (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+WARNING: File Numeros.png.hex referenced on C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/controlVGA/VROMswithBlue.v at line 46 cannot be opened for reading. Please ensure that this file is available in the current working directory.WARNING: File Interfaz.png.hex referenced on C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/controlVGA/VROMswithBlue.v at line 51 cannot be opened for reading. Please ensure that this file is available in the current working directory.Finished circuit initialization process.
+ISim P.15xf (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+WARNING: File Numeros.png.hex referenced on C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/controlVGA/VROMswithBlue.v at line 46 cannot be opened for reading. Please ensure that this file is available in the current working directory.WARNING: File Interfaz.png.hex referenced on C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/controlVGA/VROMswithBlue.v at line 51 cannot be opened for reading. Please ensure that this file is available in the current working directory.Finished circuit initialization process.
+# run 20.00us
+# run 10.00us

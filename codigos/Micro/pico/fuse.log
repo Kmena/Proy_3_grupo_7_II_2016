@@ -1,0 +1,176 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/Empaquetado_total_tb_isim_beh.exe" -prj "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/Empaquetado_total_tb_beh.prj" "Empaquetado_total_tb" "work.glbl" 
+ISim P.15xf (signature 0xc3576ebc)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../teclado/build/1.0/debouncer.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/control.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../kcpsm6.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../controlVGA/VROMswithBlue.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../controlVGA/generadorVsync.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../controlVGA/generadorHsync.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../controlVGA/generadorBlank.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../controlVGA/contadorvertical.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../controlVGA/contadorhorizontal.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../audio/reset.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../audio/div_frecuencia.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../audio/counter.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../audio/contador2.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../teclado/build/1.0/PS2Receiver.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../teclado/build/1.0/Decodificador_Keyboard_ID.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../teclado/build/1.0/ControlKB.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../Nueva carpeta/or2.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../Nueva carpeta/Mux2x7.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../Nueva carpeta/memoria_DRULC.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../Nueva carpeta/lectura.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../Nueva carpeta/escritura.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../Nueva carpeta/control_salida.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../Nueva carpeta/control_principal_rtc.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../mux3x7.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../kcpsm6_design_template.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../deco id/decoid.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../controlVGA/SyncCounters.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../controlVGA/PunterosVGA_MemoryPointed.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../controlVGA/ControlSalidaVGA.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../audio/pwm.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../audio/Latch_entrada.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../teclado/build/1.0/Keyboard.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../Nueva carpeta/ModuloRTC.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../encapsulado_micro.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../controlVGA/ControlVGACentralWithBlue.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../audio/empaquetado_audio.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../Empaquetado_total.v" into library work
+Analyzing Verilog file "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/../../Empaquetado_total_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.1/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1343: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1347: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1351: Element index 4 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1355: Element index 5 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1359: Element index 6 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1363: Element index 7 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1464: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1468: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1472: Element index 4 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1476: Element index 5 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1480: Element index 6 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1484: Element index 7 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1577: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1585: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1605: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1609: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1613: Element index 4 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1617: Element index 5 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1621: Element index 6 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1625: Element index 7 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1718: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1726: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1746: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1750: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1754: Element index 4 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1758: Element index 5 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1762: Element index 6 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1766: Element index 7 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1822: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1823: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1875: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1876: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1890: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1891: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1892: Element index 4 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1893: Element index 5 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1894: Element index 6 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1895: Element index 7 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1990: Element index 23 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1991: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1996: Element index 31 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1997: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2018: Element index 23 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2019: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2024: Element index 31 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2025: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2030: Element index 39 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2031: Element index 4 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2036: Element index 47 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2037: Element index 5 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2042: Element index 55 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2043: Element index 6 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2048: Element index 63 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2049: Element index 7 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2164: Element index 23 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2165: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2177: Element index 31 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2178: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2202: Element index 23 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2203: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2208: Element index 31 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2209: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2214: Element index 39 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2215: Element index 4 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2220: Element index 47 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2221: Element index 5 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2226: Element index 55 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2227: Element index 6 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2232: Element index 63 into mem is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 2233: Element index 7 into memp is out of bounds
+Completed static elaboration
+Compiling module contadorhorizontal
+Compiling module contadorvertical
+Compiling module generadorHsync
+Compiling module generadorVsync
+Compiling module generadorBlank
+Compiling module SyncCounters
+Compiling module VROMswithBlue
+Compiling module PunterosVGA_MemoryPointed
+Compiling module ControlSalidaVGA
+Compiling module ControlVGACentral_MemoryPointed
+Compiling module debouncer
+Compiling module PS2Receiver
+Compiling module Port_ID_Decoder
+Compiling module ControlKB
+Compiling module Keyboard
+Compiling module Mux2x7
+Compiling module or2
+Compiling module control_principal_rtc
+Compiling module lectura
+Compiling module escritura
+Compiling module control_salida
+Compiling module memoria_DMULC
+Compiling module ModuloRTC
+Compiling module Latch_entrada
+Compiling module counter
+Compiling module div_frecuencia
+Compiling module reset
+Compiling module contador2
+Compiling module pwm
+Compiling module empaquetado_audio
+Compiling module LUT6_2(INIT=64'b1111111111111111...
+Compiling module FD
+Compiling module LUT6(INIT=64'b01100101010101010)
+Compiling module FDR
+Compiling module XORCY
+Compiling module MUXCY
+Compiling module FDRE
+Compiling module RAM32M
+Compiling module RAM64M
+Compiling module kcpsm6_default
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1323: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1327: Element index 3 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1444: Element index 2 into memp is out of bounds
+WARNING:HDLCompiler:1007 - "N:/P.15xf/rtf/verilog/src/unisims/RAMB18E1.v" Line 1448: Element index 3 into memp is out of bounds
+Compiling module RB18_INTERNAL_VLOG(DOA_REG=0,DOB...
+Compiling module RAMB18E1(INITP_00=256'b010110000...
+Compiling module control(C_JTAG_LOADER_ENABLE=0,C...
+Compiling module pico
+Compiling module deco_id
+Compiling module mux3x7
+Compiling module encapsulado_micro
+Compiling module Empaquetado_total
+Compiling module Empaquetado_total_tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 11 sub-compilation(s) to finish...
+Compiled 84 Verilog Units
+Built simulation executable C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/Empaquetado_total_tb_isim_beh.exe
+Fuse Memory Usage: 81256 KB
+Fuse CPU Usage: 2921 ms
