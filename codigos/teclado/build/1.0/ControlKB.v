@@ -144,12 +144,12 @@ module ControlKB(
 								if(VirtualPos == 2'd2)
 									begin
 										VirtualPos <= 2'd0;
-										AddressBuffer <= AddressBuffer + 4'd2;
+										AddressBuffer <= AddressBuffer + 8'd2;
 									end
 								else
 									begin
 										VirtualPos <= VirtualPos + 2'd1;
-										AddressBuffer <= AddressBuffer - 4'd1;
+										AddressBuffer <= AddressBuffer - 8'd1;
 									end
 							end
 							N0: begin

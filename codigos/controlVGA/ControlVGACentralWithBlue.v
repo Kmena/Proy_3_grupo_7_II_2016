@@ -46,20 +46,18 @@ module ControlVGACentral_MemoryPointed(
 
 
 	// Adaptador de entrada para Picoblaze - 13/OCT/2016
-	reg [7:0] MemData;
-	reg [7:0] MemAddr;
 	
 	/*
 		NOTA:
 		USAR MemDataIN, MemAddrOut, CS_VGA, OUT_DATA, IN_DATA, Port_ID
 	*/
 	
-	reg Write;
+	
 
 	// Vincular Punteros
-	PunterosVGA_MemoryPointed Pointers(.MemDataIN(MemData),.PosX(PosX),
-								.PosY(PosY),.MemAddrIN(MemAddr),.CLK(CLK),.RESET(RESET),
-								.OutRGB(RGB),.VSync(VSync),.Write(Write));
+	PunterosVGA_MemoryPointed Pointers(.MemDataIN(IN_DATA),.PosX(PosX),
+								.PosY(PosY),.MemAddrIN(Port_ID),.CLK(CLK),.RESET(RESET),
+								.OutRGB(RGB),.VSync(VSync),.Write(Write_Strobe));
 								
 	
 	//VROMs Memoryinput(.CLK(CLK),.ChipSelector(ROMCS),.Address(ROMAddr),.DataOutput(RGB));
@@ -76,38 +74,11 @@ module ControlVGACentral_MemoryPointed(
 	always @*
 	begin
 		// De salida
-		if(Port_ID == 8'd51 && Write_Strobe)
+		if(Read_Strobe)
 			OUT_DATA = {7'd0, ~VSync};
 		else
 			OUT_DATA = 8'h00;
 	end
-	always @(posedge CLK)
-	begin
-		if(RESET)
-			begin
-				Write <= 1'b0;
-				MemAddr <= 4'hF;
-				MemData <= 8'h00;
-			end
-		else
-			begin
-				// De entrada
-				if(Write_Strobe)
-					if(Port_ID == 8'd40)
-						begin
-							MemAddr <= IN_DATA;
-							Write <= 0;
-						end
-					else if(Port_ID == 8'd41)
-						begin
-							MemData <= IN_DATA;
-							Write <= 1;
-						end
-					else
-						Write <= 0;
-				else
-					Write <= 0;
-			end
-	end
+	
 	
 endmodule

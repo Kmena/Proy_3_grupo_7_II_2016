@@ -26,8 +26,8 @@ module mux3x7(Dato1,Dato2,Dato3,selector,selector2,salida);
 	//assign salida=(selector)?Dato1:(selector2)?Dato2:Dato3;
 	always @ (Dato1 or Dato2 or Dato3 or selector or selector2)
 	begin
-	if(selector) salida=Dato1;
-	else if(selector2)salida=Dato2;
+		if(selector) salida=Dato1;
+		else if(selector2)salida=Dato2;
 		else salida=Dato3;
 	end
 

@@ -27,9 +27,6 @@ module Empaquetado_total(clk,reset,R,G,B,HSync,VSync,PS2_Clock,PS2_Data,datRTC,C
 	wire actRTC,actTeclado,actSonido,actVGA;
 	//write read strobe
 	wire readstrobe,writestrobe;
-	//interrupt
-	wire interrupt;
-	assign interrupt = 1'b0;
 	//output VGA
 	output [3:0] R,G,B;
 	output HSync,VSync;
