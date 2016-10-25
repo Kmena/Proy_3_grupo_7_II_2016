@@ -195,6 +195,7 @@ wire			interrupt;
 	.C_RAM_SIZE_KWORDS	(1),     	//Program size '1', '2' or '4'
 	.C_JTAG_LOADER_ENABLE	(0))     	//Include JTAG Loader when set to 1'b1 
   program_rom (    		       	//Name to match your PSM file
+   .rdl 			(kcpsm6_reset),
 	.enable 		(bram_enable),
 	.address 		(address),
 	.instruction 	(instruction),
