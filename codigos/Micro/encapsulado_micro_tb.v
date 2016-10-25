@@ -28,7 +28,6 @@ module encapsulado_micro_tb;
 	reg [7:0] in_portRTC;
 	reg [7:0] in_portteclado;
 	reg [7:0] in_portVGA;
-	reg interrupt_ack;
 	reg clk;
 	reg kcpsm6_reset;
 
@@ -36,7 +35,6 @@ module encapsulado_micro_tb;
 	wire [7:0] out_port;
 	wire writestrobe;
 	wire read_strobe;
-	wire interrupt;
 	wire actRTC;
 	wire actVGA;
 	wire actTeclado;
@@ -54,8 +52,6 @@ module encapsulado_micro_tb;
 		.in_portVGA(in_portVGA), 
 		.writestrobe(writestrobe), 
 		.read_strobe(read_strobe), 
-		.interrupt(interrupt), 
-		.interrupt_ack(interrupt_ack), 
 		.clk(clk), 
 		.kcpsm6_reset(kcpsm6_reset), 
 		.actRTC(actRTC), 
@@ -72,7 +68,6 @@ module encapsulado_micro_tb;
 		in_portRTC = 8'b1;
 		in_portteclado = 8'b1;
 		in_portVGA = 8'b1;
-		interrupt_ack = 0;
 		clk = 0;
 		kcpsm6_reset = 0;
 

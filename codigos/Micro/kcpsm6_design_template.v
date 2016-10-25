@@ -74,8 +74,6 @@ module pico(
 	output			write_strobe,
 	output			k_write_strobe,
 	output			read_strobe,
-	output			interrupt,          //See note above
-	input			interrupt_ack,
 	input clk,
 	input kcpsm6_reset
 	);
@@ -100,6 +98,8 @@ reg			kcpsm6_reset;         //See note above*/
 
 //reg			interrupt;            //See note above
 wire			kcpsm6_sleep;
+wire			interrupt_ack;
+wire			interrupt; 
 //
 // Some additional signals are required if your system also needs to reset KCPSM6. 
 //
@@ -155,7 +155,7 @@ wire			kcpsm6_sleep;
   // 
 
   assign kcpsm6_sleep = 1'b0;
-  //assign interrupt = 1'b0;
+  assign interrupt = 1'b0;
 
   //
   // The default Program Memory recommended for development.
@@ -192,7 +192,7 @@ wire			kcpsm6_sleep;
 
   control #(
 	.C_FAMILY		   ("7S"),   	//Family 'S6' or 'V6'
-	.C_RAM_SIZE_KWORDS	(2),     	//Program size '1', '2' or '4'
+	.C_RAM_SIZE_KWORDS	(1),     	//Program size '1', '2' or '4'
 	.C_JTAG_LOADER_ENABLE	(0))     	//Include JTAG Loader when set to 1'b1 
   program_rom (    		       	//Name to match your PSM file
 	.enable 		(bram_enable),
