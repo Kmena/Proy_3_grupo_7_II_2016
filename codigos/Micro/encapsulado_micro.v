@@ -31,12 +31,13 @@ module encapsulado_micro(
 	output actVGA, 
 	output actTeclado,
 	output actsonido, 
-	output [7:0] dir
+	output [7:0] dir,
+	output [7:0] port_id
    );
 	wire [7:0]		in_port;
 	wire write_strobe;
 	wire k_write_strobe;	
-	wire [7:0] port_id;
+//	wire [7:0] port_id;
 	wire Act;
 	assign Act=actRTC||actVGA||actTeclado||actsonido;
 //	assign writestrobe=Act&&~read_strobe;

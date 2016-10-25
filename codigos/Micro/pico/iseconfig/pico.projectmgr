@@ -16,9 +16,9 @@
          <ClosedNode>/Empaquetado_total C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|Empaquetado_total.v/teclado - Keyboard</ClosedNode>
          <ClosedNode>/Empaquetado_total |home|lleon95|GitHub|Proy_3_grupo_7_II_2016|codigos|Empaquetado_total.v/RTC - ModuloRTC</ClosedNode>
          <ClosedNode>/Empaquetado_total |home|lleon95|GitHub|Proy_3_grupo_7_II_2016|codigos|Empaquetado_total.v/VGA - ControlVGACentral_MemoryPointed</ClosedNode>
-         <ClosedNode>/Empaquetado_total |home|lleon95|GitHub|Proy_3_grupo_7_II_2016|codigos|Empaquetado_total.v/micro - encapsulado_micro/piko - pico</ClosedNode>
+         <ClosedNode>/Empaquetado_total |home|lleon95|GitHub|Proy_3_grupo_7_II_2016|codigos|Empaquetado_total.v/micro - encapsulado_micro/piko - pico/program_rom - control</ClosedNode>
          <ClosedNode>/Empaquetado_total |home|lleon95|GitHub|Proy_3_grupo_7_II_2016|codigos|Empaquetado_total.v/sonido - empaquetado_audio</ClosedNode>
-         <ClosedNode>/Empaquetado_total |home|lleon95|GitHub|Proy_3_grupo_7_II_2016|codigos|Empaquetado_total.v/teclado - Keyboard</ClosedNode>
+         <ClosedNode>/Empaquetado_total |home|lleon95|GitHub|Proy_3_grupo_7_II_2016|codigos|Empaquetado_total.v/teclado - Keyboard/PS2 - PS2Receiver</ClosedNode>
          <ClosedNode>/Keyboard C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|teclado|build|1.0|Keyboard.v</ClosedNode>
          <ClosedNode>/ModuloRTC C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|Nueva carpeta|ModuloRTC.v</ClosedNode>
          <ClosedNode>/empaquetado_audio C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|audio|empaquetado_audio.v</ClosedNode>
@@ -26,31 +26,31 @@
          <ClosedNode>/pwm C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|audio|pwm.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>piko - pico (/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/kcpsm6_design_template.v)</SelectedItem>
+         <SelectedItem>Empaquetado_total (/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Empaquetado_total.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000237000000020000000000000000000000000200000064ffffffff000000810000000300000002000002370000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>piko - pico (/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/kcpsm6_design_template.v)</CurrentItem>
+      <CurrentItem>Empaquetado_total (/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Empaquetado_total.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
          <ClosedNode>Design Utilities</ClosedNode>
-         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Map/Generate Post-Map Static Timing</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
          <ClosedNode>Implement Design/Translate</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Generate Programming File</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >15</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000183000000010000000100000000000000000000000064ffffffff000000810000000000000001000001830000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000173000000010000000100000000000000000000000064ffffffff000000810000000000000001000001730000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Generate Programming File</CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -81,30 +81,38 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000183000000010000000100000000000000000000000064ffffffff000000810000000000000001000001830000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/ControlVGA_tb C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|controlVGA|ControlVGA_tb.v</ClosedNode>
          <ClosedNode>/ControlVGAwithBlue_tb C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|controlVGA|ControlVGAwithBlue_tb.v</ClosedNode>
-         <ClosedNode>/ControlVGAwithBlue_tb |home|lleon95|GitHub|Proy_3_grupo_7_II_2016|codigos|controlVGA|ControlVGAwithBlue_tb.v</ClosedNode>
+         <ClosedNode>/ControlVGAwithBlue_tb |home|lleon95|GitHub|Proy_3_grupo_7_II_2016|codigos|controlVGA|ControlVGAwithBlue_tb.v/uut - ControlVGACentral_MemoryPointed/Pointers - PunterosVGA_MemoryPointed</ClosedNode>
+         <ClosedNode>/ControlVGAwithBlue_tb |home|lleon95|GitHub|Proy_3_grupo_7_II_2016|codigos|controlVGA|ControlVGAwithBlue_tb.v/uut - ControlVGACentral_MemoryPointed/SyncMachine - SyncCounters</ClosedNode>
          <ClosedNode>/Empaquetado_total C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|Empaquetado_total.v/RTC - ModuloRTC</ClosedNode>
          <ClosedNode>/Empaquetado_total C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|Empaquetado_total.v/VGA - ControlVGACentral_MemoryPointed</ClosedNode>
          <ClosedNode>/Empaquetado_total C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|Empaquetado_total.v/micro - encapsulado_micro/piko - pico/program_rom - control</ClosedNode>
          <ClosedNode>/Empaquetado_total C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|Empaquetado_total.v/sonido - empaquetado_audio</ClosedNode>
          <ClosedNode>/Empaquetado_total C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|Empaquetado_total.v/teclado - Keyboard</ClosedNode>
+         <ClosedNode>/Empaquetado_total |home|lleon95|GitHub|Proy_3_grupo_7_II_2016|codigos|Empaquetado_total.v</ClosedNode>
          <ClosedNode>/Empaquetado_total |home|lleon95|GitHub|Proy_3_grupo_7_II_2016|codigos|Empaquetado_total.v/RTC - ModuloRTC</ClosedNode>
          <ClosedNode>/Empaquetado_total |home|lleon95|GitHub|Proy_3_grupo_7_II_2016|codigos|Empaquetado_total.v/VGA - ControlVGACentral_MemoryPointed</ClosedNode>
          <ClosedNode>/Empaquetado_total |home|lleon95|GitHub|Proy_3_grupo_7_II_2016|codigos|Empaquetado_total.v/micro - encapsulado_micro/piko - pico/program_rom - control</ClosedNode>
          <ClosedNode>/Empaquetado_total |home|lleon95|GitHub|Proy_3_grupo_7_II_2016|codigos|Empaquetado_total.v/sonido - empaquetado_audio</ClosedNode>
          <ClosedNode>/Empaquetado_total |home|lleon95|GitHub|Proy_3_grupo_7_II_2016|codigos|Empaquetado_total.v/teclado - Keyboard</ClosedNode>
+         <ClosedNode>/Empaquetado_total_tb |home|lleon95|GitHub|Proy_3_grupo_7_II_2016|codigos|Empaquetado_total_tb.v/uut - Empaquetado_total/RTC - ModuloRTC</ClosedNode>
+         <ClosedNode>/Empaquetado_total_tb |home|lleon95|GitHub|Proy_3_grupo_7_II_2016|codigos|Empaquetado_total_tb.v/uut - Empaquetado_total/VGA - ControlVGACentral_MemoryPointed/Pointers - PunterosVGA_MemoryPointed</ClosedNode>
+         <ClosedNode>/Empaquetado_total_tb |home|lleon95|GitHub|Proy_3_grupo_7_II_2016|codigos|Empaquetado_total_tb.v/uut - Empaquetado_total/VGA - ControlVGACentral_MemoryPointed/SyncMachine - SyncCounters</ClosedNode>
+         <ClosedNode>/Empaquetado_total_tb |home|lleon95|GitHub|Proy_3_grupo_7_II_2016|codigos|Empaquetado_total_tb.v/uut - Empaquetado_total/micro - encapsulado_micro/piko - pico</ClosedNode>
+         <ClosedNode>/Empaquetado_total_tb |home|lleon95|GitHub|Proy_3_grupo_7_II_2016|codigos|Empaquetado_total_tb.v/uut - Empaquetado_total/sonido - empaquetado_audio</ClosedNode>
+         <ClosedNode>/Empaquetado_total_tb |home|lleon95|GitHub|Proy_3_grupo_7_II_2016|codigos|Empaquetado_total_tb.v/uut - Empaquetado_total/teclado - Keyboard/PS2 - PS2Receiver</ClosedNode>
          <ClosedNode>/FlipFlopRS_tb C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|Nueva carpeta|FlipFlopRS_tb.v</ClosedNode>
          <ClosedNode>/FlipFlopRS_tb |home|lleon95|GitHub|Proy_3_grupo_7_II_2016|codigos|Nueva carpeta|FlipFlopRS_tb.v</ClosedNode>
          <ClosedNode>/Keyboard_tb C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|teclado|build|1.0|Keyboard_tb.v</ClosedNode>
@@ -118,16 +126,17 @@
          <ClosedNode>/empaquetado_sonido_tb C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|audio|empaquetado_sonido_tb.v</ClosedNode>
          <ClosedNode>/empaquetado_sonido_tb |home|lleon95|GitHub|Proy_3_grupo_7_II_2016|codigos|audio|empaquetado_sonido_tb.v</ClosedNode>
          <ClosedNode>/encapsulado_micro_tb C:|Users|User|Documents|Proyecto_3_grupo_7_II_2016|codigos|Micro|encapsulado_micro_tb.v</ClosedNode>
+         <ClosedNode>/encapsulado_micro_tb |home|lleon95|GitHub|Proy_3_grupo_7_II_2016|codigos|Micro|encapsulado_micro_tb.v</ClosedNode>
          <ClosedNode>PROJECT</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>encapsulado_micro_tb (/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/encapsulado_micro_tb.v)</SelectedItem>
+         <SelectedItem>micro - encapsulado_micro (/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/encapsulado_micro.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >19</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000237000000020000000000000000000000000200000064ffffffff000000810000000300000002000002370000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000260000000020000000000000000000000000200000064ffffffff000000810000000300000002000002600000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>encapsulado_micro_tb (/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/encapsulado_micro_tb.v)</CurrentItem>
+      <CurrentItem>micro - encapsulado_micro (/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/encapsulado_micro.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -148,16 +157,16 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000183000000010000000100000000000000000000000064ffffffff000000810000000000000001000001830000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000000d40000007a01000000050100000002</SourceProcessView>
-   <CurrentView>Behavioral Simulation</CurrentView>
+   <CurrentView>Implementation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>

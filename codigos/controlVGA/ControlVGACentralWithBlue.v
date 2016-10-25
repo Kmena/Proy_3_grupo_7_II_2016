@@ -47,7 +47,7 @@ module ControlVGACentral_MemoryPointed(
 
 	// Adaptador de entrada para Picoblaze - 13/OCT/2016
 	reg [7:0] MemData;
-	reg [3:0] MemAddr;
+	reg [7:0] MemAddr;
 	
 	/*
 		NOTA:
@@ -76,7 +76,7 @@ module ControlVGACentral_MemoryPointed(
 	always @*
 	begin
 		// De salida
-		if(Port_ID == 8'd2 && Write_Strobe)
+		if(Port_ID == 8'd51 && Write_Strobe)
 			OUT_DATA = {7'd0, ~VSync};
 		else
 			OUT_DATA = 8'h00;
@@ -95,7 +95,7 @@ module ControlVGACentral_MemoryPointed(
 				if(Write_Strobe)
 					if(Port_ID == 8'd40)
 						begin
-							MemAddr <= IN_DATA[3:0];
+							MemAddr <= IN_DATA;
 							Write <= 0;
 						end
 					else if(Port_ID == 8'd41)

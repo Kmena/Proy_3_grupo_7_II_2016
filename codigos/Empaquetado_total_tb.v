@@ -45,7 +45,8 @@ module Empaquetado_total_tb;
 
 	// Bidirs
 	wire [7:0] datRTC;
-
+	reg [7:0] datoinR;
+	assign datRTC = WR?datoinR:8'hzz;
 	// Instantiate the Unit Under Test (UUT)
 	Empaquetado_total uut (
 		.clk(clk), 
@@ -73,6 +74,7 @@ module Empaquetado_total_tb;
 		PS2_Clock = 0;
 		PS2_Data = 0;
 		irq = 1;
+		datoinR=8'h0F;
 		#10 reset =0;
 		// Wait 100 ns for global reset to finish
 		#100;

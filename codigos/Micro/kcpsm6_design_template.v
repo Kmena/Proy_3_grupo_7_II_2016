@@ -189,13 +189,14 @@ wire			interrupt;
   // If your design also needs to be able to reset KCPSM6 the arrangement below should be 
   // used to 'OR' your signal with 'rdl' from the program memory.
   // 
-
+wire rdl;
+assign rdl = 1'b0;
   control #(
 	.C_FAMILY		   ("7S"),   	//Family 'S6' or 'V6'
 	.C_RAM_SIZE_KWORDS	(1),     	//Program size '1', '2' or '4'
 	.C_JTAG_LOADER_ENABLE	(0))     	//Include JTAG Loader when set to 1'b1 
   program_rom (    		       	//Name to match your PSM file
-   .rdl 			(kcpsm6_reset),
+   .rdl 			(rdl),
 	.enable 		(bram_enable),
 	.address 		(address),
 	.instruction 	(instruction),

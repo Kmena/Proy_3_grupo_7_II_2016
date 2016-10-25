@@ -18,9 +18,9 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module ModuloRTC(clk,reset,data_out,data_out_micro,dat_RTC,CS,AD,RD,WR,chipsel,writestrobe,readstrobe,irq,dir_in,dato_in);
+module ModuloRTC(clk,reset,data_out,data_out_micro,dat_RTC,CS,AD,RD,WR,chipsel,writestrobe,readstrobe,irq,dir_in,port_id,dato_in);
  input clk,reset,chipsel,writestrobe,readstrobe,irq;
- input [7:0] dir_in,dato_in,dat_RTC;
+ input [7:0] dir_in,dato_in,dat_RTC,port_id;
  output CS,AD,RD,WR;
  output [7:0] data_out,data_out_micro;
  
@@ -38,7 +38,7 @@ module ModuloRTC(clk,reset,data_out,data_out_micro,dat_RTC,CS,AD,RD,WR,chipsel,w
  
  Mux2x7 Mux1(.Dato1(direscout),.Dato2(dirlecout),.selector(actwr),.salida(dirsalida));
  or2 or1(.dato1(activaoutlec),.dato2(activaoutesc),.salida(activaout));
- control_principal_rtc CPRTC(.clk(clk),.reset(reset),.cs(chipsel),.writestrobe(writestrobe),.readstrobe(readstrobe),.dir(dir_in),.dato(dato_in),.memorialisto(finlec),.esclisto(finesc),.datomem(datmem), .actesc(actwr),.actlec(actlec), .datoout(data_out_micro),.datoreg(dato),.dirreg(dir),.dirmem(dirmem));
+ control_principal_rtc CPRTC(.clk(clk),.reset(reset),.cs(chipsel),.writestrobe(writestrobe),.readstrobe(readstrobe),.dir(dir_in),.dato(dato_in),.memorialisto(finlec),.esclisto(finesc),.datomem(datmem), .actesc(actwr),.actlec(actlec), .datoout(data_out_micro),.datoreg(dato),.dirreg(dir),.dirmem(dirmem),.port_id(port_id));
  lectura read(.reset(reset),.clk(clk),.dir(dir),.iniciar(actlec),.fin(finalout),.activa(activaoutlec),.dir_out(dirlecout),.final(finlec));
  escritura esc(.reset(reset),.clk(clk),.dir(dir),.dato(dato),.iniciar(actwr),.fin(finalout),.data_out(datescout),.dir_out(direscout),.escribe(escribe),.final(finesc),.activa(activaoutesc));
  control_salida COUT(.reset(reset),.direccion(dirsalida),.dato(datescout),.clk(clk),.iniciar(activaout),.escribe(escribe),.data_out(data_out),.CS(CS),.AD(AD),.RD(RD),.WR(WR),.final(finalout),.escreg(memescribe));

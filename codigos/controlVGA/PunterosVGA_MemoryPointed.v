@@ -5,7 +5,7 @@ module PunterosVGA_MemoryPointed(
 		input [7:0] MemDataIN,
 		input [9:0] PosX,
 		input [9:0] PosY,
-		input [3:0] MemAddrIN,
+		input [7:0] MemAddrIN,
 		//output [18:0] ROMAddrOut,
 		//output [1:0] ROMCS,
 		//input [5:0] ROMDataIN,
@@ -53,16 +53,16 @@ module PunterosVGA_MemoryPointed(
 					
 				case(MemAddrIN)
 					
-						4'd1 : segReloj <= MemDataIN;
-						4'd2 : minReloj <= MemDataIN;
-						4'd3 : horReloj <= MemDataIN;
-						4'd4 : yearReloj <= MemDataIN;
-						4'd5 : monReloj <= MemDataIN;
-						4'd6 : dayReloj <= MemDataIN;
+						8'd40 : segReloj <= MemDataIN;
+						8'd41 : minReloj <= MemDataIN;
+						8'd42 : horReloj <= MemDataIN;
+						8'd43 : yearReloj <= MemDataIN;
+						8'd44 : monReloj <= MemDataIN;
+						8'd45 : dayReloj <= MemDataIN;
 					
-						4'd7 : segCrono <= MemDataIN;
-						4'd8 : minCrono <= MemDataIN;
-						4'd9 : horCrono <= MemDataIN;
+						8'd46 : segCrono <= MemDataIN;
+						8'd47 : minCrono <= MemDataIN;
+						8'd48 : horCrono <= MemDataIN;
 						/*4'd7: begin
 							segCrono[3:0] <= 4'd9 - MemDataIN[3:0];
 							segCrono[7:4] <= 4'd5 - MemDataIN[7:4];
@@ -84,9 +84,9 @@ module PunterosVGA_MemoryPointed(
 								end
 						end*/
 						// End of Ajustes de timer
-						4'd11 : ringCrono <= MemDataIN[0];
-						4'd12 : actCrono <= MemDataIN[0];
-						4'd10 : Cursor <= MemDataIN;
+						8'd50 : ringCrono <= MemDataIN[0];
+						8'd51 : actCrono <= MemDataIN[0];
+						8'd49 : Cursor <= MemDataIN;
 					
 				endcase
 	

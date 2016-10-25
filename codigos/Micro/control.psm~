@@ -2,7 +2,7 @@ call inicializacion
 ciclo_principal:
 call RTC
 call teclado
-load s0,51'd
+load s0,51
 call write_start
 call VGA
 jump ciclo_principal
@@ -29,7 +29,7 @@ output s2,(s0)
 call write_start
 ;ciclo de escritura en cero
 load s0,16'd
-load s1,01'd
+load s1,00
 ciclo_cero:
 add s0,01
 output s1,(s0)

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/pico/Empaquetado_total_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="Empaquetado_total_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="25" />
+   <wvobject fp_name="/Empaquetado_total_tb/uut/RTC/CS" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CS</obj_property>
+      <obj_property name="ObjectShortName">CS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/RTC/AD" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">AD</obj_property>
+      <obj_property name="ObjectShortName">AD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/RTC/RD" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RD</obj_property>
+      <obj_property name="ObjectShortName">RD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/RTC/WR" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">WR</obj_property>
+      <obj_property name="ObjectShortName">WR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/RTC/dato_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dato_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dato_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/datRTC" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">datRTC[7:0]</obj_property>
+      <obj_property name="ObjectShortName">datRTC[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/RTC/memoria/memoriain" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">memoriain[0:15,7:0]</obj_property>
+      <obj_property name="ObjectShortName">memoriain[0:15,7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/RTC/data_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/RTC/data_out_micro" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_out_micro[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out_micro[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/RTC/actlec" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">actlec</obj_property>
+      <obj_property name="ObjectShortName">actlec</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/RTC/actwr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">actwr</obj_property>
+      <obj_property name="ObjectShortName">actwr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/RTC/dir" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dir[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dir[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/RTC/dato" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dato[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dato[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/RTC/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/RTC/port_id" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">port_id[7:0]</obj_property>
+      <obj_property name="ObjectShortName">port_id[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/RTC/writestrobe" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">writestrobe</obj_property>
+      <obj_property name="ObjectShortName">writestrobe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/RTC/readstrobe" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">readstrobe</obj_property>
+      <obj_property name="ObjectShortName">readstrobe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/RTC/CPRTC/State" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">State[3:0]</obj_property>
+      <obj_property name="ObjectShortName">State[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/RTC/read/final" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">final</obj_property>
+      <obj_property name="ObjectShortName">final</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/RTC/read/iniciar" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">iniciar</obj_property>
+      <obj_property name="ObjectShortName">iniciar</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/RTC/read/state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/id_port" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">id_port[7:0]</obj_property>
+      <obj_property name="ObjectShortName">id_port[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/RTC/CPRTC/datomem" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">datomem[7:0]</obj_property>
+      <obj_property name="ObjectShortName">datomem[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/RTC/CPRTC/dirmem" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dirmem[3:0]</obj_property>
+      <obj_property name="ObjectShortName">dirmem[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/RTC/CPRTC/datoout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">datoout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">datoout[7:0]</obj_property>
+   </wvobject>
+</wave_config>

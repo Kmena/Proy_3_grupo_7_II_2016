@@ -18,9 +18,9 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module control_principal_rtc(clk,reset,cs,writestrobe,readstrobe,dir,dato,memorialisto,esclisto,datomem, actesc,actlec, datoout,datoreg,dirreg,dirmem);
+module control_principal_rtc(clk,reset,cs,writestrobe,readstrobe,dir,dato,memorialisto,esclisto,datomem, actesc,actlec, datoout,datoreg,dirreg,dirmem,port_id);
  input clk,reset,cs,writestrobe,readstrobe,memorialisto,esclisto;
- input [7:0] dir,dato,datomem;
+ input [7:0] dir,dato,datomem,port_id;
  output datoout,datoreg,dirreg,dirmem,actesc,actlec;
  reg actesc,actlec;
  reg [7:0] datoout,datoreg,dirreg;
@@ -39,30 +39,32 @@ module control_principal_rtc(clk,reset,cs,writestrobe,readstrobe,dir,dato,memori
  parameter [3:0] actilec=4'b1000;
  parameter [3:0] mem=4'b1001;
  parameter [3:0] fin=4'b1010;
- always@(cs or writestrobe or readstrobe or memorialisto or State or esclisto or dirreg)
+ always@(cs or writestrobe or readstrobe or memorialisto or State or esclisto or dirreg or port_id)
  begin
 	 NextState=0;
 	 case(State)
 	 inicio:
-			if(cs==1'b1)
-				NextState=esclec;
+//			if(cs==1'b1)
+				NextState=esclec;/*
 			else
-				NextState=inicio;
+				NextState=inicio;*/
 	 esclec:
+	 if((port_id>= 8'd1 && port_id<=8'd4)||(port_id>= 8'd17 && port_id<=8'd25)||port_id==11)
 			if(readstrobe ==1)
 				NextState=mem_cicle;//error con el write strobe, por si acaso, no se usa
 			else
 				if(writestrobe==1)NextState=wstrobe;
-				else if(cs==1'b0) NextState=inicio;
-				else begin end
+//				else if(cs==1'b0) NextState=inicio;
+				else NextState = esclec;
+	else NextState = esclec;
 	wstrobe:
-		if(cs ==1'b1)
+		if(readstrobe ==1'b1)
 			NextState = w_start;
 		else
 			NextState = wstrobe;
 	mem_cicle:
 	   if(dirreg == 10 || dirreg == 11)
-			NextState=noactlec;
+			NextState=actilec;
 		else
 			NextState= rstrobe;
 	w_start:
@@ -73,27 +75,27 @@ module control_principal_rtc(clk,reset,cs,writestrobe,readstrobe,dir,dato,memori
 	finesc:
 		NextState=fin;
 	rstrobe:
-		if(cs ==1'b1)
+		if(readstrobe ==1'b1)
 			NextState = r_start;
 		else
 			NextState = rstrobe;
 	r_start:
 		if(memorialisto ==1'b1)
-			NextState = noactlec;
+			NextState = actilec;
 		else
 			NextState = rstrobe;
 	noactlec:
-		if(cs ==1'b1)
-			NextState = actilec;
+		if(readstrobe ==1'b1)
+			NextState = mem;
 		else
 			NextState = noactlec;
 	actilec:
-		if(cs ==1'b1)
-			NextState = mem;
-		else
+		if(readstrobe ==1'b1)
 			NextState = actilec;
+		else
+			NextState = noactlec;
 	mem:
-		if(cs ==1'b1)
+		if(readstrobe ==1'b1)
 			NextState = mem;
 		else
 			NextState = fin;
@@ -152,7 +154,7 @@ module control_principal_rtc(clk,reset,cs,writestrobe,readstrobe,dir,dato,memori
 		 end		
 		wstrobe:
 		begin
-			datoout<=0;
+			datoout<={7'd0,esclisto};
 			actesc<=1;
 			actlec<=0;
 		end
@@ -164,7 +166,7 @@ module control_principal_rtc(clk,reset,cs,writestrobe,readstrobe,dir,dato,memori
 		end
 	   w_start:
 		begin
-			datoout<=0;
+			datoout<={7'd0,esclisto};
 			actesc<=1;
 			actlec<=0;
 		end
@@ -176,33 +178,35 @@ module control_principal_rtc(clk,reset,cs,writestrobe,readstrobe,dir,dato,memori
 		end
 	   rstrobe:
 		begin
-			datoout<=0;
+			datoout<={7'd0,memorialisto};
 			actesc<=0;
 			actlec<=1;
 		end
 	   r_start:
 		begin
-			datoout<=0;
+			datoout<={7'd0,memorialisto};
 			actesc<=0;
 			actlec<=1;
 		end
 	   noactlec:
 		begin
-			datoout<=8'd1;
+			datoout<=datomem;
 			actesc<=0;
-			actlec<=0;
+			actlec<=1;
 		end
 	   actilec:
 		begin
-			datoout<=0;
+			datoout<=8'd1;
 			actesc<=0;
-			actlec<=0;
+			if(dir != 8'd11) actlec<=1;
+			else actlec<=0;
 		end
 	   mem:
 			begin
 			datoout<=datomem;
 			actesc<=0;
-			actlec<=0;
+			if(dir != 8'd11) actlec<=1;
+			else actlec<=0;
 		end
 	   fin: 
 		begin

@@ -71,7 +71,7 @@ module ControlKB(
 	localparam N9 = 8'h46;
 	
 	reg ReadyCommit;
-	reg [3:0] AddressBuffer;
+	reg [7:0] AddressBuffer;
 	reg [7:0] DataBuffer;
 	reg [15:0] KBBuffer_Before; // Save the keycode when is attempted
 	reg Changing; // See changes in the Keycode
@@ -115,26 +115,26 @@ module ControlKB(
 						// KeyDown
 						case(KBBuffer[7:0])
 							F1: begin 
-								AddressBuffer <= 4'd6;
+								AddressBuffer <= 8'd22; // Brinca a año 6
 								VirtualPos <= 2'd0;
 							end
 							F2: begin 
-								AddressBuffer <= 4'd3;
+								AddressBuffer <= 8'd19; // Brinca a hora 3
 								VirtualPos <= 2'd0;
 							end
 							F3: begin 
-								AddressBuffer <= 4'd9;
+								AddressBuffer <= 8'd25; // Cronometro a hora 9
 								VirtualPos <= 2'd0;
 							end
 							F11: begin
 								// Cambiar timer
-								AddressBuffer <= 4'd10;
+								AddressBuffer <= 8'd28;
 								DataBuffer[7:0] <= 8'd8; // RECORDAR KEYLOR
 								ReadyCommit <= 1'b1;
 							end
 							F12: begin
 								// Desactivar el Ring
-								AddressBuffer <= 4'd10;
+								AddressBuffer <= 8'd28;
 								DataBuffer <= 8'd0;
 								ReadyCommit <= 1'b1;
 							end
@@ -144,7 +144,7 @@ module ControlKB(
 								if(VirtualPos == 2'd2)
 									begin
 										VirtualPos <= 2'd0;
-										AddressBuffer <= AddressBuffer + 2'd2;
+										AddressBuffer <= AddressBuffer + 4'd2;
 									end
 								else
 									begin
@@ -214,7 +214,7 @@ module ControlKB(
 	end
 	
 	// Assignment
-	assign Address = {4'd0, AddressBuffer};
+	assign Address = AddressBuffer;
 	assign Data = DataBuffer;
 	assign Commit = {7'd0, ReadyCommit};
 

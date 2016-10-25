@@ -62,7 +62,7 @@ begin
    end
   finalizar:
           if (iniciar == 1'b1)
-			  next_state = lee;
+			  next_state = finalizar;
 			 else
 			  next_state = inicio;
   default:begin
