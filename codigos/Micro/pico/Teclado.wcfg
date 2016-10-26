@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/pico/Empaquetado_total_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="Empaquetado_total_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="28" />
+   <wvobject fp_name="/Empaquetado_total_tb/R" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">R[3:0]</obj_property>
+      <obj_property name="ObjectShortName">R[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/G" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">G[3:0]</obj_property>
+      <obj_property name="ObjectShortName">G[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/B" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">B[3:0]</obj_property>
+      <obj_property name="ObjectShortName">B[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/HSync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">HSync</obj_property>
+      <obj_property name="ObjectShortName">HSync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/VSync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">VSync</obj_property>
+      <obj_property name="ObjectShortName">VSync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/CS" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CS</obj_property>
+      <obj_property name="ObjectShortName">CS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/AD" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">AD</obj_property>
+      <obj_property name="ObjectShortName">AD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/RD" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RD</obj_property>
+      <obj_property name="ObjectShortName">RD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/WR" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">WR</obj_property>
+      <obj_property name="ObjectShortName">WR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/pwm_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pwm_out</obj_property>
+      <obj_property name="ObjectShortName">pwm_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/datRTC" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">datRTC[7:0]</obj_property>
+      <obj_property name="ObjectShortName">datRTC[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/PS2_Clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">PS2_Clock</obj_property>
+      <obj_property name="ObjectShortName">PS2_Clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/PS2_Data" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">PS2_Data</obj_property>
+      <obj_property name="ObjectShortName">PS2_Data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/irq" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">irq</obj_property>
+      <obj_property name="ObjectShortName">irq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/Key" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Key[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Key[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/datoinR" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">datoinR[7:0]</obj_property>
+      <obj_property name="ObjectShortName">datoinR[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/F0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">F0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">F0[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/teclado/Commit" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Commit[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Commit[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/teclado/Data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Data[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/teclado/Address" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Address[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Address[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/teclado/Port_ID" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Port_ID[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Port_ID[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/teclado/KBBuffer" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">KBBuffer[15:0]</obj_property>
+      <obj_property name="ObjectShortName">KBBuffer[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/in_port" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">in_port[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_port[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/out_port" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_port[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_port[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/actTeclado" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">actTeclado</obj_property>
+      <obj_property name="ObjectShortName">actTeclado</obj_property>
+   </wvobject>
+</wave_config>

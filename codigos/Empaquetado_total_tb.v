@@ -30,6 +30,7 @@ module Empaquetado_total_tb;
 	reg PS2_Clock;
 	reg PS2_Data;
 	reg irq;
+	reg [7:0] Key;
 
 	// Outputs
 	wire [3:0] R;
@@ -71,16 +72,71 @@ module Empaquetado_total_tb;
 		// Initialize Inputs
 		clk = 0;
 		reset = 1;
-		PS2_Clock = 0;
-		PS2_Data = 0;
+		PS2_Clock = 1;
+		PS2_Data = 1;
 		irq = 1;
 		datoinR=8'h0F;
 		#10 reset =0;
 		// Wait 100 ns for global reset to finish
 		#100;
-        
+      Key = 8'h05; // Seleccionar años
+		#3000000 Key = 8'h2E; // Presionar un 5
+		#3000000 Key = 8'h5A; // Dar enter
 		// Add stimulus here
 
+	end
+	integer i;
+	parameter F0 = 8'hF0;
+	always @(Key)
+	begin
+		// KeyDown
+		PS2_Data = 0;
+		#30000 PS2_Clock = 0;
+		#30000 PS2_Clock = 1;
+		for(i = 0; i < 8; i = i + 1)
+		begin
+			PS2_Data = Key[i];
+			#30000 PS2_Clock = 0;
+			#30000 PS2_Clock = 1;
+		end
+		PS2_Data = 0; // Paridad no importa
+		#30000 PS2_Clock = 0;
+		#30000 PS2_Clock = 1;
+				PS2_Data = 1; // Stop
+		#30000 PS2_Clock = 0;
+		#30000 PS2_Clock = 1;
+		// KeyUp
+		PS2_Data = 0;
+		#30000 PS2_Clock = 0;
+		#30000 PS2_Clock = 1;
+		for(i = 0; i < 8; i = i + 1)
+		begin
+			PS2_Data = F0[i];
+			#30000 PS2_Clock = 0;
+			#30000 PS2_Clock = 1;
+		end
+		PS2_Data = 0; // Paridad no importa
+		#30000 PS2_Clock = 0;
+		#30000 PS2_Clock = 1;
+				PS2_Data = 1; // Stop
+		#30000 PS2_Clock = 0;
+		#60000 PS2_Clock = 1;
+		// KeyDown
+		PS2_Data = 0;
+		#30000 PS2_Clock = 0;
+		#30000 PS2_Clock = 1;
+		for(i = 0; i < 8; i = i + 1)
+		begin
+			PS2_Data = Key[i];
+			#30000 PS2_Clock = 0;
+			#30000 PS2_Clock = 1;
+		end
+		PS2_Data = 0; // Paridad no importa
+		#30000 PS2_Clock = 0;
+		#30000 PS2_Clock = 1;
+				PS2_Data = 1; // Stop
+		#30000 PS2_Clock = 0;
+		#30000 PS2_Clock = 1;
 	end
       
 endmodule
