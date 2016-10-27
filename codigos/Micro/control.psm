@@ -47,11 +47,11 @@ input s1,(s0)
 store s1,(s0)
 compare s0,07
 jump nz, ciclo_teclado
-fetch s1,07 
-compare s1, 01
-call z, escritura
 fetch s0,05
 fetch s1,06
+fetch s2,07 
+test s2, 01
+call z, escritura
 store s1,(s0)
 store s0,0A
 return
