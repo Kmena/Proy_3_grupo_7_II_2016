@@ -10,7 +10,7 @@
 /*  \___\/\___\                                                    */
 /***********************************************************************/
 
-/* This file is designed for use with ISim build 0xc3576ebc */
+/* This file is designed for use with ISim build 0x8ef4fb42 */
 
 #define XSI_HIDE_SYMBOL_SPEC true
 #include "xsi.h"
@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/audio/counter.v";
+static const char *ng0 = "C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/audio/counter.v";
 static int ng1[] = {0, 0};
 static unsigned int ng2[] = {1U, 0U};
 
@@ -43,7 +43,7 @@ static void Always_27_0(char *t0)
     char *t11;
     char *t12;
 
-LAB0:    t1 = (t0 + 2528U);
+LAB0:    t1 = (t0 + 1444U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -51,9 +51,9 @@ LAB0:    t1 = (t0 + 2528U);
 LAB3:    goto *t2;
 
 LAB2:    xsi_set_current_line(27, ng0);
-    t2 = (t0 + 2848);
+    t2 = (t0 + 1640);
     *((int *)t2) = 1;
-    t3 = (t0 + 2560);
+    t3 = (t0 + 1472);
     *((char **)t3) = t2;
     *((char **)t1) = &&LAB4;
 
@@ -61,7 +61,7 @@ LAB1:    return;
 LAB4:    xsi_set_current_line(28, ng0);
 
 LAB5:    xsi_set_current_line(29, ng0);
-    t4 = (t0 + 1208U);
+    t4 = (t0 + 692U);
     t5 = *((char **)t4);
     t4 = (t5 + 4);
     t6 = *((unsigned int *)t4);
@@ -73,20 +73,20 @@ LAB5:    xsi_set_current_line(29, ng0);
         goto LAB6;
 
 LAB7:    xsi_set_current_line(32, ng0);
-    t2 = (t0 + 1608);
-    t3 = (t2 + 56U);
+    t2 = (t0 + 920);
+    t3 = (t2 + 36U);
     t4 = *((char **)t3);
     t5 = ((char*)((ng2)));
     memset(t13, 0, 8);
     xsi_vlog_unsigned_add(t13, 5, t4, 5, t5, 5);
-    t11 = (t0 + 1608);
+    t11 = (t0 + 920);
     xsi_vlogvar_wait_assign_value(t11, t13, 0, 0, 5, 0LL);
 
 LAB8:    goto LAB2;
 
 LAB6:    xsi_set_current_line(30, ng0);
     t11 = ((char*)((ng1)));
-    t12 = (t0 + 1608);
+    t12 = (t0 + 920);
     xsi_vlogvar_wait_assign_value(t12, t11, 0, 0, 5, 0LL);
     goto LAB8;
 

@@ -94,7 +94,7 @@ module ControlKB(
 				if(ReadyCommit && DataSelect == 2'b10)
 				begin
 					AddressBuffer <= 8'd20;
-					DataBuffer <= 8'dF0;
+					DataBuffer <= 8'hF0;
 					ReadyCommit <= 1'd0;
 					KBBuffer_Before <= 16'd0;
 					Changing <= 1'd0;

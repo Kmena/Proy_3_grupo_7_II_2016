@@ -23,6 +23,127 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema"/>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1477525360" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1477525360">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477525360" xil_pn:in_ck="-4086178963934188369" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1477525360">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../../Empaquetado_total.v"/>
+      <outfile xil_pn:name="../../Empaquetado_total_tb.v"/>
+      <outfile xil_pn:name="../../Nueva carpeta/FlipFlopRS.v"/>
+      <outfile xil_pn:name="../../Nueva carpeta/FlipFlopRS_tb.v"/>
+      <outfile xil_pn:name="../../Nueva carpeta/ModuloRTC.v"/>
+      <outfile xil_pn:name="../../Nueva carpeta/Mux2x7.v"/>
+      <outfile xil_pn:name="../../Nueva carpeta/control_principal_rtc.v"/>
+      <outfile xil_pn:name="../../Nueva carpeta/control_salida.v"/>
+      <outfile xil_pn:name="../../Nueva carpeta/escritura.v"/>
+      <outfile xil_pn:name="../../Nueva carpeta/lectura.v"/>
+      <outfile xil_pn:name="../../Nueva carpeta/memoria_DRULC.v"/>
+      <outfile xil_pn:name="../../Nueva carpeta/or2.v"/>
+      <outfile xil_pn:name="../../audio/Latch_entrada.v"/>
+      <outfile xil_pn:name="../../audio/contador2.v"/>
+      <outfile xil_pn:name="../../audio/counter.v"/>
+      <outfile xil_pn:name="../../audio/div_frecuencia.v"/>
+      <outfile xil_pn:name="../../audio/empaquetado_audio.v"/>
+      <outfile xil_pn:name="../../audio/empaquetado_sonido_tb.v"/>
+      <outfile xil_pn:name="../../audio/pwm.v"/>
+      <outfile xil_pn:name="../../audio/reset.v"/>
+      <outfile xil_pn:name="../../controlVGA/ControlSalidaVGA.v"/>
+      <outfile xil_pn:name="../../controlVGA/ControlVGACentralWithBlue.v"/>
+      <outfile xil_pn:name="../../controlVGA/ControlVGAwithBlue_tb.v"/>
+      <outfile xil_pn:name="../../controlVGA/PunterosVGA_MemoryPointed.v"/>
+      <outfile xil_pn:name="../../controlVGA/SyncCounters.v"/>
+      <outfile xil_pn:name="../../controlVGA/VROMswithBlue.v"/>
+      <outfile xil_pn:name="../../controlVGA/contadorhorizontal.v"/>
+      <outfile xil_pn:name="../../controlVGA/contadorvertical.v"/>
+      <outfile xil_pn:name="../../controlVGA/generadorBlank.v"/>
+      <outfile xil_pn:name="../../controlVGA/generadorHsync.v"/>
+      <outfile xil_pn:name="../../controlVGA/generadorVsync.v"/>
+      <outfile xil_pn:name="../../deco id/decoid.v"/>
+      <outfile xil_pn:name="../../teclado/build/1.0/ControlKB.v"/>
+      <outfile xil_pn:name="../../teclado/build/1.0/Decodificador_Keyboard_ID.v"/>
+      <outfile xil_pn:name="../../teclado/build/1.0/Keyboard.v"/>
+      <outfile xil_pn:name="../../teclado/build/1.0/Keyboard_tb.v"/>
+      <outfile xil_pn:name="../../teclado/build/1.0/PS2Receiver.v"/>
+      <outfile xil_pn:name="../../teclado/build/1.0/debouncer.v"/>
+      <outfile xil_pn:name="../control.v"/>
+      <outfile xil_pn:name="../encapsulado_micro.v"/>
+      <outfile xil_pn:name="../encapsulado_micro_tb.v"/>
+      <outfile xil_pn:name="../kcpsm6.v"/>
+      <outfile xil_pn:name="../kcpsm6_design_template.v"/>
+      <outfile xil_pn:name="../mux3x7.v"/>
+      <outfile xil_pn:name="ModuloRTC_tb.v"/>
+      <outfile xil_pn:name="control.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1477525360" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="9171173542404817957" xil_pn:start_ts="1477525360">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477525360" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4570845277581087293" xil_pn:start_ts="1477525360">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477525360" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-7273748642243781900" xil_pn:start_ts="1477525360">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1477525360" xil_pn:in_ck="-4086178963934188369" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1477525360">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../../Empaquetado_total.v"/>
+      <outfile xil_pn:name="../../Empaquetado_total_tb.v"/>
+      <outfile xil_pn:name="../../Nueva carpeta/FlipFlopRS.v"/>
+      <outfile xil_pn:name="../../Nueva carpeta/FlipFlopRS_tb.v"/>
+      <outfile xil_pn:name="../../Nueva carpeta/ModuloRTC.v"/>
+      <outfile xil_pn:name="../../Nueva carpeta/Mux2x7.v"/>
+      <outfile xil_pn:name="../../Nueva carpeta/control_principal_rtc.v"/>
+      <outfile xil_pn:name="../../Nueva carpeta/control_salida.v"/>
+      <outfile xil_pn:name="../../Nueva carpeta/escritura.v"/>
+      <outfile xil_pn:name="../../Nueva carpeta/lectura.v"/>
+      <outfile xil_pn:name="../../Nueva carpeta/memoria_DRULC.v"/>
+      <outfile xil_pn:name="../../Nueva carpeta/or2.v"/>
+      <outfile xil_pn:name="../../audio/Latch_entrada.v"/>
+      <outfile xil_pn:name="../../audio/contador2.v"/>
+      <outfile xil_pn:name="../../audio/counter.v"/>
+      <outfile xil_pn:name="../../audio/div_frecuencia.v"/>
+      <outfile xil_pn:name="../../audio/empaquetado_audio.v"/>
+      <outfile xil_pn:name="../../audio/empaquetado_sonido_tb.v"/>
+      <outfile xil_pn:name="../../audio/pwm.v"/>
+      <outfile xil_pn:name="../../audio/reset.v"/>
+      <outfile xil_pn:name="../../controlVGA/ControlSalidaVGA.v"/>
+      <outfile xil_pn:name="../../controlVGA/ControlVGACentralWithBlue.v"/>
+      <outfile xil_pn:name="../../controlVGA/ControlVGAwithBlue_tb.v"/>
+      <outfile xil_pn:name="../../controlVGA/PunterosVGA_MemoryPointed.v"/>
+      <outfile xil_pn:name="../../controlVGA/SyncCounters.v"/>
+      <outfile xil_pn:name="../../controlVGA/VROMswithBlue.v"/>
+      <outfile xil_pn:name="../../controlVGA/contadorhorizontal.v"/>
+      <outfile xil_pn:name="../../controlVGA/contadorvertical.v"/>
+      <outfile xil_pn:name="../../controlVGA/generadorBlank.v"/>
+      <outfile xil_pn:name="../../controlVGA/generadorHsync.v"/>
+      <outfile xil_pn:name="../../controlVGA/generadorVsync.v"/>
+      <outfile xil_pn:name="../../deco id/decoid.v"/>
+      <outfile xil_pn:name="../../teclado/build/1.0/ControlKB.v"/>
+      <outfile xil_pn:name="../../teclado/build/1.0/Decodificador_Keyboard_ID.v"/>
+      <outfile xil_pn:name="../../teclado/build/1.0/Keyboard.v"/>
+      <outfile xil_pn:name="../../teclado/build/1.0/Keyboard_tb.v"/>
+      <outfile xil_pn:name="../../teclado/build/1.0/PS2Receiver.v"/>
+      <outfile xil_pn:name="../../teclado/build/1.0/debouncer.v"/>
+      <outfile xil_pn:name="../control.v"/>
+      <outfile xil_pn:name="../encapsulado_micro.v"/>
+      <outfile xil_pn:name="../encapsulado_micro_tb.v"/>
+      <outfile xil_pn:name="../kcpsm6.v"/>
+      <outfile xil_pn:name="../kcpsm6_design_template.v"/>
+      <outfile xil_pn:name="../mux3x7.v"/>
+      <outfile xil_pn:name="ModuloRTC_tb.v"/>
+      <outfile xil_pn:name="control.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1477525370" xil_pn:in_ck="-4086178963934188369" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6366650664792444839" xil_pn:start_ts="1477525360">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+  </transforms>
 
 </generated_project>

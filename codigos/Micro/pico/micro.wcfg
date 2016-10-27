@@ -1,17 +1,16 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <wave_config>
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/Empaquetado_total_tb_isim_beh.wdb" id="1" type="auto">
+      <db_ref path="C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/Micro/pico/Empaquetado_total_tb_isim_beh.wdb" id="1" type="auto">
          <top_modules>
             <top_module name="Empaquetado_total_tb" />
             <top_module name="glbl" />
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="24" />
+   <WVObjectSize size="18" />
    <wvobject fp_name="/Empaquetado_total_tb/uut/micro/out_port" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">out_port[7:0]</obj_property>
       <obj_property name="ObjectShortName">out_port[7:0]</obj_property>
@@ -59,117 +58,10 @@
    <wvobject fp_name="/Empaquetado_total_tb/uut/micro/dir" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">dir[7:0]</obj_property>
       <obj_property name="ObjectShortName">dir[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/port_id" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">port_id[7:0]</obj_property>
-      <obj_property name="ObjectShortName">port_id[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/in_port" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">in_port[7:0]</obj_property>
-      <obj_property name="ObjectShortName">in_port[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/write_strobe" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">write_strobe</obj_property>
-      <obj_property name="ObjectShortName">write_strobe</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/k_write_strobe" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">k_write_strobe</obj_property>
-      <obj_property name="ObjectShortName">k_write_strobe</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/Act" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">Act</obj_property>
-      <obj_property name="ObjectShortName">Act</obj_property>
    </wvobject>
    <wvobject fp_name="/Empaquetado_total_tb/uut/micro/read_strobe" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">read_strobe</obj_property>
       <obj_property name="ObjectShortName">read_strobe</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/mux1/selector" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">selector</obj_property>
-      <obj_property name="ObjectShortName">selector</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/mux1/selector2" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">selector2</obj_property>
-      <obj_property name="ObjectShortName">selector2</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/mux1/Dato1" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">Dato1[7:0]</obj_property>
-      <obj_property name="ObjectShortName">Dato1[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/mux1/Dato2" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">Dato2[7:0]</obj_property>
-      <obj_property name="ObjectShortName">Dato2[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/mux1/Dato3" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">Dato3[7:0]</obj_property>
-      <obj_property name="ObjectShortName">Dato3[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/mux1/salida" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">salida[7:0]</obj_property>
-      <obj_property name="ObjectShortName">salida[7:0]</obj_property>
-   </wvobject>
-</wave_config>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<wave_config>
-   <wave_state>
-   </wave_state>
-   <db_ref_list>
-      <db_ref path="C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/Empaquetado_total_tb_isim_beh.wdb" id="1" type="auto">
-         <top_modules>
-            <top_module name="Empaquetado_total_tb" />
-            <top_module name="glbl" />
-         </top_modules>
-      </db_ref>
-   </db_ref_list>
-   <WVObjectSize size="24" />
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/out_port" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">out_port[7:0]</obj_property>
-      <obj_property name="ObjectShortName">out_port[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/in_portRTC" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">in_portRTC[7:0]</obj_property>
-      <obj_property name="ObjectShortName">in_portRTC[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/in_portteclado" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">in_portteclado[7:0]</obj_property>
-      <obj_property name="ObjectShortName">in_portteclado[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/in_portVGA" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">in_portVGA[7:0]</obj_property>
-      <obj_property name="ObjectShortName">in_portVGA[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/writestrobe" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">writestrobe</obj_property>
-      <obj_property name="ObjectShortName">writestrobe</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/clk" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/kcpsm6_reset" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">kcpsm6_reset</obj_property>
-      <obj_property name="ObjectShortName">kcpsm6_reset</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/actRTC" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">actRTC</obj_property>
-      <obj_property name="ObjectShortName">actRTC</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/actVGA" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">actVGA</obj_property>
-      <obj_property name="ObjectShortName">actVGA</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/actTeclado" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">actTeclado</obj_property>
-      <obj_property name="ObjectShortName">actTeclado</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/actsonido" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">actsonido</obj_property>
-      <obj_property name="ObjectShortName">actsonido</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/dir" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">dir[7:0]</obj_property>
-      <obj_property name="ObjectShortName">dir[7:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/Empaquetado_total_tb/uut/micro/port_id" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">port_id[7:0]</obj_property>
@@ -192,33 +84,4 @@
       <obj_property name="ElementShortName">Act</obj_property>
       <obj_property name="ObjectShortName">Act</obj_property>
    </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/read_strobe" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">read_strobe</obj_property>
-      <obj_property name="ObjectShortName">read_strobe</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/mux1/selector" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">selector</obj_property>
-      <obj_property name="ObjectShortName">selector</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/mux1/selector2" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">selector2</obj_property>
-      <obj_property name="ObjectShortName">selector2</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/mux1/Dato1" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">Dato1[7:0]</obj_property>
-      <obj_property name="ObjectShortName">Dato1[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/mux1/Dato2" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">Dato2[7:0]</obj_property>
-      <obj_property name="ObjectShortName">Dato2[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/mux1/Dato3" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">Dato3[7:0]</obj_property>
-      <obj_property name="ObjectShortName">Dato3[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Empaquetado_total_tb/uut/micro/mux1/salida" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">salida[7:0]</obj_property>
-      <obj_property name="ObjectShortName">salida[7:0]</obj_property>
-   </wvobject>
 </wave_config>
->>>>>>> b699255e55f8135cb23f73095b4b35af6b2130c7
