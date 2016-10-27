@@ -10,7 +10,7 @@
 /*  \___\/\___\                                                    */
 /***********************************************************************/
 
-/* This file is designed for use with ISim build 0x8ef4fb42 */
+/* This file is designed for use with ISim build 0xc3576ebc */
 
 #define XSI_HIDE_SYMBOL_SPEC true
 #include "xsi.h"
@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/controlVGA/ControlVGACentralWithBlue.v";
+static const char *ng0 = "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/controlVGA/ControlVGACentralWithBlue.v";
 static unsigned int ng1[] = {0U, 0U};
 
 
@@ -54,7 +54,7 @@ static void Always_74_0(char *t0)
     char *t24;
     char *t25;
 
-LAB0:    t1 = (t0 + 2732U);
+LAB0:    t1 = (t0 + 4768U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -62,9 +62,9 @@ LAB0:    t1 = (t0 + 2732U);
 LAB3:    goto *t2;
 
 LAB2:    xsi_set_current_line(74, ng0);
-    t2 = (t0 + 2928);
+    t2 = (t0 + 5088);
     *((int *)t2) = 1;
-    t3 = (t0 + 2760);
+    t3 = (t0 + 4800);
     *((char **)t3) = t2;
     *((char **)t1) = &&LAB4;
 
@@ -72,7 +72,7 @@ LAB1:    return;
 LAB4:    xsi_set_current_line(75, ng0);
 
 LAB5:    xsi_set_current_line(77, ng0);
-    t6 = (t0 + 1612U);
+    t6 = (t0 + 2808U);
     t7 = *((char **)t6);
     memset(t5, 0, 8);
     t6 = (t7 + 4);
@@ -106,7 +106,7 @@ LAB10:    t22 = *((unsigned int *)t5);
     *((unsigned int *)t14) = (t23 & 1U);
     t24 = ((char*)((ng1)));
     xsi_vlogtype_concat(t4, 8, 8, 2U, t24, 7, t5, 1);
-    t25 = (t0 + 2208);
+    t25 = (t0 + 3848);
     xsi_vlogvar_assign_value(t25, t4, 0, 0, 8);
     goto LAB2;
 

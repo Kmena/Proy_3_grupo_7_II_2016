@@ -10,7 +10,7 @@
 /*  \___\/\___\                                                    */
 /***********************************************************************/
 
-/* This file is designed for use with ISim build 0x8ef4fb42 */
+/* This file is designed for use with ISim build 0xc3576ebc */
 
 #define XSI_HIDE_SYMBOL_SPEC true
 #include "xsi.h"
@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/teclado/build/1.0/debouncer.v";
+static const char *ng0 = "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/teclado/build/1.0/debouncer.v";
 static int ng1[] = {19, 0};
 static unsigned int ng2[] = {1U, 0U};
 static unsigned int ng3[] = {0U, 0U};
@@ -88,7 +88,7 @@ static void Always_35_0(char *t0)
     char *t56;
     char *t57;
 
-LAB0:    t1 = (t0 + 2180U);
+LAB0:    t1 = (t0 + 3808U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -96,9 +96,9 @@ LAB0:    t1 = (t0 + 2180U);
 LAB3:    goto *t2;
 
 LAB2:    xsi_set_current_line(35, ng0);
-    t2 = (t0 + 2376);
+    t2 = (t0 + 4128);
     *((int *)t2) = 1;
-    t3 = (t0 + 2208);
+    t3 = (t0 + 3840);
     *((char **)t3) = t2;
     *((char **)t1) = &&LAB4;
 
@@ -106,10 +106,10 @@ LAB1:    return;
 LAB4:    xsi_set_current_line(35, ng0);
 
 LAB5:    xsi_set_current_line(36, ng0);
-    t4 = (t0 + 692U);
+    t4 = (t0 + 1208U);
     t5 = *((char **)t4);
-    t4 = (t0 + 1380);
-    t6 = (t4 + 36U);
+    t4 = (t0 + 2408);
+    t6 = (t4 + 56U);
     t7 = *((char **)t6);
     memset(t8, 0, 8);
     t9 = (t5 + 4);
@@ -147,19 +147,19 @@ LAB11:    xsi_set_current_line(40, ng0);
 
 LAB21:    xsi_set_current_line(41, ng0);
     t2 = ((char*)((ng3)));
-    t3 = (t0 + 1196);
+    t3 = (t0 + 2088);
     xsi_vlogvar_wait_assign_value(t3, t2, 0, 0, 5, 0LL);
     xsi_set_current_line(42, ng0);
-    t2 = (t0 + 692U);
+    t2 = (t0 + 1208U);
     t3 = *((char **)t2);
-    t2 = (t0 + 1380);
+    t2 = (t0 + 2408);
     xsi_vlogvar_wait_assign_value(t2, t3, 0, 0, 1, 0LL);
 
 LAB12:    xsi_set_current_line(44, ng0);
-    t2 = (t0 + 784U);
+    t2 = (t0 + 1368U);
     t3 = *((char **)t2);
-    t2 = (t0 + 1472);
-    t4 = (t2 + 36U);
+    t2 = (t0 + 2568);
+    t4 = (t2 + 56U);
     t5 = *((char **)t4);
     memset(t8, 0, 8);
     t6 = (t3 + 4);
@@ -197,12 +197,12 @@ LAB27:    xsi_set_current_line(48, ng0);
 
 LAB37:    xsi_set_current_line(49, ng0);
     t2 = ((char*)((ng3)));
-    t3 = (t0 + 1288);
+    t3 = (t0 + 2248);
     xsi_vlogvar_wait_assign_value(t3, t2, 0, 0, 5, 0LL);
     xsi_set_current_line(50, ng0);
-    t2 = (t0 + 784U);
+    t2 = (t0 + 1368U);
     t3 = *((char **)t2);
-    t2 = (t0 + 1472);
+    t2 = (t0 + 2568);
     xsi_vlogvar_wait_assign_value(t2, t3, 0, 0, 1, 0LL);
 
 LAB28:    goto LAB2;
@@ -215,8 +215,8 @@ LAB8:    t23 = (t8 + 4);
 LAB10:    xsi_set_current_line(36, ng0);
 
 LAB13:    xsi_set_current_line(37, ng0);
-    t30 = (t0 + 1196);
-    t31 = (t30 + 36U);
+    t30 = (t0 + 2088);
+    t31 = (t30 + 56U);
     t32 = *((char **)t31);
     t33 = ((char*)((ng1)));
     memset(t34, 0, 8);
@@ -252,13 +252,13 @@ LAB17:    t50 = (t34 + 4);
         goto LAB18;
 
 LAB19:    xsi_set_current_line(38, ng0);
-    t2 = (t0 + 1196);
-    t3 = (t2 + 36U);
+    t2 = (t0 + 2088);
+    t3 = (t2 + 56U);
     t4 = *((char **)t3);
     t5 = ((char*)((ng2)));
     memset(t8, 0, 8);
     xsi_vlog_unsigned_add(t8, 5, t4, 5, t5, 5);
-    t6 = (t0 + 1196);
+    t6 = (t0 + 2088);
     xsi_vlogvar_wait_assign_value(t6, t8, 0, 0, 5, 0LL);
 
 LAB20:    goto LAB12;
@@ -269,9 +269,9 @@ LAB16:    t49 = (t34 + 4);
     goto LAB17;
 
 LAB18:    xsi_set_current_line(37, ng0);
-    t56 = (t0 + 692U);
+    t56 = (t0 + 1208U);
     t57 = *((char **)t56);
-    t56 = (t0 + 1012);
+    t56 = (t0 + 1768);
     xsi_vlogvar_wait_assign_value(t56, t57, 0, 0, 1, 0LL);
     goto LAB20;
 
@@ -283,8 +283,8 @@ LAB24:    t9 = (t8 + 4);
 LAB26:    xsi_set_current_line(44, ng0);
 
 LAB29:    xsi_set_current_line(45, ng0);
-    t23 = (t0 + 1288);
-    t24 = (t23 + 36U);
+    t23 = (t0 + 2248);
+    t24 = (t23 + 56U);
     t30 = *((char **)t24);
     t31 = ((char*)((ng1)));
     memset(t34, 0, 8);
@@ -320,13 +320,13 @@ LAB33:    t36 = (t34 + 4);
         goto LAB34;
 
 LAB35:    xsi_set_current_line(46, ng0);
-    t2 = (t0 + 1288);
-    t3 = (t2 + 36U);
+    t2 = (t0 + 2248);
+    t3 = (t2 + 56U);
     t4 = *((char **)t3);
     t5 = ((char*)((ng2)));
     memset(t8, 0, 8);
     xsi_vlog_unsigned_add(t8, 5, t4, 5, t5, 5);
-    t6 = (t0 + 1288);
+    t6 = (t0 + 2248);
     xsi_vlogvar_wait_assign_value(t6, t8, 0, 0, 5, 0LL);
 
 LAB36:    goto LAB28;
@@ -337,9 +337,9 @@ LAB32:    t35 = (t34 + 4);
     goto LAB33;
 
 LAB34:    xsi_set_current_line(45, ng0);
-    t49 = (t0 + 784U);
+    t49 = (t0 + 1368U);
     t50 = *((char **)t49);
-    t49 = (t0 + 1104);
+    t49 = (t0 + 1928);
     xsi_vlogvar_wait_assign_value(t49, t50, 0, 0, 1, 0LL);
     goto LAB36;
 

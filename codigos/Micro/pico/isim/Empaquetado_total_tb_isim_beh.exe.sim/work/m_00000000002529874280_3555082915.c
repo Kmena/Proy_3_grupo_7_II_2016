@@ -10,7 +10,7 @@
 /*  \___\/\___\                                                    */
 /***********************************************************************/
 
-/* This file is designed for use with ISim build 0x8ef4fb42 */
+/* This file is designed for use with ISim build 0xc3576ebc */
 
 #define XSI_HIDE_SYMBOL_SPEC true
 #include "xsi.h"
@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/Micro/encapsulado_micro.v";
+static const char *ng0 = "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/encapsulado_micro.v";
 
 
 
@@ -194,7 +194,7 @@ static void Cont_43_0(char *t0)
     unsigned int t165;
     char *t166;
 
-LAB0:    t1 = (t0 + 2824U);
+LAB0:    t1 = (t0 + 4928U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -202,7 +202,7 @@ LAB0:    t1 = (t0 + 2824U);
 LAB3:    goto *t2;
 
 LAB2:    xsi_set_current_line(43, ng0);
-    t2 = (t0 + 1336U);
+    t2 = (t0 + 2328U);
     t3 = *((char **)t2);
     memset(t4, 0, 8);
     t2 = (t3 + 4);
@@ -273,10 +273,10 @@ LAB35:    t111 = (t103 + 4);
 
 LAB37:    memcpy(t125, t103, 8);
 
-LAB38:    t153 = (t0 + 3064);
-    t154 = (t153 + 32U);
+LAB38:    t153 = (t0 + 5328);
+    t154 = (t153 + 56U);
     t155 = *((char **)t154);
-    t156 = (t155 + 40U);
+    t156 = (t155 + 56U);
     t157 = *((char **)t156);
     memset(t157, 0, 8);
     t158 = 1U;
@@ -292,7 +292,7 @@ LAB38:    t153 = (t0 + 3064);
     t165 = *((unsigned int *)t163);
     *((unsigned int *)t163) = (t165 | t159);
     xsi_driver_vfirst_trans(t153, 0, 0);
-    t166 = (t0 + 3020);
+    t166 = (t0 + 5248);
     *((int *)t166) = 1;
 
 LAB1:    return;
@@ -304,7 +304,7 @@ LAB6:    t10 = (t4 + 4);
     *((unsigned int *)t10) = 1;
     goto LAB7;
 
-LAB8:    t16 = (t0 + 1428U);
+LAB8:    t16 = (t0 + 2488U);
     t17 = *((char **)t16);
     memset(t18, 0, 8);
     t16 = (t17 + 4);
@@ -375,7 +375,7 @@ LAB20:    t60 = (t53 + 4);
     *((unsigned int *)t60) = 1;
     goto LAB21;
 
-LAB22:    t66 = (t0 + 1520U);
+LAB22:    t66 = (t0 + 2648U);
     t67 = *((char **)t66);
     memset(t68, 0, 8);
     t66 = (t67 + 4);
@@ -446,7 +446,7 @@ LAB34:    t110 = (t103 + 4);
     *((unsigned int *)t110) = 1;
     goto LAB35;
 
-LAB36:    t116 = (t0 + 1612U);
+LAB36:    t116 = (t0 + 2808U);
     t117 = *((char **)t116);
     memset(t118, 0, 8);
     t116 = (t117 + 4);

@@ -58,10 +58,8 @@
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Empaquetado_total_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Empaquetado_total_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Empaquetado_total_summary.xml"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Empaquetado_total_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Empaquetado_total_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Empaquetado_total_tb_isim_beh.wdb"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Empaquetado_total_tb_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Empaquetado_total_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Empaquetado_total_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Empaquetado_total_xst.xrpt"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
@@ -71,11 +69,15 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="empaquetado_audio_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="empaquetado_audio_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="empaquetado_audio_tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="mux3x7_isim_beh.exe"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="pwm_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
@@ -89,13 +91,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1477430011" xil_pn:in_ck="-4086178963934188369" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1477430010">
+    <transform xil_pn:end_ts="1477603078" xil_pn:in_ck="7566085170095421030" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1477603078">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../Empaquetado_total.v"/>
       <outfile xil_pn:name="../../Empaquetado_total_tb.v"/>
       <outfile xil_pn:name="../../Nueva carpeta/FlipFlopRS.v"/>
@@ -113,6 +111,7 @@
       <outfile xil_pn:name="../../audio/counter.v"/>
       <outfile xil_pn:name="../../audio/div_frecuencia.v"/>
       <outfile xil_pn:name="../../audio/empaquetado_audio.v"/>
+      <outfile xil_pn:name="../../audio/empaquetado_audio_tb.v"/>
       <outfile xil_pn:name="../../audio/empaquetado_sonido_tb.v"/>
       <outfile xil_pn:name="../../audio/pwm.v"/>
       <outfile xil_pn:name="../../audio/reset.v"/>
@@ -143,11 +142,11 @@
       <outfile xil_pn:name="ModuloRTC_tb.v"/>
       <outfile xil_pn:name="control.v"/>
     </transform>
-    <transform xil_pn:end_ts="1477430043" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="9171173542404817957" xil_pn:start_ts="1477430043">
+    <transform xil_pn:end_ts="1477603107" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7363189542006140979" xil_pn:start_ts="1477603107">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1477430043" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4570845277581087293" xil_pn:start_ts="1477430043">
+    <transform xil_pn:end_ts="1477603107" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-7591747819334263087" xil_pn:start_ts="1477603107">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -155,14 +154,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1477430011" xil_pn:in_ck="-4086178963934188369" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1477430011">
+    <transform xil_pn:end_ts="1477603078" xil_pn:in_ck="7566085170095421030" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1477603078">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../Empaquetado_total.v"/>
       <outfile xil_pn:name="../../Empaquetado_total_tb.v"/>
       <outfile xil_pn:name="../../Nueva carpeta/FlipFlopRS.v"/>
@@ -180,6 +174,7 @@
       <outfile xil_pn:name="../../audio/counter.v"/>
       <outfile xil_pn:name="../../audio/div_frecuencia.v"/>
       <outfile xil_pn:name="../../audio/empaquetado_audio.v"/>
+      <outfile xil_pn:name="../../audio/empaquetado_audio_tb.v"/>
       <outfile xil_pn:name="../../audio/empaquetado_sonido_tb.v"/>
       <outfile xil_pn:name="../../audio/pwm.v"/>
       <outfile xil_pn:name="../../audio/reset.v"/>
@@ -210,30 +205,20 @@
       <outfile xil_pn:name="ModuloRTC_tb.v"/>
       <outfile xil_pn:name="control.v"/>
     </transform>
-    <transform xil_pn:end_ts="1477430061" xil_pn:in_ck="-4086178963934188369" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6366650664792444839" xil_pn:start_ts="1477430043">
+    <transform xil_pn:end_ts="1477603110" xil_pn:in_ck="7566085170095421030" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5994966049395768395" xil_pn:start_ts="1477603107">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Empaquetado_total_tb_beh.prj"/>
-      <outfile xil_pn:name="Empaquetado_total_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="empaquetado_audio_tb_beh.prj"/>
+      <outfile xil_pn:name="empaquetado_audio_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1477430061" xil_pn:in_ck="-7511206461268033112" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-23831204889041508" xil_pn:start_ts="1477430061">
+    <transform xil_pn:end_ts="1477603110" xil_pn:in_ck="-2168907181715096170" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6021195725258620488" xil_pn:start_ts="1477603110">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Empaquetado_total_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="empaquetado_audio_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
@@ -265,14 +250,14 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1477426395" xil_pn:in_ck="2390352174764501058" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="3821959566276664881" xil_pn:start_ts="1477426290">
+    <transform xil_pn:end_ts="1477602373" xil_pn:in_ck="2390352174764501058" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="3821959566276664881" xil_pn:start_ts="1477602254">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="Empaquetado_total.lso"/>
       <outfile xil_pn:name="Empaquetado_total.ngc"/>
       <outfile xil_pn:name="Empaquetado_total.ngr"/>
@@ -280,6 +265,7 @@
       <outfile xil_pn:name="Empaquetado_total.stx"/>
       <outfile xil_pn:name="Empaquetado_total.syr"/>
       <outfile xil_pn:name="Empaquetado_total.xst"/>
+      <outfile xil_pn:name="Empaquetado_total_tb_stx_beh.prj"/>
       <outfile xil_pn:name="Empaquetado_total_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
@@ -293,7 +279,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Empaquetado_total.bld"/>
       <outfile xil_pn:name="Empaquetado_total.ngd"/>
       <outfile xil_pn:name="Empaquetado_total_ngdbuild.xrpt"/>
@@ -335,6 +323,8 @@
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Empaquetado_total.bgn"/>
       <outfile xil_pn:name="Empaquetado_total.bit"/>
       <outfile xil_pn:name="Empaquetado_total.drc"/>

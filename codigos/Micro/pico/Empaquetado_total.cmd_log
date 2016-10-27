@@ -12,3 +12,4 @@ trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Empaquetado_total.twx Empaquet
 bitgen -intstyle ise -f Empaquetado_total.ut Empaquetado_total.ncd 
 xst -intstyle ise -ifn "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/pico/Empaquetado_total.xst" -ofn "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/pico/Empaquetado_total.syr" 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Empaquetado_total.ucf -p xc7a100t-csg324-1 Empaquetado_total.ngc Empaquetado_total.ngd  
+xst -intstyle ise -ifn "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/Empaquetado_total.xst" -ofn "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/pico/Empaquetado_total.syr" 

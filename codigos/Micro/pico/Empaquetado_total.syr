@@ -1,21 +1,18 @@
-Release 14.7 - xst P.20131013 (lin64)
-Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> 
-Parameter TMPDIR set to xst/projnav.tmp
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.27 secs
  
---> 
-Parameter xsthdpdir set to xst
+--> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.27 secs
  
---> 
-Reading design: Empaquetado_total.prj
+--> Reading design: Empaquetado_total.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -108,80 +105,78 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/teclado/build/1.0/debouncer.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\teclado\build\1.0\debouncer.v" into library work
 Parsing module <debouncer>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/pico/control.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\pico\control.v" into library work
 Parsing module <control>.
 Parsing module <jtag_loader_6>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/kcpsm6.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\kcpsm6.v" into library work
 Parsing module <kcpsm6>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/VROMswithBlue.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\controlVGA\VROMswithBlue.v" into library work
 Parsing module <VROMswithBlue>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/generadorVsync.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\controlVGA\generadorVsync.v" into library work
 Parsing module <generadorVsync>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/generadorHsync.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\controlVGA\generadorHsync.v" into library work
 Parsing module <generadorHsync>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/generadorBlank.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\controlVGA\generadorBlank.v" into library work
 Parsing module <generadorBlank>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/contadorvertical.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\controlVGA\contadorvertical.v" into library work
 Parsing module <contadorvertical>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/contadorhorizontal.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\controlVGA\contadorhorizontal.v" into library work
 Parsing module <contadorhorizontal>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/audio/reset.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\audio\reset.v" into library work
 Parsing module <reset>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/audio/div_frecuencia.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\audio\div_frecuencia.v" into library work
 Parsing module <div_frecuencia>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/audio/counter.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\audio\counter.v" into library work
 Parsing module <counter>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/audio/contador2.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\audio\contador2.v" into library work
 Parsing module <contador2>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/teclado/build/1.0/PS2Receiver.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\teclado\build\1.0\PS2Receiver.v" into library work
 Parsing module <PS2Receiver>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/teclado/build/1.0/Decodificador_Keyboard_ID.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\teclado\build\1.0\Decodificador_Keyboard_ID.v" into library work
 Parsing module <Port_ID_Decoder>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/teclado/build/1.0/ControlKB.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\teclado\build\1.0\ControlKB.v" into library work
 Parsing module <ControlKB>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/or2.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Nueva carpeta\or2.v" into library work
 Parsing module <or2>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/Mux2x7.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Nueva carpeta\Mux2x7.v" into library work
 Parsing module <Mux2x7>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/memoria_DRULC.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Nueva carpeta\memoria_DRULC.v" into library work
 Parsing module <memoria_DMULC>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/lectura.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Nueva carpeta\lectura.v" into library work
 Parsing module <lectura>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/escritura.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Nueva carpeta\escritura.v" into library work
 Parsing module <escritura>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/control_salida.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Nueva carpeta\control_salida.v" into library work
 Parsing module <control_salida>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/control_principal_rtc.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Nueva carpeta\control_principal_rtc.v" into library work
 Parsing module <control_principal_rtc>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/mux3x7.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\mux3x7.v" into library work
 Parsing module <mux3x7>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/kcpsm6_design_template.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\kcpsm6_design_template.v" into library work
 Parsing module <pico>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/deco id/decoid.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\deco id\decoid.v" into library work
 Parsing module <deco_id>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/SyncCounters.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\controlVGA\SyncCounters.v" into library work
 Parsing module <SyncCounters>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/PunterosVGA_MemoryPointed.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\controlVGA\PunterosVGA_MemoryPointed.v" into library work
 Parsing module <PunterosVGA_MemoryPointed>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/ControlSalidaVGA.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\controlVGA\ControlSalidaVGA.v" into library work
 Parsing module <ControlSalidaVGA>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/audio/pwm.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\audio\pwm.v" into library work
 Parsing module <pwm>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/audio/Latch_entrada.v" into library work
-Parsing module <Latch_entrada>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/teclado/build/1.0/Keyboard.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\teclado\build\1.0\Keyboard.v" into library work
 Parsing module <Keyboard>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/ModuloRTC.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Nueva carpeta\ModuloRTC.v" into library work
 Parsing module <ModuloRTC>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/encapsulado_micro.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\encapsulado_micro.v" into library work
 Parsing module <encapsulado_micro>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/ControlVGACentralWithBlue.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\controlVGA\ControlVGACentralWithBlue.v" into library work
 Parsing module <ControlVGACentral_MemoryPointed>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/audio/empaquetado_audio.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\audio\empaquetado_audio.v" into library work
 Parsing module <empaquetado_audio>.
-Analyzing Verilog file "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Empaquetado_total.v" into library work
+Analyzing Verilog file "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Empaquetado_total.v" into library work
 Parsing module <Empaquetado_total>.
 
 =========================================================================
@@ -207,8 +202,8 @@ Elaborating module <generadorBlank>.
 Elaborating module <PunterosVGA_MemoryPointed>.
 
 Elaborating module <VROMswithBlue>.
-Reading initialization file \"home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/Numeros.png.hex\".
-Reading initialization file \"home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/Interfaz.png.hex\".
+Reading initialization file \":\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\controlVGA\/Numeros.png.hex\".
+Reading initialization file \":\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\controlVGA\/Interfaz.png.hex\".
 
 Elaborating module <ControlSalidaVGA>.
 
@@ -240,8 +235,6 @@ Elaborating module <memoria_DMULC>.
 
 Elaborating module <empaquetado_audio>.
 
-Elaborating module <Latch_entrada>.
-
 Elaborating module <pwm>.
 
 Elaborating module <counter>.
@@ -249,11 +242,12 @@ Elaborating module <counter>.
 Elaborating module <div_frecuencia>.
 
 Elaborating module <reset>.
+WARNING:HDLCompiler:189 - "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\audio\pwm.v" Line 33: Size mismatch in connection of port <contador>. Formal port size is 16-bit while actual signal size is 17-bit.
 
 Elaborating module <contador2>.
 
 Elaborating module <encapsulado_micro>.
-WARNING:HDLCompiler:1127 - "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/encapsulado_micro.v" Line 42: Assignment to Act ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\encapsulado_micro.v" Line 43: Assignment to Act ignored, since the identifier is never used
 
 Elaborating module <pico>.
 
@@ -344,29 +338,30 @@ Elaborating module <LUT6(INIT=64'b1011111110111100100011111000110010110011101100
 Elaborating module <LUT6(INIT=64'b1111111100000000111100001111000011001100110011001010101010101010)>.
 
 Elaborating module <RAM64M(INIT_A=64'b0,INIT_B=64'b0,INIT_C=64'b0,INIT_D=64'b0)>.
-WARNING:HDLCompiler:1127 - "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/kcpsm6_design_template.v" Line 147: Assignment to interrupt_ack ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/kcpsm6_design_template.v" Line 193: Assignment to rdl ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\kcpsm6_design_template.v" Line 147: Assignment to interrupt_ack ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\kcpsm6_design_template.v" Line 193: Assignment to rdl ignored, since the identifier is never used
 
 Elaborating module <control(C_FAMILY="7S",C_RAM_SIZE_KWORDS=1,C_JTAG_LOADER_ENABLE=0)>.
 
 Elaborating module
 <RAMB18E1(READ_WIDTH_A=18,WRITE_WIDTH_A=18,DOA_REG=0,INIT_A=18'b0,RSTREG_PRIORITY_A="REGCE",SRVAL_A=18'b0,WRITE_MODE_A="WRITE_FIRST",READ_WIDTH_B=18,WRITE_WIDTH_B=18,DOB_REG=0,INIT_B=18'b0,RSTREG_PRIORITY_B="REGCE",SRVAL_B=18'b0,WRITE_MODE_B="WRITE_FIRST",INIT_FILE="NONE",SIM_COLLISION_CHECK="ALL",RAM_MODE="TDP",RDADDR_COLLISION_HWCONFIG="DELAYED_WRITE",SIM_DEVICE="7SERIES",INIT_00=256'b01000000000010000100100000010000000000010100101100001000000000000100100000000000000000010100101100001000000000000100000000001100010010000100000010000000000001000000000100000100000000010100100001000000110011000000000001111000000000001011100000000000000111,INIT_01=256'b01000000000001000100000000010001010000000000000110000000011000110100000001100100000000010100101100000100000000000100000000000100010001000000010001000000010000000000000101001011000010000000000001000000000001000100100000100000000000010100101100001000000000,INIT_02=256'b10000011000000000001000000000100010100000000000011000001000000000101000000000000111100000000101011
-10000100000000101100010000011010110000000001010000000000101100110100010000000110110001000001110110000000011111110100000000011111100001000000001000000100000000,INIT_03=256'b1111001000011011100000100000000010000010000000000001000000001011111100000001101010110000000010100110000000110011110100000001100111100010000000001000001000000000000000000101001010000010000000000001000000000001000100000001000010000011000000000000000001010010,INIT_04=256'b1011001100011011110100110011001110110011000111001101001100001110101100110001101111010011001100011011001100011010011000000100001111010000001100001100001000000000101000100001000000010001000000010001000000000001000100010001000000010000001001110101000000000000,INIT_05=256'b010100000000000000100000010100101101000100000001100000010000000001010000000000001101001100110010,INIT_06=256'b0,INIT_07=256'b0,INIT_08=256'b0,INIT_09=256'b0,INIT_0A=256'b0,INIT_0B=256'b0,INIT_0C=256'b0,INIT_0D=256'b0,INIT_0E=256'b0,INIT_0F=256'b0,INIT_10=256'b0,INIT_11=256'b0,INIT_12=256'b0,INIT_13=256'b0,INIT_
-14=256'b0,INIT_15=256'b0,INIT_16=256'b0,INIT_17=256'b0,INIT_18=256'b0,INIT_19=256'b0,INIT_1A=256'b0,INIT_1B=256'b0,INIT_1C=256'b0,INIT_1D=256'b0,INIT_1E=256'b0,INIT_1F=256'b0,INIT_20=256'b0,INIT_21=256'b0,INIT_22=256'b0,INIT_23=256'b0,INIT_24=256'b0,INIT_25=256'b0,INIT_26=256'b0,INIT_27=256'b0,INIT_28=256'b0,INIT_29=256'b0,INIT_2A=256'b0,INIT_2B=256'b0,INIT_2C=256'b0,INIT_2D=256'b0,INIT_2E=256'b0,INIT_2F=256'b0,INIT_30=256'b0,INIT_31=256'b0,INIT_32=256'b0,INIT_33=256'b0,INIT_34=256'b0,INIT_35=256'b0,INIT_36=256'b0,INIT_37=256'b0,INIT_38=256'b0,INIT_39=256'b0,INIT_3A=256'b0,INIT_3B=256'b0,INIT_3C=256'b0,INIT_3D=256'b0,INIT_3E=256'b0,INIT_3F=256'b0,INITP_00=256'b01011000010100010001000100011011000010100001010000000100011011000100001000010000010101010100000110100110110000100101101101001000010100000101000001010001010000010101000101010,INITP_01=256'b0,INITP_02=256'b0,INITP_03=256'b0,INITP_04=256'b0,INITP_05=256'b0,INITP_06=256'b0,INITP_07=256'b0)>.
-WARNING:HDLCompiler:1127 - "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/kcpsm6_design_template.v" Line 199: Assignment to rdl ignored, since the identifier is never used
+10000100000000000000000010110011010010000000011011001000000111101100010000011010110000000001010110000000011111110100000000011111100001000000001000000100000000,INIT_03=256'b1111001000011011100000100000000010000010000000000001000000001011111100000001101010110000000010100110000000110011110100000001100111100010000000001000001000000000000000000101001010000010000000000001000000000001000100000001000010000011000000000000000001010010,INIT_04=256'b1011001100011011110100110011001110110011000111001101001100001110101100110001101111010011001100011011001100011010011000000100001111010000001100001100001000000000101000100001000000010001000000010001000000000001000100010001000000010000001001110101000000000000,INIT_05=256'b010100000000000000100000010100101101000100000001100000010000000001010000000000001101001100110010,INIT_06=256'b0,INIT_07=256'b0,INIT_08=256'b0,INIT_09=256'b0,INIT_0A=256'b0,INIT_0B=256'b0,INIT_0C=256'b0,INIT_0D=256'b0,INIT_0E=256'b0,INIT_0F=256'b0,INIT_10=256'b0,INIT_11=256'b0,INIT_12=256'b0,INIT_13=256'b0,INIT_
+14=256'b0,INIT_15=256'b0,INIT_16=256'b0,INIT_17=256'b0,INIT_18=256'b0,INIT_19=256'b0,INIT_1A=256'b0,INIT_1B=256'b0,INIT_1C=256'b0,INIT_1D=256'b0,INIT_1E=256'b0,INIT_1F=256'b0,INIT_20=256'b0,INIT_21=256'b0,INIT_22=256'b0,INIT_23=256'b0,INIT_24=256'b0,INIT_25=256'b0,INIT_26=256'b0,INIT_27=256'b0,INIT_28=256'b0,INIT_29=256'b0,INIT_2A=256'b0,INIT_2B=256'b0,INIT_2C=256'b0,INIT_2D=256'b0,INIT_2E=256'b0,INIT_2F=256'b0,INIT_30=256'b0,INIT_31=256'b0,INIT_32=256'b0,INIT_33=256'b0,INIT_34=256'b0,INIT_35=256'b0,INIT_36=256'b0,INIT_37=256'b0,INIT_38=256'b0,INIT_39=256'b0,INIT_3A=256'b0,INIT_3B=256'b0,INIT_3C=256'b0,INIT_3D=256'b0,INIT_3E=256'b0,INIT_3F=256'b0,INITP_00=256'b01011000010100010001000100011011000010100001010000000100011011000100001000010000010101010101100000000110110000100101101101001000010100000101000001010001010000010101000101010,INITP_01=256'b0,INITP_02=256'b0,INITP_03=256'b0,INITP_04=256'b0,INITP_05=256'b0,INITP_06=256'b0,INITP_07=256'b0)>.
+WARNING:HDLCompiler:1127 - "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\kcpsm6_design_template.v" Line 199: Assignment to rdl ignored, since the identifier is never used
 
 Elaborating module <deco_id>.
 
 Elaborating module <mux3x7>.
-WARNING:HDLCompiler:1127 - "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Empaquetado_total.v" Line 64: Assignment to actTeclado ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Empaquetado_total.v" Line 64: Assignment to actTeclado ignored, since the identifier is never used
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <Empaquetado_total>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Empaquetado_total.v".
-INFO:Xst:3210 - "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Empaquetado_total.v" line 64: Output port <actTeclado> of the instance <micro> is unconnected or connected to loadless signal.
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Empaquetado_total.v".
+INFO:Xst:3210 - "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Empaquetado_total.v" line 64: Output port <actTeclado> of the instance <micro> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Empaquetado_total.v" line 64: Output port <actsonido> of the instance <micro> is unconnected or connected to loadless signal.
     Found 8-bit register for signal <writeRTC>.
     Found 8-bit register for signal <writedata>.
     Found 1-bit tristate buffer for signal <datRTC<7>> created at line 47
@@ -383,14 +378,15 @@ INFO:Xst:3210 - "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Empaquetado
 Unit <Empaquetado_total> synthesized.
 
 Synthesizing Unit <ControlVGACentral_MemoryPointed>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/ControlVGACentralWithBlue.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\controlVGA\ControlVGACentralWithBlue.v".
 WARNING:Xst:647 - Input <actVGA> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Read_Strobe> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
-	inferred   1 Multiplexer(s).
+	no macro.
 Unit <ControlVGACentral_MemoryPointed> synthesized.
 
 Synthesizing Unit <SyncCounters>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/SyncCounters.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\controlVGA\SyncCounters.v".
     Found 10-bit subtractor for signal <CntX[9]_GND_11_o_sub_1_OUT> created at line 59.
     Found 10-bit subtractor for signal <CntY[9]_GND_11_o_sub_2_OUT> created at line 60.
     Summary:
@@ -399,7 +395,7 @@ Synthesizing Unit <SyncCounters>.
 Unit <SyncCounters> synthesized.
 
 Synthesizing Unit <contadorhorizontal>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/contadorhorizontal.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\controlVGA\contadorhorizontal.v".
     Found 1-bit register for signal <vflag>.
     Found 12-bit register for signal <Horizontal>.
     Found 12-bit adder for signal <Horizontal[11]_GND_12_o_add_3_OUT> created at line 38.
@@ -409,7 +405,7 @@ Synthesizing Unit <contadorhorizontal>.
 Unit <contadorhorizontal> synthesized.
 
 Synthesizing Unit <contadorvertical>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/contadorvertical.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\controlVGA\contadorvertical.v".
     Found 10-bit register for signal <cntVertical>.
     Found 10-bit adder for signal <cntVertical[9]_GND_13_o_add_2_OUT> created at line 27.
     Summary:
@@ -418,7 +414,7 @@ Synthesizing Unit <contadorvertical>.
 Unit <contadorvertical> synthesized.
 
 Synthesizing Unit <generadorHsync>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/generadorHsync.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\controlVGA\generadorHsync.v".
     Found 10-bit comparator greater for signal <GND_14_o_cntHorizontal[9]_LessThan_1_o> created at line 17
     Found 10-bit comparator lessequal for signal <n0001> created at line 17
     Summary:
@@ -426,7 +422,7 @@ Synthesizing Unit <generadorHsync>.
 Unit <generadorHsync> synthesized.
 
 Synthesizing Unit <generadorVsync>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/generadorVsync.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\controlVGA\generadorVsync.v".
     Found 10-bit comparator greater for signal <GND_15_o_cntVertical[9]_LessThan_1_o> created at line 18
     Found 10-bit comparator greater for signal <cntVertical[9]_PWR_7_o_LessThan_2_o> created at line 18
     Summary:
@@ -434,7 +430,7 @@ Synthesizing Unit <generadorVsync>.
 Unit <generadorVsync> synthesized.
 
 Synthesizing Unit <generadorBlank>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/generadorBlank.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\controlVGA\generadorBlank.v".
     Found 10-bit comparator lessequal for signal <n0000> created at line 28
     Found 10-bit comparator greater for signal <PosX[9]_PWR_8_o_LessThan_2_o> created at line 28
     Found 10-bit comparator lessequal for signal <n0004> created at line 28
@@ -444,7 +440,7 @@ Synthesizing Unit <generadorBlank>.
 Unit <generadorBlank> synthesized.
 
 Synthesizing Unit <PunterosVGA_MemoryPointed>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/PunterosVGA_MemoryPointed.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\controlVGA\PunterosVGA_MemoryPointed.v".
         FechaY1 = 130
         HoraY1 = 288
         IndicadoresY1 = 370
@@ -516,7 +512,7 @@ Synthesizing Unit <PunterosVGA_MemoryPointed>.
 Unit <PunterosVGA_MemoryPointed> synthesized.
 
 Synthesizing Unit <VROMswithBlue>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/VROMswithBlue.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\controlVGA\VROMswithBlue.v".
         DigitosWidth = 40
         DigitosHeight = 600
         InterfazWidth = 640
@@ -536,7 +532,7 @@ WARNING:Xst:3035 - Index value(s) does not match array range for signal <Interfa
 Unit <VROMswithBlue> synthesized.
 
 Synthesizing Unit <ControlSalidaVGA>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/controlVGA/ControlSalidaVGA.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\controlVGA\ControlSalidaVGA.v".
     Found 1-bit register for signal <LSBGreen>.
     Found 1-bit register for signal <LSBBlue>.
     Found 4-bit register for signal <R>.
@@ -548,14 +544,14 @@ Synthesizing Unit <ControlSalidaVGA>.
 Unit <ControlSalidaVGA> synthesized.
 
 Synthesizing Unit <Keyboard>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/teclado/build/1.0/Keyboard.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\teclado\build\1.0\Keyboard.v".
     Found 8-bit 4-to-1 multiplexer for signal <Keyboard_Output> created at line 49.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <Keyboard> synthesized.
 
 Synthesizing Unit <PS2Receiver>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/teclado/build/1.0/PS2Receiver.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\teclado\build\1.0\PS2Receiver.v".
     Found 1-bit register for signal <datacur<7>>.
     Found 1-bit register for signal <datacur<6>>.
     Found 1-bit register for signal <datacur<5>>.
@@ -579,7 +575,7 @@ Synthesizing Unit <PS2Receiver>.
 Unit <PS2Receiver> synthesized.
 
 Synthesizing Unit <debouncer>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/teclado/build/1.0/debouncer.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\teclado\build\1.0\debouncer.v".
     Found 5-bit register for signal <cnt0>.
     Found 1-bit register for signal <Iv0>.
     Found 1-bit register for signal <O1>.
@@ -597,13 +593,13 @@ Synthesizing Unit <debouncer>.
 Unit <debouncer> synthesized.
 
 Synthesizing Unit <Port_ID_Decoder>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/teclado/build/1.0/Decodificador_Keyboard_ID.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\teclado\build\1.0\Decodificador_Keyboard_ID.v".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <Port_ID_Decoder> synthesized.
 
 Synthesizing Unit <ControlKB>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/teclado/build/1.0/ControlKB.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\teclado\build\1.0\ControlKB.v".
     Found 1-bit register for signal <ReadyCommit>.
     Found 1-bit register for signal <Changing>.
     Found 8-bit register for signal <DataBuffer>.
@@ -622,25 +618,25 @@ Synthesizing Unit <ControlKB>.
 Unit <ControlKB> synthesized.
 
 Synthesizing Unit <ModuloRTC>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/ModuloRTC.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Nueva carpeta\ModuloRTC.v".
     Summary:
 	no macro.
 Unit <ModuloRTC> synthesized.
 
 Synthesizing Unit <Mux2x7>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/Mux2x7.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Nueva carpeta\Mux2x7.v".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <Mux2x7> synthesized.
 
 Synthesizing Unit <or2>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/or2.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Nueva carpeta\or2.v".
     Summary:
 	no macro.
 Unit <or2> synthesized.
 
 Synthesizing Unit <control_principal_rtc>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/control_principal_rtc.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Nueva carpeta\control_principal_rtc.v".
         inicio = 4'b0000
         esclec = 4'b0001
         wstrobe = 4'b0010
@@ -686,7 +682,7 @@ WARNING:Xst:647 - Input <cs> is never used. This port will be preserved and left
 Unit <control_principal_rtc> synthesized.
 
 Synthesizing Unit <lectura>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/lectura.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Nueva carpeta\lectura.v".
         inicio = 2'b00
         lee = 2'b01
         finalizar = 2'b10
@@ -714,7 +710,7 @@ Synthesizing Unit <lectura>.
 Unit <lectura> synthesized.
 
 Synthesizing Unit <escritura>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/escritura.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Nueva carpeta\escritura.v".
         inicio = 3'b000
         write = 3'b001
         transferorclock = 3'b010
@@ -746,7 +742,7 @@ Synthesizing Unit <escritura>.
 Unit <escritura> synthesized.
 
 Synthesizing Unit <control_salida>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/control_salida.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Nueva carpeta\control_salida.v".
         inicio = 3'b000
         ADdown = 3'b001
         CSdown = 3'b010
@@ -791,7 +787,7 @@ Synthesizing Unit <control_salida>.
 Unit <control_salida> synthesized.
 
 Synthesizing Unit <memoria_DMULC>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/memoria_DRULC.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Nueva carpeta\memoria_DRULC.v".
     Found 1-bit register for signal <memoriain<0><7>>.
     Found 1-bit register for signal <memoriain<0><6>>.
     Found 1-bit register for signal <memoriain<0><5>>.
@@ -928,20 +924,13 @@ Synthesizing Unit <memoria_DMULC>.
 Unit <memoria_DMULC> synthesized.
 
 Synthesizing Unit <empaquetado_audio>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/audio/empaquetado_audio.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\audio\empaquetado_audio.v".
     Summary:
 	no macro.
 Unit <empaquetado_audio> synthesized.
 
-Synthesizing Unit <Latch_entrada>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/audio/Latch_entrada.v".
-    Found 1-bit register for signal <out>.
-    Summary:
-	inferred   1 D-type flip-flop(s).
-Unit <Latch_entrada> synthesized.
-
 Synthesizing Unit <pwm>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/audio/pwm.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\audio\pwm.v".
     Found 1-bit register for signal <pwm_out>.
     Found 5-bit comparator greater for signal <counter[4]_ref[4]_LessThan_2_o> created at line 41
     Summary:
@@ -950,19 +939,19 @@ Synthesizing Unit <pwm>.
 Unit <pwm> synthesized.
 
 Synthesizing Unit <counter>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/audio/counter.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\audio\counter.v".
     Found 5-bit register for signal <counter_out>.
-    Found 5-bit adder for signal <counter_out[4]_GND_39_o_add_0_OUT> created at line 32.
+    Found 5-bit adder for signal <counter_out[4]_GND_38_o_add_0_OUT> created at line 32.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   5 D-type flip-flop(s).
 Unit <counter> synthesized.
 
 Synthesizing Unit <div_frecuencia>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/audio/div_frecuencia.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\audio\div_frecuencia.v".
     Found 1-bit register for signal <clk_out>.
     Found 17-bit register for signal <contador>.
-    Found 17-bit adder for signal <contador[16]_GND_40_o_add_2_OUT> created at line 42.
+    Found 17-bit adder for signal <contador[16]_GND_39_o_add_2_OUT> created at line 42.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  18 D-type flip-flop(s).
@@ -970,39 +959,39 @@ Synthesizing Unit <div_frecuencia>.
 Unit <div_frecuencia> synthesized.
 
 Synthesizing Unit <reset>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/audio/reset.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\audio\reset.v".
     Found 5-bit register for signal <pwm_ref>.
-    Found 17-bit comparator lessequal for signal <n0000> created at line 35
+    Found 16-bit comparator lessequal for signal <n0000> created at line 35
     Summary:
 	inferred   5 D-type flip-flop(s).
 	inferred   1 Comparator(s).
 Unit <reset> synthesized.
 
 Synthesizing Unit <contador2>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/audio/contador2.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\audio\contador2.v".
     Found 17-bit register for signal <counter_out>.
-    Found 17-bit adder for signal <counter_out[16]_GND_42_o_add_0_OUT> created at line 32.
+    Found 17-bit adder for signal <counter_out[16]_GND_41_o_add_0_OUT> created at line 32.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  17 D-type flip-flop(s).
 Unit <contador2> synthesized.
 
 Synthesizing Unit <encapsulado_micro>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/encapsulado_micro.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\encapsulado_micro.v".
     Summary:
 	no macro.
 Unit <encapsulado_micro> synthesized.
 
 Synthesizing Unit <pico>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/kcpsm6_design_template.v".
-INFO:Xst:3210 - "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/kcpsm6_design_template.v" line 136: Output port <interrupt_ack> of the instance <processor> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/kcpsm6_design_template.v" line 198: Output port <rdl> of the instance <program_rom> is unconnected or connected to loadless signal.
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\kcpsm6_design_template.v".
+INFO:Xst:3210 - "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\kcpsm6_design_template.v" line 136: Output port <interrupt_ack> of the instance <processor> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\kcpsm6_design_template.v" line 198: Output port <rdl> of the instance <program_rom> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <pico> synthesized.
 
 Synthesizing Unit <kcpsm6>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/kcpsm6.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\kcpsm6.v".
         hwbuild = 8'b00000000
         interrupt_vector = 12'b001111111111
         scratch_pad_memory_size = 64
@@ -1232,7 +1221,7 @@ Synthesizing Unit <kcpsm6>.
 Unit <kcpsm6> synthesized.
 
 Synthesizing Unit <control>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/pico/control.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\pico\control.v".
         C_JTAG_LOADER_ENABLE = 0
         C_FAMILY = "7S"
         C_RAM_SIZE_KWORDS = 1
@@ -1242,7 +1231,7 @@ Synthesizing Unit <control>.
 Unit <control> synthesized.
 
 Synthesizing Unit <deco_id>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/deco id/decoid.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\deco id\decoid.v".
     Found 64x8-bit Read Only RAM for signal <_n0110>
     Summary:
 	inferred   1 RAM(s).
@@ -1250,7 +1239,7 @@ Synthesizing Unit <deco_id>.
 Unit <deco_id> synthesized.
 
 Synthesizing Unit <mux3x7>.
-    Related source file is "/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/codigos/Micro/mux3x7.v".
+    Related source file is "C:\Users\LuisOrlando\Documents\Proyectos Lab Digitales\Proy_3_grupo_7_II_2016\codigos\Micro\mux3x7.v".
     Summary:
 	inferred   2 Multiplexer(s).
 Unit <mux3x7> synthesized.
@@ -1278,8 +1267,8 @@ Macro Statistics
  4-bit adder                                           : 1
  5-bit adder                                           : 4
  8-bit addsub                                          : 1
-# Registers                                            : 104
- 1-bit register                                        : 40
+# Registers                                            : 103
+ 1-bit register                                        : 39
  10-bit register                                       : 6
  12-bit register                                       : 1
  15-bit register                                       : 1
@@ -1294,13 +1283,13 @@ Macro Statistics
  1-bit comparator equal                                : 2
  10-bit comparator greater                             : 5
  10-bit comparator lessequal                           : 10
+ 16-bit comparator lessequal                           : 1
  16-bit comparator not equal                           : 1
- 17-bit comparator lessequal                           : 1
  4-bit comparator greater                              : 1
  5-bit comparator greater                              : 1
  8-bit comparator equal                                : 1
  8-bit comparator lessequal                            : 8
-# Multiplexers                                         : 116
+# Multiplexers                                         : 115
  1-bit 2-to-1 multiplexer                              : 30
  10-bit 2-to-1 multiplexer                             : 8
  16-bit 2-to-1 multiplexer                             : 3
@@ -1310,7 +1299,7 @@ Macro Statistics
  5-bit 2-to-1 multiplexer                              : 1
  6-bit 2-to-1 multiplexer                              : 4
  8-bit 16-to-1 multiplexer                             : 1
- 8-bit 2-to-1 multiplexer                              : 40
+ 8-bit 2-to-1 multiplexer                              : 39
  8-bit 4-to-1 multiplexer                              : 1
 # Tristates                                            : 8
  1-bit tristate buffer                                 : 8
@@ -1453,14 +1442,14 @@ Macro Statistics
  17-bit up counter                                     : 2
  4-bit up counter                                      : 1
  5-bit up counter                                      : 4
-# Registers                                            : 511
- Flip-Flops                                            : 511
+# Registers                                            : 510
+ Flip-Flops                                            : 510
 # Comparators                                          : 30
  1-bit comparator equal                                : 2
  10-bit comparator greater                             : 5
  10-bit comparator lessequal                           : 10
+ 16-bit comparator lessequal                           : 1
  16-bit comparator not equal                           : 1
- 17-bit comparator lessequal                           : 1
  4-bit comparator greater                              : 1
  5-bit comparator greater                              : 1
  8-bit comparator equal                                : 1
@@ -1549,6 +1538,7 @@ Optimizing FSM <RTC/COUT/FSM_3> on signal <state[1:3]> with user encoding.
  111   | 111
 -------------------
 WARNING:Xst:1710 - FF/Latch <Maddsub_n02981_0> (without init value) has a constant value of 0 in block <PunterosVGA_MemoryPointed>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <sonido/sonido/cont_ref/counter_out_16> of sequential type is unconnected in block <Empaquetado_total>.
 INFO:Xst:2261 - The FF/Latch <activa> in Unit <escritura> is equivalent to the following FF/Latch, which will be removed : <escribe> 
 
 Optimizing unit <kcpsm6> ...
@@ -1647,85 +1637,6 @@ Found area constraint ratio of 100 (+ 5) on block Empaquetado_total, actual rati
 INFO:Xst:2260 - The FF/Latch <micro/piko/processor/sync_interrupt_flop> in Unit <Empaquetado_total> is equivalent to the following FF/Latch : <micro/piko/processor/sync_sleep_flop> 
 WARNING:Xst:1293 - FF/Latch <micro/piko/processor/sync_interrupt_flop> has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <micro/piko/processor/sync_sleep_flop> has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:2677 - Node <teclado/PS2/cnt_3> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/cnt_2> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/cnt_1> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/cnt_0> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/keycode_15> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/keycode_14> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/keycode_13> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/keycode_12> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/keycode_11> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/keycode_10> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/keycode_9> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/keycode_8> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/dataprev_7> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/dataprev_6> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/dataprev_5> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/dataprev_4> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/dataprev_3> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/dataprev_2> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/dataprev_1> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/dataprev_0> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/debounce/cnt0_4> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/debounce/cnt0_3> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/debounce/cnt0_2> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/debounce/cnt0_1> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/debounce/cnt0_0> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/debounce/cnt1_4> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/debounce/cnt1_3> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/debounce/cnt1_2> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/debounce/cnt1_1> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/debounce/cnt1_0> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/KBBuffer_Before_15> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/KBBuffer_Before_14> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/KBBuffer_Before_13> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/KBBuffer_Before_12> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/KBBuffer_Before_11> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/KBBuffer_Before_10> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/KBBuffer_Before_9> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/KBBuffer_Before_8> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/KBBuffer_Before_7> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/KBBuffer_Before_6> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/KBBuffer_Before_5> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/KBBuffer_Before_4> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/KBBuffer_Before_3> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/KBBuffer_Before_2> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/KBBuffer_Before_1> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/KBBuffer_Before_0> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/VirtualPos_1> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/VirtualPos_0> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/AddressBuffer_7> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/AddressBuffer_6> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/AddressBuffer_5> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/AddressBuffer_4> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/AddressBuffer_3> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/AddressBuffer_2> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/AddressBuffer_1> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/AddressBuffer_0> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/DataBuffer_7> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/DataBuffer_6> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/DataBuffer_5> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/DataBuffer_4> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/DataBuffer_3> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/DataBuffer_2> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/DataBuffer_1> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/DataBuffer_0> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/Changing> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/Control/ReadyCommit> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/flag> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/datacur_1> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/datacur_2> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/datacur_0> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/datacur_4> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/datacur_5> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/datacur_3> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/datacur_7> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/datacur_6> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/debounce/Iv1> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/debounce/Iv0> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/debounce/O0> of sequential type is unconnected in block <Empaquetado_total>.
-WARNING:Xst:2677 - Node <teclado/PS2/debounce/O1> of sequential type is unconnected in block <Empaquetado_total>.
 WARNING:Xst:1293 - FF/Latch <micro/piko/processor/sync_interrupt_flop> has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <micro/piko/processor/sync_sleep_flop> has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1293 - FF/Latch <micro/piko/processor/sync_interrupt_flop> has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
@@ -1743,8 +1654,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 503
- Flip-Flops                                            : 503
+# Registers                                            : 580
+ Flip-Flops                                            : 580
 
 =========================================================================
 WARNING:Xst:1293 - FF/Latch <micro/piko/processor/sync_interrupt_flop> has a constant value of 0 in block <Empaquetado_total>. This FF/Latch will be trimmed during the optimization process.
@@ -1771,29 +1682,31 @@ Top Level Output File Name         : Empaquetado_total.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1114
+# BELS                             : 1266
 #      GND                         : 1
-#      INV                         : 9
-#      LUT1                        : 66
-#      LUT2                        : 49
-#      LUT3                        : 149
-#      LUT4                        : 63
-#      LUT5                        : 108
-#      LUT6                        : 302
+#      INV                         : 12
+#      LUT1                        : 65
+#      LUT2                        : 68
+#      LUT3                        : 162
+#      LUT4                        : 81
+#      LUT5                        : 132
+#      LUT6                        : 372
 #      LUT6_2                      : 50
-#      MUXCY                       : 150
-#      MUXF7                       : 6
+#      MUXCY                       : 155
+#      MUXF7                       : 8
 #      MUXF8                       : 1
 #      VCC                         : 1
-#      XORCY                       : 159
-# FlipFlops/Latches                : 503
-#      FD                          : 49
-#      FD_1                        : 3
-#      FDC                         : 18
+#      XORCY                       : 158
+# FlipFlops/Latches                : 580
+#      FD                          : 53
+#      FD_1                        : 12
+#      FDC                         : 37
+#      FDCE                        : 16
+#      FDE                         : 16
 #      FDR                         : 137
-#      FDRE                        : 209
+#      FDRE                        : 223
 #      FDRE_1                      : 82
-#      FDS                         : 5
+#      FDS                         : 4
 # RAMS                             : 69
 #      RAM32M                      : 4
 #      RAM64M                      : 2
@@ -1801,8 +1714,8 @@ Primitive and Black Box Usage:
 #      RAMB36E1                    : 62
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 29
-#      IBUF                        : 2
+# IO Buffers                       : 31
+#      IBUF                        : 4
 #      IOBUF                       : 8
 #      OBUF                        : 19
 # DSPs                             : 1
@@ -1815,22 +1728,22 @@ Selected Device : 7a100tcsg324-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             503  out of  126800     0%  
- Number of Slice LUTs:                  820  out of  63400     1%  
-    Number used as Logic:               796  out of  63400     1%  
+ Number of Slice Registers:             580  out of  126800     0%  
+ Number of Slice LUTs:                  966  out of  63400     1%  
+    Number used as Logic:               942  out of  63400     1%  
     Number used as Memory:               24  out of  19000     0%  
        Number used as RAM:               24
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    977
-   Number with an unused Flip Flop:     474  out of    977    48%  
-   Number with an unused LUT:           157  out of    977    16%  
-   Number of fully used LUT-FF pairs:   346  out of    977    35%  
-   Number of unique control sets:        42
+ Number of LUT Flip Flop pairs used:   1121
+   Number with an unused Flip Flop:     541  out of   1121    48%  
+   Number with an unused LUT:           155  out of   1121    13%  
+   Number of fully used LUT-FF pairs:   425  out of   1121    37%  
+   Number of unique control sets:        48
 
 IO Utilization: 
  Number of IOs:                          32
- Number of bonded IOBs:                  30  out of    210    14%  
+ Number of bonded IOBs:                  32  out of    210    15%  
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:               63  out of    135    46%  
@@ -1859,8 +1772,10 @@ Clock Information:
 -----------------------------------------------------------+-------------------------------------------------------------+-------+
 Clock Signal                                               | Clock buffer(FF name)                                       | Load  |
 -----------------------------------------------------------+-------------------------------------------------------------+-------+
-sonido/sonido/div/clk_out                                  | NONE(sonido/sonido/pwm_out)                                 | 19    |
-clk                                                        | BUFGP                                                       | 553   |
+sonido/sonido/div/clk_out                                  | NONE(sonido/sonido/pwm_out)                                 | 18    |
+clk                                                        | BUFGP                                                       | 602   |
+teclado/PS2/debounce/O0                                    | NONE(teclado/PS2/cnt_3)                                     | 13    |
+teclado/PS2/flag                                           | NONE(teclado/PS2/keycode_15)                                | 16    |
 RTC/memoria/Mmux_ADD2[3]_memoriain[15][7]_wide_mux_19_OUT_4| NONE(micro/piko/program_rom/ram_1k_generate.akv7.kcpsm6_rom)| 1     |
 -----------------------------------------------------------+-------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -1906,8 +1821,8 @@ Timing Summary:
 ---------------
 Speed Grade: -1
 
-   Minimum period: 12.071ns (Maximum Frequency: 82.843MHz)
-   Minimum input arrival time before clock: 2.024ns
+   Minimum period: 12.167ns (Maximum Frequency: 82.190MHz)
+   Minimum input arrival time before clock: 2.031ns
    Maximum output required time after clock: 2.706ns
    Maximum combinational path delay: No path found
 
@@ -1917,16 +1832,16 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'sonido/sonido/div/clk_out'
-  Clock period: 2.474ns (frequency: 404.245MHz)
-  Total number of paths / destination ports: 168 / 19
+  Clock period: 2.445ns (frequency: 409.082MHz)
+  Total number of paths / destination ports: 149 / 18
 -------------------------------------------------------------------------
-Delay:               2.474ns (Levels of Logic = 18)
+Delay:               2.445ns (Levels of Logic = 17)
   Source:            sonido/sonido/cont_ref/counter_out_0 (FF)
-  Destination:       sonido/sonido/cont_ref/counter_out_16 (FF)
+  Destination:       sonido/sonido/cont_ref/counter_out_15 (FF)
   Source Clock:      sonido/sonido/div/clk_out rising
   Destination Clock: sonido/sonido/div/clk_out rising
 
-  Data Path: sonido/sonido/cont_ref/counter_out_0 to sonido/sonido/cont_ref/counter_out_16
+  Data Path: sonido/sonido/cont_ref/counter_out_0 to sonido/sonido/cont_ref/counter_out_15
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -1946,20 +1861,19 @@ Delay:               2.474ns (Levels of Logic = 18)
      MUXCY:CI->O           1   0.029   0.000  sonido/sonido/cont_ref/Mcount_counter_out_cy<11> (sonido/sonido/cont_ref/Mcount_counter_out_cy<11>)
      MUXCY:CI->O           1   0.029   0.000  sonido/sonido/cont_ref/Mcount_counter_out_cy<12> (sonido/sonido/cont_ref/Mcount_counter_out_cy<12>)
      MUXCY:CI->O           1   0.029   0.000  sonido/sonido/cont_ref/Mcount_counter_out_cy<13> (sonido/sonido/cont_ref/Mcount_counter_out_cy<13>)
-     MUXCY:CI->O           1   0.029   0.000  sonido/sonido/cont_ref/Mcount_counter_out_cy<14> (sonido/sonido/cont_ref/Mcount_counter_out_cy<14>)
-     MUXCY:CI->O           0   0.029   0.000  sonido/sonido/cont_ref/Mcount_counter_out_cy<15> (sonido/sonido/cont_ref/Mcount_counter_out_cy<15>)
-     XORCY:CI->O           1   0.510   0.000  sonido/sonido/cont_ref/Mcount_counter_out_xor<16> (Result<16>1)
-     FDC:D                     0.030          sonido/sonido/cont_ref/counter_out_16
+     MUXCY:CI->O           0   0.029   0.000  sonido/sonido/cont_ref/Mcount_counter_out_cy<14> (sonido/sonido/cont_ref/Mcount_counter_out_cy<14>)
+     XORCY:CI->O           1   0.510   0.000  sonido/sonido/cont_ref/Mcount_counter_out_xor<15> (Result<15>1)
+     FDC:D                     0.030          sonido/sonido/cont_ref/counter_out_15
     ----------------------------------------
-    Total                      2.474ns (2.075ns logic, 0.399ns route)
-                                       (83.9% logic, 16.1% route)
+    Total                      2.445ns (2.046ns logic, 0.399ns route)
+                                       (83.7% logic, 16.3% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 12.071ns (frequency: 82.843MHz)
-  Total number of paths / destination ports: 256089 / 1021
+  Clock period: 12.167ns (frequency: 82.190MHz)
+  Total number of paths / destination ports: 267893 / 1104
 -------------------------------------------------------------------------
-Delay:               6.035ns (Levels of Logic = 4)
+Delay:               6.083ns (Levels of Logic = 4)
   Source:            micro/piko/program_rom/ram_1k_generate.akv7.kcpsm6_rom (RAM)
   Destination:       VGA/Pointers/actCrono (FF)
   Source Clock:      clk rising
@@ -1971,13 +1885,59 @@ Delay:               6.035ns (Levels of Logic = 4)
     ----------------------------------------  ------------
      RAMB18E1:CLKARDCLK->DOADO7   16   2.454   0.497  micro/piko/program_rom/ram_1k_generate.akv7.kcpsm6_rom (micro/piko/instruction<7>)
      RAM32M:ADDRA3->DOA1    2   0.345   0.405  micro/piko/processor/upper_reg_banks (micro/piko/processor/sy<5>)
-     LUT6_2:I2->O6        15   0.664   0.808  micro/piko/processor/data_path_loop[4].output_data.sy_kk_mux_lut (id_port<5>)
+     LUT6_2:I2->O6        23   0.664   0.856  micro/piko/processor/data_path_loop[4].output_data.sy_kk_mux_lut (id_port<5>)
      LUT6:I3->O           82   0.124   0.584  VGA/Pointers/_n0402_inv111 (VGA/Pointers/_n0402_inv11)
      LUT6:I5->O            1   0.124   0.000  VGA/Pointers/actCrono_dpot (VGA/Pointers/actCrono_dpot)
      FDRE_1:D                  0.030          VGA/Pointers/actCrono
     ----------------------------------------
-    Total                      6.035ns (3.741ns logic, 2.294ns route)
-                                       (62.0% logic, 38.0% route)
+    Total                      6.083ns (3.741ns logic, 2.342ns route)
+                                       (61.5% logic, 38.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'teclado/PS2/debounce/O0'
+  Clock period: 2.363ns (frequency: 423.191MHz)
+  Total number of paths / destination ports: 83 / 21
+-------------------------------------------------------------------------
+Delay:               2.363ns (Levels of Logic = 1)
+  Source:            teclado/PS2/cnt_3 (FF)
+  Destination:       teclado/PS2/cnt_3 (FF)
+  Source Clock:      teclado/PS2/debounce/O0 falling
+  Destination Clock: teclado/PS2/debounce/O0 falling
+
+  Data Path: teclado/PS2/cnt_3 to teclado/PS2/cnt_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            12   0.478   0.848  teclado/PS2/cnt_3 (teclado/PS2/cnt_3)
+     LUT4:I0->O            4   0.124   0.419  teclado/PS2/_n01131 (teclado/PS2/_n0113)
+     FDRE:R                    0.494          teclado/PS2/cnt_0
+    ----------------------------------------
+    Total                      2.363ns (1.096ns logic, 1.267ns route)
+                                       (46.4% logic, 53.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'teclado/PS2/flag'
+  Clock period: 3.714ns (frequency: 269.251MHz)
+  Total number of paths / destination ports: 216 / 24
+-------------------------------------------------------------------------
+Delay:               3.714ns (Levels of Logic = 3)
+  Source:            teclado/PS2/dataprev_7 (FF)
+  Destination:       teclado/PS2/keycode_15 (FF)
+  Source Clock:      teclado/PS2/flag rising
+  Destination Clock: teclado/PS2/flag rising
+
+  Data Path: teclado/PS2/dataprev_7 to teclado/PS2/keycode_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             15   0.478   1.031  teclado/PS2/dataprev_7 (teclado/PS2/dataprev_7)
+     LUT6:I0->O            1   0.124   0.421  teclado/PS2/n0019_inv3_SW0 (N322)
+     LUT5:I4->O            1   0.124   0.776  teclado/PS2/n0019_inv3 (teclado/PS2/n0019_inv3)
+     LUT6:I2->O           16   0.124   0.497  teclado/PS2/n0019_inv5 (teclado/PS2/n0019_inv)
+     FDE:CE                    0.139          teclado/PS2/dataprev_0
+    ----------------------------------------
+    Total                      3.714ns (0.989ns logic, 2.725ns route)
+                                       (26.6% logic, 73.4% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'RTC/memoria/Mmux_ADD2[3]_memoriain[15][7]_wide_mux_19_OUT_4'
@@ -2001,10 +1961,29 @@ Delay:               3.590ns (Levels of Logic = 0)
                                        (88.9% logic, 11.1% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 466 / 466
+Timing constraint: Default OFFSET IN BEFORE for Clock 'sonido/sonido/div/clk_out'
+  Total number of paths / destination ports: 18 / 18
 -------------------------------------------------------------------------
-Offset:              2.024ns (Levels of Logic = 3)
+Offset:              1.030ns (Levels of Logic = 1)
+  Source:            irq (PAD)
+  Destination:       sonido/sonido/pwm_out (FF)
+  Destination Clock: sonido/sonido/div/clk_out rising
+
+  Data Path: irq to sonido/sonido/pwm_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            22   0.001   0.535  irq_IBUF (irq_IBUF)
+     FDR:R                     0.494          sonido/sonido/pwm_out
+    ----------------------------------------
+    Total                      1.030ns (0.495ns logic, 0.535ns route)
+                                       (48.1% logic, 51.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 535 / 533
+-------------------------------------------------------------------------
+Offset:              2.031ns (Levels of Logic = 3)
   Source:            reset (PAD)
   Destination:       VGA/Pointers/actCrono (FF)
   Destination Clock: clk falling
@@ -2013,13 +1992,13 @@ Offset:              2.024ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           346   0.001   1.160  reset_IBUF (reset_IBUF)
+     IBUF:I->O           381   0.001   1.168  reset_IBUF (reset_IBUF)
      LUT6:I0->O           82   0.124   0.584  VGA/Pointers/_n0402_inv111 (VGA/Pointers/_n0402_inv11)
      LUT6:I5->O            1   0.124   0.000  VGA/Pointers/actCrono_dpot (VGA/Pointers/actCrono_dpot)
      FDRE_1:D                  0.030          VGA/Pointers/actCrono
     ----------------------------------------
-    Total                      2.024ns (0.279ns logic, 1.745ns route)
-                                       (13.8% logic, 86.2% route)
+    Total                      2.031ns (0.279ns logic, 1.752ns route)
+                                       (13.7% logic, 86.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -2075,34 +2054,51 @@ RTC/memoria/Mmux_ADD2[3]_memoriain[15][7]_wide_mux_19_OUT_4|    3.590|         |
 -----------------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |    9.665|    4.614|    6.035|         |
----------------+---------+---------+---------+---------+
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+clk             |    9.665|    4.614|    6.083|         |
+teclado/PS2/flag|    5.441|         |         |         |
+----------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock sonido/sonido/div/clk_out
 -------------------------+---------+---------+---------+---------+
                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------------+---------+---------+---------+---------+
-clk                      |    1.507|         |         |         |
-sonido/sonido/div/clk_out|    2.474|         |         |         |
+sonido/sonido/div/clk_out|    2.445|         |         |         |
 -------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock teclado/PS2/debounce/O0
+-----------------------+---------+---------+---------+---------+
+                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------+---------+---------+---------+---------+
+clk                    |         |         |    1.106|         |
+teclado/PS2/debounce/O0|         |         |    2.363|         |
+-----------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock teclado/PS2/flag
+-----------------------+---------+---------+---------+---------+
+                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------+---------+---------+---------+---------+
+teclado/PS2/debounce/O0|         |    3.622|         |         |
+teclado/PS2/flag       |    3.714|         |         |         |
+-----------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 103.00 secs
-Total CPU time to Xst completion: 94.00 secs
+Total REAL time to Xst completion: 101.00 secs
+Total CPU time to Xst completion: 100.72 secs
  
 --> 
 
-
-Total memory usage is 587848 kilobytes
+Total memory usage is 531468 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  180 (   0 filtered)
-Number of infos    :   42 (   0 filtered)
+Number of warnings :  104 (   0 filtered)
+Number of infos    :   43 (   0 filtered)
 

@@ -2,9 +2,28 @@ Command line:
    Empaquetado_total_tb_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  56136
+     -socket  2794
 
-Wed Oct 26 18:25:17 2016
+Thu Oct 27 08:17:06 2016
 
 
- Elaboration Time: 0.327602 sec
+ Elaboration Time: 0.1875 sec
+
+ Current Memory Usage: 856.023 Meg
+
+ Total Signals          : 1637
+ Total Nets             : 2432
+ Total Signal Drivers   : 710
+ Total Blocks           : 414
+ Total Primitive Blocks : 253
+ Total Processes        : 1245
+ Total Traceable Variables  : 2281
+ Total Scalar Nets and Variables : 2111129
+Total Line Count : 8456
+
+ Total Simulation Time: 0.921875 sec
+
+ Current Memory Usage: 698.737 Meg
+
+Thu Oct 27 08:25:03 2016
+

@@ -1,0 +1,29 @@
+Command line:
+   empaquetado_audio_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  3196
+
+Thu Oct 27 15:18:32 2016
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 839.811 Meg
+
+ Total Signals          : 32
+ Total Nets             : 44
+ Total Signal Drivers   : 12
+ Total Blocks           : 8
+ Total Primitive Blocks : 5
+ Total Processes        : 20
+ Total Traceable Variables  : 26
+ Total Scalar Nets and Variables : 172
+Total Line Count : 65
+
+ Total Simulation Time: 0.046875 sec
+
+ Current Memory Usage: 839.811 Meg
+
+Thu Oct 27 15:19:00 2016
+

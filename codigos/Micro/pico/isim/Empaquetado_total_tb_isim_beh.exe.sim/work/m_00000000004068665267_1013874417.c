@@ -10,7 +10,7 @@
 /*  \___\/\___\                                                    */
 /***********************************************************************/
 
-/* This file is designed for use with ISim build 0x8ef4fb42 */
+/* This file is designed for use with ISim build 0xc3576ebc */
 
 #define XSI_HIDE_SYMBOL_SPEC true
 #include "xsi.h"
@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/controlVGA/generadorBlank.v";
+static const char *ng0 = "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/controlVGA/generadorBlank.v";
 static int ng1[] = {48, 0};
 static int ng2[] = {688, 0};
 static int ng3[] = {30, 0};
@@ -235,7 +235,7 @@ static void Cont_28_0(char *t0)
     unsigned int t202;
     char *t203;
 
-LAB0:    t1 = (t0 + 1444U);
+LAB0:    t1 = (t0 + 2528U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -243,7 +243,7 @@ LAB0:    t1 = (t0 + 1444U);
 LAB3:    goto *t2;
 
 LAB2:    xsi_set_current_line(28, ng0);
-    t2 = (t0 + 692U);
+    t2 = (t0 + 1208U);
     t4 = *((char **)t2);
     t2 = ((char*)((ng1)));
     memset(t5, 0, 8);
@@ -321,10 +321,10 @@ LAB68:    t189 = (t3 + 4);
     *((unsigned int *)t3) = 1;
     *((unsigned int *)t189) = 1;
 
-LAB69:    t190 = (t0 + 1684);
-    t191 = (t190 + 32U);
+LAB69:    t190 = (t0 + 2928);
+    t191 = (t190 + 56U);
     t192 = *((char **)t191);
-    t193 = (t192 + 40U);
+    t193 = (t192 + 56U);
     t194 = *((char **)t193);
     memset(t194, 0, 8);
     t195 = 1U;
@@ -340,7 +340,7 @@ LAB69:    t190 = (t0 + 1684);
     t202 = *((unsigned int *)t200);
     *((unsigned int *)t200) = (t202 | t196);
     xsi_driver_vfirst_trans(t190, 0, 0);
-    t203 = (t0 + 1640);
+    t203 = (t0 + 2848);
     *((int *)t203) = 1;
 
 LAB1:    return;
@@ -357,7 +357,7 @@ LAB11:    t16 = (t9 + 4);
     *((unsigned int *)t16) = 1;
     goto LAB12;
 
-LAB13:    t21 = (t0 + 692U);
+LAB13:    t21 = (t0 + 1208U);
     t22 = *((char **)t21);
     t21 = ((char*)((ng2)));
     memset(t23, 0, 8);
@@ -455,7 +455,7 @@ LAB30:    t74 = (t67 + 4);
     *((unsigned int *)t74) = 1;
     goto LAB31;
 
-LAB32:    t79 = (t0 + 600U);
+LAB32:    t79 = (t0 + 1048U);
     t80 = *((char **)t79);
     t79 = ((char*)((ng3)));
     memset(t81, 0, 8);
@@ -539,7 +539,7 @@ LAB42:    t92 = (t85 + 4);
     *((unsigned int *)t92) = 1;
     goto LAB43;
 
-LAB44:    t97 = (t0 + 600U);
+LAB44:    t97 = (t0 + 1048U);
     t98 = *((char **)t97);
     t97 = ((char*)((ng4)));
     memset(t99, 0, 8);

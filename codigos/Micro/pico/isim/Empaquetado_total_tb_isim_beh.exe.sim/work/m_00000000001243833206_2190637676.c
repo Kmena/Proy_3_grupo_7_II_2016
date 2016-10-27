@@ -10,7 +10,7 @@
 /*  \___\/\___\                                                    */
 /***********************************************************************/
 
-/* This file is designed for use with ISim build 0x8ef4fb42 */
+/* This file is designed for use with ISim build 0xc3576ebc */
 
 #define XSI_HIDE_SYMBOL_SPEC true
 #include "xsi.h"
@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/Mux2x7.v";
+static const char *ng0 = "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/Mux2x7.v";
 
 
 
@@ -40,7 +40,7 @@ static void Always_27_0(char *t0)
     char *t11;
     char *t12;
 
-LAB0:    t1 = (t0 + 1536U);
+LAB0:    t1 = (t0 + 2688U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -48,9 +48,9 @@ LAB0:    t1 = (t0 + 1536U);
 LAB3:    goto *t2;
 
 LAB2:    xsi_set_current_line(27, ng0);
-    t2 = (t0 + 1732);
+    t2 = (t0 + 3008);
     *((int *)t2) = 1;
-    t3 = (t0 + 1564);
+    t3 = (t0 + 2720);
     *((char **)t3) = t2;
     *((char **)t1) = &&LAB4;
 
@@ -58,7 +58,7 @@ LAB1:    return;
 LAB4:    xsi_set_current_line(28, ng0);
 
 LAB5:    xsi_set_current_line(29, ng0);
-    t4 = (t0 + 600U);
+    t4 = (t0 + 1048U);
     t5 = *((char **)t4);
     t4 = (t5 + 4);
     t6 = *((unsigned int *)t4);
@@ -70,17 +70,17 @@ LAB5:    xsi_set_current_line(29, ng0);
         goto LAB6;
 
 LAB7:    xsi_set_current_line(30, ng0);
-    t2 = (t0 + 784U);
+    t2 = (t0 + 1368U);
     t3 = *((char **)t2);
-    t2 = (t0 + 1012);
+    t2 = (t0 + 1768);
     xsi_vlogvar_assign_value(t2, t3, 0, 0, 8);
 
 LAB8:    goto LAB2;
 
 LAB6:    xsi_set_current_line(29, ng0);
-    t11 = (t0 + 692U);
+    t11 = (t0 + 1208U);
     t12 = *((char **)t11);
-    t11 = (t0 + 1012);
+    t11 = (t0 + 1768);
     xsi_vlogvar_assign_value(t11, t12, 0, 0, 8);
     goto LAB8;
 

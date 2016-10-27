@@ -10,7 +10,7 @@
 /*  \___\/\___\                                                    */
 /***********************************************************************/
 
-/* This file is designed for use with ISim build 0x8ef4fb42 */
+/* This file is designed for use with ISim build 0xc3576ebc */
 
 #define XSI_HIDE_SYMBOL_SPEC true
 #include "xsi.h"
@@ -46,21 +46,21 @@ static void NetDecl_38_0(char *t0)
     unsigned int t17;
     char *t18;
 
-LAB0:    t1 = (t0 + 1708U);
+LAB0:    t1 = (t0 + 2984U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
 
 LAB3:    goto *t2;
 
-LAB2:    t2 = (t0 + 3768);
+LAB2:    t2 = (t0 + 6244);
     t3 = *((char **)t2);
-    t4 = ((((char*)(t3))) + 24U);
+    t4 = ((((char*)(t3))) + 40U);
     t5 = *((char **)t4);
-    t4 = (t0 + 2692);
-    t6 = (t4 + 32U);
+    t4 = (t0 + 4672);
+    t6 = (t4 + 56U);
     t7 = *((char **)t6);
-    t8 = (t7 + 40U);
+    t8 = (t7 + 56U);
     t9 = *((char **)t8);
     memset(t9, 0, 8);
     t10 = 1U;
@@ -76,7 +76,7 @@ LAB2:    t2 = (t0 + 3768);
     t17 = *((unsigned int *)t15);
     *((unsigned int *)t15) = (t17 | t11);
     xsi_driver_vfirst_trans(t4, 0, 0U);
-    t18 = (t0 + 2624);
+    t18 = (t0 + 4544);
     *((int *)t18) = 1;
 
 LAB1:    return;
@@ -87,9 +87,9 @@ static void Initial_40_1(char *t0)
     char *t1;
     char *t2;
 
-LAB0:    t1 = (t0 + 264);
+LAB0:    t1 = (t0 + 472);
     t2 = *((char **)t1);
-    t1 = (t0 + 1184);
+    t1 = (t0 + 2064);
     xsi_vlogvar_assign_value(t1, t2, 0, 0, 1);
 
 LAB1:    return;
@@ -110,21 +110,21 @@ static void Always_44_2(char *t0)
     char *t11;
     char *t12;
 
-LAB0:    t1 = (t0 + 1996U);
+LAB0:    t1 = (t0 + 3480U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
 
 LAB3:    goto *t2;
 
-LAB2:    t2 = (t0 + 2632);
+LAB2:    t2 = (t0 + 4560);
     *((int *)t2) = 1;
-    t3 = (t0 + 2024);
+    t3 = (t0 + 3512);
     *((char **)t3) = t2;
     *((char **)t1) = &&LAB4;
 
 LAB1:    return;
-LAB4:    t4 = (t0 + 956U);
+LAB4:    t4 = (t0 + 1664U);
     t5 = *((char **)t4);
     t4 = (t5 + 4);
     t6 = *((unsigned int *)t4);
@@ -135,14 +135,14 @@ LAB4:    t4 = (t0 + 956U);
     if (t10 > 0)
         goto LAB5;
 
-LAB6:    t2 = (t0 + 1184);
+LAB6:    t2 = (t0 + 2064);
     xsi_vlogvar_deassign(t2, 0, 0);
 
 LAB7:    goto LAB2;
 
-LAB5:    t11 = (t0 + 1184);
+LAB5:    t11 = (t0 + 2064);
     xsi_set_assignedflag(t11);
-    t12 = (t0 + 3772);
+    t12 = (t0 + 6252);
     *((int *)t12) = 1;
     NetReassign_46_5(t0);
     goto LAB7;
@@ -157,23 +157,23 @@ static void Always_50_3(char *t0)
     char *t4;
     char *t5;
 
-LAB0:    t1 = (t0 + 2140U);
+LAB0:    t1 = (t0 + 3728U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
 
 LAB3:    goto *t2;
 
-LAB2:    t2 = (t0 + 2640);
+LAB2:    t2 = (t0 + 4576);
     *((int *)t2) = 1;
-    t3 = (t0 + 2168);
+    t3 = (t0 + 3760);
     *((char **)t3) = t2;
     *((char **)t1) = &&LAB4;
 
 LAB1:    return;
-LAB4:    t4 = (t0 + 864U);
+LAB4:    t4 = (t0 + 1504U);
     t5 = *((char **)t4);
-    t4 = (t0 + 1184);
+    t4 = (t0 + 2064);
     xsi_vlogvar_wait_assign_value(t4, t5, 0, 0, 1, 0LL);
     goto LAB2;
 
@@ -200,20 +200,20 @@ static void Cont_53_4(char *t0)
     unsigned int t17;
     char *t18;
 
-LAB0:    t1 = (t0 + 2284U);
+LAB0:    t1 = (t0 + 3976U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
 
 LAB3:    goto *t2;
 
-LAB2:    t2 = (t0 + 1184);
-    t3 = (t2 + 36U);
+LAB2:    t2 = (t0 + 2064);
+    t3 = (t2 + 56U);
     t4 = *((char **)t3);
-    t5 = (t0 + 2728);
-    t6 = (t5 + 32U);
+    t5 = (t0 + 4736);
+    t6 = (t5 + 56U);
     t7 = *((char **)t6);
-    t8 = (t7 + 40U);
+    t8 = (t7 + 56U);
     t9 = *((char **)t8);
     memset(t9, 0, 8);
     t10 = 1U;
@@ -229,7 +229,7 @@ LAB2:    t2 = (t0 + 1184);
     t17 = *((unsigned int *)t15);
     *((unsigned int *)t15) = (t17 | t11);
     xsi_driver_vfirst_trans(t5, 0, 0);
-    t18 = (t0 + 2648);
+    t18 = (t0 + 4592);
     *((int *)t18) = 1;
 
 LAB1:    return;
@@ -243,7 +243,7 @@ static void NetReassign_46_5(char *t0)
     char *t4;
     char *t5;
 
-LAB0:    t1 = (t0 + 2428U);
+LAB0:    t1 = (t0 + 4224U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -251,15 +251,15 @@ LAB0:    t1 = (t0 + 2428U);
 LAB3:    goto *t2;
 
 LAB2:    t3 = 0;
-    t2 = (t0 + 264);
+    t2 = (t0 + 472);
     t4 = *((char **)t2);
-    t2 = (t0 + 3772);
+    t2 = (t0 + 6252);
     if (*((int *)t2) > 0)
         goto LAB4;
 
 LAB5:
 LAB1:    return;
-LAB4:    t5 = (t0 + 1184);
+LAB4:    t5 = (t0 + 2064);
     xsi_vlogvar_assignassignvalue(t5, t4, 0, 0, 0, 1, ((int*)(t2)));
     t3 = 1;
     goto LAB5;

@@ -10,7 +10,7 @@
 /*  \___\/\___\                                                    */
 /***********************************************************************/
 
-/* This file is designed for use with ISim build 0x8ef4fb42 */
+/* This file is designed for use with ISim build 0xc3576ebc */
 
 #define XSI_HIDE_SYMBOL_SPEC true
 #include "xsi.h"
@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/Micro/kcpsm6_design_template.v";
+static const char *ng0 = "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Micro/kcpsm6_design_template.v";
 static unsigned int ng1[] = {0U, 0U};
 
 
@@ -44,7 +44,7 @@ static void Cont_157_0(char *t0)
     unsigned int t14;
     unsigned int t15;
 
-LAB0:    t1 = (t0 + 2548U);
+LAB0:    t1 = (t0 + 4448U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -53,10 +53,10 @@ LAB3:    goto *t2;
 
 LAB2:    xsi_set_current_line(157, ng0);
     t2 = ((char*)((ng1)));
-    t3 = (t0 + 3068);
-    t4 = (t3 + 32U);
+    t3 = (t0 + 5328);
+    t4 = (t3 + 56U);
     t5 = *((char **)t4);
-    t6 = (t5 + 40U);
+    t6 = (t5 + 56U);
     t7 = *((char **)t6);
     memset(t7, 0, 8);
     t8 = 1U;
@@ -94,7 +94,7 @@ static void Cont_158_1(char *t0)
     unsigned int t14;
     unsigned int t15;
 
-LAB0:    t1 = (t0 + 2692U);
+LAB0:    t1 = (t0 + 4696U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -103,10 +103,10 @@ LAB3:    goto *t2;
 
 LAB2:    xsi_set_current_line(158, ng0);
     t2 = ((char*)((ng1)));
-    t3 = (t0 + 3104);
-    t4 = (t3 + 32U);
+    t3 = (t0 + 5392);
+    t4 = (t3 + 56U);
     t5 = *((char **)t4);
-    t6 = (t5 + 40U);
+    t6 = (t5 + 56U);
     t7 = *((char **)t6);
     memset(t7, 0, 8);
     t8 = 1U;
@@ -144,7 +144,7 @@ static void Cont_193_2(char *t0)
     unsigned int t14;
     unsigned int t15;
 
-LAB0:    t1 = (t0 + 2836U);
+LAB0:    t1 = (t0 + 4944U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -153,10 +153,10 @@ LAB3:    goto *t2;
 
 LAB2:    xsi_set_current_line(193, ng0);
     t2 = ((char*)((ng1)));
-    t3 = (t0 + 3140);
-    t4 = (t3 + 32U);
+    t3 = (t0 + 5456);
+    t4 = (t3 + 56U);
     t5 = *((char **)t4);
-    t6 = (t5 + 40U);
+    t6 = (t5 + 56U);
     t7 = *((char **)t6);
     memset(t7, 0, 8);
     t8 = 1U;
