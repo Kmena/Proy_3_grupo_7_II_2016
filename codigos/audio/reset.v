@@ -21,7 +21,7 @@
 module reset(contador,clk,pwm_ref,reset_central);
 input clk;
 input reset_central;
-input [16:0] contador;
+input [15:0] contador;
 output [4:0] pwm_ref;
 reg [4:0] pwm_ref;
 always @(posedge clk or posedge reset_central)
@@ -32,7 +32,7 @@ begin
  end
  else
  begin
-  if (contador>=17'd80000 && contador<=17'b11111111111111111)
+  if (contador>=17'd32000 && contador<=16'b1111111111111111)
   begin
    pwm_ref<=5'b00110;
   end

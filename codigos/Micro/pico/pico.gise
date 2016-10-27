@@ -92,6 +92,10 @@
     <transform xil_pn:end_ts="1477430011" xil_pn:in_ck="-4086178963934188369" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1477430010">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../Empaquetado_total.v"/>
       <outfile xil_pn:name="../../Empaquetado_total_tb.v"/>
       <outfile xil_pn:name="../../Nueva carpeta/FlipFlopRS.v"/>
@@ -154,6 +158,11 @@
     <transform xil_pn:end_ts="1477430011" xil_pn:in_ck="-4086178963934188369" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1477430011">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../Empaquetado_total.v"/>
       <outfile xil_pn:name="../../Empaquetado_total_tb.v"/>
       <outfile xil_pn:name="../../Nueva carpeta/FlipFlopRS.v"/>
@@ -204,7 +213,11 @@
     <transform xil_pn:end_ts="1477430061" xil_pn:in_ck="-4086178963934188369" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6366650664792444839" xil_pn:start_ts="1477430043">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Empaquetado_total_tb_beh.prj"/>
       <outfile xil_pn:name="Empaquetado_total_tb_isim_beh.exe"/>
@@ -216,6 +229,8 @@
     <transform xil_pn:end_ts="1477430061" xil_pn:in_ck="-7511206461268033112" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-23831204889041508" xil_pn:start_ts="1477430061">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Empaquetado_total_tb_isim_beh.wdb"/>
