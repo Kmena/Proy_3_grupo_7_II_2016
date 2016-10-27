@@ -10,7 +10,7 @@
 /*  \___\/\___\                                                    */
 /***********************************************************************/
 
-/* This file is designed for use with ISim build 0xc3576ebc */
+/* This file is designed for use with ISim build 0x8ef4fb42 */
 
 #define XSI_HIDE_SYMBOL_SPEC true
 #include "xsi.h"
@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/LuisOrlando/Documents/Proyectos Lab Digitales/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/or2.v";
+static const char *ng0 = "C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/or2.v";
 
 
 
@@ -83,7 +83,7 @@ static void Always_26_0(char *t0)
     unsigned int t54;
     char *t55;
 
-LAB0:    t1 = (t0 + 2528U);
+LAB0:    t1 = (t0 + 1444U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
@@ -91,15 +91,15 @@ LAB0:    t1 = (t0 + 2528U);
 LAB3:    goto *t2;
 
 LAB2:    xsi_set_current_line(26, ng0);
-    t2 = (t0 + 2848);
+    t2 = (t0 + 1640);
     *((int *)t2) = 1;
-    t3 = (t0 + 2560);
+    t3 = (t0 + 1472);
     *((char **)t3) = t2;
     *((char **)t1) = &&LAB4;
 
 LAB1:    return;
 LAB4:    xsi_set_current_line(27, ng0);
-    t4 = (t0 + 1048U);
+    t4 = (t0 + 600U);
     t5 = *((char **)t4);
     memset(t6, 0, 8);
     t4 = (t5 + 4);
@@ -124,7 +124,7 @@ LAB8:    t13 = (t6 + 4);
 
 LAB10:    memcpy(t27, t6, 8);
 
-LAB11:    t55 = (t0 + 1608);
+LAB11:    t55 = (t0 + 920);
     xsi_vlogvar_assign_value(t55, t27, 0, 0, 1);
     goto LAB2;
 
@@ -136,7 +136,7 @@ LAB7:    t12 = (t6 + 4);
     *((unsigned int *)t12) = 1;
     goto LAB8;
 
-LAB9:    t18 = (t0 + 1208U);
+LAB9:    t18 = (t0 + 692U);
     t19 = *((char **)t18);
     memset(t20, 0, 8);
     t18 = (t19 + 4);
