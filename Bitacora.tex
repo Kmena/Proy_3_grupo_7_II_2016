@@ -1,0 +1,457 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{graphicx}
+\usepackage[left=3cm,right=3cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{\textbf{\thepage/\pageref{LastPage}}}
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\vspace*{1.5cm}
+\textbf{Escuela de Ingenierí­a en Electronica}\\[0.8cm]
+\textbf{Laboratorio de Diseño de Sistemas Digitales}\\[1cm]
+\textbf{Bitácora}\\[2cm]
+\textbf{Proyecto:}\\[0.4cm]
+Control y programación RTC con Nexys3 \\[1.7cm]
+\textbf{Profesor:}\\[0.4cm]
+Alfonso Chacón Rodrí­guez \\[1.7cm]
+\textbf{Estudiantes:}\\[0.4cm]
+Keylor Mena Venegas \\[0.8cm]
+Luis Leon Vega \\[0.8cm]
+Luis Merayo Gatica \\[1.7cm]
+\textbf{Periodo}\\[0.8cm]
+II Semestre, 2016\\
+\end{center}
+\end{titlepage}
+
+
+\section*{\textit{Descripción del problema}}
+
+Se debe realizar un controlador para realizar la lectura y escritura del módulo RTC V3023. Los datos del sistema deben poder ser desplegados en un monitor LCD mediante el protocolo VGA. Ante ello, se debe realizar un controlador para el RTC y para la VGA. Asimismo, se deben poder ajustar la hora, activar la alarma y el cronómetro de forma descendente mediante botones e interruptores dispuestos en la FPGA Nexys3.
+
+\section*{\textit{Introducción al proyecto}}
+
+Este proyecto consiste en realizar un controlador de módulos RTC (Real Time Controller), especí­ficamente para el módulo V3023. Este controlador será capaz de escribir y leer dicho módulo para obtener parámetros de reloj, cronómetro y alarma. \\
+Asimismo, para poder desplegar la información relevante de los parámetros anteriores, se conectará un monitor LCD mediante el protocolo VGA. Por otro lado, para poder programar y dar instrucciones al circuito, se deberán usar los botones señalados en el instructivo y algunos interruptores. \\
+Finalmente, el conjunto es un circuito que permita controlar el módulo y comunicar al usuario mediante los botones y el monitor LCD, donde él podrá recibir la información relevante y poder modificar dicha información.\\
+
+\section*{\textit{Objetivo General}}
+Diseñar un controlador de RTC que permita leerlo y programarlo mediante una interfaz de usuario consistente en botones incorporados dentro de la FPGA (Nexys3) y un monitor comunicado a través del protocolo VGA.
+
+\section*{\textit{Objetivos Especí­ficos}}
+\begin{itemize}
+	\item Investigar el funcionamiento del módulo RTC y el protocolo de comunicación del mismo.
+	\item Diseñar un controlador para el módulo RTC, cuyo bus de datos y direcciones estén multiplexados.
+	\item Cumplir con las reglas de temporizado del sistema, en especial, con el protocolo de comunicación del módulo RTC.
+	\item Combinar el controlador de RTC con un controlador VGA para poder desplegar la información del módulo al usuario. Este módulo VGA será adaptado del proyecto anterior.
+	\item Desarrollar un banco de pruebas (testbench) para poder emular el comportamiento del módulo RTC con la finalidad de comprobar el funcionamiento del circuito controlador.
+\end{itemize}
+
+\newpage
+
+% Comienzo de la bitacora
+\section*{\textit{Control de eventos}}
+% Nueva entrada
+\begin{flushright}
+	\begin{large}
+		\textbf{Fecha: 9 de Noviembre}\\[5ex]
+	\end{large}
+\end{flushright}
+
+\noindent \textbf{Integrantes:} todos \\[1ex]
+\textbf{Hora:} 20:00 -22:30 pm \\[1ex]
+\textbf{Actividad:} \\[2ex]
+Se diseño el primer intento de aproximarse a un diagrama de bloques de nivel 2. Esto se puede notar en la figura \ref{fig:DigramaNivel2.1}, en este se puede notar 5 bloques principales, uno de ellos es el microprocesador echo con el picoblaze. Ademas podemos notar que este tiene como entrada las señales PosX y PosY de la VGA, de esta manera se controla la lectura de la RTC cuando la VGA se encuentra pintando en algunos lugares de la pantalla, Ademas la entrada IRQ controla cuando la etapa de sonido funciona.\\
+La memoria alimenta con los datos que debe pintar la VGA, estos datos vienen de la RTC directamente cuando se encuentra actualizando los datos. ademas que posee un espacio para la señal IRQ y el teclado.\\
+El teclado introduce a la memoria los datos que el usuario desea cambiar para que se muestre inmediatamente en la VGA. Ademas una vez que el usuario desea introducir el cambio en la RTC, este bloque se comunica con el controlador RTC para introducir el cambio.\\
+ 
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=14cm]{img/Digrama_tercer_proyecto.png}
+	\caption{Diagrama de bloques nivel 2 primer intento}
+	\label{fig:DigramaNivel2.1}
+\end{figure}
+
+% Nueva entrada
+\newpage
+\begin{flushright}
+	\begin{large}
+		\textbf{Fecha: 10 de Noviembre}\\[5ex]
+	\end{large}
+\end{flushright}
+
+\noindent \textbf{Integrantes:} Luis Leon \\[1ex]
+\textbf{Hora:} 14:00 -  16:00\\[1ex]
+\textbf{Actividad:} \\[2ex]
+Algunos de los miembros del equipo asistieron a la tutoría de hoy, donde se aclaró el funcionamiento del microcontrolador PicoBlaze para FPGA. Esto ha originado algunos cambios en el diseño del día de ayer, al saber que el funcionamiento del Picoblaze es con base a un puerto I/O controlado por una memoria (físico representado en memoria). Esto ha generado el cambio en el diseño, por lo cual, se debe referir a la figura \ref{fig:DigramaNivel2.2}. \\
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=17cm]{img/Digrama_tercer_proyecto2-1.png}
+	\caption{Diagrama de bloques nivel 2 segundo intento}
+	\label{fig:DigramaNivel2.2}
+\end{figure}
+
+Por otro lado, el mapa de memoria mediante el cual, se controlarán todos los periféricos es representado en la figura \ref{fig:mapamemoria1}. Este mapa contempla que:
+
+\begin{itemize}
+	\item La VGA contiene un banco de registros estabilizados que consultará dependiendo de la posición del cursor. Estos registros son accedidos por el Port ID 1 y modificados por el Port ID 2.
+	\item El teclado brinda el código de la tecla presionada. Luego de que se hace el ReadStrobe en el controlador de teclado, este código se limpia y espera la próxima tecla o, bien, que se levante la tecla (Evento KeyUp).
+	\item El controlador de audio solo tiene un registro que le habilita para que suene el speaker o no.
+	\item El controlador de RTC tiene todos los registros que son posible cambiar. Cuando se hace un WriteStrobe, se habilita el ciclo de escritura en la RTC en el dato dado por la dirección del ID (Port ID). Cuando se hace ReadStrobe, se puede ejecutar una lectura o algo similar en el próximo ciclo.
+	\item Dependiendo del orden de magnitud, se habilitará la lectura de datos. Ejemplo: Si el Bit 5 está activo, es un dato que va a la RTC, si el Bit 4 está en 1 pero el Bit 5 no, entonces va a audio y así sucesivamente, de acuerdo al mapa.
+\end{itemize}
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=16cm]{img/Mapa de Memoria.png}
+	\caption{Mapa de memoria}
+	\label{fig:mapamemoria1}
+\end{figure}
+
+% Nueva entrada
+\begin{flushright}
+	\begin{large}
+		\textbf{Fecha: 9 de Octubre}\\[5ex]
+	\end{large}
+\end{flushright}
+
+\noindent \textbf{Integrantes:} todos \\[1ex]
+\textbf{Hora:} 11:00 -13:00 pm \\[1ex]
+\textbf{Actividad:} \\[2ex]
+Se reviso los cambios relizados el dia anterior por todos los compañeros,  en esta se aprobó por todos el diseño a nivel de bloques, pero se realizo cambio al banco de registro de la figura \ref{fig:mapamemoria1} donde se elimino los bancos de registros ioports de la rtc dejando un solo registro que controla las direcciones en las que el debe escribir, ademas de crear un bus de entrada de datos\\
+Los registro de la rtc se pasaron a la memoria scratch para guardar los datos de la rtc una vez que lea. Se puede notar mas facil en la figura \ref{fig:mapamemoria2}\\
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=16cm]{img/Mapa de Memoria2.png}
+	\caption{Mapa de memoria}
+	\label{fig:mapamemoria2}
+\end{figure}
+
+\noindent \textbf{Integrantes:} todos \\[1ex]
+\textbf{Hora:} 15:00 -18:00 pm \\[1ex]
+\textbf{Actividad:} \\[2ex]
+
+Tomando en cuenta algunos datos y consejos que el profe acoto al proyecto se decidió integrar un deco a la salida del id. De esta manera se puede tener un control mas fácil en cada modulo creando un CS en cada modulo y que este sea el que active los procesos, como se puede notar en la figura \ref{fig:Deco}.\\
+Otro aspecto a considerar es que se puede tomar este deco para generar las direcciones de la RTC y ahorrar procesos del microprocesador generando datos y direcciones en un solo acceso. Pensando en este aspecto de debe considerar tener la memoria scratch con un direccionamiento de igual manera para el id de cada dato como se muestra en la columna de " Dirección B10" de la figura \ref{fig:mapamemoria1}.\\
+De esta manera solo se ocupa una variable o un registro para accesar a la memoria scratch y generar el valor de dirección en la RTC
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=16cm]{img/Deco.png}
+	\caption{Deco de ID}
+	\label{fig:Deco}
+\end{figure}
+
+
+\begin{flushright}
+	\begin{large}
+		\textbf{Fecha: 12 de Octubre}\\[5ex]
+	\end{large}
+\end{flushright}
+
+\noindent \textbf{Integrantes:} todos \\[1ex]
+\textbf{Hora:} 16:00 -18:00 pm \\[1ex]
+\textbf{Actividad:} \\[2ex]
+
+Después de un análisis de los avances del día anterior se procedió a diseñar un primer intento de un diagrama de flujo de el micro procesador.\\
+Para esta efecto se buscaron crear 5 ciclos, como se muestra de la figura \ref{fig:Cicloprincipal}, donde el primer ciclo es el de inicializacion {falta diseño}.\\
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=4cm]{img/Diagrama De Flujo Princiapal.png}
+	\caption{Diagrama de flujo principal}
+	\label{fig:Cicloprincipal}
+\end{figure}
+Después de este un ciclo de teclado, como se muestra en la figura \ref{fig:Cicloteclado}, en este se usan los espacios de memoria y Id de la tabla \ref{Tabla_deco}, usando los espacios de los registros auxiliares se guardan valores para generar ciclos como se muestra en el diagrama de flujo.\\
+Este flujo tiene 3 etapas principales, una donde guarda el valor del registro que desea cambiar y el valor del teclado. Luego se generan los cambios en la RTC, los procesos de arriba y abajo se hacen automáticamente y una vez que se hace un comit se escribe en la dirección y el dato que ingresaron previamente, el ultimo proceso es activar o desactivar el irq.\\
+Después de este proceso sigue el ciclo de la RTC como se muestra en la figura \ref{fig:CicloRTC}, este genera ciclos donde activa la lectura en la RTC, y espera a que el dato este estable para poder leerlo.\\
+Después de este proceso el sistema espera a que la VGA le solicite los datos luego este pasa al proceso de VGA como se muestra en la figura \ref{fig:CicloVGA}, este proceso se parece mucho al de escritura, donde se crea un ciclo donde se recorren todas las direcciones de escritura con la ayuda de un auxiliar y con ayuda del deco se determina el valor de dirección donde se guarda en la VGA.\\ 
+Por facilidad se uso la misma dirección en la memoria de regitros que en el id.\\[2ex]
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=16cm]{img/digrama de teclado irq.png}
+	\caption{Diagrama de flujo principal}
+	\label{fig:Cicloteclado}
+\end{figure}
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=10cm]{img/digrama de flujo RTC.png}
+	\caption{Diagrama de flujo principal}
+	\label{fig:CicloRTC}
+\end{figure}
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=10cm]{img/digrama de flujo VGA.png}
+	\caption{Diagrama de flujo principal}
+	\label{fig:CicloVGA}
+\end{figure}
+\begin{table}[]
+	\centering
+	\caption{resumen del Deco}
+	\label{Tabla_deco}
+	\begin{tabular}{lll}
+	Id	& CS & ADD  \\
+	0   & MemoriaEstable & \\
+	1   & Escritura & \\
+	2   & VSync & \\
+	5	& teclado &  \\
+	6	& teclado &  \\
+	7	& teclado &  \\
+	8	& teclado &  \\
+	9	& teclado &  \\
+	10	& teclado &  \\
+	14	& sonido &  \\
+	17	& RTC &  d33\\
+	18	& RTC &  d34\\
+	19	& RTC &  d35\\
+	20	& RTC &  d36\\
+	21	& RTC &  d37\\
+	22	& RTC &  d38\\
+	23	& RTC &  h41\\
+	24	& RTC &  h42\\
+	25	& RTC &  h43\\
+	26	& RTC &  \\
+	27	& RTC &  \\
+	28	& RTC &  \\
+	29	& RTC &  \\
+	33	& AUX &  \\
+	34	& AUX &  \\
+	35	& AUX &  \\
+	36	& AUX &  \\
+	40	& VGA &  Direccion \\
+	41	& VGA &  Dato\\
+	42	& VGA &  Cursor3\\
+	43	& VGA &  4\\
+	44	& VGA &  5\\
+	45	& VGA &  6\\
+	46	& VGA &  7\\
+	47	& VGA &  8\\
+	48	& VGA &  9\\
+	49	& VGA &  10\\
+	50	& VGA &  11
+	\end{tabular}
+\end{table}
+
+
+\begin{table}[]
+	\centering
+	\caption{resumen del Deco}
+	\label{Tabla_memdeco}
+	\begin{tabular}{lll}
+		Id	& CS & ADD  \\
+		2   & VSync & \\
+		5	& teclado &  Direccion \\
+		6	& teclado &  Dato \\
+		7	& teclado &  Commit \\
+		14	& sonido &  \\
+		17	& RTC &  d33\\
+		18	& RTC &  d34\\
+		19	& RTC &  d35\\
+		20	& RTC &  d36\\
+		21	& RTC &  d37\\
+		22	& RTC &  d38\\
+		23	& RTC &  h41\\
+		24	& RTC &  h42\\
+		25	& RTC &  h43\\
+		26	& RTC &  \\
+		27	& RTC &  \\
+		28	& RTC &  \\
+		29	& RTC &  \\
+		33	& AUX &  \\
+		34	& AUX &  \\
+		35	& AUX &  \\
+		36	& AUX &  \\
+		40	& VGA &  Direccion \\
+		41	& VGA &  Dato\\
+
+	\end{tabular}
+\end{table}
+
+% Nueva entrada
+\begin{flushright}
+	\begin{large}
+		\textbf{Fecha: 13 de Octubre}\\[5ex]
+	\end{large}
+\end{flushright}
+
+\noindent \textbf{Integrantes:} Todos \\[1ex]
+\textbf{Hora:} 13:30 -16:10 pm | 19:30-21:30\\[1ex]
+\textbf{Actividad:} \\[2ex]
+% Actividad de lleon
+\noindent \textbf{Con respecto al teclado:} \\
+Se ha probado un ejemplo disponible para Nexys 4 DDR, el cual, consiste en un módulo para obtener datos procedentes del teclado de forma unidireccional, mostrando todos los códigos recibidos mediante el protocolo serial PS/2. En este se ha descubierto el siguiente comportamiento: \\
+
+\begin{itemize}
+	\item Proceso 1:\\
+	Al presionar la tecla (evento KeyDown), se recibe el código de la tecla que fue presionada (Scan Code).
+	\item Proceso 2:\\
+	Al mantener la tecla (evento KeyPress), no ocurre nada y el código de la tecla se mantiene como el último recibido.
+	\item Proceso 3:\\
+	Al soltar la tecla (evento KeyUp), se recibe el código de liberación (F0) seguido del código de la tecla que fue liberada.
+\end{itemize}
+
+Conociendo el procedimiento, se expondrá un ejemplo para aclarar el funcionamiento de este ejemplo. Suponer que se presiona la tecla Enter, que tiene un Scan Code 5A.\\
+Al no presionar la tecla aún, en el display: \textbf{00 00 00 00}\\
+Al presionar la tecla, en el display: \textbf{00 00 00 5A}\\
+Al mantener la tecla, en el display: \textbf{00 00 00 5A}\\
+Al soltar la tecla, en el display: \textbf{00 5A F0 5A}\\[2ex]
+Finalmente, al terminar el día, se implementaron los bloques más significativos, excluyendo al control, en Verilog. Eso con base al diagrama \ref{fig:DiagramaKeyboard}. Mañana se realizará el control.\\
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=14cm]{img/diagrama_keyboard.jpeg}
+	\caption{Diagrama de bloques del controlador de teclado}
+	\label{fig:DiagramaKeyboard}
+\end{figure}
+
+% Actividad de Merayo
+\noindent \textbf{Con respecto al audio:} \\
+
+
+% Actividad de Keylor
+\noindent \textbf{Con respecto al picoblaze:} \\
+
+
+\noindent Enlaces de interés:
+\begin{itemize}
+	\item Ejemplo del teclado en Digilent: https://reference.digilentinc.com/learn/programmable-logic/tutorials/nexys-4-ddr-keyboard-demo/start
+\end{itemize}
+
+\newpage
+% Nueva entrada
+\begin{flushright}
+	\begin{large}
+		\textbf{Fecha: 14 de Octubre}\\[5ex]
+	\end{large}
+\end{flushright}
+
+\noindent \textbf{Integrantes:} Luis Leon \\[1ex]
+\textbf{Hora:} 7:00 - 9:20\\[1ex]
+\textbf{Actividad:} \\[2ex]
+Se realizó el módulo de control del controlador de teclado, señalado en el diagrama \ref{fig:DiagramaKeyboard} como "Control KB". Se ha comentado el equipo de trabajo de la conclusión de dicho controlador y quedará pendiente la simulación mediante un testbench, donde se deberá representar el comportamiento del teclado bajo el protocolo PS/2.
+
+\newpage
+% Nueva entrada
+\begin{flushright}
+	\begin{large}
+		\textbf{Fecha: 15 de Octubre}\\[5ex]
+	\end{large}
+\end{flushright}
+
+\noindent \textbf{Integrantes:} Luis Leon \\[1ex]
+\textbf{Hora:} 12:30 - 16:30\\[1ex]
+\textbf{Actividad:} \\[2ex]
+Se realizó el modelo comportamental del teclado PS/2 para poder probar el controlador de teclado mediante el testbench. Se han hecho algunas correcciones y se ha tomado prevista de casos repetitivos de teclas que no se habían tomado en cuenta.\\
+Al finalizar el proceso de trabajo, el controlador está listo para ser implementado en el sistema principal y debidamente probado. En la figura \ref{fig:SimKeyB1} se muestra el comportamiento de la simulación gráfica, donde se aprecia los cambios en los registros al pulsar y liberar las teclas. Por otro lado, en la figura \ref{fig:SimKeyB2} se muestra una tabla generada mediante el script del testbench para corroborar los resultados.\\
+Se recuerda que el funcionamiento consta de tres etapas: la consulta de la dirección que se ha cambiado (en memoria), el dato con el nuevo valor y verificación de commit.\\
+Finalmente, se ejecutaron los cambios en el módulo VGA integrando el sistema de cambio de registros con base a un PortID y un ReadStrobe.\\ 
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=16cm]{img/simkb1_1.png}
+	\caption{Diagrama de tiempos de la simulación del controlador de teclado}
+	\label{fig:SimKeyB1}
+\end{figure}
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[height=14cm]{img/simkb2.png}
+	\caption{Simulación tabular del controlador de teclado}
+	\label{fig:SimKeyB2}
+\end{figure}
+
+\newpage
+% Nueva entrada
+\begin{flushright}
+	\begin{large}
+		\textbf{Fecha: 16 de Octubre}\\[5ex]
+	\end{large}
+\end{flushright}
+
+\noindent \textbf{Integrantes:} Luis Leon \\[1ex]
+\textbf{Hora:} 8:00 - 10:30\\[1ex]
+\textbf{Actividad:} \\[2ex]
+Se realizaron las simulaciones del módulo VGA para comprobar el funcionamiento de la modificación. Todo resultó de acuerdo con lo que se esperaba. En la figura \ref{fig:SimVGA1} se muestra un despliegue general de los resultados, donde se destaca la imagen obtenida con los diagramas de tiempos.\\
+Por otro lado, el diagrama de tiempos específicos se encuentran en las figuras \ref{fig:SimVGA2} y \ref{fig:SimVGA3}.\\
+Para descifrar las pruebas de simulación, se han escrito en el registro de años un 16 y en el registro de cronómetro un 45 para destacar los cambios de registros distintos.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=16cm]{img/simvga1.png}
+	\caption{Imagen de los resultados de la simulación}
+	\label{fig:SimVGA1}
+\end{figure}
+
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=16cm]{img/simvga2.png}
+	\caption{Imagen de los resultados de la simulación - Tiempos generales}
+	\label{fig:SimVGA2}
+\end{figure}
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=16cm]{img/simvga3.png}
+	\caption{Imagen de los resultados de la simulación - Tiempos de cambio}
+	\label{fig:SimVGA3}
+\end{figure}
+
+\newpage
+% Nueva entrada
+\begin{flushright}
+	\begin{large}
+		\textbf{Fecha: 19 de Octubre}\\[5ex]
+	\end{large}
+\end{flushright}
+
+\noindent \textbf{Integrantes:} Keylor Mena, Luis Merayo \\[1ex]
+\textbf{Hora:} 8:00 - 10:30\\[1ex]
+\textbf{Actividad:} \\[2ex]
+
+Se reviso las señales generadas en el isim del microprosesador para poder analizar el control de la RTC.
+Con esto podemos armar el diagrama de la figura \ref{fig:diagramaCRTC} en este se ven los caminos posibles a tomar. Ya sea escritura y lectura y sus respectivos tiempos de espera en la escritura de la rtc
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=16cm]{img/DiagramaControlRTC.png}
+	\caption{diagrama de la maquina de control de la RTC}
+	\label{fig:diagramaCRTC}
+\end{figure}
+
+\end{document}
+
+% Nueva entrada
+\begin{flushright}
+	\begin{large}
+		\textbf{Fecha: 25 de Octubre}\\[5ex]
+	\end{large}
+\end{flushright}
+
+\noindent \textbf{Integrantes:} Luis Merayo, Luis Leon, Keylor Mena \\[1ex]
+\textbf{Hora:} 14:00 - 14:30\\[1ex]
+\textbf{Actividad:} \\[2ex]
+
+Se hicieron las primeras pruebas de los módulos en la FPGA, dando un resultado negativo en cuanto al funcionamiento de todo el sistema. Sin embargo, se detectó un error en la VGA que puede estar afectando al circuito implementado. \\
+Además, se corrigió un problema de direcciones en la VGA, que no concordaban con las establecidas en el microcontrolador. Asimismo, se cambió el sistema de acceso a la misma debido a incompatibilidades, ya que no se concordó en buena comunicación entre los miembros durante el desarrollo del microcontrolador y la VGA.
+
+% Nueva entrada
+\begin{flushright}
+	\begin{large}
+		\textbf{Fecha: 27 de Octubre}\\[5ex]
+	\end{large}
+\end{flushright}
+
+\noindent \textbf{Integrantes:} Luis Merayo, Luis Leon \\[1ex]
+\textbf{Hora:} 13:00 - 19:30\\[1ex]
+\textbf{Actividad:} \\[2ex]
+
+Se detectó un problema en el teclado que no permitía que escribiera en el microcontrolador. El error fue detectado en el archivo ucf, donde no se colocaban los pullup a los pines de comunicación con el integrado adaptador PS2.
+
