@@ -37,11 +37,9 @@ module PS2Receiver(
     reg flag;
     
     initial begin
-        keycode[15:0]<=16'h0000;
+        keycode[15:0]<=32'd0;
         cnt<=4'b0000;
         flag<=1'b0;
-		  dataprev <= 8'd0;
-		  datacur <= 8'd0;
     end
     
 debouncer debounce(
@@ -67,28 +65,31 @@ always@(negedge(kclkf))begin
     10:flag<=1'b0;
     
     endcase
-        if(cnt<=9) cnt<=cnt+4'd1;
-        else if(cnt==10) cnt<=4'd0;
+        if(cnt<=9) cnt<=cnt+1;
+        else if(cnt==10) cnt<=0;
         
 end
 
 always @(posedge flag)begin
-    if (dataprev!=datacur)begin
-        if(keycode[15:8] == 8'hF0)
+    
+
+		  if(keycode[15:8] == 8'hF0)
 		  begin
-			  keycode[15:8]<= 8'd0;
-			  keycode[7:0]<=datacur;
-			  dataprev<=datacur;
+				keycode[15:8]<=4'd0;
+				keycode[7:0]<=datacur;
+				dataprev<=8'd0;
 		  end
 		  else
 		  begin
-			  keycode[15:8]<=dataprev;
-			  keycode[7:0]<=datacur;
-			  dataprev<=datacur;
+				keycode[15:8]<=dataprev;
+			   keycode[7:0]<=datacur;
+				dataprev<=datacur;
 		  end
-    end
+        
+        
+    
 end
     
-assign keycodeout=keycode;
+assign keycodeout=keycode[15:0];
     
 endmodule
