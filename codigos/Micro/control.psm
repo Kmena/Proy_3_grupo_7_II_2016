@@ -50,14 +50,15 @@ jump nz, ciclo_teclado
 fetch s0,05
 fetch s1,06
 fetch s2,07 
-test s2, 01
-call z, escritura
 store s1,(s0)
-store s0,0A
+store s0,10'd
+compare s2, 01
+call z, escritura
 return
 
 escritura:
 output s1,(s0)
+call write_start
 return
 
 RTC:

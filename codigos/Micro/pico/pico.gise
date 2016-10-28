@@ -15,7 +15,7 @@
 
   <!--                                                          -->
 
-  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
 
   <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
 
@@ -94,6 +94,9 @@
     <transform xil_pn:end_ts="1477603078" xil_pn:in_ck="7566085170095421030" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1477603078">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="../../Empaquetado_total.v"/>
       <outfile xil_pn:name="../../Empaquetado_total_tb.v"/>
       <outfile xil_pn:name="../../Nueva carpeta/FlipFlopRS.v"/>
@@ -157,6 +160,7 @@
     <transform xil_pn:end_ts="1477603078" xil_pn:in_ck="7566085170095421030" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1477603078">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="../../Empaquetado_total.v"/>
       <outfile xil_pn:name="../../Empaquetado_total_tb.v"/>
       <outfile xil_pn:name="../../Nueva carpeta/FlipFlopRS.v"/>
@@ -208,6 +212,9 @@
     <transform xil_pn:end_ts="1477603110" xil_pn:in_ck="7566085170095421030" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5994966049395768395" xil_pn:start_ts="1477603107">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="empaquetado_audio_tb_beh.prj"/>
       <outfile xil_pn:name="empaquetado_audio_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -218,6 +225,8 @@
     <transform xil_pn:end_ts="1477603110" xil_pn:in_ck="-2168907181715096170" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6021195725258620488" xil_pn:start_ts="1477603110">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="empaquetado_audio_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
@@ -256,6 +265,7 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="Empaquetado_total.lso"/>
