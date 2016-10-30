@@ -56,9 +56,9 @@ module PunterosVGA_MemoryPointed(
 						8'd40 : segReloj <= MemDataIN;
 						8'd41 : minReloj <= MemDataIN;
 						8'd42 : horReloj <= MemDataIN;
-						8'd43 : yearReloj <= MemDataIN;
+						8'd45 : yearReloj <= MemDataIN;
 						8'd44 : monReloj <= MemDataIN;
-						8'd45 : dayReloj <= MemDataIN;
+						8'd44 : dayReloj <= MemDataIN;
 					
 						8'd46 : segCrono <= MemDataIN;
 						8'd47 : minCrono <= MemDataIN;

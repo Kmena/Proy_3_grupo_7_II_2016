@@ -15,7 +15,11 @@ module Keyboard(
 		input Read_Strobe,
 		output reg [7:0] Keyboard_Output,
 		input PS2_Clock,
-		input PS2_Data
+		input PS2_Data,
+		
+		output wire [6:0] seg,
+		 output wire [7:0] an,
+		 output wire dp 
 	);
 	
 	// Instanciar receptor PS2 
@@ -54,5 +58,17 @@ module Keyboard(
 			default: Keyboard_Output = 8'd0;
 		endcase
 	end
+	
+	wire [31:0] x;
+	assign x = {8'd0, Address, Data, Commit};
+	
+	seg7decimal s7(
+
+	.x(x),
+   .clk(CLK),
+   .seg(seg),
+   .an(an),
+   .dp(dp) 
+	 );
 
 endmodule
