@@ -208,6 +208,8 @@
     <transform xil_pn:end_ts="1477603110" xil_pn:in_ck="7566085170095421030" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5994966049395768395" xil_pn:start_ts="1477603107">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="empaquetado_audio_tb_beh.prj"/>
       <outfile xil_pn:name="empaquetado_audio_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -218,6 +220,8 @@
     <transform xil_pn:end_ts="1477603110" xil_pn:in_ck="-2168907181715096170" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6021195725258620488" xil_pn:start_ts="1477603110">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="empaquetado_audio_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>

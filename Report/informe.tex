@@ -1,0 +1,119 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage[left=1.3cm,right=1.3cm,top=1.8cm,bottom=4cm]{geometry}
+\usepackage{lastpage}
+\usepackage{marginnote}
+\usepackage{multirow}
+\usepackage{wallpaper}
+\usepackage{fancyhdr}
+\setlength{\headheight}{87pt} 
+\pagestyle{fancy}\fancyhf{}
+\renewcommand{\headrulewidth}{0pt} 
+\setlength{\parindent}{0cm}
+\newcommand{\tab}{\hspace*{2em}}
+\newcommand\BackgroundStructure{
+	\setlength{\unitlength}{1mm}
+	\setlength\fboxsep{0mm}
+	\setlength\fboxrule{0.5mm}
+	\put(10, 10){\fcolorbox{black}{white!10}{\framebox(192,247){}}}
+	\put(10, 262){\fcolorbox{black}{white!10}{\framebox(192, 31){}}}
+}
+
+%-------------------------ENCABEZADO---------------
+\fancyhead[L]{\begin{tabular}{l r | l r}	
+		\textbf{Proyecto} & 3 & \textbf{PÃ¡gina} & \thepage/\pageref{LastPage} \\
+		\textbf{Trabajo} & Desarrollo de un controlador & \textbf{Actualizado en:} & 27/08/2016 \\
+		\textbf{} &  VGA & \textbf{Revisado en:} & 30/08/2016 \\
+		\textbf{Grupo} & 1 & \textbf{DiseÃ±adores} & Keylor Mena Venegas \\
+		\textbf{Revisado por:} & Alfonso ChacÃ³n RodrÃ­guez & \textbf{ } & Luis Leon Vega \\
+		\textbf{} & & \textbf{ } & Luis Merayo Gatica
+	\end{tabular}}
+	
+	\begin{document}
+		\AddToShipoutPicture{\BackgroundStructure}
+		
+		\section*{\textit{Resumen}}
+		
+		Se debe realizar un controlador para realizar la lectura y escritura del módulo RTC V3023. Los datos del sistema deben poder ser desplegados en un monitor LCD mediante el protocolo VGA. Por lo cual, se deben realizar controladores para la RTC y la VGA, además estos y el funcionamiento en general del sistema deben ser controlados por el microcontrolador Picoblaze de Xilinx. Asimismo, se debe poder ajustar los parametros de hora, fecha, y cronometro, en forma descendente, por medio de un teclado y utilizar la salida de audio disponible en la Nexys 4.\\
+		
+		\section*{\textit{Introduccion}} 
+		Este proyecto consiste en realizar un controlador de módulos RTC (Real Time Controller), especí­ficamente para el módulo V3023. Este controlador será capaz de escribir y leer dicho módulo para obtener parámetros de reloj, cronómetro y alarma. \\
+		Asimismo, para poder desplegar la información relevante de los parámetros anteriores, se conectará un monitor LCD mediante el protocolo VGA. Por otro lado, para poder programar y dar instrucciones al circuito, se deberá usar un teclado, además de implementar la salida de audio del a Nexys 4 para notificar al usuario del fin de la alarma. \\
+		Todos los módulos mencionados deben ser controlados por el microcontrolador Picoblaze de Xilinx.\\
+		Finamente, el sistema realiza la correcta comunicación y lectura de la RTC, además de permitir al usuario visualizar y acceder a la misma de una forma eficiente. 
+		
+		\section{Objetivos}
+		\begin{itemize}
+			\item Diseñar un controlador de RTC que permita leerlo y programarlo mediante una interfaz de usuario que consiste en un teclado, un monitor comunicado a través del protocolo VGA y un microcontrolador.
+			\item Implementar el control general del sistema mediante el uso de el microcontrolador Picoblaze.
+			\item Investigar y conocer el lenguaje de programación del Picoblaze.
+			\item Asegurar la sincronía de tiempos entre el Picoblaze, la RTC, y los demás módulos del circuito.
+			\item Realizar la conversión del código del Picoblaze para su implementación en el lenguaje Verilog.
+			\item Investigar el funcionamiento del módulo RTC y el protocolo de comunicación del mismo.
+			\item Investigar el funcionamiento del módulo de tecldo y su protocolo de comunicación.
+			\item Diseñar un controlador para el módulo RTC, cuyo bus de datos y direcciones están multiplexados.
+			\item Cumplir con las reglas de temporizado del sistema, en especial, con el protocolo de comunicación del módulo RTC.
+			\item Combinar el controlador de RTC con un controlador VGA, por medio del Picoblaze, para poder desplegar la información del módulo al usuario. Este módulo VGA será adaptado del proyecto anterior.
+			\item Desarrollar un banco de pruebas (testbench) para poder emular el comportamiento del módulo RTC con la finalidad de comprobar el funcionamiento del circuito controlador.
+			\item Desarrollar un banco de pruebas (testbench) para verificar el correcto trasiego de datos del teclado hacia el Picoblaze.
+			\item Implementa la salida de audio mono incluida en la Nexys 4. 
+		\end{itemize}
+		
+		\section{Descripción del sistema}
+		El sistema se divide en 5 módulos, los cuales son teclado, Controlador de RTC, controlador de VGA, salida de audio y microcontrolador Picoblaze.
+		El circuito está diseñado de manera que el Picoblaze funcione como controlador pricipal del sistema, es decir, se encarga de intercomunicar los demás módulos entre sí. Específicamente permite realizar el acceso a la RTC, por medio de su respectivo controlador, ya sea para lectura o la escritura de nuevos datos enviados por el teclado al microcontrolador. Además controla el envío de los datos que se desplegan en la VGA y activa o desactiva el módulo de audio.  \\[2ex]
+			
+		
+	
+		
+		
+		\section{Datos y resultados}
+		\subsection{Simulaciones}
+	
+		 	
+		 	
+		
+<<<<<<< HEAD
+		\section{Análisis de datos y resultados}
+		 
+		  
+		 
+		    
+		 
+		    
+=======
+		\section{AnÃ¡lisis de datos y resultados}
+		
+>>>>>>> origin/master
+		
+		\section{Hoja de datos de unidades desarrolladas}
+		\subsection{Distribución de pines en la Nexys 4}
+		\begin{center}
+		
+		\end{center}
+		Todos los pines tienen un IOSTANDARD de LVCMOS33.
+		
+		\section{Conclusiones y recomendaciones}
+		\subsection{Conclusiones}
+		\begin{itemize}
+			
+		 
+		 
+		 
+	\end{itemize}
+		\subsection{Recomendaciones}
+<<<<<<< HEAD
+		\begin{itemize}
+		 
+	\end{itemize}
+	    \section{Bibliografía}
+	     [1] EM Microelectronic, \textit{ Very Low Power 8-Bit 32 kHz RTC Module with Digital Trimming, User RAM and High Level Integration}, Swatch Group Electronic systems, 2015.\\[2ex]
+	     [2] Digilent, \textit{Nexys 4 FPGA Board Reference Manual}, Digilent, 2013.
+	\end{document}
+=======
+		
+		
+	\end{document}
+>>>>>>> origin/master
