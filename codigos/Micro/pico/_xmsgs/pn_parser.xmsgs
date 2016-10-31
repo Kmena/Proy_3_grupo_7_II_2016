@@ -8,7 +8,121 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/Empaquetado_total.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/Micro/encapsulado_micro.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/Micro/kcpsm6.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/Micro/kcpsm6_design_template.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/Micro/mux3x7.v&quot; into library work</arg>
+</msg>
+
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/Micro/pico/control.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/FlipFlopRS.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/ModuloRTC.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/Mux2x7.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/control_principal_rtc.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/control_salida.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/escritura.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/lectura.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/memoria_DRULC.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/Nueva carpeta/or2.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/audio/Latch_entrada.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/audio/contador2.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/audio/counter.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/audio/div_frecuencia.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/audio/empaquetado_audio.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/audio/pwm.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/audio/reset.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/controlVGA/ControlSalidaVGA.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/controlVGA/ControlVGACentralWithBlue.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/controlVGA/PunterosVGA_MemoryPointed.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/controlVGA/SyncCounters.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/controlVGA/VROMswithBlue.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/controlVGA/contadorhorizontal.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/controlVGA/contadorvertical.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/controlVGA/generadorBlank.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/controlVGA/generadorHsync.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/controlVGA/generadorVsync.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/deco id/decoid.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/teclado/build/1.0/ControlKB.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/teclado/build/1.0/Decodificador_Keyboard_ID.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/teclado/build/1.0/Keyboard.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/teclado/build/1.0/PS2Receiver.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Documents/Proy_3_grupo_7_II_2016/codigos/teclado/build/1.0/debouncer.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/User/Downloads/Empaquetado_total2.v&quot; into library work</arg>
 </msg>
 
 </messages>

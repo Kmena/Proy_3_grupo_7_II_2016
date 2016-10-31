@@ -1,0 +1,29 @@
+Command line:
+   encapsulado_micro_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52167
+
+Sun Oct 30 22:45:47 2016
+
+
+ Elaboration Time: 0.312003 sec
+
+ Current Memory Usage: 664.805 Meg
+
+ Total Signals          : 1413
+ Total Nets             : 2142
+ Total Signal Drivers   : 647
+ Total Blocks           : 382
+ Total Primitive Blocks : 231
+ Total Processes        : 1141
+ Total Traceable Variables  : 2095
+ Total Scalar Nets and Variables : 121876
+Total Line Count : 7497
+
+ Total Simulation Time: 0.452403 sec
+
+ Current Memory Usage: 664.805 Meg
+
+Sun Oct 30 22:46:01 2016
+

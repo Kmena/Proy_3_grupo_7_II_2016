@@ -58,6 +58,7 @@
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Empaquetado_total_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Empaquetado_total_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Empaquetado_total_summary.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Empaquetado_total_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Empaquetado_total_tb_isim_beh.exe"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Empaquetado_total_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Empaquetado_total_usage.xml"/>
@@ -69,13 +70,13 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="empaquetado_audio_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="empaquetado_audio_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="empaquetado_audio_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="encapsulado_micro_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="encapsulado_micro_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="encapsulado_micro_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="mux3x7_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="pwm_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
@@ -87,18 +88,14 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1477428654" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1477428654">
+    <transform xil_pn:end_ts="1477885793" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1477885793">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1477603078" xil_pn:in_ck="7566085170095421030" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1477603078">
+    <transform xil_pn:end_ts="1477885793" xil_pn:in_ck="6004233978686938400" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1477885793">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../../../../../Downloads/Empaquetado_total2.v"/>
       <outfile xil_pn:name="../../Empaquetado_total.v"/>
       <outfile xil_pn:name="../../Empaquetado_total_tb.v"/>
       <outfile xil_pn:name="../../Nueva carpeta/FlipFlopRS.v"/>
@@ -138,6 +135,7 @@
       <outfile xil_pn:name="../../teclado/build/1.0/Keyboard_tb.v"/>
       <outfile xil_pn:name="../../teclado/build/1.0/PS2Receiver.v"/>
       <outfile xil_pn:name="../../teclado/build/1.0/debouncer.v"/>
+      <outfile xil_pn:name="../../tesbnch_modelsim.v"/>
       <outfile xil_pn:name="../control.v"/>
       <outfile xil_pn:name="../encapsulado_micro.v"/>
       <outfile xil_pn:name="../encapsulado_micro_tb.v"/>
@@ -147,26 +145,22 @@
       <outfile xil_pn:name="ModuloRTC_tb.v"/>
       <outfile xil_pn:name="control.v"/>
     </transform>
-    <transform xil_pn:end_ts="1477603107" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7363189542006140979" xil_pn:start_ts="1477603107">
+    <transform xil_pn:end_ts="1477889104" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="3484680569868832671" xil_pn:start_ts="1477889104">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1477603107" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-7591747819334263087" xil_pn:start_ts="1477603107">
+    <transform xil_pn:end_ts="1477889104" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-3339764170788585411" xil_pn:start_ts="1477889104">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1477428654" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-7273748642243781900" xil_pn:start_ts="1477428654">
+    <transform xil_pn:end_ts="1477885793" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-7273748642243781900" xil_pn:start_ts="1477885793">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1477603078" xil_pn:in_ck="7566085170095421030" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1477603078">
+    <transform xil_pn:end_ts="1477885793" xil_pn:in_ck="6004233978686938400" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1477885793">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../../../../../Downloads/Empaquetado_total2.v"/>
       <outfile xil_pn:name="../../Empaquetado_total.v"/>
       <outfile xil_pn:name="../../Empaquetado_total_tb.v"/>
       <outfile xil_pn:name="../../Nueva carpeta/FlipFlopRS.v"/>
@@ -206,6 +200,7 @@
       <outfile xil_pn:name="../../teclado/build/1.0/Keyboard_tb.v"/>
       <outfile xil_pn:name="../../teclado/build/1.0/PS2Receiver.v"/>
       <outfile xil_pn:name="../../teclado/build/1.0/debouncer.v"/>
+      <outfile xil_pn:name="../../tesbnch_modelsim.v"/>
       <outfile xil_pn:name="../control.v"/>
       <outfile xil_pn:name="../encapsulado_micro.v"/>
       <outfile xil_pn:name="../encapsulado_micro_tb.v"/>
@@ -215,32 +210,22 @@
       <outfile xil_pn:name="ModuloRTC_tb.v"/>
       <outfile xil_pn:name="control.v"/>
     </transform>
-    <transform xil_pn:end_ts="1477603110" xil_pn:in_ck="7566085170095421030" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5994966049395768395" xil_pn:start_ts="1477603107">
+    <transform xil_pn:end_ts="1477889139" xil_pn:in_ck="6004233978686938400" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="8759481906563964429" xil_pn:start_ts="1477889104">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="empaquetado_audio_tb_beh.prj"/>
-      <outfile xil_pn:name="empaquetado_audio_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="encapsulado_micro_beh.prj"/>
+      <outfile xil_pn:name="encapsulado_micro_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1477603110" xil_pn:in_ck="-2168907181715096170" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6021195725258620488" xil_pn:start_ts="1477603110">
+    <transform xil_pn:end_ts="1477889139" xil_pn:in_ck="-5425510913346760371" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8158105416276509168" xil_pn:start_ts="1477889139">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="empaquetado_audio_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="encapsulado_micro_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
     </transform>
     <transform xil_pn:end_ts="1477424049" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1477424049">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -270,22 +255,17 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1477602373" xil_pn:in_ck="2390352174764501058" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="3821959566276664881" xil_pn:start_ts="1477602254">
-      <status xil_pn:value="SuccessfullyRun"/>
+    <transform xil_pn:end_ts="1477885982" xil_pn:in_ck="5334302996565292258" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="3821959566276664881" xil_pn:start_ts="1477885842">
+      <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="Empaquetado_total.lso"/>
       <outfile xil_pn:name="Empaquetado_total.ngc"/>
       <outfile xil_pn:name="Empaquetado_total.ngr"/>
       <outfile xil_pn:name="Empaquetado_total.prj"/>
-      <outfile xil_pn:name="Empaquetado_total.stx"/>
       <outfile xil_pn:name="Empaquetado_total.syr"/>
       <outfile xil_pn:name="Empaquetado_total.xst"/>
+      <outfile xil_pn:name="Empaquetado_total_tb_beh.prj"/>
       <outfile xil_pn:name="Empaquetado_total_tb_stx_beh.prj"/>
       <outfile xil_pn:name="Empaquetado_total_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
@@ -312,6 +292,7 @@
     <transform xil_pn:end_ts="1477426978" xil_pn:in_ck="-5416887653396664251" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="-7188367874928765557" xil_pn:start_ts="1477426428">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Empaquetado_total.pcf"/>
       <outfile xil_pn:name="Empaquetado_total_map.map"/>
@@ -327,6 +308,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Empaquetado_total.ncd"/>
       <outfile xil_pn:name="Empaquetado_total.pad"/>
