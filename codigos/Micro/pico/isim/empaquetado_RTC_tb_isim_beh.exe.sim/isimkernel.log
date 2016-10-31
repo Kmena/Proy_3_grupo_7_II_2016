@@ -1,0 +1,29 @@
+Command line:
+   empaquetado_RTC_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52448
+
+Mon Oct 31 17:14:54 2016
+
+
+ Elaboration Time: 0.109201 sec
+
+ Current Memory Usage: 659.747 Meg
+
+ Total Signals          : 97
+ Total Nets             : 148
+ Total Signal Drivers   : 39
+ Total Blocks           : 10
+ Total Primitive Blocks : 8
+ Total Processes        : 53
+ Total Traceable Variables  : 91
+ Total Scalar Nets and Variables : 607
+Total Line Count : 425
+
+ Total Simulation Time: 0.218402 sec
+
+ Current Memory Usage: 659.747 Meg
+
+Mon Oct 31 17:15:00 2016
+

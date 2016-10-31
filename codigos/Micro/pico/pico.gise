@@ -70,6 +70,9 @@
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="empaquetado_RTC_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="empaquetado_RTC_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="empaquetado_RTC_tb_isim_beh.wdb"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="empaquetado_audio_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="encapsulado_micro_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="encapsulado_micro_isim_beh.exe"/>
@@ -77,6 +80,7 @@
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="mux3x7_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="pwm_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
@@ -92,7 +96,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1477885793" xil_pn:in_ck="6004233978686938400" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1477885793">
+    <transform xil_pn:end_ts="1477955673" xil_pn:in_ck="-3283746768146006064" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1477955673">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../../../../../Downloads/Empaquetado_total2.v"/>
@@ -108,6 +112,7 @@
       <outfile xil_pn:name="../../Nueva carpeta/lectura.v"/>
       <outfile xil_pn:name="../../Nueva carpeta/memoria_DRULC.v"/>
       <outfile xil_pn:name="../../Nueva carpeta/or2.v"/>
+      <outfile xil_pn:name="../../Nueva%20carpeta/empaquetado_RTC_tb.v"/>
       <outfile xil_pn:name="../../audio/Latch_entrada.v"/>
       <outfile xil_pn:name="../../audio/contador2.v"/>
       <outfile xil_pn:name="../../audio/counter.v"/>
@@ -142,14 +147,13 @@
       <outfile xil_pn:name="../kcpsm6.v"/>
       <outfile xil_pn:name="../kcpsm6_design_template.v"/>
       <outfile xil_pn:name="../mux3x7.v"/>
-      <outfile xil_pn:name="ModuloRTC_tb.v"/>
       <outfile xil_pn:name="control.v"/>
     </transform>
-    <transform xil_pn:end_ts="1477889104" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="3484680569868832671" xil_pn:start_ts="1477889104">
+    <transform xil_pn:end_ts="1477955673" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="6466012949044923114" xil_pn:start_ts="1477955673">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1477889104" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-3339764170788585411" xil_pn:start_ts="1477889104">
+    <transform xil_pn:end_ts="1477955673" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="735010294371402760" xil_pn:start_ts="1477955673">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -157,7 +161,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1477885793" xil_pn:in_ck="6004233978686938400" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1477885793">
+    <transform xil_pn:end_ts="1477955673" xil_pn:in_ck="-3283746768146006064" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1477955673">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="../../../../../Downloads/Empaquetado_total2.v"/>
@@ -173,6 +177,7 @@
       <outfile xil_pn:name="../../Nueva carpeta/lectura.v"/>
       <outfile xil_pn:name="../../Nueva carpeta/memoria_DRULC.v"/>
       <outfile xil_pn:name="../../Nueva carpeta/or2.v"/>
+      <outfile xil_pn:name="../../Nueva%20carpeta/empaquetado_RTC_tb.v"/>
       <outfile xil_pn:name="../../audio/Latch_entrada.v"/>
       <outfile xil_pn:name="../../audio/contador2.v"/>
       <outfile xil_pn:name="../../audio/counter.v"/>
@@ -207,25 +212,24 @@
       <outfile xil_pn:name="../kcpsm6.v"/>
       <outfile xil_pn:name="../kcpsm6_design_template.v"/>
       <outfile xil_pn:name="../mux3x7.v"/>
-      <outfile xil_pn:name="ModuloRTC_tb.v"/>
       <outfile xil_pn:name="control.v"/>
     </transform>
-    <transform xil_pn:end_ts="1477889139" xil_pn:in_ck="6004233978686938400" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="8759481906563964429" xil_pn:start_ts="1477889104">
+    <transform xil_pn:end_ts="1477955685" xil_pn:in_ck="-3283746768146006064" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="8285146850458713091" xil_pn:start_ts="1477955673">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="encapsulado_micro_beh.prj"/>
-      <outfile xil_pn:name="encapsulado_micro_isim_beh.exe"/>
+      <outfile xil_pn:name="empaquetado_RTC_tb_beh.prj"/>
+      <outfile xil_pn:name="empaquetado_RTC_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1477889139" xil_pn:in_ck="-5425510913346760371" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8158105416276509168" xil_pn:start_ts="1477889139">
+    <transform xil_pn:end_ts="1477955686" xil_pn:in_ck="7287736693476677240" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-8564833171906593626" xil_pn:start_ts="1477955685">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="encapsulado_micro_isim_beh.wdb"/>
+      <outfile xil_pn:name="empaquetado_RTC_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
     </transform>
     <transform xil_pn:end_ts="1477424049" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1477424049">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -259,6 +263,8 @@
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Empaquetado_total.lso"/>
       <outfile xil_pn:name="Empaquetado_total.ngc"/>
       <outfile xil_pn:name="Empaquetado_total.ngr"/>
