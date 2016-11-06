@@ -126,6 +126,72 @@
 		
 		Cabe destacar que, la interfaz tiene espacios azules para indicarle al sistema de punteros cuando debe hacer cambio de imagen por un número. Esto se hizo con la finalidad de ahorrar espacio en la Nexys y optimizar el código, ya que existieron problemas debido al rendimiento en tiempo de todo el bloque VGA.\\[2ex]
 		
+		
+		\subsection{Controlador de teclado}
+		Una de las diferencias de este proyecto con respecto al anterior es la incorporación de un teclado con comunicación bajo el protocolo serial PS2. Este protocolo serial emplea un reloj generado por el periférico y una línea de datos que permite transmitir los datos en sincronía con el reloj del periférico.\\ [2ex]
+		Para efectos de uso, se han tomado en cuenta las siguientes teclas para poder usar, más adelante, el circuito:
+		
+		\begin{table}[htb]
+			\centering
+			\caption{Configuración de las teclas}
+			\begin{tabular}{c|c}
+				Tecla & Función \\
+				\hline
+				\hline
+				F1 & Alterar fecha \\
+				F2 & Alterar hora \\
+				F3 & Alterar cronómetro \\
+				F10 & Apagar alerta del cronómetro \\
+				F11 & Activar cronómetro \\
+				F12 & Detener cronómetro \\
+				Esc & Descartar y Salir \\
+				Enter & Guardar y Salir \\
+				Tab & Seleccionar Siguiente \\
+				0-9 & Valores numéricos \\
+			\end{tabular}
+			\label{tab:teclas}
+		\end{table}
+		
+		Para las salidas del circuito, este guardará los valores de la selección del usuario hasta que haya un commit = 1 y un ReadStrobe que indique que los datos fueron leídos por el microcontrolador. Asimismo, hay una salida hacia los display de 7 segmentos para comprobar los datos.
+		
+		\subsubsection{Diagrama de primer nivel}
+		El diseño básico es presentado en la figura \ref{fig:KBPrimerNivel}, donde se indican las entradas y salidas del circuito. En estas, se presentan las direcciones del PortID procedente del Picoblaze, la salida de datos hacia el Picoblaze (DataOUT) y un indicador de lectura ReadStrobe, que permite comprobar al controlador de teclado que los datos fueron leídos y poder, así, borrar los registros del control. Por otro lado, es posible notar las entradas del teclado PS2 (PS2\_CLK y PS2\_DATA) y las salidas hacia los displays de 7 segmentos que permiten comprobar el funcionamiento del microcontrolador y del teclado.
+		
+		
+		\begin{figure}[hbtp]
+			\centering
+			\includegraphics[width=14cm]{img/KBPrimerNivel.png}
+			\caption{Diagrama de primer nivel KB}
+			\label{fig:KBPrimerNivel}
+		\end{figure}
+		
+		\subsubsection{Diagrama de segundo nivel}
+		Para la segunda iteración del diseño, se investigó acerca del funcionamiento del teclado y un código de ejemplo para un teclado que muestra los códigos de las teclas en los display de 7 segmentos [3]. Este código estaba diseñado para una Nexys 4 DDR, que, a como fue posible notar, es ligeramente diferente a la Nexys 4 que se emplea, actualmente.\\ [2ex]
+		Tomando en cuenta un diseño basado en el código de ejemplo, la iteración del diseño queda de acuerdo con la figura \ref{fig:KBSegundoNivel}.
+		
+		\begin{figure}[hbtp]
+			\centering
+			\includegraphics[width=18cm]{img/KBSegundoNivel.png}
+			\caption{Diagrama de primer nivel KB}
+			\label{fig:KBSegundoNivel}
+		\end{figure}
+		
+		Las etapas modificadas y basadas en el ejemplo son el Adaptador de señal, el Receptor PS2 y el Decodificador de 7 segmentos. La alteración de estas radica en las conexiones y el ancho de los buses de datos de I/O de cada segmento. Sin embargo, el Adaptador de señal se ha tomado intacto, ya que es esencial para el Receptor PS2 y evitar posibles rebotes causados por desconexiones o posibles fluctuaciones eléctricas. \\ [2ex]
+		El Receptor PS2 permite convertir el dato recibido bajo formato serial a un formato paralelo de 32 bits (16 bits aprovechables), que permiten tener en cuenta los valores de las teclas en una forma de pila para el Control de Teclado (KeyCode). \\ [2ex]
+		El Control principal se encarga de decodificar cada tecla, modificar los registros correctos y llevar en cuenta las direcciones que se van modificando bajo cada combinación en la secuencia de las teclas. Asimismo, vigila la lectura del Picoblaze para determinar cuando el dato ha salido leído y repetir una nueva rutina de lectura. Este control cuenta con 3 registros que contienen la dirección del dato que se va a alterar (si son segundos, minutos, horas...), el dato que se escribirá, gobernado principalmente por las teclas numéricas y el registro de commit, que permite guardar el dato en el Picoblaze.\\ [2ex]
+		El decodificador de dirección recibe el PortID del Picoblaze y permite direccionar al multiplexor (Multiplexor de salida) en la salida de los datos hacia el mismo microcontrolador (Seleccionar entre Dirección, Dato o Commit). Asimismo, lleva en cuenta cuando el Picoblaze hace lectura del registro commit, que alerta que el Control Principal debe hacer Reset. \\ [2ex]
+		Finalmente, el Decodificador de 7 segmentos es combinacional y permite decodificar los datos en Hexadecimal para proyectarlos en los displays de la placa Nexys 4.
+		
+		\subsubsection{Diagrama de tercer nivel}
+		Para la última iteración del diseño modular del Controlador e Teclado, el diseño continúa la línea del segundo nivel, a excepción de que se hacen visibles los nombres de los registros que serán alterados por el ControlKB y serán entregados al Mux para dirigirlos al Picoblaze y el Decodificador de 7 segmentos. Además, se han colocado los nombres de los módulos como fueron implementados en HDL. Para observar el diseño, consulte la figura \ref{fig:KBTercerNivel}.
+		
+		\begin{figure}[hbtp]
+			\centering
+			\includegraphics[width=18cm]{img/KBTercerNivel.png}
+			\caption{Diagrama de primer nivel KB}
+			\label{fig:KBTercerNivel}
+		\end{figure}
+		
 		\subsection{Control de usuario}
 		Para poder controlar el acceso del usuario, que se comunica por medio de 7 botones, 3 interruptores que indican que se quiere cambiar, el reloj, el timer o la alarma, y para moverse entre los registros de datos y aumentar o disminuir sus valores.\\ 
 		
@@ -280,15 +346,14 @@
 				Recurso & Consumo \\
 				\hline
 				\hline
-				Potencia & 89mW \\
+				Potencia & 194mW \\
 				Slices ocupadas & 1\% \\
 				Registros & < 1\% \\
-				MUX & 3\% \\
-				IO & 14\% \\
+				IO & 22\% \\
 				LUTs lógicos & 1\% \\
-				LUT FF & 1419\\ 
+				LUT FF & 1306\\ 
 				DSP48E1 & 1\% \\
-				Reloj Máximo & 111.592MHz \\
+				Reloj Máximo & 98.739MHz \\
 				\end{tabular}
 				\label{tab:consumo}
 				\end{table}
@@ -304,5 +369,6 @@
 		
 		\subsection{Recomendaciones}
 		
-		
+		\section{Bibliografía}
+		[3]"Nexys4-DDR Keyboard Demo [Reference.Digilentinc]", \textit{Reference.digilentinc.com} , 2016. [Online]. Available: https://reference.digilentinc.com/learn/programmable-logic/tutorials/nexys-4-ddr-keyboard-demo/start. [Accessed: 12-Oct-2016].
 	\end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.27)  6 NOV 2016 09:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.27)  6 NOV 2016 11:41
 entering extended mode
 **./informe.tex
 (informe.tex
@@ -336,24 +336,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
-<img/VGAPrimerNivel.png, id=9, 539.76656pt x 235.63031pt>
+<img/VGAPrimerNivel.png, id=9, 562.35094pt x 235.63031pt>
 File: img/VGAPrimerNivel.png Graphic file (type png)
 
 <use img/VGAPrimerNivel.png>
 Package pdftex.def Info: img/VGAPrimerNivel.png used on input line 73.
-(pdftex.def)             Requested size: 426.79134pt x 186.31488pt.
+(pdftex.def)             Requested size: 426.79134pt x 178.82921pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 78--81
 
  []
 
 [2 <./img/Subsistemas.jpg>]
-<img/VGASegundoNivel.png, id=13, 843.90282pt x 383.18156pt>
+<img/VGASegundoNivel.png, id=14, 865.73438pt x 383.18156pt>
 File: img/VGASegundoNivel.png Graphic file (type png)
 
 <use img/VGASegundoNivel.png>
 Package pdftex.def Info: img/VGASegundoNivel.png used on input line 87.
-(pdftex.def)             Requested size: 512.1496pt x 232.54764pt.
+(pdftex.def)             Requested size: 512.1496pt x 226.68907pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
@@ -369,13 +369,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--101
 
  []
 
-<img/VGATercerNivel.png, id=17, 843.90282pt x 502.87875pt>
+<img/VGATercerNivel.png, id=19, 843.90282pt x 502.87875pt>
 File: img/VGATercerNivel.png Graphic file (type png)
 
 <use img/VGATercerNivel.png>
 Package pdftex.def Info: img/VGATercerNivel.png used on input line 104.
 (pdftex.def)             Requested size: 512.1496pt x 305.19023pt.
- <img/VGAInterfaz.png, id=18, 513.92pt x 385.44pt>
+ <img/VGAInterfaz.png, id=20, 513.92pt x 385.44pt>
 File: img/VGAInterfaz.png Graphic file (type png)
 
 <use img/VGAInterfaz.png>
@@ -387,7 +387,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--118
  []
 
 [4 <./img/VGASegundoNivel.png>] [5 <./img/VGATercerNivel.png> <./img/VGAInterfa
-z.png>] <img/VGANumeros.png, id=27, 32.12pt x 481.8pt>
+z.png>] <img/VGANumeros.png, id=30, 32.12pt x 481.8pt>
 File: img/VGANumeros.png Graphic file (type png)
 
 <use img/VGANumeros.png>
@@ -399,150 +399,178 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--128
  []
 
 [6 <./img/VGANumeros.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
+<img/KBPrimerNivel.png, id=35, 612.78937pt x 235.63031pt>
+File: img/KBPrimerNivel.png Graphic file (type png)
+
+<use img/KBPrimerNivel.png>
+Package pdftex.def Info: img/KBPrimerNivel.png used on input line 163.
+(pdftex.def)             Requested size: 398.33858pt x 153.16867pt.
+
+<img/KBSegundoNivel.png, id=36, 874.76813pt x 426.84468pt>
+File: img/KBSegundoNivel.png Graphic file (type png)
+
+<use img/KBSegundoNivel.png>
+Package pdftex.def Info: img/KBSegundoNivel.png used on input line 174.
+(pdftex.def)             Requested size: 512.1496pt x 249.9083pt.
+ [7] [8 <./img/KBPrimerNivel.png> <./img/KBSegundoNivel.png>] <img/KBTercerNive
+l.png, id=45, 874.76813pt x 427.5975pt>
+File: img/KBTercerNivel.png Graphic file (type png)
+
+<use img/KBTercerNivel.png>
+Package pdftex.def Info: img/KBTercerNivel.png used on input line 190.
+(pdftex.def)             Requested size: 512.1496pt x 250.34904pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
  []
 
-<img/nivel1_contusr.jpg, id=32, 922.94812pt x 366.61969pt>
+<img/nivel1_contusr.jpg, id=46, 922.94812pt x 366.61969pt>
 File: img/nivel1_contusr.jpg Graphic file (type jpg)
 
 <use img/nivel1_contusr.jpg>
-Package pdftex.def Info: img/nivel1_contusr.jpg used on input line 137.
+Package pdftex.def Info: img/nivel1_contusr.jpg used on input line 203.
 (pdftex.def)             Requested size: 284.51958pt x 85.35567pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
+[9] [10 <./img/KBTercerNivel.png> <./img/nivel1_contusr.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
 
  []
 
-<img/nivel2_contusr.jpg, id=33, 635.37375pt x 291.33844pt>
+<img/nivel2_contusr.jpg, id=54, 635.37375pt x 291.33844pt>
 File: img/nivel2_contusr.jpg Graphic file (type jpg)
 
 <use img/nivel2_contusr.jpg>
-Package pdftex.def Info: img/nivel2_contusr.jpg used on input line 150.
+Package pdftex.def Info: img/nivel2_contusr.jpg used on input line 216.
 (pdftex.def)             Requested size: 455.25829pt x 199.17442pt.
 
-<img/JerarquiaRTC.jpg, id=34, 673.76718pt x 549.55313pt>
+<img/JerarquiaRTC.jpg, id=55, 673.76718pt x 549.55313pt>
 File: img/JerarquiaRTC.jpg Graphic file (type jpg)
 
 <use img/JerarquiaRTC.jpg>
-Package pdftex.def Info: img/JerarquiaRTC.jpg used on input line 161.
+Package pdftex.def Info: img/JerarquiaRTC.jpg used on input line 227.
 (pdftex.def)             Requested size: 455.24614pt x 256.07623pt.
 
-<img/diagramatiempoescritura.jpg, id=35, 703.87968pt x 261.22594pt>
+<img/diagramatiempoescritura.jpg, id=56, 703.87968pt x 261.22594pt>
 File: img/diagramatiempoescritura.jpg Graphic file (type jpg)
 
 <use img/diagramatiempoescritura.jpg>
-Package pdftex.def Info: img/diagramatiempoescritura.jpg used on input line 167
+Package pdftex.def Info: img/diagramatiempoescritura.jpg used on input line 233
 .
 (pdftex.def)             Requested size: 455.23943pt x 256.07938pt.
 
-<img/diagramatiempolectura.jpg, id=36, 706.13812pt x 279.29344pt>
+<img/diagramatiempolectura.jpg, id=57, 706.13812pt x 279.29344pt>
 File: img/diagramatiempolectura.jpg Graphic file (type jpg)
 
 <use img/diagramatiempolectura.jpg>
-Package pdftex.def Info: img/diagramatiempolectura.jpg used on input line 173.
+Package pdftex.def Info: img/diagramatiempolectura.jpg used on input line 239.
 (pdftex.def)             Requested size: 455.24548pt x 256.0837pt.
 
-<img/cuadrotiemposalida.jpg, id=37, 584.1825pt x 261.97874pt>
+<img/cuadrotiemposalida.jpg, id=58, 584.1825pt x 261.97874pt>
 File: img/cuadrotiemposalida.jpg Graphic file (type jpg)
 
 <use img/cuadrotiemposalida.jpg>
-Package pdftex.def Info: img/cuadrotiemposalida.jpg used on input line 179.
+Package pdftex.def Info: img/cuadrotiemposalida.jpg used on input line 245.
 (pdftex.def)             Requested size: 455.25938pt x 256.08183pt.
- [7 <./img/nivel1_contusr.jpg>]
-<img/nivel1_RTC.jpg, id=42, 515.67656pt x 279.29344pt>
+
+<img/nivel1_RTC.jpg, id=59, 515.67656pt x 279.29344pt>
 File: img/nivel1_RTC.jpg Graphic file (type jpg)
 
 <use img/nivel1_RTC.jpg>
-Package pdftex.def Info: img/nivel1_RTC.jpg used on input line 187.
+Package pdftex.def Info: img/nivel1_RTC.jpg used on input line 253.
 (pdftex.def)             Requested size: 455.26033pt x 256.0837pt.
- [8 <./img/nivel2_contusr.jpg> <./img/JerarquiaRTC.jpg>] [9 <./img/diagramatiem
-poescritura.jpg> <./img/diagramatiempolectura.jpg>]
-<img/FlujoInit.jpg, id=49, 738.50906pt x 394.47375pt>
+ <img/FlujoInit.jpg, id=60, 738.50906pt x 394.47375pt>
 File: img/FlujoInit.jpg Graphic file (type jpg)
- <use img/FlujoInit.jpg>
-Package pdftex.def Info: img/FlujoInit.jpg used on input line 199.
+
+<use img/FlujoInit.jpg>
+Package pdftex.def Info: img/FlujoInit.jpg used on input line 265.
 (pdftex.def)             Requested size: 455.24527pt x 256.07384pt.
-
-<img/FlujoLec.jpg, id=50, 362.85562pt x 342.5297pt>
+ <img/FlujoLec.jpg, id=61, 362.85562pt x 342.5297pt>
 File: img/FlujoLec.jpg Graphic file (type jpg)
- <use img/FlujoLec.jpg>
-Package pdftex.def Info: img/FlujoLec.jpg used on input line 205.
+
+<use img/FlujoLec.jpg>
+Package pdftex.def Info: img/FlujoLec.jpg used on input line 271.
 (pdftex.def)             Requested size: 455.25711pt x 256.09174pt.
-
-<img/FlujoEsc.jpg, id=51, 572.1375pt x 345.54094pt>
+ <img/FlujoEsc.jpg, id=62, 572.1375pt x 345.54094pt>
 File: img/FlujoEsc.jpg Graphic file (type jpg)
- <use img/FlujoEsc.jpg>
-Package pdftex.def Info: img/FlujoEsc.jpg used on input line 211.
+
+<use img/FlujoEsc.jpg>
+Package pdftex.def Info: img/FlujoEsc.jpg used on input line 277.
 (pdftex.def)             Requested size: 455.24872pt x 256.08118pt.
+ [11 <./img/nivel2_contusr.jpg>] [12 <./img/JerarquiaRTC.jpg> <./img/diagramati
+empoescritura.jpg>] [13 <./img/diagramatiempolectura.jpg> <./img/cuadrotiemposa
+lida.jpg>]
+
+LaTeX Warning: Reference `fig:punteros' on page 14 undefined on input line 287.
 
 
-LaTeX Warning: Reference `fig:punteros' on page 10 undefined on input line 221.
 
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 220--222
+Underfull \hbox (badness 10000) in paragraph at lines 286--288
 
  []
 
-[10 <./img/cuadrotiemposalida.jpg>] [11 <./img/nivel1_RTC.jpg> <./img/FlujoInit
-.jpg>] [12 <./img/FlujoLec.jpg> <./img/FlujoEsc.jpg>]
-<img/Punteros.png, id=61, 197.98969pt x 402.75468pt>
+[14 <./img/nivel1_RTC.jpg>] [15 <./img/FlujoInit.jpg> <./img/FlujoLec.jpg>]
+<img/Punteros.png, id=79, 197.98969pt x 402.75468pt>
 File: img/Punteros.png Graphic file (type png)
  <use img/Punteros.png>
-Package pdftex.def Info: img/Punteros.png used on input line 225.
+Package pdftex.def Info: img/Punteros.png used on input line 291.
 (pdftex.def)             Requested size: 167.8449pt x 341.43306pt.
 
-<img/SimVGA1.PNG, id=62, 733.23938pt x 239.39438pt>
+<img/SimVGA1.PNG, id=80, 733.23938pt x 239.39438pt>
 File: img/SimVGA1.PNG Graphic file (type png)
  <use img/SimVGA1.PNG>
-Package pdftex.def Info: img/SimVGA1.PNG used on input line 232.
+Package pdftex.def Info: img/SimVGA1.PNG used on input line 298.
 (pdftex.def)             Requested size: 455.24408pt x 148.63484pt.
 
-<img/SimVGA2.PNG, id=63, 642.14906pt x 595.47469pt>
+<img/SimVGA2.PNG, id=81, 642.14906pt x 595.47469pt>
 File: img/SimVGA2.PNG Graphic file (type png)
  <use img/SimVGA2.PNG>
-Package pdftex.def Info: img/SimVGA2.PNG used on input line 239.
+Package pdftex.def Info: img/SimVGA2.PNG used on input line 305.
 (pdftex.def)             Requested size: 455.24408pt x 422.16302pt.
 
-<img/SimVGA3.PNG, id=64, 858.20625pt x 587.94656pt>
+<img/SimVGA3.PNG, id=82, 858.20625pt x 587.94656pt>
 File: img/SimVGA3.PNG Graphic file (type png)
  <use img/SimVGA3.PNG>
-Package pdftex.def Info: img/SimVGA3.PNG used on input line 246.
+Package pdftex.def Info: img/SimVGA3.PNG used on input line 312.
 (pdftex.def)             Requested size: 455.24408pt x 311.87933pt.
 
-<img/SimVGA4.PNG, id=65, 675.27281pt x 594.72188pt>
+<img/SimVGA4.PNG, id=83, 675.27281pt x 594.72188pt>
 File: img/SimVGA4.PNG Graphic file (type png)
  <use img/SimVGA4.PNG>
-Package pdftex.def Info: img/SimVGA4.PNG used on input line 253.
+Package pdftex.def Info: img/SimVGA4.PNG used on input line 319.
 (pdftex.def)             Requested size: 455.24408pt x 400.94806pt.
 
-<img/SimVGA5.PNG, id=66, 931.98187pt x 593.21625pt>
+<img/SimVGA5.PNG, id=84, 931.98187pt x 593.21625pt>
 File: img/SimVGA5.PNG Graphic file (type png)
  <use img/SimVGA5.PNG>
-Package pdftex.def Info: img/SimVGA5.PNG used on input line 260.
+Package pdftex.def Info: img/SimVGA5.PNG used on input line 326.
 (pdftex.def)             Requested size: 455.24408pt x 289.76428pt.
 
-<img/matlab.png, id=67, 862.72313pt x 502.87875pt>
+<img/matlab.png, id=85, 862.72313pt x 502.87875pt>
 File: img/matlab.png Graphic file (type png)
  <use img/matlab.png>
-Package pdftex.def Info: img/matlab.png used on input line 267.
+Package pdftex.def Info: img/matlab.png used on input line 333.
 (pdftex.def)             Requested size: 455.24408pt x 265.35812pt.
 
-[13 <./img/Punteros.png>] [14 <./img/SimVGA1.PNG> <./img/SimVGA2.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 274--275
+[16 <./img/FlujoEsc.jpg>] [17 <./img/Punteros.png> <./img/SimVGA1.PNG>]
+[18 <./img/SimVGA2.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
 
  []
 
 
 AED: lastpage setting LastPage
-[15 <./img/SimVGA3.PNG>] [16 <./img/SimVGA4.PNG>] [17 <./img/SimVGA5.PNG> <./im
-g/matlab.png>] [18] (informe.aux
+
+Overfull \hbox (5.73201pt too wide) in paragraph at lines 373--374
+\OT1/cmr/m/n/12 Avai-la-ble: https://reference.digilentinc.com/learn/programmab
+le-logic/tutorials/nexys-4-ddr-keyboard-
+ []
+
+[19 <./img/SimVGA3.PNG>] [20 <./img/SimVGA4.PNG>] [21 <./img/SimVGA5.PNG> <./im
+g/matlab.png>] [22] (informe.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 )
@@ -551,19 +579,20 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4013 strings out of 493334
- 56597 string characters out of 3136672
- 143168 words of memory out of 3000000
- 7453 multiletter control sequences out of 15000+200000
- 8253 words of font info for 29 fonts, out of 3000000 for 9000
+ 4036 strings out of 493334
+ 57086 string characters out of 3136672
+ 146209 words of memory out of 3000000
+ 7472 multiletter control sequences out of 15000+200000
+ 8600 words of font info for 30 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,18n,47p,852b,384s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,19n,48p,852b,384s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on informe.pdf (18 pages, 971489 bytes).
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on informe.pdf (22 pages, 1038958 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
+ 130 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 116 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 131 words of extra memory for PDF output out of 10000 (max. 10000000)
 
