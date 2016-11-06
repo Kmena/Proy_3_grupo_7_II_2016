@@ -85,7 +85,7 @@
 		\begin{figure}[hbtp]
 			\centering
 			\includegraphics[width=18cm]{img/VGASegundoNivel.png}
-			\caption{Diagrama de primer nivel VGA}
+			\caption{Diagrama de segundo nivel VGA}
 			\label{fig:vgaSegundoNivel}
 		\end{figure}
 		
@@ -102,13 +102,13 @@
 			\begin{figure}[hbtp]
 				\centering
 				\includegraphics[width=18cm]{img/VGATercerNivel.png}
-				\caption{Diagrama de primer nivel VGA}
+				\caption{Diagrama de tercer nivel VGA}
 				\label{fig:vgaTercerNivel}
 			\end{figure}
 			\begin{figure}[hbtp]
 				\centering
 				\includegraphics[width=13cm]{img/VGAInterfaz.png}
-				\caption{Diagrama de primer nivel VGA}
+				\caption{Interfaz de VGA}
 				\label{fig:vgaInterfaz}
 			\end{figure}
 		
@@ -120,7 +120,7 @@
 		\begin{figure}[hbtp]
 			\centering
 			\includegraphics[width=1cm]{img/VGANumeros.png}
-			\caption{Diagrama de primer nivel VGA}
+			\caption{Números VGA}
 			\label{fig:vgaNumeros}
 		\end{figure}
 		
@@ -172,7 +172,7 @@
 		\begin{figure}[hbtp]
 			\centering
 			\includegraphics[width=18cm]{img/KBSegundoNivel.png}
-			\caption{Diagrama de primer nivel KB}
+			\caption{Diagrama de segundo nivel KB}
 			\label{fig:KBSegundoNivel}
 		\end{figure}
 		
@@ -188,7 +188,7 @@
 		\begin{figure}[hbtp]
 			\centering
 			\includegraphics[width=18cm]{img/KBTercerNivel.png}
-			\caption{Diagrama de primer nivel KB}
+			\caption{Diagrama de tercer nivel KB}
 			\label{fig:KBTercerNivel}
 		\end{figure}
 		
@@ -336,6 +336,18 @@
 		\end{figure}
 			
 		\newpage
+		
+		Para el teclado, se ha desarrollado un testbench para poner a prueba la funcionalidad del Controlador de Teclado de forma completa, con emulación de presión de tecla. Refiérase a la figura \ref{fig:simkb1}
+		
+		\begin{figure}[htbp]
+			\centering
+			\includegraphics[width=16cm]{img/simkb1_1.png}
+			\caption[3erNivel]{Simulación del teclado}
+			\label{fig:simkb1}
+		\end{figure}
+		
+		En esta simulación, es posible apreciar los cambios en los registros Address, Data y Commit, que corresponden a los tres posibles registros que puede leer el picoblaze y seleccionarlos mediante el PortID. Además, el Keyboard\_Output puede desplegar un reinicio a cero después de la activación del ReadStrobe.
+		
 		\subsection{Mediciones}
 		Es importante considerar el consumo de potencia de la implementación del diseño en la FPGA y el área ocupada dentro del Artix7, chip de FPGA que trae integrada la FPGA Nexys 4. En la Tabla \ref{tab:consumo} es posible observar algunos parámetros de consumo de potencia (obtenidos por medio del XPower Analizer) y los recursos brindados por la conclusión de la síntesis: \\[2ex]
 		
