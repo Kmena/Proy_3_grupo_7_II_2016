@@ -426,4 +426,33 @@ Con esto podemos armar el diagrama de la figura \ref{fig:diagramaCRTC} en este s
 	\label{fig:diagramaCRTC}
 \end{figure}
 
+% Nueva entrada
+\begin{flushright}
+	\begin{large}
+		\textbf{Fecha: 1 de Noviembre}\\[5ex]
+	\end{large}
+\end{flushright}
+
+\noindent \textbf{Integrantes:} Keylor Mena, Luis Leon \\[1ex]
+\textbf{Hora:} 8:00 - 12:30\\[1ex]
+\textbf{Actividad:} \\[2ex]
+
+Se continuaron las pruebas con respecto al temporizador, que no se detiene al levantarse la bandera del IRQ. En este caso, se ha decidido corregir el problema colocando los números del timer a 0 cuando la señal de IRQ está acertada en la VGA.\\
+Con esto, se ha resuelto el problema del temporizador y ya el proyecto queda funcionando en su totalidad.
+
+\noindent \textbf{Integrantes:} Todos \\[1ex]
+\textbf{Hora:} 13:00-15:00 \\[1ex]
+\textbf{Actividad:} \\[2ex]
+
+Se entregó el proyecto funcionando al profesor. Además, se tomaron las mediciones de las señales. Se descubrió que el glitch detectado hace 2 días fue producto de la RTC, por lo cual, quedará documentado mediante el dato arrojado por el analizador lógico.\\
+
+Por otro lado, los resultados de la salida hacia el altavoz están en la figura \ref{fig:speaker}. Esto denota que la amplitud está a 10mV, por lo cual, hay que acondicionarla mediante un preamplificador antes de conectarlo a un equipo de audio.
+
+\begin{figure}[hbtp]
+	\centering
+	\includegraphics[width=10cm]{img/Speaker.png}
+	\caption{Salida del altavoz}
+	\label{fig:speaker}
+\end{figure}
+
 \end{document}
