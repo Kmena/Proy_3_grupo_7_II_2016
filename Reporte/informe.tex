@@ -36,25 +36,34 @@
 		
 		\section*{\textit{Resumen}}
 		
-		Se debe realizar un controlador para realizar la lectura y escritura del módulo RTC V3023. Los datos del sistema deben poder ser desplegados en un monitor LCD mediante el protocolo VGA. Ante ello, se debe realizar un controlador para el RTC y para la VGA. Asimismo, se deben poder ajustar la hora, activar la alarma y el cronómetro de forma descendente mediante botones e interruptores dispuestos en la FPGA Nexys 4.\\
+		Se debe realizar un controlador para realizar la lectura y escritura del módulo RTC V3023. Los datos del sistema deben poder ser desplegados en un monitor LCD mediante el protocolo VGA. Por lo cual, se deben realizar controladores para la RTC y la VGA, además estos y el funcionamiento en general del sistema deben ser controlados por el microcontrolador Picoblaze de Xilinx. Asimismo, se debe poder ajustar los parametros de hora, fecha, y cronometro, en forma descendente, por medio de un teclado y utilizar la salida de audio disponible en la Nexys 4.\\
 		
 		\section*{\textit{Introduccion}} 
-		Este proyecto consiste en realizar un controlador de módulos RTC (Real Time Controller), específicamente para el módulo V3023. Este controlador será capaz de escribir y leer dicho módulo para obtener parámetros de reloj, cronómetro y alarma. \\
-		Asimismo, para poder desplegar la información relevante de los parámetros anteriores, se conectará un monitor LCD mediante el protocolo VGA. Por otro lado, para poder programar y dar instrucciones al circuito, se deberán usar los botones señalados en el instructivo y algunos interruptores. \\
-		Finalmente, el conjunto es un circuito que permita controlar el módulo y comunicar al usuario mediante los botones y el monitor LCD, donde él podrá recibir la información relevante y poder modificar dicha información.\\
+		Este proyecto consiste en realizar un controlador de módulos RTC (Real Time Controller), especí­ficamente para el módulo V3023. Este controlador será capaz de escribir y leer dicho módulo para obtener parámetros de reloj, cronómetro y alarma. \\
+		Asimismo, para poder desplegar la información relevante de los parámetros anteriores, se conectará un monitor LCD mediante el protocolo VGA. Por otro lado, para poder programar y dar instrucciones al circuito, se deberá usar un teclado, además de implementar la salida de audio del a Nexys 4 para notificar al usuario del fin de la alarma. \\
+		Todos los módulos mencionados deben ser controlados por el microcontrolador Picoblaze de Xilinx.\\
+		Finamente, el sistema realiza la correcta comunicación y lectura de la RTC, además de permitir al usuario visualizar y acceder a la misma de una forma eficiente.\\
 		
 		\section{Objetivos}
 		\begin{itemize}
-			\item Diseñar un controlador de RTC que permita leerlo y programarlo mediante una interfaz de usuario consistente en botones incorporados dentro de la FPGA (Nexys 4) y un monitor comunicado a través del protocolo VGA.
+			\item Diseñar un controlador de RTC que permita leerlo y programarlo mediante una interfaz de usuario que consiste en un teclado, un monitor comunicado a través del protocolo VGA y un microcontrolador.
+			\item Implementar el control general del sistema mediante el uso de el microcontrolador Picoblaze.
+			\item Investigar y conocer el lenguaje de programación del Picoblaze.
+			\item Asegurar la sincronía de tiempos entre el Picoblaze, la RTC, y los demás módulos del circuito.
+			\item Realizar la conversión del código del Picoblaze para su implementación en el lenguaje Verilog.
 			\item Investigar el funcionamiento del módulo RTC y el protocolo de comunicación del mismo.
-			\item Diseñar un controlador para el módulo RTC, cuyo bus de datos y direcciones estén multiplexados.
+			\item Investigar el funcionamiento del módulo de tecldo y su protocolo de comunicación.
+			\item Diseñar un controlador para el módulo RTC, cuyo bus de datos y direcciones están multiplexados.
 			\item Cumplir con las reglas de temporizado del sistema, en especial, con el protocolo de comunicación del módulo RTC.
-			\item Combinar el controlador de RTC con un controlador VGA para poder desplegar la información del módulo al usuario. Este módulo VGA será adaptado del proyecto anterior.
+			\item Combinar el controlador de RTC con un controlador VGA, por medio del Picoblaze, para poder desplegar la información del módulo al usuario. Este módulo VGA será adaptado del proyecto anterior.
 			\item Desarrollar un banco de pruebas (testbench) para poder emular el comportamiento del módulo RTC con la finalidad de comprobar el funcionamiento del circuito controlador.
+			\item Desarrollar un banco de pruebas (testbench) para verificar el correcto trasiego de datos del teclado hacia el Picoblaze.
+			\item Implementa la salida de audio mono incluida en la Nexys 4. 
 		\end{itemize}
 		
 		\section{Descripción del sistema}
-		El sistema se puede dividir en cuatro subsistemas, para facilitar el diseño dividimos el sistema en 4 grandes partes, el controlador de la pantalla, el controlador para el RTC, el control de usuario y  una memoria principal. Éstos subsistemas, pueden ser desarrollados de manera separada siempre que se tenga el cuidado necesario con los datos que comparten entre los bloques, para este efecto se desarrollo una memoria con 2 registros que se actualizan entre ellos al activar banderas. En la Fig. \ref{fig:sistema} se puede observar la composición general del sistema. \\[2ex]
+		El sistema se divide en 5 módulos, los cuales son teclado, Controlador de RTC, controlador de VGA, salida de audio y microcontrolador Picoblaze.
+		El circuito está diseñado de manera que el Picoblaze funcione como controlador pricipal del sistema, es decir, se encarga de intercomunicar los demás módulos entre sí. Específicamente permite realizar el acceso a la RTC, por medio de su respectivo controlador, ya sea para lectura o la escritura de nuevos datos enviados por el teclado al microcontrolador. Además controla el envío de los datos que se desplegan en la VGA y activa o desactiva el módulo de audio.  \\[2ex]
 		
 		\begin{figure}[hbtp]
 			\centering
