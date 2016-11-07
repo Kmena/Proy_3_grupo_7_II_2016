@@ -49,7 +49,7 @@ module control_principal_rtc(clk,reset,cs,writestrobe,readstrobe,dir,dato,memori
 			else
 				NextState=inicio;*/
 	 esclec:
-	 if((port_id>= 8'd1 && port_id<=8'd4)|| (port_id == 8'd28) ||(port_id>= 8'd17 && port_id<=8'd25)||port_id==11)
+	 if((port_id>= 8'd1 && port_id<=8'd4)|| (port_id == 8'd28) ||(port_id>= 8'd17 && port_id<=8'd25)||(port_id==8'd11))
 			if(readstrobe ==1)
 				NextState=mem_cicle;//error con el write strobe, por si acaso, no se usa
 			else

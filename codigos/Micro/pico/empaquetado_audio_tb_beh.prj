@@ -1,8 +1,0 @@
-verilog work "../../audio/reset.v"
-verilog work "../../audio/div_frecuencia.v"
-verilog work "../../audio/counter.v"
-verilog work "../../audio/contador2.v"
-verilog work "../../audio/pwm.v"
-verilog work "../../audio/empaquetado_audio.v"
-verilog work "../../audio/empaquetado_audio_tb.v"
-verilog work "C:/Xilinx/14.1/ISE_DS/ISE//verilog/src/glbl.v"

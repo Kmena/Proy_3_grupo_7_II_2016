@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.9)  19 OCT 2016 21:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.9)  7 NOV 2016 15:21
 entering extended mode
 **./Bitacora.tex
 (Bitacora.tex
@@ -422,75 +422,65 @@ File: img/diagrama_keyboard.jpeg Graphic file (type jpg)
 Package pdftex.def Info: img/diagrama_keyboard.jpeg used on input line 309.
 (pdftex.def)             Requested size: 398.33858pt x 298.44582pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 319--320
-
- []
-
-
-Overfull \hbox (47.5079pt too wide) in paragraph at lines 324--325
+Overfull \hbox (47.5079pt too wide) in paragraph at lines 316--317
 []\OT1/cmr/m/n/12 Ejemplo del te-cla-do en Di-gi-lent: https://reference.digile
 ntinc.com/learn/programmable-
  []
 
 [11] [12 <./img/diagrama_keyboard.jpeg>]
-Underfull \hbox (badness 10000) in paragraph at lines 348--355
+Underfull \hbox (badness 10000) in paragraph at lines 340--347
 
  []
 
 <img/simkb1_1.png, id=56, 1031.855pt x 431.6125pt>
 File: img/simkb1_1.png Graphic file (type png)
  <use img/simkb1_1.png>
-Package pdftex.def Info: img/simkb1_1.png used on input line 358.
+Package pdftex.def Info: img/simkb1_1.png used on input line 350.
 (pdftex.def)             Requested size: 455.24408pt x 190.42378pt.
 
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 358--359
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 350--351
  [][] 
  []
 
 <img/simkb2.png, id=57, 393.47pt x 654.445pt>
 File: img/simkb2.png Graphic file (type png)
  <use img/simkb2.png>
-Package pdftex.def Info: img/simkb2.png used on input line 365.
+Package pdftex.def Info: img/simkb2.png used on input line 357.
 (pdftex.def)             Requested size: 239.494pt x 398.33858pt.
  [13 <./img/simkb1_1.png (PNG copy)>] [14 <./img/simkb2.png>]
 <img/simvga1.png, id=64, 1371.1225pt x 770.88pt>
 File: img/simvga1.png Graphic file (type png)
  <use img/simvga1.png>
-Package pdftex.def Info: img/simvga1.png used on input line 387.
+Package pdftex.def Info: img/simvga1.png used on input line 379.
 (pdftex.def)             Requested size: 455.24408pt x 255.94386pt.
 
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 387--388
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 379--380
  [][] 
  []
 
 <img/simvga2.png, id=65, 915.42pt x 400.49625pt>
 File: img/simvga2.png Graphic file (type png)
  <use img/simvga2.png>
-Package pdftex.def Info: img/simvga2.png used on input line 395.
+Package pdftex.def Info: img/simvga2.png used on input line 387.
 (pdftex.def)             Requested size: 455.24408pt x 199.16597pt.
 
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 395--396
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 387--388
  [][] 
  []
 
 <img/simvga3.png, id=66, 1005.7575pt x 417.56pt>
 File: img/simvga3.png Graphic file (type png)
  <use img/simvga3.png>
-Package pdftex.def Info: img/simvga3.png used on input line 402.
+Package pdftex.def Info: img/simvga3.png used on input line 394.
 (pdftex.def)             Requested size: 455.24408pt x 189.0025pt.
 
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 402--403
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 394--395
  [][] 
  []
 
 [15 <./img/simvga1.png>] [16 <./img/simvga2.png (PNG copy)> <./img/simvga3.png 
 (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 415--418
+Underfull \hbox (badness 10000) in paragraph at lines 407--410
 
  []
 
@@ -498,33 +488,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 415--418
 File: img/DiagramaControlRTC.png Graphic file (type png)
 
 <use img/DiagramaControlRTC.png>
-Package pdftex.def Info: img/DiagramaControlRTC.png used on input line 424.
+Package pdftex.def Info: img/DiagramaControlRTC.png used on input line 416.
 (pdftex.def)             Requested size: 455.24408pt x 350.65987pt.
 
-Overfull \hbox (28.45273pt too wide) in paragraph at lines 424--425
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 416--417
  [][] 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 428--431
+
+ []
+
+[17 <./img/DiagramaControlRTC.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 435--438
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 439--440
+
+ []
+
+<img/Speaker.png, id=77, 321.2pt x 240.9pt>
+File: img/Speaker.png Graphic file (type png)
+ <use img/Speaker.png>
+Package pdftex.def Info: img/Speaker.png used on input line 445.
+(pdftex.def)             Requested size: 284.52756pt x 213.40048pt.
+
+
 AED: lastpage setting LastPage
-[17 <./img/DiagramaControlRTC.png>] (Bitacora.aux
+[18 <./img/Speaker.png>] (Bitacora.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 3110 strings out of 493334
- 43942 string characters out of 3139256
- 128268 words of memory out of 3000000
- 6593 multiletter control sequences out of 15000+200000
+ 3116 strings out of 493334
+ 44045 string characters out of 3139256
+ 128278 words of memory out of 3000000
+ 6598 multiletter control sequences out of 15000+200000
  8605 words of font info for 30 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,11n,43p,554b,384s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,12n,43p,554b,384s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Bitacora.pdf (18 pages, 705085 bytes).
+Output written on Bitacora.pdf (19 pages, 711311 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
+ 95 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
