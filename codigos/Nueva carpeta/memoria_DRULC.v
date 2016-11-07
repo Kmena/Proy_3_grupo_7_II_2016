@@ -77,7 +77,7 @@ module memoria_DMULC(ADD1,ADD2,DAT1,Dato2,clk,reset,w1,irq);
 			else
 			begin
 				Dato2<=memoriain[ADD2];
-				memoriain[11]<=8'hff;
+				memoriain[11]<=8'h08;
 			end
 				/*Dato2<=memoriain[ADD2];
 				memoriain[10]<={7'b0,~irq};

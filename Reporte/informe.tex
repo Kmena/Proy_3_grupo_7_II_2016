@@ -255,17 +255,17 @@
 			\label{fig:nivel1RTC}
 		\end{figure}
 		\subsubsection{nivel 2 RTC}
-		Como se menciono antes existen 6 maquina de estados agrupados en 3 jerarquías.\\[2ex]
- 		La primera maquina de estados es la de inicializacion, esta tiene un bit de entrada para su inicializacion. Ademas posee salidas de datos y dirección  y bits W y R, que siempre están en cero y se conectan a las maquinas de lectura y escritura respectivamente, esto responde al flujo de la figura \ref{fig:FMEI}.\\[2ex]
-		La maquina encargada del proceso while true responde al flujo de la figura, esta tiene un bit para la iniciación de la maquina y un bit que indica que finalizo el proceso, de igual manera un bit que indica que la maquina de estados siguiente termino su proceso para que esta salte entre estados y igual que la maquina pasada tiene las señales W y R y la salida de datos y dirección.\\[2ex]
+		Esta etapa posee 4 bloques principales uno que controla la comunicación de la maquina principal de control y el bloque de la RTC. Esto se muestra en la figura \ref{fig:diagramaCRTC} en este se ven los caminos posibles a tomar. Ya sea escritura y lectura y sus respectivos tiempos de espera en la escritura de la RTC.
+		
+		\begin{figure}[hbtp]
+			\centering
+			\includegraphics[width=16cm]{img/DiagramaControlRTC.png}
+			\caption{diagrama de la maquina de control de la RTC}
+			\label{fig:diagramaCRTC}
+		\end{figure}
+		Para esta maquina exiten 2 camino que se pueden tomar, dependiendo de si se va a escribir o leer en la RTC, ademas de tener un ciclo de espera de la lectura o escritura en la RTC. Y tiene 2 modos de lectura uno por si se va a leer la RTC o la memoria del bloque.
 		Siguiendo la jerarquía, existen 2 maquinas, escritura y lectura, estas respetan los flujos de la figura \ref{fig:FML} y \ref{fig:FME}, estas tienen las entradas de datos y dirección y la señal r y w respectivamente y tiene solo una salida de datos y r y w de esta manera las maquina controla que dato sale, si la direccion y o el dato, ademas tiene el bit de ciclo que determina si esta en el ciclo de escritura o lectura, como se nota en los flujos, el bit de ciclo no depende de la maquina, sino de la parte del programa donde esta se encuentre.\\[2ex]
 		Por ultimo el control de salida responde al cuadro de la figura \ref{fig:CTS} a este le entra, el bit de activación que sale de la maquina de escritura o lectura, y entran los datos del ciclo y dato que salen dependiendo del tiempo; internamente este tiene un timer, con el fin de llevar el tiempo desde la activación, y dependiendo del tiempo que transcurre genera los cambios de la figura \ref{fig:CTS}. \\[2ex]
-		\begin{figure}[htbp]
-			\centering
-			\includegraphics[height=9cm, width=16cm]{img/FlujoInit.jpg}
-			\caption[3erNivel]{flujo de datos de la maquina de estados de inicializacion}
-			\label{fig:FMEI}
-		\end{figure}
 		\begin{figure}[htbp]
 			\centering
 			\includegraphics[height=9cm, width=16cm]{img/FlujoLec.jpg}
@@ -278,7 +278,82 @@
 			\caption[3erNivel]{flujo de datos de la maquina de Escritura}
 			\label{fig:FME}
 		\end{figure}
-		\subsection{ROM de Instrucciones}
+		\subsection{control principal}
+		Una de las ideas principales del proyecto es controlar todo el sistema con una sola maquina realizada por un microprocesador.
+		Para esta efecto se buscaron crear 5 ciclos, como se muestra de la figura \ref{fig:Cicloprincipal}, donde el primer ciclo es el de inicializacion {falta diseño}.\\
+		\begin{figure}[hbtp]
+			\centering
+			\includegraphics[width=4cm]{img/Diagrama De Flujo Princiapal.png}
+			\caption{Diagrama de flujo principal}
+			\label{fig:Cicloprincipal}
+		\end{figure}
+		Después de este un ciclo de teclado, como se muestra en la figura \ref{fig:Cicloteclado}, en este se usan los espacios de memoria y Id de la tabla \ref{Tabla_deco}, usando los espacios de los registros auxiliares se guardan valores para generar ciclos como se muestra en el diagrama de flujo.\\
+		Este flujo tiene 3 etapas principales, una donde guarda el valor del registro que desea cambiar y el valor del teclado. Luego se generan los cambios en la RTC, los procesos de arriba y abajo se hacen automáticamente y una vez que se hace un comit se escribe en la dirección y el dato que ingresaron previamente, el ultimo proceso es activar o desactivar el irq.\\
+		Después de este proceso sigue el ciclo de la RTC como se muestra en la figura \ref{fig:CicloRTC}, este genera ciclos donde activa la lectura en la RTC, y espera a que el dato este estable para poder leerlo.\\
+		Después de este proceso el sistema espera a que la VGA le solicite los datos luego este pasa al proceso de VGA como se muestra en la figura \ref{fig:CicloVGA}, este proceso se parece mucho al de escritura, donde se crea un ciclo donde se recorren todas las direcciones de escritura con la ayuda de un auxiliar y con ayuda del deco se determina el valor de dirección donde se guarda en la VGA.\\ 
+		Por facilidad se uso la misma dirección en la memoria de regitros que en el id.\\[2ex]
+		\begin{figure}[hbtp]
+			\centering
+			\includegraphics[width=16cm]{img/digrama de teclado irq.png}
+			\caption{Diagrama de flujo principal}
+			\label{fig:Cicloteclado}
+		\end{figure}
+		\begin{figure}[hbtp]
+			\centering
+			\includegraphics[width=10cm]{img/digrama de flujo RTC.png}
+			\caption{Diagrama de flujo principal}
+			\label{fig:CicloRTC}
+		\end{figure}
+		\begin{figure}[hbtp]
+			\centering
+			\includegraphics[width=10cm]{img/digrama de flujo VGA.png}
+			\caption{Diagrama de flujo principal}
+			\label{fig:CicloVGA}
+		\end{figure}
+		\begin{table}[]
+			\centering
+			\caption{resumen del Deco}
+			\label{Tabla_deco}
+			\begin{tabular}{lll}
+				Id	& CS & ADD  \\
+				1   & status 0 & 00 \\
+				2   & status 1 & 01\\
+				3   & status 2 & 02\\
+				4   & comit & F0\\
+				5	& teclado &  \\
+				6	& teclado &  \\
+				7	& teclado &  \\
+				14	& sonido &  \\
+				17	& RTC &  d33\\
+				18	& RTC &  d34\\
+				19	& RTC &  d35\\
+				20	& RTC &  d36\\
+				21	& RTC &  d37\\
+				22	& RTC &  d38\\
+				23	& RTC &  h41\\
+				24	& RTC &  h42\\
+				25	& RTC &  h43\\
+				26	& RTC &  \\
+				27	& RTC &  \\
+				28	& RTC &  \\
+				29	& RTC &  \\
+				33	& AUX &  \\
+				34	& AUX &  \\
+				35	& AUX &  \\
+				36	& AUX &  \\
+				40	& VGA &  Direccion \\
+				41	& VGA &  Dato\\
+				42	& VGA &  Cursor3\\
+				43	& VGA &  4\\
+				44	& VGA &  5\\
+				45	& VGA &  6\\
+				46	& VGA &  7\\
+				47	& VGA &  8\\
+				48	& VGA &  9\\
+				49	& VGA &  10\\
+				50	& VGA &  11
+			\end{tabular}
+		\end{table}
 		
 		
 		\section{Datos y resultados}
