@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.9)  7 NOV 2016 19:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.9)  7 NOV 2016 20:21
 entering extended mode
 **./informe.tex
 (informe.tex
@@ -185,10 +185,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 \f@ncyO@olf=\skip61
 \f@ncyO@orf=\skip62
 )
-(informe.aux
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
-)
+(informe.aux)
 \openout1 = `informe.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
@@ -317,6 +314,9 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 60.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 60.
+
+LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 60.
+
 ! I can't write on file `informe.pdf'.
 Please type another file name for output
 ! Emergency stop.
@@ -328,10 +328,10 @@ l.60 			\item D
 
  
 Here is how much of TeX's memory you used:
- 3871 strings out of 493335
- 53774 string characters out of 3136663
- 144236 words of memory out of 3000000
- 7341 multiletter control sequences out of 15000+200000
+ 3835 strings out of 493335
+ 53233 string characters out of 3136663
+ 143879 words of memory out of 3000000
+ 7305 multiletter control sequences out of 15000+200000
  7648 words of font info for 27 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,18n,43p,583b,400s stack positions out of 5000i,500n,10000p,200000b,50000s
