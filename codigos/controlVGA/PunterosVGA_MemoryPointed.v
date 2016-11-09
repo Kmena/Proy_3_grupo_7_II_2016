@@ -13,7 +13,8 @@ module PunterosVGA_MemoryPointed(
 		input RESET,
 		output reg [5:0] OutRGB,
 		input VSync,
-		input Write
+		input Write,
+		input IRQ
     );
 
 	/*
@@ -50,7 +51,7 @@ module PunterosVGA_MemoryPointed(
 		else if(!RESET && !VSync && Write)
 			begin
 			// Contador de flujo
-					
+				ringCrono <= ~IRQ;
 				case(MemAddrIN)
 					
 						8'd40 : segReloj <= MemDataIN;
@@ -58,20 +59,33 @@ module PunterosVGA_MemoryPointed(
 						8'd42 : horReloj <= MemDataIN;
 						8'd45 : yearReloj <= MemDataIN;
 						8'd44 : monReloj <= MemDataIN;
-						8'd44 : dayReloj <= MemDataIN;
+						8'd43 : dayReloj <= MemDataIN;
 					
-						8'd46 : segCrono <= MemDataIN;
+						/*8'd46 : segCrono <= MemDataIN;
 						8'd47 : minCrono <= MemDataIN;
-						8'd48 : horCrono <= MemDataIN;
-						/*4'd7: begin
+						8'd48 : horCrono <= MemDataIN;*/
+						8'd46: if(!ringCrono)
+						begin
 							segCrono[3:0] <= 4'd9 - MemDataIN[3:0];
 							segCrono[7:4] <= 4'd5 - MemDataIN[7:4];
 						end
-						4'd8 : begin
+						else
+						begin
+							segCrono[3:0] <= 4'd0;
+							segCrono[7:4] <= 4'd0;
+						end
+						8'd47 : if(!ringCrono)
+						begin
 							minCrono[3:0] <= 4'd9 - MemDataIN[3:0];
 							minCrono[7:4] <= 4'd5 - MemDataIN[7:4];
 						end
-						4'd9 : begin
+						else
+						begin
+							minCrono[3:0] <= 4'd0;
+							minCrono[3:0] <= 4'd0;
+						end
+						8'd48 : if(!ringCrono)
+						begin
 							if(MemDataIN[3:0] > 4'd3)
 								begin
 									horCrono[3:0] <= 4'd13 - MemDataIN[3:0];
@@ -82,10 +96,15 @@ module PunterosVGA_MemoryPointed(
 									horCrono[3:0] <= 4'd3 - MemDataIN[3:0];
 									horCrono[7:4] <= 4'd2 - MemDataIN[7:4];
 								end
-						end*/
+						end
+						else
+						begin
+							horCrono[3:0] <= 4'd0;
+							horCrono[3:0] <= 4'd0;
+						end
+						
 						// End of Ajustes de timer
-						8'd50 : ringCrono <= MemDataIN[0];
-						8'd51 : actCrono <= MemDataIN[0];
+						8'd51 : actCrono <= MemDataIN[3];
 						8'd49 : Cursor <= MemDataIN;
 					
 				endcase
@@ -179,7 +198,7 @@ module PunterosVGA_MemoryPointed(
 				end
 			else
 				begin
-					// Ver si el pixel próximo es azul
+					// Ver si el pixel próximo es azul 17s 18m 19h 20d 21mt 22y 23s 24m 25h
 					if(RGBInterfaz == 000001)
 						begin
 							// Eso quiere decir que hay puntero
@@ -192,7 +211,7 @@ module PunterosVGA_MemoryPointed(
 											// Colocar direccion en X para offset
 											newPointerX <= PosX;
 											// Encender cursor si se cumple
-											cursorON <= Cursor == 8'd4;
+											cursorON <= Cursor == 8'd20;
 											// Colocar direccion en Y para offset
 											newPointerY <= FechaY1[9:0];
 											// Dato en memoria
@@ -207,7 +226,7 @@ module PunterosVGA_MemoryPointed(
 											// Colocar direccion en X para offset
 											newPointerX <= PosX;
 											// Encender cursor si se cumple
-											cursorON <= Cursor == 8'd4;
+											cursorON <= Cursor == 8'd20;
 											// Colocar direccion en Y para offset
 											newPointerY <= FechaY1[9:0];
 											// Dato en memoria
@@ -222,7 +241,7 @@ module PunterosVGA_MemoryPointed(
 											// Colocar direccion en X para offset
 											newPointerX <= PosX;
 											// Encender cursor si se cumple
-											cursorON <= Cursor == 8'd5;
+											cursorON <= Cursor == 8'd21;
 											// Colocar direccion en Y para offset
 											newPointerY <= FechaY1[9:0];
 											// Dato en memoria
@@ -237,7 +256,7 @@ module PunterosVGA_MemoryPointed(
 											// Colocar direccion en X para offset
 											newPointerX <= PosX;
 											// Encender cursor si se cumple
-											cursorON <= Cursor == 8'd5;
+											cursorON <= Cursor == 8'd21;
 											// Colocar direccion en Y para offset
 											newPointerY <= FechaY1[9:0];
 											// Dato en memoria
@@ -252,7 +271,7 @@ module PunterosVGA_MemoryPointed(
 											// Colocar direccion en X para offset
 											newPointerX <= PosX;
 											// Encender cursor si se cumple
-											cursorON <= Cursor == 8'd6;
+											cursorON <= Cursor == 8'd22;
 											// Colocar direccion en Y para offset
 											newPointerY <= FechaY1[9:0];
 											// Dato en memoria
@@ -267,7 +286,7 @@ module PunterosVGA_MemoryPointed(
 											// Colocar direccion en X para offset
 											newPointerX <= PosX;
 											// Encender cursor si se cumple
-											cursorON <= Cursor == 8'd6;
+											cursorON <= Cursor == 8'd22;
 											// Colocar direccion en Y para offset
 											newPointerY <= FechaY1[9:0];
 											// Dato en memoria
@@ -283,7 +302,7 @@ module PunterosVGA_MemoryPointed(
 											// Colocar direccion en X para offset
 											newPointerX <= PosX;
 											// Encender cursor si se cumple
-											cursorON <= Cursor == 8'd3;
+											cursorON <= Cursor == 8'd19;
 											// Colocar direccion en Y para offset
 											newPointerY <= HoraY1[9:0];
 											// Dato en memoria
@@ -298,7 +317,7 @@ module PunterosVGA_MemoryPointed(
 											// Colocar direccion en X para offset
 											newPointerX <= PosX;
 											// Encender cursor si se cumple
-											cursorON <= Cursor == 8'd3;
+											cursorON <= Cursor == 8'd19;
 											// Colocar direccion en Y para offset
 											newPointerY <= HoraY1[9:0];
 											// Dato en memoria
@@ -313,7 +332,7 @@ module PunterosVGA_MemoryPointed(
 											// Colocar direccion en X para offset
 											newPointerX <= PosX;
 											// Encender cursor si se cumple
-											cursorON <= Cursor == 8'd2;
+											cursorON <= Cursor == 8'd18;
 											// Colocar direccion en Y para offset
 											newPointerY <= HoraY1[9:0];
 											// Dato en memoria
@@ -328,7 +347,7 @@ module PunterosVGA_MemoryPointed(
 											// Colocar direccion en X para offset
 											newPointerX <= PosX;
 											// Encender cursor si se cumple
-											cursorON <= Cursor == 8'd2;
+											cursorON <= Cursor == 8'd18;
 											// Colocar direccion en Y para offset
 											newPointerY <= HoraY1[9:0];
 											// Dato en memoria
@@ -343,7 +362,7 @@ module PunterosVGA_MemoryPointed(
 											// Colocar direccion en X para offset
 											newPointerX <= PosX;
 											// Encender cursor si se cumple
-											cursorON <= Cursor == 8'd1;
+											cursorON <= Cursor == 8'd17;
 											// Colocar direccion en Y para offset
 											newPointerY <= HoraY1[9:0];
 											// Dato en memoria
@@ -358,7 +377,7 @@ module PunterosVGA_MemoryPointed(
 											// Colocar direccion en X para offset
 											newPointerX <= PosX;
 											// Encender cursor si se cumple
-											cursorON <= Cursor == 8'd1;
+											cursorON <= Cursor == 8'd17;
 											// Colocar direccion en Y para offset
 											newPointerY <= HoraY1[9:0];
 											// Dato en memoria
@@ -374,7 +393,7 @@ module PunterosVGA_MemoryPointed(
 											// Colocar direccion en X para offset
 											newPointerX <= PosX;
 											// Encender cursor si se cumple
-											cursorON <= Cursor == 8'd9;
+											cursorON <= Cursor == 8'd25;
 											// Colocar direccion en Y para offset
 											newPointerY <= HoraY1[9:0];
 											// Dato en memoria
@@ -389,7 +408,7 @@ module PunterosVGA_MemoryPointed(
 											// Colocar direccion en X para offset
 											newPointerX <= PosX;
 											// Encender cursor si se cumple
-											cursorON <= Cursor == 8'd9;
+											cursorON <= Cursor == 8'd25;
 											// Colocar direccion en Y para offset
 											newPointerY <= HoraY1[9:0];
 											// Dato en memoria
@@ -404,7 +423,7 @@ module PunterosVGA_MemoryPointed(
 											// Colocar direccion en X para offset
 											newPointerX <= PosX;
 											// Encender cursor si se cumple
-											cursorON <= Cursor == 8'd8;
+											cursorON <= Cursor == 8'd24;
 											// Colocar direccion en Y para offset
 											newPointerY <= HoraY1[9:0];
 											// Dato en memoria
@@ -419,7 +438,7 @@ module PunterosVGA_MemoryPointed(
 											// Colocar direccion en X para offset
 											newPointerX <= PosX;
 											// Encender cursor si se cumple
-											cursorON <= Cursor == 8'd8;
+											cursorON <= Cursor == 8'd24;
 											// Colocar direccion en Y para offset
 											newPointerY <= HoraY1[9:0];
 											// Dato en memoria
@@ -434,7 +453,7 @@ module PunterosVGA_MemoryPointed(
 											// Colocar direccion en X para offset
 											newPointerX <= PosX;
 											// Encender cursor si se cumple
-											cursorON <= Cursor == 8'd7;
+											cursorON <= Cursor == 8'd23;
 											// Colocar direccion en Y para offset
 											newPointerY <= HoraY1[9:0];
 											// Dato en memoria
@@ -449,7 +468,7 @@ module PunterosVGA_MemoryPointed(
 											// Colocar direccion en X para offset
 											newPointerX <= PosX;
 											// Encender cursor si se cumple
-											cursorON <= Cursor == 8'd7;
+											cursorON <= Cursor == 8'd23;
 											// Colocar direccion en Y para offset
 											newPointerY <= HoraY1[9:0];
 											// Dato en memoria

@@ -31,7 +31,8 @@ module ControlVGACentral_MemoryPointed(
 		output [3:0] G,
 		output [3:0] B,
 		output HSync,
-		output VSync/*,
+		output VSync,
+		input IRQ/*,
 		output [9:0] PosX,
 		output [9:0] PosY*/
     );
@@ -59,7 +60,7 @@ module ControlVGACentral_MemoryPointed(
 	// Vincular Punteros
 	PunterosVGA_MemoryPointed Pointers(.MemDataIN(IN_DATA),.PosX(PosX),
 								.PosY(PosY),.MemAddrIN(Port_ID),.CLK(CLK),.RESET(RESET),
-								.OutRGB(RGB),.VSync(VSync),.Write(Write_Strobe));
+								.OutRGB(RGB),.VSync(VSync),.Write(Write_Strobe),.IRQ(IRQ));
 								
 	
 	//VROMs Memoryinput(.CLK(CLK),.ChipSelector(ROMCS),.Address(ROMAddr),.DataOutput(RGB));

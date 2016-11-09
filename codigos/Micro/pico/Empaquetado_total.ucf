@@ -12,7 +12,7 @@ NET "B[2]" LOC = D7;
 NET "B[3]" LOC = D8;
 NET "HSync" LOC = B11;
 NET "VSync" LOC = B12;
-NET "reset" LOC = E16;
+NET "inreset" LOC = E16;
 NET "clk" LOC = E3;
 NET "RD" LOC = V11;
 NET "WR" LOC = V15;
@@ -26,7 +26,7 @@ NET "datRTC[4]" LOC = G13;
 NET "datRTC[5]" LOC = C17;
 NET "datRTC[6]" LOC = D18;
 NET "datRTC[7]" LOC = E18;
-NET "irq" LOC = U11;
+NET "inirq" LOC = U11;
 NET "pwm_out" LOC = A11;
 NET "pwm_out" IOSTANDARD = LVCMOS33;
 NET "PS2_Clock" LOC = F4;
@@ -64,11 +64,16 @@ NET "clk" IOSTANDARD = LVCMOS33;
 NET "CS" IOSTANDARD = LVCMOS33;
 NET "HSync" IOSTANDARD = LVCMOS33;
 NET "RD" IOSTANDARD = LVCMOS33;
-NET "reset" IOSTANDARD = LVCMOS33;
+NET "inreset" IOSTANDARD = LVCMOS33;
 NET "VSync" IOSTANDARD = LVCMOS33;
 NET "WR" IOSTANDARD = LVCMOS33;
-NET "irq" IOSTANDARD = LVCMOS33;
+NET "inirq" IOSTANDARD = LVCMOS33;
+## Clock signal
+#NET "clk"   LOC = "E3"	| IOSTANDARD = "LVCMOS33";					#Bank = 35, Pin name = IO_L12P_T1_MRCC_35,					Sch name = CLK100MHZ
+NET "clk" TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100 MHz HIGH 50%; 
 
+NET "inirq" PULLUP;
 # PlanAhead Generated physical constraints 
 
 NET "AN[0]" LOC = N6;

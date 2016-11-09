@@ -25,8 +25,8 @@
 module tesbnch_modelsim;
 
 	// Inputs
-	reg PosX;
-	reg PosY;
+	wire [9:0] PosX;
+	wire [9:0] PosY;
 	reg clk;
 	reg reset;
 	reg PS2_Clock;
@@ -55,7 +55,7 @@ module tesbnch_modelsim;
 	//archivo
 	integer id;
 	// Instantiate the Unit Under Test (UUT)
-	Empaquetado_total2 uut (
+	Empaquetado_total uut (
 		.PosX(PosX), 
 		.PosY(PosY), 
 		.clk(clk), 
@@ -79,14 +79,13 @@ module tesbnch_modelsim;
 	initial begin
 		// Initialize Inputs
 		//id=$fopen("C:/Users/User/Documents/proy_2_grupo_7_II_2016/Simulations/testbech/resultados/pantallazo1.txt","w+");
-		id=$fopen("/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/simulaciones/pantallazo1.txt","w+");
-		PosX = 0;
-		PosY = 0;
+		id=$fopen("pantallazo1.txt","w+");
 		clk = 0;
-		reset = 0;
+		reset = 1;
 		PS2_Clock = 0;
 		PS2_Data = 0;
 		irq = 0;
+		#10 reset = 0;
 		memoria[0]=0;
 		memoria[1]=0;
 		memoria[2]=0;
@@ -121,7 +120,7 @@ module tesbnch_modelsim;
 		memoria[14]=14;
 		memoria[15]=15;
 		$fclose(id);
-		id=$fopen("/home/lleon95/GitHub/Proy_3_grupo_7_II_2016/simulaciones/pantallazo2.txt","w+");
+		id=$fopen("pantallazo2.txt","w+");
 		#8400000;
 		$fclose(id);
 		// Wait 100 ns for global reset to finish
@@ -136,7 +135,7 @@ module tesbnch_modelsim;
 			//cambio del address
 			if(!CS&&!WR&&!AD&&RD)
 			begin
-				case(DatAdd)
+				case(datRTC)
 				8'd33:ADD=4'd1;
 				8'd34:ADD=4'd2;
 				8'd35:ADD=4'd3;
@@ -154,7 +153,7 @@ module tesbnch_modelsim;
 				//dato salida
 				if(!CS&&WR&&!RD&&AD) datoin = memoria[ADD];
 				//escritura dato
-				else if(!CS&&!WR&&RD&&AD) memoria[ADD]=DatAdd;
+				else if(!CS&&!WR&&RD&&AD) memoria[ADD]=datRTC;
 				else begin end
 			end
 	end
@@ -170,8 +169,8 @@ module tesbnch_modelsim;
 		//$fwrite(id, "\t");
 		$fwrite(id, "%H",G);
 		//$fwrite(id, "\t");
-		$fwrite(id, "%H",B);
-		$fwrite(id, "\n");
+		$fwrite(id, "%H \n",B);
+//		$fwrite(id, "\n");
 	end
 endmodule
 

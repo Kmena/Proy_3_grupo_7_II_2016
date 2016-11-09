@@ -69,16 +69,12 @@ module memoria_DMULC(ADD1,ADD2,DAT1,Dato2,clk,reset,w1,irq);
 			if(memoriain[7]==8'b0 && memoriain[8]==8'b0 && memoriain[9]==8'b0)
 			begin
 				memoriain[11]<=8'b0;
-				if(ADD2 == 4'd7) Dato2<=8'd23;
-				else if(ADD2 == 4'd8) Dato2<=8'd59;
-				else if(ADD2 == 4'd9) Dato2<=8'd59;
-				else Dato2<=memoriain[ADD2];
 			end
 			else
 			begin
-				Dato2<=memoriain[ADD2];
-				memoriain[11]<=8'h08;
+				memoriain[11]<=8'hff;
 			end
+				Dato2<=memoriain[ADD2];
 				/*Dato2<=memoriain[ADD2];
 				memoriain[10]<={7'b0,~irq};
 				memoriain[11]<={7'b0,irq};*/

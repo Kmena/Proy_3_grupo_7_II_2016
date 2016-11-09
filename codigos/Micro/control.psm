@@ -51,7 +51,7 @@ fetch s0,05
 fetch s1,06
 fetch s2,07 
 store s1,(s0)
-store s0,26'd
+store s0,10'd
 compare s2, 01
 call z, escritura
 return
@@ -75,16 +75,12 @@ input s2,(s0)
 store s2,(s0)
 compare s0,25'd
 jump nz,ciclo_RTC
-;fetch s0,10'd
-;store s0,26'd
+fetch s0,10'd
+store s0,26'd
 load s0,11'd  
 input s2,(s0)
 input s2,(s0)
 store s2,27'd
-load s0, 01
-load s1, 00
-compare s2,00
-call z, escritura
 return
 
 VGA:

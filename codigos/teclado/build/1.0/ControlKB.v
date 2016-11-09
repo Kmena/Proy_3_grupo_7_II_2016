@@ -14,6 +14,7 @@
 	F1: 05: Adj Date
 	F2: 06: Adj Clock
 	F3: 04: Adj Timer
+	F10: Quitar IRQ
 	F11: 78: Timer Act
 	F12: 07: Timer Off
 	ESC: 76: Discard all
@@ -24,21 +25,7 @@
 	Numbers: 0-9: 45, 16, 1E, 26, 25, 2E, 36, 3D, 3E, 46
 */
 
-/*
-	Recordatorio de memoria:
-	segReloj <= 0;
-	minReloj <= 0;
-	horReloj <= 0;
-	yearReloj <= 0;
-	monReloj <= 0;
-	dayReloj <= 0; //6
-	segCrono <= 0;
-	minCrono <= 0;
-	horCrono <= 0; //9
-	ringCrono <= 0;
-	actCrono <= 0;
-	Cursor <= 0;
-*/
+
 module ControlKB(
 		input CLK,
 		input RESET,
@@ -54,6 +41,7 @@ module ControlKB(
 	localparam F1 = 8'h05;
 	localparam F2 = 8'h06;
 	localparam F3 = 8'h04;
+	localparam F10 = 8'h09;
 	localparam F11 = 8'h78;
 	localparam F12 = 8'h07;
 	localparam Enter = 8'h5A;
@@ -72,10 +60,11 @@ module ControlKB(
 	
 	reg ReadyCommit;
 	reg [7:0] AddressBuffer;
-	reg [7:0] DataBuffer;
+	reg [7:0] DataBuffer, DataOut;
 	reg [15:0] KBBuffer_Before; // Save the keycode when is attempted
 	reg Changing; // See changes in the Keycode
 	reg [1:0] VirtualPos; // For Tabs
+	reg corrected, poscorrected;
 	
 	always @(posedge CLK or posedge RESET)
 	begin
@@ -83,10 +72,13 @@ module ControlKB(
 		begin
 			AddressBuffer <= 8'd0;
 			DataBuffer <= 8'd0;
+			DataOut <= 8'd0;
 			ReadyCommit <= 1'd0;
 			KBBuffer_Before <= 16'd0;
 			Changing <= 1'd0;
 			VirtualPos <= 2'd0;
+			corrected <= 1'd0;
+			poscorrected <= 1'd0;
 		end
 		else
 		begin
@@ -95,14 +87,41 @@ module ControlKB(
 				begin
 					AddressBuffer <= 8'd0;
 					DataBuffer <= 8'h00;
+					DataOut <= 8'h00;
 					ReadyCommit <= 1'd0;
 					KBBuffer_Before <= 16'd0;
 					Changing <= 1'd0;
 					VirtualPos <= 2'd0;
+					//corrected <= 1'd0;
 				end
 				else begin end
 			else begin end
+				// Corregir el dato --- -- ---- ---
 			
+				case(AddressBuffer)
+								8'd23: begin
+									DataOut[3:0] <= 4'd9 - DataBuffer[3:0];
+									DataOut[7:4] <= 4'd5 - DataBuffer[7:4];
+								end
+								8'd24 : begin
+									DataOut[3:0] <= 4'd9 - DataBuffer[3:0];
+									DataOut[7:4] <= 4'd5 - DataBuffer[7:4];
+								end
+								8'd25 : begin
+									if(DataBuffer[3:0] > 4'd3)
+										begin
+											DataOut[3:0] <= 4'd13 - DataBuffer[3:0];
+											DataOut[7:4] <= 4'd1 - DataBuffer[7:4];
+										end
+									else
+										begin
+											DataOut[3:0] <= 4'd3 - DataBuffer[3:0];
+											DataOut[7:4] <= 4'd2 - DataBuffer[7:4];
+										end
+								end
+								default: begin DataOut <= DataBuffer; end
+				endcase
+				
 				// Comprobar teclado - Detectar nueva tecla
 				Changing <= KBBuffer != KBBuffer_Before;
 				if(Changing)
@@ -131,14 +150,25 @@ module ControlKB(
 								AddressBuffer <= 8'd28;
 								DataBuffer[7:0] <= 8'd8; // RECORDAR KEYLOR
 								ReadyCommit <= 1'b1;
+								
 							end
 							F12: begin
 								// Desactivar el Ring
 								AddressBuffer <= 8'd28;
 								DataBuffer <= 8'd0;
 								ReadyCommit <= 1'b1;
+								
 							end
-							Enter: ReadyCommit <= 1'b1;
+							F10: begin
+								// Desactivar el Ring
+								AddressBuffer <= 8'd02;
+								DataBuffer <= 8'd4;
+								ReadyCommit <= 1'b1;
+								
+							end
+							Enter: begin 
+								ReadyCommit <= 1'b1; 
+							end
 							Tab: begin
 								// Select Cursors
 								if(VirtualPos == 2'd2)
@@ -155,42 +185,52 @@ module ControlKB(
 							N0: begin
 								DataBuffer[7:4] <= DataBuffer[3:0];
 								DataBuffer[3:0] <= 4'd0;
+							
 							end
 							N1: begin
 								DataBuffer[7:4] <= DataBuffer[3:0];
 								DataBuffer[3:0] <= 4'd1;
+								
 							end
 							N2: begin
 								DataBuffer[7:4] <= DataBuffer[3:0];
 								DataBuffer[3:0] <= 4'd2;
+								
 							end
 							N3: begin
 								DataBuffer[7:4] <= DataBuffer[3:0];
 								DataBuffer[3:0] <= 4'd3;
+								
 							end
 							N4: begin
 								DataBuffer[7:4] <= DataBuffer[3:0];
 								DataBuffer[3:0] <= 4'd4;
+								
 							end
 							N5: begin
 								DataBuffer[7:4] <= DataBuffer[3:0];
 								DataBuffer[3:0] <= 4'd5;
+								
 							end
 							N6: begin
 								DataBuffer[7:4] <= DataBuffer[3:0];
 								DataBuffer[3:0] <= 4'd6;
+								
 							end
 							N7: begin
 								DataBuffer[7:4] <= DataBuffer[3:0];
 								DataBuffer[3:0] <= 4'd7;
+								
 							end
 							N8: begin
 								DataBuffer[7:4] <= DataBuffer[3:0];
 								DataBuffer[3:0] <= 4'd8;
+							
 							end
 							N9: begin
 								DataBuffer[7:4] <= DataBuffer[3:0];
 								DataBuffer[3:0] <= 4'd9;
+								
 							end
 						endcase
 						Changing <= 0;
@@ -202,6 +242,7 @@ module ControlKB(
 							// Discard Changes
 							AddressBuffer <= 8'd0;
 							DataBuffer <= 8'd0;
+							DataOut <= 8'd0;
 							ReadyCommit <= 1'd0;
 							KBBuffer_Before <= 16'd0;
 							Changing <= 1'd0;
@@ -215,7 +256,7 @@ module ControlKB(
 	
 	// Assignment
 	assign Address = AddressBuffer;
-	assign Data = DataBuffer;
+	assign Data = DataOut;
 	assign Commit = {7'd0, ReadyCommit};
 
 endmodule
