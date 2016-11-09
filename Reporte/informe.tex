@@ -278,7 +278,7 @@
 		Por ultimo el control de salida responde al cuadro de la figura \ref{fig:CTS} a este le entra, el bit de activación que sale de la maquina de escritura o lectura, y entran los datos del ciclo y dato que salen dependiendo del tiempo; internamente este tiene un timer, con el fin de llevar el tiempo desde la activación, y dependiendo del tiempo que transcurre genera los cambios de la figura \ref{fig:CTS}. \\[2ex]
 		\begin{figure}[htbp]
 			\centering
-			\includegraphics[height=9cm, width=16cm]{img/FlujoLec.jpg}
+			\includegraphics[height=9cm, width=16cm]{img/Flujolec.jpg}
 			\caption[3erNivel]{flujo de datos de la maquina de lectura}
 			\label{fig:FML}
 		\end{figure}
@@ -486,12 +486,99 @@
 		
 		\section{Hoja de datos de unidades desarrolladas}
 		
+		Para las conexiones del diseño implementado en Verilog del circuito, se debe seguir con la siguiente guía de conexión, que en este caso, se muestran en las tablas \ref{tab:Espec} y \ref{tab:Espec1}. Es importante seguirla para evitar conflictos y cabe aclarar que se recomienda implementarla en Nexys 4, ya que esta tabla tiene el pinout establecida para dicha placa de FPGA.
 		
+		\begin{table}[htbp]
+			\centering
+			\caption{Asignación de pines de las entradas y salidas}
+			\begin{tabular}{c||c||c||c}
+				Señal & Designación & Pin & Función\\
+				\hline
+				\hline
+				clk & input & E3 & Señal de reloj de la Nexys 4, es de 100MHz. \\
+				PS2\_CLOCK & input & F4 & Señal de reloj del teclado\\
+				PS2\_DATA & input & B2 & Datos en serie del teclado \\
+				datRTC[0] & inout & B13 & Bit de datos y direcciones de entrada. \\
+				datRTC[1] & inout & F14 & Bit de datos y direcciones de entrada. \\
+				datRTC[2] & inout & D17 & Bit de datos y direcciones de entrada. \\
+				datRTC[3] & inout & E17 & Bit de datos y direcciones de entrada. \\
+				datRTC[4] & inout & G13 & Bit de datos y direcciones de entrada. \\
+				datRTC[5] & inout & C17 & Bit de datos y direcciones de entrada. \\
+				datRTC[6] & inout & D18 & Bit de datos y direcciones de entrada. \\
+				datRTC[7] & inout & E18 & Bit de datos y direcciones de entrada. \\
+				
+				AN[0] & output & N6 & Ánodos de Display. \\
+				AN[1] & output & M6 & Ánodos de Display. \\
+				AN[2] & output & M3 & Ánodos de Display. \\
+				AN[3] & output & N5 & Ánodos de Display. \\
+				AN[4] & output & N2 & Ánodos de Display. \\
+				AN[5] & output & N4 & Ánodos de Display. \\
+				AN[6] & output & L1 & Ánodos de Display. \\
+				AN[7] & output & M1 & Ánodos de Display. \\
+				
+				SEG[0] & output & L3 & Segmentos de Display. \\
+				SEG[1] & output & N1 & Segmentos de Display. \\
+				SEG[2] & output & L5 & Segmentos de Display. \\
+				SEG[3] & output & L4 & Segmentos de Display. \\
+				SEG[4] & output & K3 & Segmentos de Display. \\
+				SEG[5] & output & M2 & Segmentos de Display. \\
+				SEG[6] & output & L6 & Segmentos de Display. \\
+			
+			
+			    R[0]  & output & A3 & Bit para color rojo. \\
+			    R[1]  & output & B4 & Bit para color rojo. \\
+			    R[2]  & output & C5 & Bit para color rojo. \\
+			    R[3]  & output & A4 & Bit para color rojo. \\
+			    G[0]  & output & C6 & Bit para color verde. \\
+			    G[1]  & output & A5 & Bit para color verde. \\
+			    G[2]  & output & B6 & Bit para color verde. \\
+			    G[3]  & output & A6 & Bit para color verde. \\
+			    B[0]  & output & B7 & Bit para color azul. \\
+			    B[1]  & output & C7 & Bit para color azul. \\
+			    B[2]  & output & D7 & Bit para color azul. \\
+			    B[3]  & output & D8 & Bit para color azul. \\
+				HSync  & output & B11 & Sincronización horizontal. \\
+				VSync  & output & B12 & Sincronización vertical. \\
+				
+			\end{tabular}
+			\label{tab:Espec}
+		\end{table}
+		
+		\begin{table}[htbp]
+			\centering
+			\caption{Continuación de asignación de pines de las entradas y salidas}
+			\begin{tabular}{c||c||c||c}
+				Señal & Designación & Pin & Función\\
+				\hline
+				\hline
+			RD  & output & V11 & Señal para leer. \\
+			CS  & output & P15 & Señal de selección. \\
+			WR  & output & V15 & Señal para escribir. \\
+			AD  & output & G14 & Selecciona entre dirección y dato. \\
+			inirq  & input & U11 & Interrupción de RTC. \\
+			PWM\_OUT & output & A11 & Sonido.\\
+			inRESET & input & E16 & Reset.\\
+		\end{tabular}
+		\label{tab:Espec1}
+	\end{table}
+	
 		\section{Conclusiones y recomendaciones}
 		\subsection{Conclusiones}
-		
+		\begin{itemize}
+			\item Utiliza un microcontrolador como máquina de control facilitó el proceso de desarrollo de dicha etapa, debido a que se abstrae a nivel de software.
+			\item Colocar un módulo externo de RTC aliviana la carga del microcontrolador en algunos sistemas, como por ejemplo, en dispositivos móviles, ya que se puede aprovechar el potencial del microprocesador para ejecutar tareas de mayor importancia.
+			\item Desarrollar una unidad de control principal ayuda en la comunicación entre los diferentes periféricos, esto comunicando un identificador (PORT\_ID) y un bus de datos centralizado.
+			\item Colocar un teclado para configurar la información del sistema ayuda a tener una mejor experiencia de usuario, ya que se pueden escribir los números en lugar de estar seleccionándolos mediante dos botones. 
+
+		\end{itemize}
 		
 		\subsection{Recomendaciones}
+		\begin{itemize}
+			\item Se debe acondicionar mejor la comunicación entre la RTC y la Nexys 4, debido a fluctuaciones en la alimentación de este en el IRQ que ocasionaron problemas. Esto se solucionó de forma temporal mediante un circuito RC.
+			\item La interfaz de la VGA debe realizarse de forma externa para mejorar la experiencia, ya que, si se importan imágenes mediante ROM en HDL, puede consumir gran cantidad de recursos que pueden afectar la velocidad máxima del sistema.
+			\item Controlar los periféricos mediante circuitos modulares separados.
+		\end{itemize}
+		
 		
 		\section{Bibliografía}
 		[3]"Nexys4-DDR Keyboard Demo [Reference.Digilentinc]", \textit{Reference.digilentinc.com} , 2016. [Online]. Available: https://reference.digilentinc.com/learn/programmable-logic/tutorials/nexys-4-ddr-keyboard-demo/start. [Accessed: 12-Oct-2016].
