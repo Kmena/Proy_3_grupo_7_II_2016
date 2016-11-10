@@ -482,7 +482,15 @@
 			\label{fig:DIR}
 		\end{figure}
 		\section{Análisis de datos y resultados}
+		El funcionamiento del sistema esta en un optimo funcionamiento en la practica, aunque existen algunos defectos, por ejemplo:
 		
+		\begin{itemize}
+			\item El tiempo no esta en una optima condición, en la tabla \ref{tab:consumo} se puede notar que el tiempo de ejecución esta en 98.739 MHz.
+			\item En las mediciones realizadas en el analizador lógico podemos notar que las señales RD,CS y WR no tienen mucha separacion en sus comienzos y finales.
+		\end{itemize}
+		
+		Pero gracias a la construcción del micro de una manera muy sistemática n la activación de sus señales este problema se minimizo.\\
+		Ademas, el segundo problema se redujeron sus efectos, debido que el sistema de salida de la RTC no trabaja tan cercano en sus tiempos críticos, sino se que se agrego un tiempo extra por cualquier error.\\
 		
 		\section{Hoja de datos de unidades desarrolladas}
 		

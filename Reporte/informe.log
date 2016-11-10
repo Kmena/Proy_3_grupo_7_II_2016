@@ -1,15 +1,13 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.9)  9 NOV 2016 10:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.9)  9 NOV 2016 19:29
 entering extended mode
- restricted \write18 enabled.
- %&-line parsing enabled.
-**informe.tex
-(./informe.tex
-LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 5 languages loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+**./informe.tex
+(informe.tex
+LaTeX2e <2016/03/31> patch level 3
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -23,82 +21,87 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2008/03/30 v1.1d Input encoding file
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
-File: latin1.def 2008/03/30 v1.1d Input encoding file
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin1.def"
+File: latin1.def 2015/03/17 v1.2c Input encoding file
 ))
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2013/12/03 3.9h The Babel package
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2016/04/23 3.9r The Babel package
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
-Language: spanish.ldf 2014/01/29 v5.0m Spanish support from the babel system
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\User\AppData\Roaming\MiKTeX\2.9\tex\latex\arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\babel-spanish\spanish.ldf"
+Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2013/12/03 3.9h Babel common definitions
+("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2016/04/23 3.9r Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen103
 )
-\es@datefmt=\count88
 \es@quottoks=\toks16
-\es@quotdepth=\count89
-Package babel Info: Making " an active character on input line 496.
-Package babel Info: Making . an active character on input line 599.
-Package babel Info: Making < an active character on input line 644.
-Package babel Info: Making > an active character on input line 644.
+\es@quotdepth=\count88
+Package babel Info: Making " an active character on input line 561.
+Package babel Info: Making . an active character on input line 662.
+Package babel Info: Making < an active character on input line 707.
+Package babel Info: Making > an active character on input line 707.
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count90
+\Gread@gobject=\count89
 ))
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
-(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count91
-\Gm@cntv=\count92
-\c@Gm@tempcnt=\count93
+\Gm@cnth=\count90
+\Gm@cntv=\count91
+\c@Gm@tempcnt=\count92
 \Gm@bindingoffset=\dimen106
 \Gm@wd@mp=\dimen107
 \Gm@odd@mp=\dimen108
@@ -108,58 +111,59 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen112
 \Gm@layoutvoffset=\dimen113
 \Gm@dimlist=\toks18
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+(C:\Users\User\AppData\Roaming\MiKTeX\2.9\tex\latex\lastpage\lastpage.sty
+Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
-Package: lastpage 2013/01/28 v1.2l Refers to last page's name (HMM; JPG)
+(C:\Users\User\AppData\Roaming\MiKTeX\2.9\tex\latex\marginnote\marginnote.sty
+Package: marginnote 2016/06/02 v1.2 non floating margin notes for LaTeX
+\c@mn@abspage=\count93
 )
-(/usr/share/texlive/texmf-dist/tex/latex/marginnote/marginnote.sty
-Package: marginnote 2012/03/29 v1.1i non floating margin notes for LaTeX
-\c@mn@abspage=\count94
-)
-(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
 \bigstrutjot=\dimen114
 )
-(/usr/share/texlive/texmf-dist/tex/latex/wallpaper/wallpaper.sty
+(C:\Users\User\AppData\Roaming\MiKTeX\2.9\tex\latex\wallpaper\wallpaper.sty
 Package: wallpaper 2005/01/18, v1.01 easy wallpaper formatting (MHFW)
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count95
-\calc@Bcount=\count96
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count94
+\calc@Bcount=\count95
 \calc@Adimen=\dimen115
 \calc@Bdimen=\dimen116
 \calc@Askip=\skip43
 \calc@Bskip=\skip44
-LaTeX Info: Redefining \setlength on input line 76.
-LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count97
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count96
 \calc@Cskip=\skip45
 )
-(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
+(C:\Users\User\AppData\Roaming\MiKTeX\2.9\tex\latex\eso-pic\eso-pic.sty
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
-Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 )
-(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+(C:\Users\User\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
-Package xcolor Info: Model `RGB' extended on input line 1353.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ))
 \wpXoffset=\skip46
 \wpYoffset=\skip47
@@ -170,7 +174,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 \tileX=\skip52
 \tileY=\skip53
 )
-(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+(C:\Users\User\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
 \fancy@headwidth=\skip54
 \f@ncyO@elh=\skip55
 \f@ncyO@erh=\skip56
@@ -180,7 +184,8 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 \f@ncyO@erf=\skip60
 \f@ncyO@olf=\skip61
 \f@ncyO@orf=\skip62
-) (./informe.aux
+)
+(informe.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 )
@@ -200,25 +205,26 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
 LaTeX Info: Redefining \. on input line 34.
 LaTeX Info: Redefining \% on input line 34.
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(C:\Users\User\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count98
+\scratchcounter=\count97
 \scratchdimen=\dimen117
 \scratchbox=\box26
-\nofMPsegments=\count99
-\nofMParguments=\count100
+\nofMPsegments=\count98
+\nofMParguments=\count99
 \everyMPshowfont=\toks19
-\MPscratchCnt=\count101
+\MPscratchCnt=\count100
 \MPscratchDim=\dimen118
-\MPnumerator=\count102
-\makeMPintoPDFobject=\count103
+\MPnumerator=\count101
+\makeMPintoPDFobject=\count102
 \everyMPtoPDFconversion=\toks20
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -226,37 +232,35 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -292,13 +296,10 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package lastpage Info: Please have a look at the pageslts package at
-(lastpage)             http://www.ctan.org/tex-archive/ 
-(lastpage)             macros/latex/contrib/pageslts/ 
-(lastpage)             or
-(lastpage)             http://www.ctan.org/tex-archive/ 
-(lastpage)             install/macros/latex/contrib/pageslts.tds.zip
+(lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 34.
-Package marginnote Info: \pdfoutput not 0 and \pdflastxpos available.
+Package marginnote Info: \pdfoutput not 0 or unimportant and
+(marginnote)             \pdflastxpos or \lastxpos available.
 (marginnote)             Extended position detection mode activated.
 \AtBeginShipoutBox=\box27
 
@@ -317,7 +318,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 60.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 60.
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+[1{C:/Users/User/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 60--61
@@ -329,7 +330,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--68
 
  []
 
-<img/Subsistemas.jpg, id=9, 922.94812pt x 366.61969pt>
+<img/Subsistemas.jpg, id=8, 922.94812pt x 366.61969pt>
 File: img/Subsistemas.jpg Graphic file (type jpg)
 
 <use img/Subsistemas.jpg>
@@ -340,7 +341,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
-<img/VGAPrimerNivel.png, id=13, 562.35094pt x 235.63031pt>
+<img/VGAPrimerNivel.png, id=12, 562.35094pt x 235.63031pt>
 File: img/VGAPrimerNivel.png Graphic file (type png)
 
 <use img/VGAPrimerNivel.png>
@@ -351,7 +352,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--91
 
  []
 
-<img/VGASegundoNivel.png, id=15, 865.73438pt x 383.18156pt>
+<img/VGASegundoNivel.png, id=14, 865.73438pt x 383.18156pt>
 File: img/VGASegundoNivel.png Graphic file (type png)
 
 <use img/VGASegundoNivel.png>
@@ -373,13 +374,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--111
  []
 
 [4 <./img/VGASegundoNivel.png>]
-<img/VGATercerNivel.png, id=24, 843.90282pt x 502.87875pt>
+<img/VGATercerNivel.png, id=23, 843.90282pt x 502.87875pt>
 File: img/VGATercerNivel.png Graphic file (type png)
 
 <use img/VGATercerNivel.png>
 Package pdftex.def Info: img/VGATercerNivel.png used on input line 114.
 (pdftex.def)             Requested size: 512.1496pt x 305.19023pt.
- <img/VGAInterfaz.png, id=25, 513.92pt x 385.44pt>
+ <img/VGAInterfaz.png, id=24, 513.92pt x 385.44pt>
 File: img/VGAInterfaz.png Graphic file (type png)
 
 <use img/VGAInterfaz.png>
@@ -390,7 +391,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--128
 
  []
 
-[5 <./img/VGATercerNivel.png>] <img/VGANumeros.png, id=30, 32.12pt x 481.8pt>
+[5 <./img/VGATercerNivel.png>] <img/VGANumeros.png, id=29, 32.12pt x 481.8pt>
 File: img/VGANumeros.png Graphic file (type png)
 
 <use img/VGANumeros.png>
@@ -402,21 +403,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--138
  []
 
 [6 <./img/VGAInterfaz.png>] [7 <./img/VGANumeros.png>]
-<img/KBPrimerNivel.png, id=40, 612.78937pt x 235.63031pt>
+<img/KBPrimerNivel.png, id=39, 612.78937pt x 235.63031pt>
 File: img/KBPrimerNivel.png Graphic file (type png)
 
 <use img/KBPrimerNivel.png>
 Package pdftex.def Info: img/KBPrimerNivel.png used on input line 173.
 (pdftex.def)             Requested size: 398.33858pt x 153.16867pt.
 
-<img/KBSegundoNivel.png, id=41, 874.76813pt x 426.84468pt>
+<img/KBSegundoNivel.png, id=40, 874.76813pt x 426.84468pt>
 File: img/KBSegundoNivel.png Graphic file (type png)
 
 <use img/KBSegundoNivel.png>
 Package pdftex.def Info: img/KBSegundoNivel.png used on input line 184.
 (pdftex.def)             Requested size: 512.1496pt x 249.9083pt.
  [8 <./img/KBPrimerNivel.png>] [9 <./img/KBSegundoNivel.png>] <img/KBTercerNive
-l.png, id=49, 874.76813pt x 427.5975pt>
+l.png, id=48, 874.76813pt x 427.5975pt>
 File: img/KBTercerNivel.png Graphic file (type png)
 
 <use img/KBTercerNivel.png>
@@ -427,7 +428,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
 
-<img/nivel1_contusr.jpg, id=50, 922.94812pt x 366.61969pt>
+<img/nivel1_contusr.jpg, id=49, 922.94812pt x 366.61969pt>
 File: img/nivel1_contusr.jpg Graphic file (type jpg)
 
 <use img/nivel1_contusr.jpg>
@@ -444,21 +445,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 221--222
  []
 
 [10 <./img/KBTercerNivel.png>]
-<img/nivel2_contusr.jpg, id=55, 635.37375pt x 291.33844pt>
+<img/nivel2_contusr.jpg, id=54, 635.37375pt x 291.33844pt>
 File: img/nivel2_contusr.jpg Graphic file (type jpg)
 
 <use img/nivel2_contusr.jpg>
 Package pdftex.def Info: img/nivel2_contusr.jpg used on input line 226.
 (pdftex.def)             Requested size: 455.25829pt x 199.17442pt.
 
-<img/JerarquiaRTC.jpg, id=56, 673.76718pt x 549.55313pt>
+<img/JerarquiaRTC.jpg, id=55, 673.76718pt x 549.55313pt>
 File: img/JerarquiaRTC.jpg Graphic file (type jpg)
 
 <use img/JerarquiaRTC.jpg>
 Package pdftex.def Info: img/JerarquiaRTC.jpg used on input line 237.
 (pdftex.def)             Requested size: 455.24614pt x 256.07623pt.
 
-<img/diagramatiempoescritura.jpg, id=57, 703.87968pt x 261.22594pt>
+<img/diagramatiempoescritura.jpg, id=56, 703.87968pt x 261.22594pt>
 File: img/diagramatiempoescritura.jpg Graphic file (type jpg)
 
 <use img/diagramatiempoescritura.jpg>
@@ -466,41 +467,41 @@ Package pdftex.def Info: img/diagramatiempoescritura.jpg used on input line 243
 .
 (pdftex.def)             Requested size: 455.23943pt x 256.07938pt.
 
-<img/diagramatiempolectura.jpg, id=58, 706.13812pt x 279.29344pt>
+<img/diagramatiempolectura.jpg, id=57, 706.13812pt x 279.29344pt>
 File: img/diagramatiempolectura.jpg Graphic file (type jpg)
 
 <use img/diagramatiempolectura.jpg>
 Package pdftex.def Info: img/diagramatiempolectura.jpg used on input line 249.
 (pdftex.def)             Requested size: 455.24548pt x 256.0837pt.
 
-<img/cuadrotiemposalida.jpg, id=59, 584.1825pt x 261.97874pt>
+<img/cuadrotiemposalida.jpg, id=58, 584.1825pt x 261.97874pt>
 File: img/cuadrotiemposalida.jpg Graphic file (type jpg)
 
 <use img/cuadrotiemposalida.jpg>
 Package pdftex.def Info: img/cuadrotiemposalida.jpg used on input line 255.
 (pdftex.def)             Requested size: 455.25938pt x 256.08183pt.
  [11 <./img/nivel1_contusr.jpg> <./img/nivel2_contusr.jpg>] <img/nivel1_RTC.jpg
-, id=63, 515.67656pt x 279.29344pt>
+, id=62, 515.67656pt x 279.29344pt>
 File: img/nivel1_RTC.jpg Graphic file (type jpg)
 
 <use img/nivel1_RTC.jpg>
 Package pdftex.def Info: img/nivel1_RTC.jpg used on input line 263.
 (pdftex.def)             Requested size: 455.26033pt x 256.0837pt.
 
-<img/DiagramaControlRTC.png, id=64, 607.26875pt x 467.7475pt>
+<img/DiagramaControlRTC.png, id=63, 607.26875pt x 467.7475pt>
 File: img/DiagramaControlRTC.png Graphic file (type png)
 
 <use img/DiagramaControlRTC.png>
 Package pdftex.def Info: img/DiagramaControlRTC.png used on input line 272.
 (pdftex.def)             Requested size: 455.24408pt x 350.65987pt.
 
-<img/Flujolec.jpg, id=65, 362.85562pt x 342.5297pt>
+<img/Flujolec.jpg, id=64, 362.85562pt x 342.5297pt>
 File: img/Flujolec.jpg Graphic file (type jpg)
  <use img/Flujolec.jpg>
 Package pdftex.def Info: img/Flujolec.jpg used on input line 281.
 (pdftex.def)             Requested size: 455.25711pt x 256.09174pt.
 
-<img/FlujoEsc.jpg, id=66, 572.1375pt x 345.54094pt>
+<img/FlujoEsc.jpg, id=65, 572.1375pt x 345.54094pt>
 File: img/FlujoEsc.jpg Graphic file (type jpg)
  <use img/FlujoEsc.jpg>
 Package pdftex.def Info: img/FlujoEsc.jpg used on input line 287.
@@ -513,7 +514,7 @@ jpg>] [15 <./img/DiagramaControlRTC.png>]
 LaTeX Warning: File `img/Diagrama De Flujo Princiapal.png' not found on input l
 ine 296.
 
-<img/Diagrama De Flujo Princiapal.png, id=80, 165.61874pt x 276.03125pt>
+<img/Diagrama De Flujo Princiapal.png, id=79, 165.61874pt x 276.03125pt>
 File: img/Diagrama De Flujo Princiapal.png Graphic file (type png)
 
 <use img/Diagrama De Flujo Princiapal.png>
@@ -525,7 +526,7 @@ e 296.
 LaTeX Warning: File `img/digrama de teclado irq.png' not found on input line 30
 7.
 
-<img/digrama de teclado irq.png, id=81, 1020.81375pt x 872.25874pt>
+<img/digrama de teclado irq.png, id=80, 1020.81375pt x 872.25874pt>
 File: img/digrama de teclado irq.png Graphic file (type png)
 
 <use img/digrama de teclado irq.png>
@@ -537,7 +538,7 @@ Package pdftex.def Info: img/digrama de teclado irq.png used on input line 307.
 LaTeX Warning: File `img/digrama de flujo RTC.png' not found on input line 313.
 
 
-<img/digrama de flujo RTC.png, id=82, 676.5275pt x 748.7975pt>
+<img/digrama de flujo RTC.png, id=81, 676.5275pt x 748.7975pt>
 File: img/digrama de flujo RTC.png Graphic file (type png)
 
 <use img/digrama de flujo RTC.png>
@@ -548,7 +549,7 @@ Package pdftex.def Info: img/digrama de flujo RTC.png used on input line 313.
 LaTeX Warning: File `img/digrama de flujo VGA.png' not found on input line 319.
 
 
-<img/digrama de flujo VGA.png, id=83, 674.52pt x 748.7975pt>
+<img/digrama de flujo VGA.png, id=82, 674.52pt x 748.7975pt>
 File: img/digrama de flujo VGA.png Graphic file (type png)
 
 <use img/digrama de flujo VGA.png>
@@ -571,50 +572,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 371--373
 [16 <./img/Flujolec.jpg>] [17 <./img/FlujoEsc.jpg> <./img/Diagrama De Flujo Pri
 nciapal.png>] [18 <./img/digrama de teclado irq.png>] [19 <./img/digrama de flu
 jo RTC.png>] [20 <./img/digrama de flujo VGA.png>] [21]
-<img/Punteros.png, id=103, 197.98969pt x 402.75468pt>
+<img/Punteros.png, id=102, 197.98969pt x 402.75468pt>
 File: img/Punteros.png Graphic file (type png)
  <use img/Punteros.png>
 Package pdftex.def Info: img/Punteros.png used on input line 376.
 (pdftex.def)             Requested size: 167.8449pt x 341.43306pt.
 
-<img/SimVGA1.PNG, id=104, 733.23938pt x 239.39438pt>
+<img/SimVGA1.PNG, id=103, 733.23938pt x 239.39438pt>
 File: img/SimVGA1.PNG Graphic file (type png)
  <use img/SimVGA1.PNG>
 Package pdftex.def Info: img/SimVGA1.PNG used on input line 383.
 (pdftex.def)             Requested size: 455.24408pt x 148.63484pt.
 
-<img/SimVGA2.PNG, id=105, 642.14906pt x 595.47469pt>
+<img/SimVGA2.PNG, id=104, 642.14906pt x 595.47469pt>
 File: img/SimVGA2.PNG Graphic file (type png)
  <use img/SimVGA2.PNG>
 Package pdftex.def Info: img/SimVGA2.PNG used on input line 390.
 (pdftex.def)             Requested size: 455.24408pt x 422.16302pt.
 
-<img/SimVGA3.PNG, id=106, 858.20625pt x 587.94656pt>
+<img/SimVGA3.PNG, id=105, 858.20625pt x 587.94656pt>
 File: img/SimVGA3.PNG Graphic file (type png)
  <use img/SimVGA3.PNG>
 Package pdftex.def Info: img/SimVGA3.PNG used on input line 397.
 (pdftex.def)             Requested size: 455.24408pt x 311.87933pt.
 
-<img/SimVGA4.PNG, id=107, 675.27281pt x 594.72188pt>
+<img/SimVGA4.PNG, id=106, 675.27281pt x 594.72188pt>
 File: img/SimVGA4.PNG Graphic file (type png)
  <use img/SimVGA4.PNG>
 Package pdftex.def Info: img/SimVGA4.PNG used on input line 404.
 (pdftex.def)             Requested size: 455.24408pt x 400.94806pt.
 
-<img/SimVGA5.PNG, id=108, 931.98187pt x 593.21625pt>
+<img/SimVGA5.PNG, id=107, 931.98187pt x 593.21625pt>
 File: img/SimVGA5.PNG Graphic file (type png)
  <use img/SimVGA5.PNG>
 Package pdftex.def Info: img/SimVGA5.PNG used on input line 411.
 (pdftex.def)             Requested size: 455.24408pt x 289.76428pt.
 
-<img/matlab.png, id=109, 862.72313pt x 502.87875pt>
+<img/matlab.png, id=108, 862.72313pt x 502.87875pt>
 File: img/matlab.png Graphic file (type png)
  <use img/matlab.png>
 Package pdftex.def Info: img/matlab.png used on input line 418.
 (pdftex.def)             Requested size: 455.24408pt x 265.35812pt.
 
 [22 <./img/Punteros.png>] [23 <./img/SimVGA1.PNG> <./img/SimVGA2.PNG>]
-<img/simkb1_1.png, id=119, 1031.855pt x 431.6125pt>
+<img/simkb1_1.png, id=118, 1031.855pt x 431.6125pt>
 File: img/simkb1_1.png Graphic file (type png)
  <use img/simkb1_1.png>
 Package pdftex.def Info: img/simkb1_1.png used on input line 429.
@@ -629,27 +630,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 458--459
 
  []
 
-<img/vistageneral.jpeg, id=120, 1043.9pt x 586.19pt>
+<img/vistageneral.jpeg, id=119, 1043.9pt x 586.19pt>
 File: img/vistageneral.jpeg Graphic file (type jpg)
 
 <use img/vistageneral.jpeg>
 Package pdftex.def Info: img/vistageneral.jpeg used on input line 462.
 (pdftex.def)             Requested size: 455.24408pt x 255.6346pt.
 
-<img/irqactivado.jpeg, id=121, 1043.9pt x 586.19pt>
+<img/irqactivado.jpeg, id=120, 1043.9pt x 586.19pt>
 File: img/irqactivado.jpeg Graphic file (type jpg)
  <use img/irqactivado.jpeg>
 Package pdftex.def Info: img/irqactivado.jpeg used on input line 468.
 (pdftex.def)             Requested size: 455.24408pt x 255.6346pt.
 
-<img/timeroff_irqoff.jpeg, id=122, 1043.9pt x 586.19pt>
+<img/timeroff_irqoff.jpeg, id=121, 1043.9pt x 586.19pt>
 File: img/timeroff_irqoff.jpeg Graphic file (type jpg)
 
 <use img/timeroff_irqoff.jpeg>
 Package pdftex.def Info: img/timeroff_irqoff.jpeg used on input line 474.
 (pdftex.def)             Requested size: 455.24408pt x 255.6346pt.
 
-<img/puestaydireccion.jpeg, id=123, 1043.9pt x 586.19pt>
+<img/puestaydireccion.jpeg, id=122, 1043.9pt x 586.19pt>
 File: img/puestaydireccion.jpeg Graphic file (type jpg)
 
 <use img/puestaydireccion.jpeg>
@@ -657,15 +658,20 @@ Package pdftex.def Info: img/puestaydireccion.jpeg used on input line 480.
 (pdftex.def)             Requested size: 455.24408pt x 255.6346pt.
  [24 <./img/SimVGA3.PNG>] [25 <./img/SimVGA4.PNG>] [26 <./img/SimVGA5.PNG> <./i
 mg/matlab.png>] [27 <./img/simkb1_1.png (PNG copy)> <./img/vistageneral.jpeg>] 
-[28 <./img/irqactivado.jpeg> <./img/timeroff_irqoff.jpeg>] 
+[28 <./img/irqactivado.jpeg> <./img/timeroff_irqoff.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 492--494
+
+ []
+
+[29 <./img/puestaydireccion.jpeg>] 
 AED: lastpage setting LastPage
 
-Overfull \hbox (5.73201pt too wide) in paragraph at lines 572--573
+Overfull \hbox (5.73201pt too wide) in paragraph at lines 592--593
 \OT1/cmr/m/n/12 Avai-la-ble: https://reference.digilentinc.com/learn/programmab
 le-logic/tutorials/nexys-4-ddr-keyboard-
  []
 
-[29 <./img/puestaydireccion.jpeg>] [30] [31] (./informe.aux
+[30] [31] [32] (informe.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 )
@@ -674,21 +680,20 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3978 strings out of 494966
- 56367 string characters out of 6179560
- 152373 words of memory out of 5000000
- 7098 multiletter control sequences out of 15000+600000
- 8600 words of font info for 30 fonts, out of 8000000 for 9000
- 40 hyphenation exceptions out of 8191
- 38i,18n,48p,850b,400s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on informe.pdf (31 pages, 1372371 bytes).
+ 4092 strings out of 493334
+ 58190 string characters out of 3139256
+ 160326 words of memory out of 3000000
+ 7520 multiletter control sequences out of 15000+200000
+ 8600 words of font info for 30 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 40i,18n,48p,852b,400s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on informe.pdf (32 pages, 1388086 bytes).
 PDF statistics:
- 170 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
+ 171 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  176 words of extra memory for PDF output out of 10000 (max. 10000000)
 
